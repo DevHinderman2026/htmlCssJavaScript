@@ -1,0 +1,14 @@
+# ai02 Questions
+
+Copy these questions into a Google Doc or a Word document. Type your answer under each question. Use your own words. One or two sentences is enough. Share the document with Mr. McMaster in Google Classroom.
+
+## 1. Name the five regions you used on your page. Say what goes in each one. There are four on my page. Top is the intro or the banner region. Next is the nav. This contains links. Third is the main.This contains the headings. Forth is the content info.
+## 2. Why does a page have only one heading level one? What goes wrong for a screen reader user if a page has four? The reasoning behind heading level one and only having one on a website is because that is the title. If multiple were present, things would be placed incorrectly on the page. The boundaries would be screwed up as well. For a screen reader user, it would basically be A logistical nightmare. The commands to jump between heading levels would not work correctly either.
+
+## 3. When should content be an ordered list instead of an unordered list? Give one example of each. If you are creating a site for example stating the isles of grocery items, those items should be in an order list based on the aisle type. For a standard list of justice instructions that don't need to be followed in order, bullet points are a good alternative for that. An order list is only useful when things need to be done in order or read in order.
+
+## 4. What is the difference in meaning between the strong element and the em element? The only difference is that the strong elements place Emphasis on important text. This is especially useful for screen readers.
+
+## 5. Bold text and a heading can look the same on screen. Why does it matter which one you use? Tricky one to answer but my thinking comes down to one simple concept. When I think of bold, that means something is important. The purpose of bold especially is to distinguish when something is important on the site.
+
+## 6. What does markup mean in the name HTML? Markups are essentially annotations to distinguish what the text does in the document.
