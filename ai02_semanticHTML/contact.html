@@ -20,6 +20,10 @@
         main:focus {
             outline: none;
         }
+        .page-overview {
+            border-left: 4px solid #999;
+            padding-left: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -27,22 +31,26 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header>
-        <h1>The Artist Who Only Uses Ears</h1>
+        <h1>Contact</h1>
+        <p>The Artist Who Only Uses Ears &mdash; music by Russell Hinderman</p>
     </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="music.html">Music</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
     </nav>
 
     <main id="main-content" tabindex="-1">
 
-        <section>
-            <h2>Get In Touch</h2>
+        <p class="page-overview">This is the Contact page. It has one section below, called Get In Touch, which holds a short note followed by my email address as a link. After that section you will reach the page footer, which repeats my name and email address.</p>
+
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get In Touch</h2>
             <p>The best way to reach me is by email. I check it regularly and I am happy to talk about music, production, or collaboration.</p>
             <ul>
                 <li>Email: <a href="mailto:mc_rhinderman28@mcjvs2.org">mc_rhinderman28@mcjvs2.org</a></li>

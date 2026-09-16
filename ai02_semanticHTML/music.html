@@ -20,6 +20,31 @@
         main:focus {
             outline: none;
         }
+        .page-overview {
+            border-left: 4px solid #999;
+            padding-left: 1rem;
+        }
+        .table-wrap {
+            overflow-x: auto;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        caption {
+            text-align: left;
+            padding-bottom: 0.5rem;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 0.5rem 0.75rem;
+            text-align: left;
+            vertical-align: middle;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -27,34 +52,117 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header>
-        <h1>The Artist Who Only Uses Ears</h1>
+        <h1>Music</h1>
+        <p>The Artist Who Only Uses Ears &mdash; music by Russell Hinderman</p>
     </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="music.html">Music</a></li>
+            <li><a href="music.html" aria-current="page">Music</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <main id="main-content" tabindex="-1">
 
-        <section>
-            <h2>Current Album</h2>
+        <p class="page-overview">This is the Music page. It has three sections below, in this order: Current Album, then Listen to One of My Releases, then How I Build an Album. The middle section holds a table of six releases with eight columns: Artwork, Release, Format, Year, Tracks, Running Time, Credits, and Listen. After the last section you will reach the page footer, which holds my name and my email address.</p>
+
+        <section aria-labelledby="album-heading">
+            <h2 id="album-heading">Current Album</h2>
             <p>The most current album I'm working on is called <strong>Paranoia</strong>. The way I produce music is I work on big catalogs of albums, and then hand pick which ones I'd like to distribute.</p>
         </section>
 
-        <section>
-            <h2>Listen to One of My Releases</h2>
-            <p>If you want to hear what I have been working on, you can stream one of my releases now.</p>
-            <p><a href="https://music.youtube.com/watch?v=JooddkbGqbU&amp;si=wAvqgshbwUZFN2kg">Listen to my release on YouTube Music</a></p>
+        <section aria-labelledby="listen-heading">
+            <h2 id="listen-heading">Listen to One of My Releases</h2>
+            <p>Everything below is out now on YouTube Music. If you only have time for one thing, start with <a href="https://music.youtube.com/watch?v=JooddkbGqbU&amp;si=wAvqgshbwUZFN2kg">Fractured tides</a>, the opening track from <em>The tides</em>.</p>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>Six selected releases. Each row gives the cover artwork, the release name, the format, the release year, the number of tracks, the running time, the credits, and a link to listen on YouTube Music.</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Artwork</th>
+                            <th scope="col">Release</th>
+                            <th scope="col">Format</th>
+                            <th scope="col">Year</th>
+                            <th scope="col">Tracks</th>
+                            <th scope="col">Running Time</th>
+                            <th scope="col">Credits</th>
+                            <th scope="col">Listen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="the-tides.png" alt="Cover art for The tides: pale layered waves across a deep blue-grey field, split by a jagged white fracture line, with the title The tides and the name Russell Hinderman below." width="120" height="120"></td>
+                            <th scope="row">The tides</th>
+                            <td>Single</td>
+                            <td>2026</td>
+                            <td>3</td>
+                            <td>22 minutes</td>
+                            <td>Russell Hinderman</td>
+                            <td><a href="https://music.youtube.com/browse/MPREb_a3bluD56Yhp">Listen to The tides</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="the-cost-of-love.png" alt="Cover art for The cost of love: a dark crimson glow at the centre with fine cracks spreading outward across black, with the title The cost of love and the name Russell Hinderman below." width="120" height="120"></td>
+                            <th scope="row">The cost of love</th>
+                            <td>Album</td>
+                            <td>2026</td>
+                            <td>14</td>
+                            <td>1 hour 24 minutes</td>
+                            <td>Russell Hinderman</td>
+                            <td><a href="https://music.youtube.com/browse/MPREb_jq5oXmmo3OD">Listen to The cost of love</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="sensations.png" alt="Cover art for Sensations: concentric orange and magenta ripples spreading over a purple-to-amber gradient, with the title Sensations and the name Russell Hinderman below." width="120" height="120"></td>
+                            <th scope="row">Sensations</th>
+                            <td>Album</td>
+                            <td>2026</td>
+                            <td>8</td>
+                            <td>46 minutes</td>
+                            <td>Russell Hinderman</td>
+                            <td><a href="https://music.youtube.com/browse/MPREb_yBEdQngiaHi">Listen to Sensations</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="nemesis.png" alt="Cover art for Nemesis: sharp red and black diagonal shards cutting across a near-black background, with the title Nemesis and the name Russell Hinderman below." width="120" height="120"></td>
+                            <th scope="row">Nemesis</th>
+                            <td>EP</td>
+                            <td>2026</td>
+                            <td>4</td>
+                            <td>21 minutes</td>
+                            <td>Russell Hinderman</td>
+                            <td><a href="https://music.youtube.com/browse/MPREb_93nX9cje6LB">Listen to Nemesis</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="terms-of-awareness.png" alt="Cover art for Terms of awareness: a pale outlined circle centred on a teal grid, with the title Terms of awareness and the name Russell Hinderman below." width="120" height="120"></td>
+                            <th scope="row">Terms of awareness</th>
+                            <td>EP</td>
+                            <td>2026</td>
+                            <td>4</td>
+                            <td>18 minutes</td>
+                            <td>Russell Hinderman</td>
+                            <td><a href="https://music.youtube.com/browse/MPREb_eoGSNJM8dXF">Listen to Terms of awareness</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="the-betrayer-of-warnings.png" alt="Cover art for The betrayer of warnings: amber and black diagonal hazard stripes fading into darkness, with the title The betrayer of warnings and the name Russell Hinderman below." width="120" height="120"></td>
+                            <th scope="row">The betrayer of warnings</th>
+                            <td>Single</td>
+                            <td>2026</td>
+                            <td>1</td>
+                            <td>5 minutes 8 seconds</td>
+                            <td>Russell Hinderman, featuring DJSODAPOP</td>
+                            <td><a href="https://music.youtube.com/browse/MPREb_6Cea9cedi4f">Listen to The betrayer of warnings</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <section>
-            <h2>How I Build an Album</h2>
-            <p>Every release follows roughly the same path, from the first rough idea to the finished record.</p>
+        <section aria-labelledby="process-heading">
+            <h2 id="process-heading">How I Build an Album</h2>
+            <p>Every release follows roughly the same path, from the first rough idea to the finished record. The software behind each of these steps is described on the <a href="equipment.html">Equipment page</a>.</p>
             <ol>
                 <li>Sketch out ideas and build a large catalog of songs.</li>
                 <li>Produce the tracks that show the most promise.</li>

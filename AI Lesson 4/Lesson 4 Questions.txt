@@ -1,0 +1,15 @@
+# ai04 Questions
+
+Copy these questions into a Google Doc or a Word document. Type your answer under each question. Use your own words. One or two sentences is enough. Share the document with Mr. McMaster in Google Classroom.
+
+## 1. What makes alt text good? Give one bad example and one good example for the same picture. Imagine the picture is a golden sky with trees surrounding it. That would be a good example of alt text. Bad example of alt text would just be, sky with trees. That's not very descriptive. If the picture is golden skies with trees surrounding it in the frame, than the alt text should clarify that.
+
+## 2. When should an image have empty alt text? What does a screen reader do with it? For websites with images with no context for alttext, This would be useful if the image was blank. The screen reader would read the image as just graphic. But if images are placeholders then alt text isn't needed however for most images, alt text is absolutely needed.
+
+## 3. What is the difference between alt text and a figcaption? Who gets each one? Altext is what the picture looks like, the description. A fig caption is the information for the picture explaining about it. This is also useful for blind users as well.
+
+## 4. Why do table header cells matter? What is it like to read a table that has them, compared to one that does not? Table headers give useful context of the name of each cell that the user is reading. And this is especially important for somebody who is using a screen reader. If tables don't have these headers, even if to a sighted person there are bold items, or images showing where to go, the visually impaired person would not be able to read any of the content. The headers are essentially foundations for screen readers to orient to.
+
+## 5. What does the controls attribute do on an audio or video element? the purpose of the attribute is to make the controls visible for the audio and or video player. common controls can include rewind, Fast forward, pause, next, and previous.
+
+## 6. JPG, PNG, SVG. Which one is best for a photo? Which one is best for a logo with sharp edges? Which one can grow to any size without getting blurry? Jpg for images and png for logos SVG is vector based and gives instructions for the image That is why you can set it to any size.

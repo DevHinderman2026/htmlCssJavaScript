@@ -20,6 +20,10 @@
         main:focus {
             outline: none;
         }
+        .page-overview {
+            border-left: 4px solid #999;
+            padding-left: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -28,21 +32,25 @@
 
     <header>
         <h1>The Artist Who Only Uses Ears</h1>
+        <p>Music by Russell Hinderman</p>
     </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="music.html">Music</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <main id="main-content" tabindex="-1">
 
-        <section>
-            <h2>Music</h2>
+        <p class="page-overview">This is the home page. Above the main content there is a banner with the site name, then a navigation list of five links: Home, About, Music, Equipment, and Contact. The main content below has three sections, in this order: Music, then Listen to One of My Releases, then About. After the last section you will reach the page footer, which holds my name and my email address.</p>
+
+        <section aria-labelledby="music-heading">
+            <h2 id="music-heading">Music</h2>
             <p>The most current album I'm working on is called <strong>Paranoia</strong>. The way I produce music is I work on big catalogs of albums, and then hand pick which ones I'd like to distribute.</p>
             <ol>
                 <li>Sketch out ideas and build a large catalog of songs.</li>
@@ -53,25 +61,22 @@
             </ol>
         </section>
 
-        <section>
-            <h2>Listen to One of My Releases</h2>
+        <section aria-labelledby="listen-heading">
+            <h2 id="listen-heading">Listen to One of My Releases</h2>
             <p>If you want to hear what I have been working on, you can stream one of my releases now.</p>
-            <p><a href="https://music.youtube.com/watch?v=JooddkbGqbU&amp;si=wAvqgshbwUZFN2kg">Listen to my release on YouTube Music</a></p>
+            <p><a href="https://music.youtube.com/watch?v=JooddkbGqbU&amp;si=wAvqgshbwUZFN2kg">Listen to Fractured tides on YouTube Music</a></p>
+            <p>The full list of my releases, with cover artwork and credits, is on the <a href="music.html">Music page</a>.</p>
         </section>
 
-        <section>
-            <h2>About</h2>
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">About</h2>
             <p>This site was made in 2026. I have been producing music since 2021, and this page is where I keep track of what I am working on.</p>
             <ul>
                 <li>Metal is my favorite genre to produce.</li>
                 <li>I have been producing music for about five years.</li>
                 <li>I work in large album catalogs rather than one song at a time.</li>
             </ul>
-        </section>
-
-        <section>
-            <h2>Digital Audio Workstation Equipment That I Use for Music Production</h2>
-            <p>I use GarageBand for producing music and sketching out ideas, and then I use Logic Pro for mixing and mastering. If certain projects allow, I automatically use Logic Pro to start out with producing music. It just depends on <em>what the song calls for</em>.</p>
+            <p>More about me is on the <a href="about.html">About page</a>, and the software I produce with is on the <a href="equipment.html">Equipment page</a>.</p>
         </section>
 
     </main>
