@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music - The Artist Who Only Uses Ears</title>
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -3rem;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 0.75rem 1rem;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        main:focus {
+            outline: none;
+        }
+    </style>
 </head>
 <body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header>
         <h1>The Artist Who Only Uses Ears</h1>
@@ -20,11 +39,17 @@
         </ul>
     </nav>
 
-    <main>
+    <main id="main-content" tabindex="-1">
 
         <section>
             <h2>Current Album</h2>
             <p>The most current album I'm working on is called <strong>Paranoia</strong>. The way I produce music is I work on big catalogs of albums, and then hand pick which ones I'd like to distribute.</p>
+        </section>
+
+        <section>
+            <h2>Listen to One of My Releases</h2>
+            <p>If you want to hear what I have been working on, you can stream one of my releases now.</p>
+            <p><a href="https://music.youtube.com/watch?v=JooddkbGqbU&amp;si=wAvqgshbwUZFN2kg">Listen to my release on YouTube Music</a></p>
         </section>
 
         <section>

@@ -1,0 +1,16 @@
+# ai03 Questions
+
+Copy these questions into a Google Doc or a Word document. Type your answer under each question. Use your own words. One or two sentences is enough. Share the document with Mr. McMaster in Google Classroom.
+
+## 1. What is the difference between a relative link and an absolute link? An absolute link is a full link address for example a link to Youtube. A relative link is Links where the browser has to figure out where to go.
+
+## 2. If you move your whole site into a different folder, which kind of link keeps working? Why? The absolute link will still work due to the fact that the absolute link actually points you to somewhere like YouTube or any other URL. The relative links would break due to the fact that they're not in the same folder as the index.
+
+## 3. A jump link has two parts. What does the link need, and what does the target need? You first need the link and then the Destination of where the link will take you to. The Skip to main content link is a good example.
+
+## 4. What does a mailto link do when someone activates it? How do you add a subject line? This link activates your email program to compose an email to the recipient or the company. First subject line, in the code base you would add a question mark and then subject equals and then the text you want for the subject line.
+
+## 5. What does the download attribute change about a link? The link changes to save as. This will download the file to the hard disk.
+
+## 6. Why is Click here bad link text? Think about what the links list sounds like.
+Simple. A user who is blind does not what click here leads to.## 7. What is a skip link for? Skip links exist to jump the user into the content they care about on the page like the main heading. Instead of fighting through the navigation links. also if a user clicks on a link that takes them to a different portion of the site, the skip link will jump them straight down into the headings. bypassing all of the navigation steps. The steps include tab, arrow keys, and so on.
