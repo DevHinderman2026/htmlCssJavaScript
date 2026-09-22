@@ -1,0 +1,22 @@
+# ai04b Questions
+
+1. Why can a link to a music service not be used as the file for an audio element? What does the audio element need instead?
+
+
+2. Your page has a link out to a music service and an audio player with your own file. What can go wrong with the link that cannot go wrong with the file in your folder?
+
+
+3. The controls attribute is on your audio element. What would a visitor find on the page if you took it off?
+
+
+4. The audio element has a sentence and a download link inside it. When does anyone ever hear that? Why is it worth putting there?
+
+
+5. Your cover art has alt text and a caption. What is each one for, and why should they not say the same thing?
+
+
+6. What does the colspan attribute do? How did you work out what number to give it?
+
+
+7. You added a link from the music page to the release page, and a link back. Why does a new page need both?
+

@@ -47,7 +47,18 @@
 
     <main id="main-content" tabindex="-1">
 
-        <p class="page-overview">This is the home page. Above the main content there is a banner with the site name, then a navigation list of five links: Home, About, Music, Equipment, and Contact. The main content below has three sections, in this order: Music, then Listen to One of My Releases, then About. After the last section you will reach the page footer, which holds my name and my email address.</p>
+        <p class="page-overview">This is the home page. Above the main content there is a banner with the site name, then a navigation list of five links: Home, About, Music, Equipment, and Contact. The main content below has four sections, in this order: Listen to a Sample, which holds an audio player; then Music; then Listen to One of My Releases; then About. After the last section you will reach the page footer, which holds my name and my email address.</p>
+
+        <section aria-labelledby="sample-heading">
+            <h2 id="sample-heading">Listen to a Sample</h2>
+            <p>Here is a 49-second sample of <cite>Sensations</cite>, the title track from my 2026 album of the same name. Press play on the audio player below to hear it.</p>
+            <audio controls preload="metadata" aria-label="Sample of Sensations by Russell Hinderman">
+                <source src="audio%20samples/sensations-sample.m4a" type="audio/mp4">
+                <source src="audio%20samples/sensations-sample.mp3" type="audio/mpeg">
+                <p>Your browser cannot play audio on this page. You can <a href="audio%20samples/sensations-sample.mp3" download>download the Sensations sample (MP3, 1.5 MB)</a> instead.</p>
+            </audio>
+            <p>The full album is listed on the <a href="music.html">Music page</a>.</p>
+        </section>
 
         <section aria-labelledby="music-heading">
             <h2 id="music-heading">Music</h2>
