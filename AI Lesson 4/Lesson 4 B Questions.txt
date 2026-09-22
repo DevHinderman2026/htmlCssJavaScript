@@ -2,21 +2,29 @@
 
 1. Why can a link to a music service not be used as the file for an audio element? What does the audio element need instead?
 
+A link cannot be used for audio elements because the audio element would not play. The audio element needs its own file for the player controls to work. A link would take you out of the site and into a streaming platform which for this website, for these samples, we don't want.
 
 2. Your page has a link out to a music service and an audio player with your own file. What can go wrong with the link that cannot go wrong with the file in your folder?
 
+The link to the service possibly could be invalid, or the streaming service might not be able to be reached. Therefore, with audio, the audio file is inherently playable in the site, which it will be able to play.
 
 3. The controls attribute is on your audio element. What would a visitor find on the page if you took it off?
 
+The player disappears.
 
 4. The audio element has a sentence and a download link inside it. When does anyone ever hear that? Why is it worth putting there?
 
+The only time the download link will appear is if the browser doesn't know the audio player. The download link gives the viewer access to the file so they can hear it without the restriction.
 
 5. Your cover art has alt text and a caption. What is each one for, and why should they not say the same thing?
 
+The alt text is the description of the image for visually impaired and or blind users on the site. The caption is for everybody to see. The alt text and the caption should not say the same thing due to the alt text is description based and the caption is for everybody to see that gives more information about the image for everyone, not just for somebody who is blind in that case.
 
 6. What does the colspan attribute do? How did you work out what number to give it?
 
+Colspan allows cells to stretch. The colspan must be eight in order to match the number of columns and cells in the table. If the colspan is too short, it would look broken, and if it's too long, the rows and columns would stick out.
 
 7. You added a link from the music page to the release page, and a link back. Why does a new page need both?
+
+You need both links due to the fact that if there is no back link, you won't be able to actually get out of the releases page and go back to the music page. Also if the release link does not exist you wouldn't even be able to go into that either.
 
