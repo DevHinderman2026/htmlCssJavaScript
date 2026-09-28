@@ -1,0 +1,41 @@
+Summary of: html14_ExampleSolution_about.html
+Course: HTML CSS JavaScript track
+Lesson: Capstone Project Legacy
+Type of document: example solution code
+
+In one sentence:
+This is the About page of the sample Mountain View Coffee Co. site, showing how to organize story, mission, team, values, and timeline content with semantic sections, articles, lists, and headings.
+
+Main ideas:
+1. Head: same pattern as the home page, with UTF-8 charset, viewport meta tag, the title "About Us (separator bar) Mountain View Coffee Co.," a meta description about ethically sourced, locally roasted coffee, one og:title tag, and the shared stylesheet link.
+2. Header and navigation are identical to every other page (site-name h1, hamburger button, four links), except the About link carries the class active. The comments point out that the header and footer are kept consistent across all pages.
+3. The main landmark contains these sections, in order:
+- Page header section: an h1 "About Mountain View Coffee Co." and a subtitle "Our Story of Community, Quality, and Coffee."
+- Our Story (h2): an article with three paragraphs. Maria Chen and David Rodriguez founded the shop in 2015; Maria learned coffee farming and roasting in Central America; David was an experienced barista; the shop now serves hundreds of customers a week and roasts daily nearby. A photo of the owners sits beside the text.
+- Our Mission (h2): a photo of roasted beans, then an article with a paragraph, an h3 "Our Commitments," and a bulleted list of four commitments with bold labels: Quality, Community, Sustainability, Excellence.
+- Meet Our Team (h2): an intro sentence and a grid of four article elements. Each has a round headshot image, an h3 name, a role paragraph, and a short bio. The four are Maria Chen (Co-Founder and Head Roaster), David Rodriguez (Co-Founder and Head Barista), Alex Kim (Pastry Chef), and Jordan Smith (Cafe Manager).
+- Our Core Values (h2): four value boxes, each with an h3 starting with an emoji (a seedling for Sustainability, a heart for Community, a handshake for Fairness, an artist palette for Creativity) and a paragraph.
+- Our Journey (h2): a timeline of four items, each with a year as an h3 and a paragraph: 2015 opening with two espresso machines; 2016 in-house roastery and direct trade with Colombian farms; 2018 monthly events for artists and entrepreneurs; 2021 recognized as one of Ohio's best coffee shops.
+- Call to action (h2 "Join Our Community") with a "Get in Touch" link to the contact page.
+4. The footer and script tag are the same as on every page.
+5. Techniques shown: alternating image-left and image-right layouts using the same about-content container; article elements for self-contained items (story text, team members); a strong element for bold list labels; and consistent class names that the shared CSS turns into grids.
+
+Key terms:
+Article (written <article>) — a self-contained piece of content, used here for each team member profile and for story text.
+Section (written <section>) — a themed group of content with its own heading.
+Unordered list (written <ul>) — a bulleted list, used for the four commitments.
+Strong (written <strong>) — marks text as important, shown in bold, used for list labels.
+Timeline — a series of dated events, built here from simple div blocks each headed by a year.
+
+What you are asked to do:
+Nothing directly; this is a model to study for building your own About page with real, meaningful content (the capstone requires 2 to 3 paragraphs about your subject and no Lorem Ipsum).
+
+Watch out for:
+- Every image has descriptive alt text naming who or what is shown, for example "Maria Chen, coffee roaster and co-founder."
+- Correction: use one h1 per page, which is the course rule and common best practice. This page breaks it with two h1 elements, the site name in the header and "About Mountain View Coffee Co." in the page header (the menu and contact pages do the same); on your own inner pages, keep the page title as the only h1 and make the site name a plain link or paragraph.
+- The emoji at the start of the value headings will be read aloud by screen readers (for example "seedling Sustainability"). Decide whether that is what you want in your own headings.
+- The hamburger button has no accessible name, the same issue as on the home page.
+- Correction: 2015 to 2021 is 6 years, not 5. The 2021 timeline entry says customers celebrated "5 years," a small content error to avoid in your own dates.
+
+Connects to:
+Semantic sectioning from html02 Semantic HTML; lists and images from html04 Images Media and Tables.

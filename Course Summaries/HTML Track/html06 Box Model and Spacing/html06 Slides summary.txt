@@ -1,0 +1,52 @@
+Summary of: html06_Slides.md
+Course: HTML CSS JavaScript track
+Lesson: html06 Box Model and Spacing
+Type of document: slideshow
+
+In one sentence:
+This slideshow introduces the CSS box model (how every element is built from four nested layers of space), the box-sizing fix, and the display and position properties, split into sub-lesson 06a (Box Model) and sub-lesson 06b (Display and Positioning).
+
+Main ideas:
+1. Every HTML element is a box. Picture it as four layers wrapped around each other, from the inside out: content, then padding, then border, then margin. The content is the actual text or image. Padding is empty space inside the border, wrapped directly around the content. The border is a line that goes around the padding. Margin is empty space outside the border that pushes other elements away.
+2. Box model properties. The property width and the property height set the size of the content area (for example width 300px, height 200px). The property padding sets inside space, the property border sets the line, and the property margin sets outside space.
+3. Shorthand value order for padding and margin. One value applies to all four sides. Two values mean top-and-bottom first, then left-and-right. Four values go clockwise starting at the top: top, right, bottom, left.
+Code: margin: 10px 20px 30px 40px;
+This sets a 10 pixel top margin, 20 pixel right, 30 pixel bottom, and 40 pixel left.
+4. The box-sizing problem. By default (box-sizing content-box), width means content only, so padding and border are added on top. A box with width 300px and padding 20px actually takes up 340 pixels across, because 20 pixels of padding is added on each side.
+5. The fix is box-sizing border-box. With it, the width you set includes the content, padding, and border together, so a 300 pixel wide box with 20 pixels of padding and a 2 pixel border still measures exactly 300 pixels. The padding and border eat into the inside instead of growing the box.
+6. Best practice from the slides: apply border-box to every element with the universal selector.
+Code: * { box-sizing: border-box; }
+The star selector matches every element on the page, so every box uses the predictable sizing.
+7. The display property controls how an element flows on the page. block takes the full available width and starts on a new line (examples: div and p). inline sits inside a line of text and ignores width and height (examples: span and a). inline-block flows in a line like text but does respect width and height (example: custom buttons). none hides the element from the page entirely.
+8. The position property controls where an element appears. static is the default and follows normal document flow. relative moves the element relative to where it would normally be. absolute places it relative to the nearest positioned parent. fixed places it relative to the viewport (the visible browser window) so it stays put while the page scrolls.
+9. With relative, absolute, or fixed you use the offset properties top, right, bottom, and left to say how far to move the element. The property z-index sets stacking order when elements overlap; a higher number sits on top.
+10. Layout example: a page with header, main, and footer. The header gets position fixed, top 0, width 100 percent, height 60px, and z-index 100 so it stays at the top of the window above everything else. Because a fixed header is lifted out of normal flow, the main element gets margin-top 60px, matching the header height, so the header does not cover the start of the content. The footer gets a margin-top of 40px.
+11. The X-ray trick. Browser dev tools are turned off on school computers, so the class uses CSS itself to reveal boxes.
+Code: * { outline: 1px solid red; }
+This draws a thin red line around the edge of every element. An outline takes up no space, so nothing moves when you add it. Put it at the top of your CSS, change a padding or margin value, save, refresh, see which box moved, and delete the line when finished.
+12. Key takeaways: box model equals content plus padding plus border plus margin; padding is inside space and margin is outside space; use border-box to avoid width surprises; display changes how elements flow; position changes where they appear; the X-ray trick shows every box edge when a layout looks wrong.
+13. Coming practice: a styled card component with padding, margin, and borders, and a page layout with a fixed header, content, and footer.
+
+Key terms:
+box model — the idea that every element is four nested layers: content, padding, border, margin
+content — the text or image inside the box
+padding — transparent space inside the border, around the content
+border — the line drawn around the padding
+margin — transparent space outside the border, separating the element from its neighbors
+width and height — the size of the content area (or of the whole bordered box when border-box is used)
+box-sizing — property that decides what width and height measure; content-box is the default, border-box includes padding and border
+display — property controlling flow; values block, inline, inline-block, none
+position — property controlling placement; values static, relative, absolute, fixed
+top, right, bottom, left — offset properties used with non-static positions
+z-index — stacking order of overlapping positioned elements; higher is on top
+viewport — the visible browser window area
+outline — a line drawn around an element that takes up no space; used in the X-ray trick
+
+Watch out for:
+- Forgetting border-box makes boxes wider than the width you wrote.
+- A fixed header covers the top of your content unless main gets a matching margin-top.
+- Inline elements ignore width and height; switch to inline-block if you need sizing.
+- Remove the X-ray outline line before you turn work in.
+
+Connects to:
+The sub-lessons match html06a Task (box model) and html06b Task (display and positioning). The archived AI track has a matching lesson folder, ai06 Box Model and Spacing.

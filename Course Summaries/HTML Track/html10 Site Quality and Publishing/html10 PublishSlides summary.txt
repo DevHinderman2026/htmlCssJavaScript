@@ -1,0 +1,60 @@
+Summary of: html10_PublishSlides.md
+Course: HTML CSS JavaScript track
+Lesson: html10 Site Quality and Publishing
+Type of document: slideshow
+
+In one sentence:
+This slideshow (still titled Lesson 13: Testing, Protocols and Publishing) explains how the web works, how to validate and test a site, and how to publish it to GitHub Pages with GitHub Desktop.
+
+Main ideas:
+Part A, web protocols (old sub-lesson 13a).
+1. What happens when you visit a site: you type a URL and the browser sends a request; DNS looks up the server's IP address; HTTP or HTTPS transfers the files; the browser renders the HTML, CSS and JavaScript so you see the page.
+2. Key protocols:
+- HTTP transfers web data without encryption, so it is plain text and vulnerable.
+- HTTPS transfers web data encrypted with SSL/TLS; it is the modern standard.
+- FTP uploads and downloads files; an old method, rarely used now.
+- TCP/IP sends data in packets across networks; the foundation of the internet.
+- DNS translates domain names to IP addresses, for example google.com to 142.251.32.14.
+Best practice: always use HTTPS, shown by the lock icon in the address bar.
+3. Static versus dynamic sites. A static site gives every visitor the same content, serving HTML, CSS and JavaScript files as they are (portfolios, blogs, landing pages); it is faster, cheaper and simple to deploy. A dynamic site changes content based on the user or a database, using server-side languages like PHP, Node.js or Python (Facebook, Gmail, Netflix); it is more complex and needs server resources. GitHub Pages is perfect for static sites.
+Part B, testing and validation (old 13b).
+4. How a browser renders a page: parse the HTML and build the DOM tree; parse the CSS and apply styles; run the JavaScript for interactivity; display the final page.
+5. Why test in several browsers: Chrome, Firefox, Safari and Edge render slightly differently; old browsers may not support new CSS or JavaScript; mobile browsers behave differently from desktop. Every browser has DevTools for debugging.
+6. W3C validators check code against official standards: the HTML validator at validator.w3.org and the CSS validator at jigsaw.w3.org/css-validator. DevTools lets you inspect elements, debug CSS, test responsive mobile view, and check the console for JavaScript errors.
+7. Testing checklist: no HTML or CSS validator errors; works in Chrome, Firefox and Safari; responsive on desktop and mobile; links work and images load; no console errors.
+Part C, publishing (old 13c).
+8. Git is a version control system: it tracks changes, saves snapshots of your code, lets you roll back when something breaks, and is essential for professionals.
+9. The four moves in GitHub Desktop: 1. change files (save in VS Code); 2. review changes (GitHub Desktop lists what changed); 3. commit (write a summary and snapshot the work); 4. push (upload the snapshot to GitHub). The terminal commands you may see online (git add, commit, push) are the same moves without buttons.
+10. Deploying to GitHub Pages: 1. create a repository named username.github.io; 2. clone it with GitHub Desktop; 3. add your project files; 4. commit and push; 5. enable GitHub Pages in the repository settings; 6. wait about 2 minutes; 7. visit https://username.github.io. Result: a live site with no hosting fees or server setup.
+11. Beyond GitHub Pages: a custom domain (pointing yourname.com at the github.io address) needs DNS configuration, which is advanced and only covered at a basic level. Content management systems such as WordPress, Wix and Squarespace are described here as drag-and-drop builders that are great for non-coders but give less control than custom HTML and CSS.
+12. Summary of the full workflow: code, validate with the W3C validators, test in multiple browsers, deploy with git to GitHub Pages, and share your live URL.
+
+Key terms:
+HTTP — HyperText Transfer Protocol, unencrypted web data transfer.
+HTTPS — encrypted HTTP using SSL/TLS; shown by a lock icon.
+SSL/TLS — the encryption layer behind HTTPS.
+FTP — File Transfer Protocol, an older way to upload files to a server.
+TCP/IP — the protocols that break data into packets and deliver them across networks.
+DNS — Domain Name System, which turns domain names into IP addresses.
+IP address — the numeric address of a server or device.
+static site — same files served to everyone.
+dynamic site — pages built per user or from a database by server-side code.
+DOM tree — the browser's structured model of the page built from the HTML.
+W3C validator — official tool that checks HTML or CSS against the standards.
+DevTools — browser developer tools for inspecting, debugging and testing.
+git — version control that tracks changes and snapshots.
+commit — a saved snapshot with a summary message.
+push — uploading commits to GitHub.
+repository — a project folder tracked by git.
+GitHub Pages — free static-site hosting from a repository.
+custom domain — your own domain name pointed at your hosted site.
+CMS — content management system such as WordPress, Wix or Squarespace.
+
+Watch out for:
+- HTTP is not secure; always use HTTPS.
+- GitHub Pages only hosts static sites.
+- The class uses GitHub Desktop, not terminal git commands.
+- Correction: CMS is an exam topic. Know what a CMS is (WordPress, Wix, Squarespace), how it differs from hand coding, and when each fits, as the newer Unit Guide and New Topics slides teach; this older slideshow treats CMS as only a side note ("we're learning real web dev"), and html11 has you build with one.
+
+Connects to:
+html10 NewTopicsSlides (bandwidth, latency, plug-ins and CMS), html10 PublishWalkthrough and tasks c, d and e. html11 Build It Three Ways covers hands-on CMS work.

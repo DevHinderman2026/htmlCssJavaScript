@@ -1,0 +1,23 @@
+Summary of: ai05_ConceptCheck.md
+Course: Web Design AI track (archived version)
+Lesson: ai05 CSS Fundamentals
+Type of document: questions
+
+In one sentence:
+This is the ConceptCheck question sheet you complete and turn in for the archived ai05 unit; its questions are left out of these study notes because they are homework, not study material.
+
+Topics it checks:
+- where CSS can live and external stylesheets
+- class selectors versus id selectors
+- separation of content and presentation
+- hex color codes
+- font-family lists
+- hover effects in CSS versus JavaScript
+State competencies listed on the sheet: 6.1.7 and 6.5.7.
+
+What you are asked to do:
+Answer each question in your own words, directly under it in your copy of ai05_ConceptCheck.md. Commit and push the completed file with the rest of the unit's work, as listed in the unit's turn-in list.
+
+Study these in:
+- ai05 BuildBrief summary.txt (in this folder)
+- ai05 AudioLab summary.txt (in this folder)

@@ -1,0 +1,55 @@
+Summary of: html11_Walkthrough.md
+Course: HTML CSS JavaScript track
+Lesson: Enrichment, Bootstrap Basics (the retired Lesson 11 Bootstrap unit)
+Type of document: walkthrough
+
+In one sentence:
+This 30 to 40 minute guided build walks you through making a responsive Bootstrap landing page, section by section, filling in blanks for your own content.
+
+Main ideas:
+1. Step 1, set up the file. Create a file named myBootstrapPage.html. The template has the doctype, html with lang="en", a head with meta charset UTF-8, the viewport meta tag, an empty title, and the Bootstrap 5.3.0 CSS link from the CDN. The body has a placeholder comment and, at the end, the Bootstrap JavaScript bundle script from the CDN. Your task: fill in the title, for example "My Coffee Shop".
+2. Step 2, add a navbar. At the top of the body, add a nav element with classes navbar navbar-expand-lg navbar-dark bg-dark. Inside it is a div with class container-fluid holding: a brand link (class navbar-brand); a hamburger button (class navbar-toggler, type button, with data-bs-toggle="collapse" and data-bs-target="#navbarNav") containing a span with class navbar-toggler-icon; and a div with classes collapse navbar-collapse and id navbarNav holding a list with classes navbar-nav ms-auto. The list has three items, each with class nav-item and a link with class nav-link. Your task: add a brand name and three navigation link names.
+3. Step 3, hero section and card grid. The hero is a section with classes bg-primary text-white text-center py-5 (blue background, white centered text, large vertical padding). Inside a container it has an h1 starting "Welcome to", a paragraph with class lead (larger intro text) for a tagline, and a button with classes btn btn-light reading "Learn More". Next is a content section with class py-5 containing a container, an h2 with classes text-center mb-5, and a row with three cards. Each card sits in a div with classes col-12 col-md-6 col-lg-4 mb-4, and each card is a div with classes card h-100 (full height, so cards in a row match) containing card-body, a card-title h5, a card-text paragraph, and a button with classes btn btn-primary btn-sm (small). Your task: fill in the hero title and tagline, and give each of the three cards a title, description, and button text. The responsive breakdown: col-12 is full width on mobile, col-md-6 is half width on tablets, col-lg-4 is about one third on desktops.
+4. Step 4, alert and form. A section with classes bg-light py-5 holds a container. First, a dismissible alert: a div with classes alert alert-info alert-dismissible fade show and role="alert", containing bold "FYI:" text and a close button with class btn-close and data-bs-dismiss="alert". Then an h2 "Contact Us", and a row with class justify-content-center (centers the column) holding a col-12 col-md-6 column with a form. The form has three groups, each a div with class mb-3: a Name text input, an Email email input, and a Message textarea with 4 rows. Each label has class form-label and a for attribute matching the input's id (name, email, message), and each input has class form-control and a placeholder. The submit button has classes btn btn-success w-100 (full width). This step is provided complete; there are no blanks.
+5. Step 5, footer. Before the closing body tag, add a footer with classes bg-dark text-white text-center py-4 mt-5. Inside a container it has a copyright paragraph and a div with class mt-3 holding two links, Privacy and Contact, with classes text-white text-decoration-none (no underline), the first also with me-3 (margin at the end). Your task: fill in the copyright text.
+6. Step 6, test responsiveness. Save and open in a browser. Resize the window and notice the layout change. Press F12, turn on the device toolbar, and pick a mobile view. On mobile, use the hamburger menu. Click the alert's close X to dismiss it.
+7. Complete page order: head with title and Bootstrap CSS; then in the body the navbar, hero, card grid section, alert and form section, footer, and finally the Bootstrap JavaScript bundle.
+8. Classes used, as summarized by the document: navbar and navbar-expand-lg for the responsive nav; bg-dark, bg-primary, bg-light for backgrounds; text-white and text-center for text; container and container-fluid as wrappers; row; col-12, col-md-6, col-lg-4 for responsive columns; card, card-body, card-title; btn, btn-primary, btn-success; alert and alert-info; form-label and form-control; mb-3, py-5, mt-5 for spacing; h-100 for height 100 percent of the parent; d-none and d-block for display.
+9. Next steps suggested: try other colors such as bg-success or bg-warning, add more cards, test on your phone, try other buttons such as btn-danger or btn-outline-primary, and adjust spacing with m- and p- utilities.
+
+Key terms:
+lead — class for a larger, standout introductory paragraph.
+py-5 — large padding on top and bottom (the y axis).
+mb-3, mb-4, mb-5, mt-3, mt-5 — margin-bottom or margin-top at sizes 3, 4, 5.
+me-3 — margin at the end (right side in left-to-right languages).
+h-100 — height 100 percent of the parent element.
+w-100 — width 100 percent.
+btn-light, btn-sm — a light-colored button and a small button.
+alert-dismissible, fade, show — make an alert closable, with a fade effect, visible at first.
+btn-close — the small X button that closes an alert.
+data-bs-dismiss="alert" — tells Bootstrap's JavaScript that clicking this closes the alert.
+role="alert" — tells assistive technology this is an important message.
+justify-content-center — centers columns within a row.
+form-label — styles a form label.
+text-decoration-none — removes the underline from a link.
+
+What you are asked to do:
+- Create myBootstrapPage.html from the template.
+- Fill in the page title.
+- Fill in the brand name and three nav link names.
+- Fill in the hero heading and tagline.
+- Fill in the section heading, and the title, description, and button text for three cards.
+- Fill in the footer copyright text.
+- Test at different widths, on the mobile view, with the hamburger menu, and by dismissing the alert.
+
+Watch out for:
+Troubleshooting from the document:
+- Navbar does not collapse on mobile: the Bootstrap JavaScript link must be included before the closing body tag.
+- Cards do not stack on mobile: make sure col-12 is in the card column classes.
+- Nothing is styled: check that the Bootstrap CSS link is in the head, and look for errors in the browser console (F12).
+- Colors do not show: use real Bootstrap class names, such as bg-primary, not made-up ones like bg-blue.
+- Accessibility plus: the form labels use for attributes that match input ids, which is what lets a screen reader announce each field's label.
+Heads up: the footer template hard-codes the year 2024, so put the current year in your copyright line. The class list also names d-none and d-block, which this walkthrough never uses; learn what they do (hide an element, show it as a block) but you do not need them here.
+
+Connects to:
+The DIY task in this same folder builds a bigger version of this same landing page for a business of your choice.

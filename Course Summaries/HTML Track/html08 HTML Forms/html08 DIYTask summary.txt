@@ -1,0 +1,92 @@
+Summary of: html08_DIYTask.md
+Course: HTML CSS JavaScript track
+Lesson: html08 HTML Forms
+Type of document: DIY task
+
+In one sentence:
+This independent project asks you to design, build and style your own multi-section survey form that uses every form element from lesson 08, with a 55-point rubric.
+
+Main ideas:
+The project proves mastery of forms: the survey must be interactive, accessible and look polished. Estimated time is 45 to 60 minutes and the difficulty is intermediate. You pick your own survey topic. Suggested topics: customer satisfaction, event feedback, product interest, travel, entertainment (movies or music), health and fitness, technology, or school and course feedback.
+
+A sample outline is given: a survey title; section 1 Demographics with name (text), email (email) and age (number); section 2 Preferences with a choose-all-that-apply checkbox group and a pick-one radio group; section 3 Experience with a rating radio group and a which-type dropdown; section 4 Comments with a textarea; then Submit and Reset buttons.
+
+Code quality tips:
+1. Use comments to label each section of the form, for example an HTML comment reading Contact Information Section above a fieldset.
+2. Indent properly so nesting is easy to follow: form, then fieldset, then label and input.
+3. Use descriptive ids and names, such as firstName, rather than meaningless ones like f1.
+4. Organize your CSS by grouping related rules with comments: fieldset and legend together, inputs and controls together, buttons together.
+
+Key terms:
+fieldset and legend — titled groups; you need at least four.
+placeholder option — a first dropdown choice such as "-- Select --" that prompts the user.
+rows and cols — textarea size attributes.
+media query — CSS that applies only at certain screen widths; here max-width 600px.
+focus state — how a field looks while being used.
+maxlength, pattern, min, max — HTML validation attributes mentioned in the bonus challenges.
+tabindex — controls the Tab order.
+W3C Validator — the official tool that checks HTML for errors.
+
+What you are asked to do:
+Part 1, HTML structure. The survey MUST include:
+1. Form container: a form with action="/submit-survey" and method="POST", and a meaningful h1 title.
+2. At least 4 fieldset elements, each with a legend giving a clear section name (for example Demographics, Preferences, Experience, Additional Info).
+3. Text inputs: a text input for name, an email input with validation, and at least one more text input (such as city or company), all with labels, placeholders and appropriate id and name attributes.
+4. At least one type="number" input and at least one type="date" input, both labeled.
+5. At least one group of 4 or more radio buttons, correctly grouped by name, each with a clear label.
+6. At least one group of 3 or more checkboxes, correctly grouped by name, each with a clear label.
+7. At least one select with 4 or more options, including a placeholder option.
+8. A textarea with rows, cols and placeholder text.
+
+Part 2, CSS styling:
+1. Page layout: responsive on mobile and desktop, a max-width between 500 and 800 pixels, centered with proper margins and padding, a clean background color or image.
+2. Form: white or light background, padding and rounded corners, a subtle shadow or border, clear visual hierarchy.
+3. Fieldset and legend: distinct styling for each fieldset, readable legend text, good spacing between sections.
+4. Inputs: consistent padding and borders, rounded corners, full or appropriate width, a focus state that changes color or adds a shadow, and distinct styling for different input types.
+5. Labels: bold for standalone labels, spacing above inputs, clear association with their inputs.
+6. Buttons: a visually prominent submit button in a different color, hover effects, good padding and font size; optionally a reset button styled differently.
+7. Responsive: media queries for mobile at max-width 600px; buttons may stack; text stays readable; controls scale.
+
+Part 3, accessibility and usability:
+1. Every input has an associated label using for and id; semantic HTML structure; the required attribute on important fields.
+2. Clear, helpful placeholders; logical field order and grouping; consistent spacing and alignment; professional appearance.
+
+Folder structure: a project folder containing index.html (the survey), style.css (an external stylesheet), and optionally README.md with a brief description.
+
+Submission checklist:
+- HTML is valid according to the W3C Validator.
+- External CSS file is linked correctly.
+- All Part 1 elements are present.
+- Styled professionally per Part 2.
+- Responsive on mobile and desktop.
+- All inputs have labels.
+- Clean and organized look.
+- No console errors in the browser developer tools.
+- Descriptive page title.
+- Comments in the code (optional but recommended).
+
+Grading rubric, 55 points total:
+- HTML Structure, 25 points: all form elements present, proper nesting, valid HTML5.
+- CSS Styling, 20 points: professional, responsive, accessible.
+- Accessibility, 5 points: labels, semantic HTML, required attributes.
+- User Experience, 5 points: clear layout, logical grouping, helpful placeholders.
+
+Bonus challenges (optional): add maxlength to text inputs; style required fields differently, such as a red border or a star; add tabindex to control tab order; make a second HTML page that pretends to display submitted data; use CSS Grid or Flexbox for the layout; add HTML5 validation with pattern, min and max.
+
+Submission instructions:
+1. Create a folder named html08_DIYTask_YourName (or similar).
+2. Put index.html and style.css in it.
+3. Check that all links, such as the CSS file reference, are correct.
+4. Test the form in a browser.
+5. Submit the folder or files to your teacher.
+
+Resources named: html08_StudyGuide.md, the example solution html08_DIYTask_Solutions.html, and html08_Walkthrough.md.
+
+Watch out for:
+- Radio and checkbox groups only work correctly when every item in the group shares the same name.
+- Placeholders help but do not replace labels; every input still needs a connected label.
+- The stylesheet must be external (style.css), not inside a style block.
+- Heads up: the example solution file html08_DIYTask_Solutions.html listed under Resources is teacher-only and not in the folder. Use html08_Walkthrough.md and the study guide as your models instead.
+
+Connects to:
+The html08a, 08b and 08c tasks practice each piece separately; the html08 extension task adds validation styling. Responsive media queries come from html07 Flexbox and Responsive Design.

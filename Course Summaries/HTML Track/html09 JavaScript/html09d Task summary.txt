@@ -1,0 +1,50 @@
+Summary of: html09d_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html09 JavaScript
+Type of document: task starter file
+
+In one sentence:
+This starter page (titled "Lesson 10b Task: Events and Form Validation") has you build a contact form, validate it on submit with JavaScript, show and hide error and success messages, and add JavaScript hover effects to nav links.
+
+Main ideas:
+1. The page. It is a valid HTML5 page with an internal style sheet: a centered white card, block labels, full-width inputs and textarea with a blue glow on focus, and a full-width green button that shrinks slightly when pressed. Two message classes are pre-styled. The error-message class is a pink panel with dark red text that is hidden (display none) until it also has the class show. The success-message class is a light green panel, likewise hidden until it has the show class. Nav links are blue pill buttons that already get a darker blue and grow to 110 percent size on :hover in CSS.
+2. Body contents, in order: the h1 "Lesson 10b: Events and Form Validation"; an instructions panel listing four tasks; an h2 "Navigation (Add Hover Effects with JS)" and a nav element with four links, Home, About, Services, and Contact, pointing to in-page anchors; an h2 "Contact Form"; then two error divs that already exist. The first, id emptyFieldsError, says "All fields are required. Please fill them out." The second, id emailError, says "Please enter a valid email address (must contain @)." After those are HTML comments describing what you must build.
+3. The script at the bottom has a commented-out skeleton. Step 1 gets the form by id contactForm. Step 2 gets the three inputs by ids name, email, and message. Step 3 gets the two error divs and the success div. Step 4 adds a submit listener that calls event.preventDefault(), reads the three values, and first removes the show class from all three messages so old messages disappear. It then leaves TODOs to check for empty fields, check the email for an at sign, and show success and clear the form if valid. Step 5 selects all nav links with querySelectorAll('nav a') and leaves a TODO to loop through them adding mouseover and mouseout listeners.
+4. How the show and hide works: the messages start hidden in CSS. Adding the class show with classList.add('show') makes one visible; classList.remove('show') hides it again.
+
+Key terms:
+form element (written <form>) — wraps inputs so they can be submitted together.
+submit event — fires when the form is submitted.
+event.preventDefault() — stops the browser from actually submitting and reloading the page.
+value — the text currently in an input or textarea.
+includes('@') — checks whether the text contains an at sign.
+classList.add / classList.remove — add or remove a class, here the class show.
+querySelectorAll('nav a') — selects every link inside the nav.
+mouseover / mouseout — events when the pointer enters or leaves an element.
+placeholder — hint text shown inside an empty input.
+
+What you are asked to do:
+The instructions panel lists: make the form validate on submit (check for empty fields); validate the email format (must contain @); show and hide error messages; and add hover effects to the nav links using JavaScript.
+HTML TODOs:
+1. Add a success message div with id="successMsg" and class="success-message", with the text "Form submitted successfully!"
+2. Create a form with id="contactForm" containing: an input of type text with id name and placeholder "Your Name"; an input of type email with id email and placeholder "Your Email"; a textarea with id message and placeholder "Your Message"; and a submit button with the text "Send Message."
+JavaScript TODOs, in order:
+1. Add an event listener for the form's submit event.
+2. Call event.preventDefault() to stop the real submission.
+3. Get the values of the name, email, and message inputs.
+4. If any field is empty, show emptyFieldsError.
+5. If the email does not contain @, show emailError.
+6. If validation passes, hide the errors and show successMsg.
+7. Clear the form fields by setting each value to an empty string.
+Hover TODO: on mouseover, change the link's background color and scale; on mouseout, reset it. The comment admits this is already done in CSS but asks for a JavaScript version "for practice."
+
+Watch out for:
+- The starter HTML TODOs list inputs but no label elements, even though the CSS styles labels. For accessibility, give each input a label connected with the for attribute.
+- An input of type email may run the browser's own email check before your JavaScript sees the value, so your "must contain @" message might not appear in some cases.
+- Uncomment the skeleton code before adding to it, or nothing will run.
+- After a failed check, stop (for example with return) so the success message is not also shown.
+Correction: hover effects belong in CSS (:hover), and the newer Unit Guide retires the JavaScript hover exercise, so skip the hover TODO; the nav links already have a CSS :hover style. This older file still asks for JavaScript hover, but follow the Unit Guide.
+Heads up: "Lesson 10b" in the file is leftover old numbering; this is html09d, used in segment 09f. Its on-page error and success messages (no alert()) are the same approach the Features DIY task requires.
+
+Connects to:
+html09 DomSlides (validation and classList slides), the Features DIY task (Feature 3, validating your own html08 form), and html08 (forms).

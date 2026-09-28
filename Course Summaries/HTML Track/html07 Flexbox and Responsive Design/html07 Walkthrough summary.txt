@@ -1,0 +1,56 @@
+Summary of: html07_Walkthrough.md
+Course: HTML CSS JavaScript track
+Lesson: html07 Flexbox and Responsive Design
+Type of document: walkthrough
+
+In one sentence:
+This guided walkthrough builds a six-photo gallery that is one column on phones, two on tablets, and three on desktops, first with flexbox plus media queries and then again with pure CSS Grid, with seven fill-in "Try This" questions and an answer key.
+
+Main ideas:
+1. Before starting, download the lesson's images folder from the course GitHub (the html07_flexboxResponsive/images folder in the 42mcmaster htmlCssJavaScript repository) into a folder named images next to your files. Image paths such as images/photo-1.png only work if the folder name and location match.
+2. Step 1, HTML. Create index.html with lang en, a charset meta tag, the viewport meta tag, the title Photo Gallery, and a link to styles.css. Inside main there is an h1 "Photo Gallery" and a div with class gallery holding six divs with class photo. Each photo div has an img with alt text (Photo 1 through Photo 6) and a caption paragraph: Beautiful landscape, Mountain view, Sunset scene, Ocean waves, Forest trees, City skyline.
+3. Step 2, mobile CSS. A reset sets margin 0, padding 0, and border-box on every element. The body gets Arial, a light gray background, and 20px padding. main gets max-width 1200px and margin 0 auto, which caps the page width and centers it. The h1 is centered with space below. The gallery is display flex with flex-direction column and gap 20px, so the six photos stack in one column with 20 pixels between them. Each photo card has a white background, 8px rounded corners, overflow hidden (so the image corners get clipped to the rounded shape), and a soft shadow. Images get width 100 percent, height auto, and display block. Captions get 15px padding, centered gray text.
+4. Step 3, tablet media query at min-width 768px: set flex-direction to a blank you fill in, and also set display grid with grid-template-columns repeat(2, 1fr) for two equal columns.
+5. Step 4, desktop media query at min-width 1024px: grid-template-columns repeat with a blank number of columns, 1fr each.
+6. Part 2, why mobile-first. The mobile default is one column (1fr). At 768px and up it becomes repeat(2, 1fr); at 1024px and up, repeat(3, 1fr). Reasons given: everyone gets a fast simple experience by default; larger screens get progressively richer layouts; there is less CSS to override so it is easier to maintain; simpler CSS loads faster on mobile.
+7. Part 3, the same gallery in pure grid, with the same HTML. Mobile: display grid, grid-template-columns 1fr, gap 20px. Tablet at 768px: repeat with a blank count, 1fr. Desktop at 1024px: repeat(3, 1fr).
+8. Part 4, the critical responsive image rule: max-width 100 percent so an image is never wider than its container, height auto to keep its aspect ratio, and display block to remove the small gap images get when treated as inline text.
+9. Part 5, the viewport meta tag must be in the head of every responsive page. width=device-width means use the device's real width, not a desktop width; initial-scale=1.0 means start at 100 percent zoom.
+10. Testing without dev tools (they are off on school computers): drag the browser window edge. At full width you should see 3 columns, at about 800 pixels 2 columns, and at about 400 pixels 1 column.
+11. Flexbox versus grid side by side. The flexbox version switches from column to row with flex-wrap wrap at 768px. The grid version switches from 1fr to repeat(2, 1fr). The walkthrough says grid is easier for exact column counts, while flexbox is better for flexible component layouts.
+12. Takeaways: mobile-first defaults plus min-width media queries; responsive images always use max-width 100 percent and height auto; never forget the viewport tag; flexbox for one-dimensional layouts and grid for two-dimensional; 768px and 1024px are called industry-standard breakpoints.
+
+Key terms:
+flex-direction: column — stacks flex items top to bottom
+gap — space between items
+media query with min-width — styles that apply only at or above a screen width
+display: grid — turns on two-dimensional grid layout
+grid-template-columns — lists the column sizes
+fr — one fraction of the available space
+repeat(2, 1fr) — two equal-width columns
+max-width: 100% — image never wider than its container
+height: auto — keeps the image's aspect ratio
+display: block on images — removes the inline gap beneath images
+overflow: hidden — hides anything that spills outside the box, used here to clip image corners
+viewport meta tag — makes phones use their real width and normal zoom
+
+What you are asked to do:
+Answer the seven Try This questions (answers from the key in parentheses):
+1. What CSS property makes the gallery stack vertically? (flex-direction)
+2. What value should flex-direction be for a horizontal layout? (row)
+3. How many columns should desktop have? (3)
+4. What does 1fr mean? (one fraction of the available space)
+5. What does repeat(2, 1fr) create? (two equal-width columns)
+6. Why do we need height auto? (to keep the original aspect ratio when the width changes)
+7. What happens without the viewport meta tag on mobile? (the page displays at desktop size, too wide and hard to read)
+Also build index.html and styles.css as described and test by resizing the window.
+
+Watch out for:
+- The images folder must be named images and sit next to your HTML file.
+- Resize the window to test, since dev tools are not available.
+Heads up: the Step 1 HTML uses src values photo1.jpg through photo6.jpg, but the downloaded files are named photo-1.png through photo-6.png inside an images folder. Change each src to images/photo-1.png, images/photo-2.png, and so on, or the pictures will not appear.
+Correction: once the tablet media query sets display grid, the gallery is no longer a flex container, so the flex-direction line in that same rule does nothing (the answer key's "row" is still the right fill-in). For a true flexbox tablet layout, use the side-by-side comparison version: flex-direction row with flex-wrap wrap.
+Correction: the right responsive image rule is max-width 100 percent with height auto, as Part 4 says. Step 2's width 100 percent works but forces every image to stretch to fill its container, even past its real size.
+
+Connects to:
+Directly prepares you for the html07 DIYTask photo gallery; the grid ideas continue in html07c Task and html07 ExtensionTask.

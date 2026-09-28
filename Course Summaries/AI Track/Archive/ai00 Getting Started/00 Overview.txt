@@ -1,0 +1,15 @@
+Overview of: ai00 Getting Started
+Course: Web Design AI track (archived version)
+
+What this lesson is about:
+This archived unit teaches the working system of the AI-directed track before any real web content. You learn the five-step loop of brief, direct, save, audit, commit, and habits for giving Claude clear, specific directions. You learn the eight standard screen reader audit moves (page announcement, headings list, region walk, links list, tab through, table cell by cell, read from here, and listening for list announcements) by practicing on a correctly built bakery page. You then run the whole loop once by directing a tiny hello.html page, auditing it, committing and pushing it with GitHub Desktop, and saving a prompt log. You leave able to direct a build, verify it by ear, and turn it in. The matching lesson in the HTML CSS JavaScript track is html00 Getting Started.
+
+Documents in this folder, in suggested order:
+1. ai00 WorkflowGuide summary.txt — the full system: the five-step loop, how to talk to Claude, the prompt log, the tools, and fixes for common problems.
+2. ai00 PracticePage summary.txt — description of the correctly built Trailhead Bakery sample page used for practice.
+3. ai00 AudioLab summary.txt — the moves trainer: eight screen reader moves and exactly what each should sound like on the practice page.
+4. ai00 FirstSession summary.txt — a 45-minute walkthrough running the whole loop once and listing the turn-in files.
+5. ai00 ConceptCheck summary.txt — the topics the ai00 ConceptCheck sheet checks (questions left out; they are homework).
+
+Other files in the original lesson:
+None. The source folder contains only the four markdown files and the one HTML practice page summarized here.

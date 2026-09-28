@@ -1,0 +1,23 @@
+Summary of: ai04_ConceptCheck.md
+Course: Web Design AI track (archived version)
+Lesson: ai04 Images Media and Tables
+Type of document: questions
+
+In one sentence:
+This is the ConceptCheck question sheet you complete and turn in for the archived ai04 unit; its questions are left out of these study notes because they are homework, not study material.
+
+Topics it checks:
+- good alt text
+- empty alt versus missing alt
+- alt text versus figcaption
+- table header cells (th with scope)
+- the controls attribute on audio and video
+- the JPG, PNG, and SVG image formats
+State competencies listed on the sheet: 6.1.6, 6.2.5, and 6.2.6.
+
+What you are asked to do:
+Answer each question in your own words, directly under it in your copy of ai04_ConceptCheck.md. Commit and push the completed file with the rest of the unit's work, as listed in the unit's turn-in list.
+
+Study these in:
+- ai04 BuildBrief summary.txt (in this folder)
+- ai04 AudioLab summary.txt (in this folder)

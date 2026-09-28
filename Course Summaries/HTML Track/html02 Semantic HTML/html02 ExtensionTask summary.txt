@@ -1,0 +1,42 @@
+Summary of: html02_ExtensionTask.md
+Course: HTML CSS JavaScript track
+Lesson: html02 Semantic HTML
+Type of document: extension task (extra credit)
+
+In one sentence:
+"Div Soup Rescue" is an extra-credit task for fast finishers: rewrite a badly built page so every element is the semantically correct one, and write a short note explaining your changes.
+
+Main ideas:
+1. It is extra credit; Mr. M assigns points when it is complete. Finish the regular html02 tasks first.
+2. The situation: a so-called web developer delivered html02_ExtensionStarter.html. It looks fine in a browser, but underneath, everything is a div, the headings are just bold text, the list is faked with br line breaks, and b and i are used where strong and em belong.
+3. The goal is fixing meaning, not style. The page should look roughly the same afterward.
+4. "Div soup" is the nickname for markup built from generic div containers that tell browsers and screen readers nothing about what each part is.
+
+Key terms:
+div — a generic container with no meaning.
+Refactor — rewriting code to improve its structure without changing what it does.
+h1, h2, h3 — real headings to replace bold fake headings.
+header, nav, main, footer — page regions to replace wrapper divs.
+ul or ol — real lists to replace br-separated lines.
+strong, em — semantic replacements for b and i.
+
+What you are asked to do:
+1. Copy html02_ExtensionStarter.html to a new file named html02_ExtensionRescue_lastname.html.
+2. Refactor it so every element is semantically correct. At minimum you need proper headings h1 through h3; header, nav, main, and footer regions; a real list; strong and em; and real paragraphs.
+3. Create html02_ExtensionNotes_lastname.md, a short "what I changed and why" note. For each category of fix (not every line), write one or two sentences: what was wrong, what you replaced it with, and why the new element is correct.
+Commit both files.
+Done when:
+- No div remains that should be a semantic element.
+- No bold-text fake headings; a single h1 with logical h2 and h3 below it.
+- The br "list" is a real ul or ol.
+- Every b and i is either justified or replaced with strong or em.
+- The notes file explains each category of change.
+- Both files are pushed to GitHub.
+
+Watch out for:
+- Keep the visible content the same; you are changing tags, not text or design.
+- Only one h1.
+- Some b or i uses may be justified, but you must be able to explain why.
+
+Connects to:
+Uses the starter described in html02 ExtensionStarter summary.txt; applies everything from the html02 Slides and Study Guide.

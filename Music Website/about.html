@@ -4,27 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - The Artist Who Only Uses Ears</title>
-    <style>
-        .skip-link {
-            position: absolute;
-            top: -3rem;
-            left: 0;
-            background: #000;
-            color: #fff;
-            padding: 0.75rem 1rem;
-            z-index: 100;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        main:focus {
-            outline: none;
-        }
-        .page-overview {
-            border-left: 4px solid #999;
-            padding-left: 1rem;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="menu.js" defer></script>
 </head>
 <body>
 
@@ -36,7 +18,8 @@
     </header>
 
     <nav aria-label="Main navigation">
-        <ul>
+        <button type="button" class="menu-toggle" aria-expanded="true" aria-controls="main-menu" hidden>Menu</button>
+        <ul id="main-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html" aria-current="page">About</a></li>
             <li><a href="music.html">Music</a></li>

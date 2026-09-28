@@ -1,0 +1,13 @@
+Overview of: ai03 Links and Navigation
+Course: Web Design AI track (archived version)
+
+What this lesson is about:
+This archived unit turns your ai02 page into a three-page site (home, about, and a topic page) that you can navigate in every direction. You direct Claude using the a element and href, relative links between your own pages, fragment links that jump to an id on the same page, a mailto link with a pre-filled subject, and the download attribute. Every page begins with a skip link so keyboard and screen reader users can bypass the menu. Link text must always name its destination, and a twist has you hear how bad "click here" links sound in the links list. The audit tests the links list, round-trip navigation, the skip link, the table of contents jumps, and the email and download links. The matching lesson in the HTML CSS JavaScript track is html03 Links and Navigation.
+
+Documents in this folder, in suggested order:
+1. ai03 BuildBrief summary.txt — the three-page site requirements, must-say list, "click here" twist, and files to commit.
+2. ai03 AudioLab summary.txt — the four-step navigation audit.
+3. ai03 ConceptCheck summary.txt — the topics the ai03 ConceptCheck sheet checks (questions left out; they are homework).
+
+Other files in the original lesson:
+None. The source folder contains only these three markdown files.

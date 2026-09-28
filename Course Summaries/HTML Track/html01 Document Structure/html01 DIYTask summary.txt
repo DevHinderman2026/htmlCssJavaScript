@@ -1,0 +1,66 @@
+Summary of: html01_DIYTask.md
+Course: HTML CSS JavaScript track
+Lesson: html01 Document Structure
+Type of document: DIY task (independent project with rubric)
+
+In one sentence:
+This is the independent project for lesson 01: build a complete "About Me" page from scratch, with no starter code, and submit it as aboutMe.html in your GitHub folder.
+
+Main ideas:
+1. This task pulls together everything from sub-lessons 01a and 01b: the HTML skeleton, headings, paragraphs, line breaks, and comments.
+2. You type the whole structure from memory rather than copying and pasting from examples, which is how the skeleton gets memorized.
+3. Content should be real and personal. Headings should honestly describe the text under them, and each section needs meaningful writing, not placeholder text like "Lorem ipsum".
+4. A suggested outline (you may use your own): an h1 with your name; an h2 "About Me" with a short bio paragraph about what you are passionate about; an h2 "My Interests" with an h3 "Technology" and a paragraph on what tech interests you and why; an h2 "Education and Goals" with a paragraph on what you are studying and want to accomplish; and an h2 "Fun Fact" with something unique about you.
+
+Key terms:
+aboutMe.html — the required file name (lowerCamelCase).
+meta charset — required tag in the head setting character encoding.
+title — must read "About Me".
+h1, h2, h3 — heading levels used for your name, sections, and a subsection.
+br — line break inside a paragraph.
+Comment — developer note in the code; at least three required.
+
+What you are asked to do:
+Submit one HTML file named aboutMe.html to your GitHub folder.
+Structure requirements:
+- Valid HTML5 with the doctype, html, head, and body tags.
+- A proper meta charset tag in the head.
+- A title tag in the head that reads "About Me".
+- Proper indentation and neatly organized code.
+Content requirements:
+- Exactly one h1 heading containing your name.
+- At least three h2 headings for different sections (examples: About Me, My Interests, Goals).
+- At least one h3 subheading within a section.
+- At least 4 paragraphs total.
+- At least one br tag creating a line break inside a paragraph.
+- At least 3 comments explaining sections or your thinking.
+Writing requirements:
+- Genuine content that reflects who you are; meaningful information in every section; headings that match their content; correct grammar and spelling.
+How to start:
+1. Create a folder named html01_AboutMe.
+2. Open it in VS Code.
+3. Create aboutMe.html.
+4. Type the full structure from memory: doctype, html, head, body, meta charset, and title.
+5. Add headings, paragraphs, and comments.
+6. Save and test in the browser with Live Server.
+7. Review the code for indentation and comments.
+Checklist before submitting: file named aboutMe.html; doctype present; all tags properly closed; meta charset in the head; title "About Me" in the head; one h1 with your name; at least three h2s; at least one h3; at least 4 paragraphs with real content; at least one br; at least 3 comments; neat indentation; page displays without errors; all content original and about you.
+Grading rubric, 100 points total:
+- Valid HTML structure (doctype, html, head, body): 20 points.
+- Proper use of headings (h1, h2, h3): 15 points.
+- Content quality and originality: 15 points.
+- Paragraphs and line breaks: 15 points.
+- Comments in code: 10 points.
+- Code organization and indentation: 10 points.
+- Functionality (displays in browser, no errors): 15 points.
+After finishing: review the study guide vocabulary, play the Gimkit review quiz, then take the assessment quiz.
+
+Watch out for:
+- Do not leave any tag open; check opening and closing tags and spelling if something does not work.
+- The title text must be exactly "About Me".
+- Only one h1.
+- Get the structure right first, then add content, and test often.
+- If stuck, go back to the html01 Walkthrough.
+
+Connects to:
+The AI track's ai01 lesson builds this same About Me page by directing Claude.

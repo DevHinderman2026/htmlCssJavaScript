@@ -1,0 +1,39 @@
+Summary of: html05a_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html05 CSS Fundamentals
+Type of document: task starter file
+
+In one sentence:
+This practice starter page has you use inline styles and an internal stylesheet together with element, class, and ID selectors, following TODO comments.
+
+Main ideas:
+1. The page is titled "CSS Methods and Selectors Task" (written with an ampersand in the source). Its body holds an h1 "Three CSS Methods Practice", several short paragraphs, and one div.
+2. The page text itself teaches the ideas: the task practices inline, internal, and external CSS; selectors let you target specific elements using element, class, or ID selectors; element selectors target all tags of one type, such as every p; class selectors use a dot and can apply to many elements; ID selectors use a hash sign and should target one unique element. The last paragraph says to master these methods and selectors before the next lesson.
+
+Key terms:
+style element — holds an internal stylesheet in the head.
+style attribute — holds an inline style on one tag.
+element selector — h1 targets every h1.
+class selector — .intro targets every element with class="intro".
+ID selector — a hash sign plus special targets the element with id="special".
+background-color, color, font-size, font-weight, padding — the properties used here.
+
+What you are asked to do:
+In the head:
+- Add an internal style element containing rules for h1 (color and font-size), .intro (background-color and padding), and the special ID (color and font-weight).
+In the body:
+- Add an inline style to the h1 to make it blue using the color property.
+- On the second paragraph (about CSS selectors), add class="intro" and an inline style of background-color: yellow;.
+- On the div (about class selectors), add id="special" and an inline style of color: red;.
+- On the paragraph about ID selectors, add class="intro" (the comment calls it the second intro paragraph).
+Code: <div id="special" style="color: red;">
+This is how the div's opening tag looks after both changes: it gets the ID and an inline red color.
+
+Watch out for:
+- Inline styles are the strongest, so the inline blue on the h1, the inline yellow on the first intro paragraph, and the inline red on the div will override the colors you set for the same properties in the style element. Watching this happen is a good way to see specificity in action.
+- The style element belongs in the head; attributes go inside the opening tag.
+- Heads up: the page text says it practices all three methods, but no TODO here asks for an external stylesheet. Do only the inline and internal TODOs in this file; the external stylesheet is practiced in html05b.
+- Heads up: the div you give id="special" holds the sentence about class selectors, and the paragraph you give class="intro" holds the sentence about ID selectors. Follow the TODOs exactly anyway; the mismatch between labels and sentences does not affect the practice.
+
+Connects to:
+Parts 2 and 3 of the html05 Walkthrough (inline and internal methods). html05b adds the external stylesheet and Google Fonts.

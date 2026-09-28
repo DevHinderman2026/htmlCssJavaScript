@@ -1,0 +1,58 @@
+Summary of: ai05_BuildBrief.md
+Course: Web Design AI track (archived version)
+Lesson: ai05 CSS Fundamentals
+Type of document: build brief (project task, "Style Without Sight")
+
+In one sentence:
+This brief has you direct Claude to style your three-page site with one external stylesheet, specifying colors, fonts, link hover styles, and all three selector types, and then compare Claude's descriptions of the site with and without CSS.
+
+Main ideas:
+The brief pairs with html05 (CSS Fundamentals).
+1. What to build: style the three-page site with a single external stylesheet.
+- One file, styles.css, linked from every page, with zero inline styles and zero style blocks.
+- A deliberate color scheme of 3 to 4 colors, and two fonts (one for headings, one for body text).
+- Styled links, including a :hover state.
+- Element, class, and id selectors all used somewhere, on purpose.
+2. The track's method for styling: styling is directed by specification, the way an art director directs a photographer. You define the palette, the mood, and the rules, then verify by tracing claims back to code. CSS is the presentation layer, and the AudioLab proves it changes nothing about the page's structure or meaning.
+3. The must-say list:
+- external stylesheet, and the link element that attaches it.
+- the three places CSS can live (inline, internal, external), and your directions must say why you chose external.
+- selector types: element, class (written with a period), and id (written with a # sign).
+- color values: direct specific hex codes or named colors. Pick them by their descriptions, and ask Claude to describe the personality of a palette.
+- font-family with a fallback stack.
+- :hover, noting that it belongs to CSS, not JavaScript.
+4. The twist: ask Claude to describe your site's appearance in full detail (colors, fonts, spacing, mood) as if writing it for a design review. Then ask the same question about a version with no CSS. Save both descriptions in your prompt log. Comparing them shows exactly what styling does, and getting precise visual descriptions out of an AI is a specification skill you will use all year.
+
+Code: <link rel="stylesheet" href="styles.css">
+This line goes in the head of each page and attaches the external stylesheet named styles.css.
+
+Code: font-family: Georgia, "Times New Roman", serif;
+This is an example of a fallback stack: the browser uses the first font it has, and serif is the final generic fallback. (Font names are only an example.)
+
+Key terms:
+External stylesheet — a separate .css file linked to pages; here styles.css.
+link element — the HTML element in the head that attaches a stylesheet.
+Inline style — CSS written in an element's style attribute (not allowed in this build).
+Internal style (style block) — CSS written inside a style element in the page's head (not allowed in this build).
+Selector — the part of a CSS rule that picks which elements it styles.
+Element selector — selects by tag name, such as h1.
+Class selector — selects elements with a class, written with a leading period.
+id selector — selects the one element with that id, written with a leading #.
+Hex code — a color written as # followed by six characters.
+font-family — the property that sets fonts, given as a list with fallbacks.
+:hover — a CSS pseudo-class that applies styles while the pointer is over an element.
+
+What you are asked to do:
+- Direct Claude to create styles.css and link it from every page with no inline styles or style blocks.
+- Specify a 3 to 4 color scheme, two fonts, link styles with :hover, and use element, class, and id selectors on purpose.
+- Use every must-say term by name and state why external is the right choice.
+- Do the twist and save both appearance descriptions in your prompt log.
+- Commit: the updated site plus styles.css, ai05_PromptLog.md, and your completed ConceptCheck and AudioLab.
+
+Watch out for:
+- Any inline style or style block breaks the requirement.
+- Hover effects belong in CSS, not JavaScript.
+- Keep Claude's detailed description; the AudioLab's Step 4 uses it.
+
+Connects to:
+Pairs with html05 CSS Fundamentals; audited in ai05 AudioLab.

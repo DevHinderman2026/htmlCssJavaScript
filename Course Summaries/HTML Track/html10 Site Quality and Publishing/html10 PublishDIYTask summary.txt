@@ -1,0 +1,51 @@
+Summary of: html10_PublishDIYTask.md
+Course: HTML CSS JavaScript track
+Lesson: html10 Site Quality and Publishing
+Type of document: DIY task
+
+In one sentence:
+This capstone task (still titled DIY Task 13) has you take one of your best earlier projects through the full professional cycle: validate, fix, test across browsers and on mobile, deploy to GitHub Pages, and write a testing report.
+
+Main ideas:
+1. Duration is 90 minutes and can span 2 to 3 class periods. The six stages are select, validate, fix, test, deploy and document. At the end you have a live website on the internet.
+2. Good project choices: a restaurant or business landing page, a portfolio or resume site, a product or service page, a quiz game or interactive site, an e-commerce product page, or a multi-page site with navigation. The sheet says to choose from Units 1 to 4.
+3. Pre-deployment checks before starting: HTML and CSS files ready; images in the right folders; project opens locally without errors; links work locally; no console errors (F12, then Console).
+4. Cross-browser testing covers three kinds of checks in each browser. Functionality: page loads completely, 3 or more links work, all images display, navigation works, buttons and interactive elements work, forms work. Visual: layout, colors, fonts and spacing look right, nothing overlaps, responsive at desktop, tablet and mobile sizes. Technical: no console errors, no JavaScript errors, page loads in under 3 seconds. Each issue gets a severity of High, Medium or Low, and each browser gets a rating out of 10.
+5. Expected folder structure: index.html at the top level, a style.css file, optional pages such as about.html and contact.html, an images folder, and an optional assets folder.
+6. Deployment uses GitHub Desktop: create a public repository named username.github.io; clone it with File, Clone repository; copy the project files in; review the Changes list; commit with the summary "Deploy [project name] to GitHub Pages" using Commit to main; click Push origin; in the repository Settings, open Pages and choose the main branch and the root folder, then Save; wait 1 to 2 minutes; visit https://username.github.io.
+7. The resources section gives the workflow in one line: clone, change files, Commit to main with a real summary, Push origin. It also lists the HTML and CSS validators, GitHub, PageSpeed Insights (Lighthouse in the cloud, at pagespeed.web.dev) and WAVE (wave.webaim.org).
+8. Relative path examples: a stylesheet link with href="style.css"; an image with src="images/photo.jpg"; page links with href="about.html" and href="pages/contact.html".
+Code: <a href="pages/contact.html">Contact</a>
+This links to contact.html inside a pages folder, measured from the current page, so it keeps working after upload.
+9. The closing message lists the full cycle you have completed: planned, coded, validated, tested, fixed, deployed and shared.
+
+Key terms:
+capstone — the final, all-in-one task of a unit.
+severity — how serious an issue is: High, Medium or Low.
+relative path — a path measured from the current page.
+root folder — the top level of the repository, where index.html must be.
+PageSpeed Insights — Google's online version of Lighthouse, which scores performance and accessibility.
+sitemap and robots.txt — files that help search engines find pages and tell crawlers what to index (extra credit).
+
+What you are asked to do:
+Part 1: record the project name, where the files are, where index.html is, and list all files; complete the pre-deployment checklist.
+Part 2a: validate every HTML file at validator.w3.org; for each file record whether it had errors, list them, mark the fix status, and record how many you fixed.
+Part 2b: validate your CSS at jigsaw.w3.org/css-validator; record no errors, errors, or warnings only; list errors and warnings; record the fix status and number fixed.
+Part 3: list at least 3 browsers (a 4th is optional) and complete the full functionality, visual and technical checklist for each, with issues and a rating out of 10.
+Part 4: for each issue found (at least three slots are provided), describe the problem, how you fixed it, and whether it works now.
+Part 5: final pre-deployment checklist: all HTML validates with 0 errors; all CSS validates with 0 errors; tested in 3 or more browsers; tested on mobile; all links use relative paths; index.html is in the root; all images and assets are in the repository folder; no console errors; all issues fixed. Confirm your folder structure is correct.
+Part 6: deploy (steps above) and record your repository URL, whether cloning, pushing and enabling Pages succeeded, whether the site loads and all features work, and your live URL.
+Part 7: testing report with project name, live URL, a table of each browser with its version, pass or fail, and issues; number of HTML and CSS errors fixed; whether it is mobile responsive; an overall quality rating out of 10. Then answer the short reflection section at the end of the original document (it is on the final checklist).
+Final submission checklist for full credit: one project selected; HTML validation 0 errors; CSS validation 0 errors; tested in at least 3 browsers with documentation; tested responsive design on mobile; all issues found and fixed; GitHub repository created and public; files committed and pushed; GitHub Pages enabled; site live and working at https://username.github.io; testing report completed; reflection questions answered.
+Submit either: 1. the link to your live site, 2. a screenshot of your GitHub Pages URL working, and 3. your completed testing report (this document); or a simple document with the project name, clickable live URL, browsers tested, major issues found and fixed, and 1 to 2 paragraphs on your overall experience.
+Extra credit. Level 1: custom domain; README.md in the repository; multiple pages; screenshot of the live site. Level 2: Google Lighthouse test; better mobile responsiveness; smooth scrolling or animations; a "How This Site Was Made" document. Level 3: document your deployment process for others; write a tutorial on git and GitHub Pages; add a sitemap or robots.txt; add form validation if you have forms.
+No point values are given.
+
+Watch out for:
+- Full credit requires 0 validation errors, not just fewer errors.
+- Use relative paths and keep index.html in the root, or the live site will break.
+- Correction: in the GitHub Pages settings the folder option is written "/ (root)" (the other choice is /docs), as the html10e task shows. Step 4 of this sheet calls it "/root", but it means the same setting.
+- Heads up: "Units 1 to 4" is leftover older course numbering. Pick your project from any earlier html lesson (html01 to html09) that fits the project choices above.
+
+Connects to:
+html10d Task (validation and testing) and html10e Task (deployment steps) combined into one project; html10 ExtensionTask continues with auditing the live site.

@@ -1,0 +1,17 @@
+Overview of: html05 CSS Fundamentals
+Course: HTML CSS JavaScript track
+
+What this lesson is about:
+Lesson 05 introduces CSS, the language that controls how HTML looks. You learn the three ways to add CSS (inline style attributes, an internal style element in the head, and an external .css file connected with a link element) and why the external file is best practice. You learn how a rule is built from a selector and a declaration block of property: value pairs, and the three basic selectors: element, class (with a dot), and ID (with a hash sign). You practice colors written as names, hex codes, and rgb() values, font properties including Google Fonts, and text properties such as text-align, line-height, text-decoration, and letter-spacing. You also get a first look at the cascade and specificity, which decide which rule wins. The substitute-day lesson adds rgba(), hsl(), combined selectors, units like rem and percent, and a first taste of the box model. By the end you can build a separate stylesheet and restyle a page without touching its HTML.
+
+Documents in this folder, in suggested order:
+1. html05 Slides summary.txt — the slideshow: CSS methods, selectors, rule structure, colors, fonts, text, cascade and specificity.
+2. html05 StudyGuide summary.txt — 22 vocabulary terms, a syntax cheat sheet, competencies, common mistakes, and ten practice questions with answers.
+3. html05 Walkthrough summary.txt — step-by-step styling of one page inline, then internal, then external, with colors, Google Fonts, and text properties.
+4. html05a Task summary.txt — practice starter file for inline styles, an internal stylesheet, and element, class, and ID selectors.
+5. html05b Task summary.txt — practice starter file for Google Fonts, a small external stylesheet, and color, font, and text rules.
+6. html05 DIYTask summary.txt — independent project: restyle your html01 About Me page with a styles.css of at least 10 rules.
+7. html05 Substitute summary.txt — graded substitute-day lesson: a CSS video, a quiz, and 13 styling steps on a provided notes page. This one summary covers both html05_Substitute.md (the instructions) and html05_Substitute.html (the page to style).
+
+Other files in the original lesson:
+None. The source folder contains only the eight text documents above (five Markdown files and three HTML files), with no images or media.

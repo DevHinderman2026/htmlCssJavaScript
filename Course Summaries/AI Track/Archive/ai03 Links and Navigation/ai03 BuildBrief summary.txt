@@ -1,0 +1,51 @@
+Summary of: ai03_BuildBrief.md
+Course: Web Design AI track (archived version)
+Lesson: ai03 Links and Navigation
+Type of document: build brief (project task)
+
+In one sentence:
+This brief has you direct Claude to expand your ai02 page into a three-page site with shared navigation, in-page anchors, an email link, a download link, and a skip link on every page.
+
+Main ideas:
+The brief pairs with html03 (Links and Navigation).
+1. What to build: expand your ai02 page into a three-page site made of a home page, an about page, and one topic page of your choice. Requirements:
+- Every page shares the same nav, and every nav link works in both directions.
+- The about page is long enough to need in-page anchors: a small table of contents at the top that jumps to three sections further down.
+- The footer gains an email link that opens a mail message with a subject line already filled in, and a download link to a small text file.
+- Every page starts with a skip link to the main content. The brief adds, "you know why better than anyone," pointing to your own screen reader experience.
+2. The must-say list:
+- the a element and its href attribute.
+- relative link versus absolute link. Direct Claude to use relative links between your pages, and be ready to say why that matters when the site moves.
+- anchor or fragment links: an id on the target and a # in the href.
+- mailto: with a subject parameter.
+- the download attribute.
+- link text quality: no "click here"; every link's text must say where it goes.
+3. The twist: ask Claude to write one nav using "click here" style link text, run the links-list audit on it, then have Claude fix it. Keep both versions of that exchange in your prompt log; the audit makes the difference obvious, which is the lesson.
+
+Code: <a href="#goals">My goals</a>
+This is an example of a fragment link: the # followed by a name jumps to the element whose id is that name on the same page. (Example written for these notes; the section name "My goals" comes from the AudioLab.)
+
+Key terms:
+a — the anchor element that creates a link.
+href — the attribute holding the link's destination.
+Relative link — a link written relative to the current file's location, such as about.html.
+Absolute link — a link with the full address including the domain.
+Anchor or fragment link — a link whose href starts with # and jumps to an id on the page.
+id — an attribute that gives an element a unique name so links can target it.
+mailto: — the link scheme that opens an email message; a subject parameter pre-fills the subject.
+download attribute — tells the browser to save the linked file instead of opening it.
+Skip link — a link at the start of each page that jumps to the main content.
+
+What you are asked to do:
+- Direct Claude to build the three-page site with all requirements above.
+- Use every must-say term by name and direct Claude to use relative links between pages.
+- Do the "click here" twist and keep both versions in your prompt log.
+- Commit: index.html, about.html, your topic page, the downloadable file, ai03_PromptLog.md, and your completed ai03_AudioLab.md and ai03_ConceptCheck.md.
+
+Watch out for:
+- Links must work both ways between all pages.
+- A fragment link needs both the # in the href and a matching id on the target.
+- Link text must name its destination.
+
+Connects to:
+Builds on the ai02 page; pairs with html03 Links and Navigation; audited in ai03 AudioLab.

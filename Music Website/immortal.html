@@ -4,58 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Immortal - The Artist Who Only Uses Ears</title>
-    <style>
-        .skip-link {
-            position: absolute;
-            top: -3rem;
-            left: 0;
-            background: #000;
-            color: #fff;
-            padding: 0.75rem 1rem;
-            z-index: 100;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        main:focus {
-            outline: none;
-        }
-        .page-overview {
-            border-left: 4px solid #999;
-            padding-left: 1rem;
-        }
-        .table-wrap {
-            overflow-x: auto;
-        }
-        table {
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-        caption {
-            text-align: left;
-            padding-bottom: 0.5rem;
-        }
-        th, td {
-            border: 1px solid #999;
-            padding: 0.5rem 0.75rem;
-            text-align: left;
-            vertical-align: middle;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        figure {
-            margin: 1rem 0;
-        }
-        dt {
-            font-weight: bold;
-            margin-top: 0.5rem;
-        }
-        dd {
-            margin-left: 1.5rem;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="menu.js" defer></script>
 </head>
 <body>
 
@@ -67,7 +18,8 @@
     </header>
 
     <nav aria-label="Main navigation">
-        <ul>
+        <button type="button" class="menu-toggle" aria-expanded="true" aria-controls="main-menu" hidden>Menu</button>
+        <ul id="main-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="music.html">Music</a></li>

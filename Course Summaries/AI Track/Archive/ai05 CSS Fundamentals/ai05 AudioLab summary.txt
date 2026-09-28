@@ -1,0 +1,42 @@
+Summary of: ai05_AudioLab.md
+Course: Web Design AI track (archived version)
+Lesson: ai05 CSS Fundamentals
+Type of document: audio lab (screen reader experiment and audit, "The Invisibility Proof")
+
+In one sentence:
+This lab proves by ear that correctly written CSS changes nothing a screen reader reports, shows the one exception (display: none), and has you verify Claude's description of your styling by tracing each claim to an actual CSS rule.
+
+Main ideas:
+You styled your whole site with a stylesheet this week. The lab's surprising claim is that, done correctly, all that styling changes nothing a screen reader reports. CSS is the presentation layer (colors, fonts, spacing), while the audit reads the structure layer underneath. Proving that boundary and then finding the exception that crosses it is the whole lab.
+
+1. Step 1, baseline before the stylesheet. Ask Claude to temporarily remove the stylesheet link from your home page and save, explaining it is an experiment and it will go right back. Open the page and run three familiar moves: the headings list, the region walk, and the links list. Record counts, names, and order.
+2. Step 2, attach the stylesheet and run the identical audit. First write one sentence predicting what will change. Then have Claude put the stylesheet link back and save. Reload and run the same three moves. You should hear exactly the same headings, regions, and links in the same order. The page now has colors, fonts, and spacing, but none of it registers, because styling and structure are separate layers. The lab calls that separation the entire point of CSS. If something did change, the stylesheet is doing more than styling, which is a real finding; describe the difference to Claude and have it explain which CSS rule caused it before deciding on a fix.
+3. Step 3, the exception that proves the rule. The property display: none does not merely make an element invisible; it removes it from the page's meaning entirely, including for screen readers. Tell Claude to add a rule, in the stylesheet only and without touching the HTML, that sets the footer to display none, and save. Reload and run the region walk. You should hear banner, navigation, main, and no footer. The HTML still contains every word of the footer, yet one line of CSS erased it from what the page communicates. Write three sentences on what this proves about display: none and why a stylesheet can never be dismissed as just decoration. Cleanup: have Claude remove the rule and save, then re-run the region walk to confirm the footer is back.
+4. Step 4, the specification audit. This checks whether the styling you directed really got built, by tracing claims to code the way a code review works. In the brief's twist you saved Claude's detailed description of the styled site. Pick its two most concrete claims, such as "headings are dark green" or "links underline when hovered." For each, ask Claude to read you the exact CSS rule that makes it true, quoting the selector and properties. You should get a real rule for each: for heading color, a rule selecting headings with a color property; for hover, a rule using the hover state. If Claude cannot produce a matching rule, the description was embellished and the site does not do what it said, which is a defect in either the site or the description. Direct the right fix: build the missing rule, or correct the description in your prompt log.
+
+Code: footer { display: none; }
+This rule, the kind Step 3 asks for, selects the footer element and removes it from the page completely, so it disappears from the region walk too.
+
+Key terms:
+CSS — the styling language for presentation: colors, fonts, spacing.
+Presentation layer — how a page looks, controlled by CSS.
+Structure layer — what a page is and means, defined by HTML; this is what a screen reader reads.
+Stylesheet link — the link element that attaches an external CSS file to a page.
+display: none — a CSS property value that removes an element from the page and from screen readers.
+Selector — the part of a CSS rule that chooses which elements it applies to.
+Hover state — a CSS state that applies when the pointer is over an element.
+
+What you are asked to do:
+- Step 1: remove the stylesheet link temporarily and record the headings list, region walk, and links list.
+- Step 2: write a prediction, restore the stylesheet, repeat the three moves, and write what you heard and whether your prediction held.
+- Step 3: hide the footer with display none in CSS only, run the region walk, write three sentences, then remove the rule and confirm the footer is back.
+- Step 4: trace two concrete claims from Claude's description to exact CSS rules, write the claims and what you found, and direct any fix.
+- Verdict: write the two-sentence verdict at the end of the lab (its prompts are in the original file); it is part of the completed AudioLab you turn in.
+
+Watch out for:
+- Remember to restore the stylesheet link after Step 1 and remove the display none rule after Step 3.
+- display: none hides content from screen readers too, so CSS is not "just decoration."
+- AI descriptions can be embellished; verify claims against the actual code.
+
+Connects to:
+Uses the description saved in ai05 BuildBrief's twist; display: none returns in ai06 AudioLab. Matches html05 CSS Fundamentals in the HTML CSS JavaScript track.

@@ -1,0 +1,47 @@
+Summary of: html12_CertLane_CheatCard.md
+Course: HTML CSS JavaScript track
+Lesson: html12 Exam Prep
+Type of document: cheat card (one-page exam-day review sheet)
+
+In one sentence:
+This one-page card lists the most-missed facts for the Certiport ITS HTML and CSS exam, meant to be reviewed the morning of the test.
+
+Main ideas:
+1. The specificity ladder, weakest to strongest: an element selector such as p, then a class such as .intro, then an ID such as #main, then an inline style attribute, then !important.
+2. Counting specificity: count it as three numbers in the order IDs, classes, elements. The selector #nav .link a has one ID, one class and one element, so it scores (1,1,1). A longer selector is not automatically stronger.
+3. Cascade tiebreak: when two rules have equal specificity, the one that appears last in the file wins. An inline style beats the stylesheet, and !important beats inline, though using !important is considered a code smell (a sign of messy code).
+4. Inheritance. Properties that pass down from parent to child: color, the font properties, text-align, line-height and visibility. Properties that do not pass down: margin, padding, border, width, height and background.
+5. Units. Absolute: px, pt, cm. Relative: percent; em, which is relative to the parent's font size; rem, relative to the root (html element) font size; vw and vh, relative to the viewport width and height.
+6. The three that everyone confuses:
+- display: none removes the element completely; it takes up no space.
+- visibility: hidden makes it invisible but it still keeps its space.
+- overflow: hidden cuts off (clips) content that goes past the edge of the box.
+7. HTTP methods: GET puts the data in the URL, can be bookmarked, and is for retrieving. POST puts the data in the request body and is for submitting or changing data.
+8. Character entities: &lt; makes a less-than sign, &gt; a greater-than sign, &amp; an ampersand, &nbsp; a non-breaking space, and &copy; the copyright symbol.
+9. Image maps: an image with a usemap attribute pointing to a map by name, plus a map element, plus area elements that set a shape (rect, circle or poly), coordinates and a link.
+Code: <img usemap="#map1"> <map name="map1"> <area shape="rect" coords="..." href="...">
+The image's usemap value, with a hash sign in front, matches the map's name; each area defines one clickable region.
+10. Media: the video element can take controls, autoplay, muted, loop and poster (a preview image) attributes. The track element with kind="subtitles" adds captions. Fallback text goes inside the video or audio element, between its tags.
+11. Box model, outside to inside: margin, then border, then padding, then content. Shorthand values go top, right, bottom, left, clockwise. With two values, the first is top and bottom and the second is left and right.
+12. The final reminder: read every option, because test writers deliberately place an almost-right answer before the right one.
+
+Key terms:
+specificity — the score deciding which CSS rule wins when rules conflict.
+cascade — the rule that, on a tie, the later rule wins.
+inheritance — a child element picking up a property value from its parent.
+!important — a flag that overrides normal specificity; use sparingly.
+em and rem — font-relative units: parent font and root font.
+vw and vh — one percent of the viewport width and height.
+character entity — a code starting with an ampersand and ending with a semicolon that displays a special character.
+image map — an image with several clickable regions (map and area elements).
+track — element that adds captions or subtitles to video.
+poster — video attribute for an image shown before playback.
+
+Watch out for:
+- A long selector made of classes and elements still loses to a single ID.
+- visibility: hidden keeps the empty space; display: none does not.
+- Background is NOT inherited, even though children often appear to share it.
+- Fallback text belongs inside the media element, not after it.
+
+Connects to:
+Used on Lane 2 day 4 in the html12 unit guide. The box model is from html06 Box Model and Spacing, and specificity and units build on html05 CSS Fundamentals.

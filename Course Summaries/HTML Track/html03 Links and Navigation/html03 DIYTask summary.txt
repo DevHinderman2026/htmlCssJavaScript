@@ -1,0 +1,63 @@
+Summary of: html03_DIYTask.md
+Course: HTML CSS JavaScript track
+Lesson: html03 Links and Navigation
+Type of document: DIY task
+
+In one sentence:
+Design and build your own three-page website, on a topic you choose, with shared navigation, page anchors, and email, phone, and external links.
+
+Main ideas:
+1. Estimated time is 45 to 60 minutes.
+2. The site has exactly three pages, all in the same folder: index.html (Home), about.html (About), and contact.html (Contact).
+3. Example topics: coffee shop, tech blog, portfolio, pet care business, band, fitness studio.
+4. The example structure for each page: HTML5 head with meta charset, viewport meta tag, and a title like "Your Site Title - Home"; a header with id "top" containing an h1 and a nav with relative links to index.html, about.html, and contact.html; a main for page-specific content; and a footer with a copyright line and a matching nav.
+Code: <header id="top">
+This opening header tag carries the id top so Back to Top links can jump to it.
+
+Key terms:
+Relative link — a link by file name, such as about.html, for pages in the same folder.
+id="top" — required on every page's header.
+Page anchor — a link to the number sign plus a section id.
+mailto: — email link.
+tel: — phone link.
+target="_blank" — opens an external link in a new tab.
+Descriptive link text — link words that say where the link goes.
+
+What you are asked to do:
+Requirements for all pages:
+- The same header and nav on every page (copy and paste), with relative links to all three pages: index.html, about.html, contact.html.
+- id="top" on the header of every page.
+- A footer with copyright text and a matching nav.
+- Valid HTML5, all tags closed, and at least a few explanatory comments.
+- Descriptive link text, no "click here".
+Home page, index.html:
+- At least 2 section elements with id attributes.
+- At least one page anchor linking to a section (an href of the number sign plus the section id).
+About page, about.html:
+- At least 2 sections with meaningful content.
+- At least one page anchor.
+Contact page, contact.html:
+- An email link, for example:
+Code: <a href="mailto:hello@example.com">Email Us</a>
+This link reads Email Us and opens an email to hello@example.com.
+- A phone link, for example:
+Code: <a href="tel:+1-555-0100">Call Us</a>
+This link reads Call Us and dials the number in the href.
+- An external link with target="_blank".
+- Contact information displayed clearly.
+Submission checklist:
+- All 3 files created and in the same folder.
+- Navigation works on every page.
+- Page anchors jump to the correct sections.
+- Email link, phone link, and external link (target="_blank") all work.
+- All HTML valid, no broken tags.
+- Footer with consistent links on all pages.
+
+Watch out for:
+- Keep the three files in one folder, or the simple relative links will break.
+- The nav must be identical on every page.
+- Every id you link to must exist and be spelled exactly the same.
+- Avoid "click here" link text.
+
+Connects to:
+Repeats the html03 Walkthrough independently. The html03 Extension Task adds breadcrumbs and a skip link to this site. The AI track's ai03 lesson builds a similar three-page site.

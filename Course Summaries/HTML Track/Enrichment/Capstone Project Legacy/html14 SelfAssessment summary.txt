@@ -1,0 +1,56 @@
+Summary of: html14_SelfAssessment.md
+Course: HTML CSS JavaScript track
+Lesson: Capstone Project Legacy
+Type of document: self-assessment checklist and reflection
+
+In one sentence:
+This is the form you fill out before submitting the capstone, checking off every requirement, reflecting on your work, rating yourself, and then committing it to your GitHub repository.
+
+Main ideas:
+1. The top of the form asks for student names, project title, GitHub repository URL, live GitHub Pages URL, and date submitted.
+2. Part 1 is a requirements checklist that mirrors the Capstone Spec, grouped the same way as the rubric.
+3. Part 2 is written reflection plus a 1 to 5 star self-rating with a reason.
+4. Part 3 is a final completion checklist.
+5. Then come submission steps and a teacher comments area with a grade out of 100.
+
+Key terms:
+Self-assessment — judging your own work against the requirements before the teacher does.
+Commit and push — saving a change in Git with a message and sending it up to GitHub.
+Device emulation — the DevTools mode that previews a page at phone or tablet size.
+
+What you are asked to do:
+Part 1, Requirements Checklist (check each one you completed):
+HTML Structure and Semantic Markup: 4 or more pages (Home, About, Services or Portfolio, Contact); valid HTML5 with DOCTYPE, html, head, and body; the charset UTF-8 meta tag and the viewport meta tag on every page; semantic elements (header, nav, main, article, section, footer); one h1 per page with correct h2 and h3 nesting; all pages linked by working navigation.
+CSS and Styling: external .css file; custom CSS, not just Bootstrap or framework defaults; 3 or more colors used consistently; 2 fonts (heading and body); Google Fonts imported and applied; professional, cohesive design.
+Responsive Design: works on mobile (under 600 pixels), tablet (600 to 1024), and desktop (1024 and up); media queries or Bootstrap grid; navigation adapts; images scale; tested on a real phone or with DevTools device emulation.
+Forms and JavaScript: contact form with 3 or more fields; appropriate input types (text, email, tel, textarea, and so on); the JavaScript file linked with a script tag; validation of required fields, email format, and at least 1 extra rule; feedback on submit (success or error); submission blocked when invalid; at least 1 other interactive feature (smooth scrolling, toggle menu, gallery, modal, and so on).
+Code: <script src="script.js"></script>
+This line links your external JavaScript file to the page.
+Content and Media: at least one data table; clear headers and 4 or more columns; 5 or more rows of data; 3 to 4 images; descriptive alt text on all images; optimized image sizes; original content with no Lorem Ipsum.
+SEO and Accessibility: titles under 60 characters; meta descriptions of 100 to 160 characters; correct heading order; enough color contrast; Tab key reaches all links and buttons; alt text on all images; no Lighthouse accessibility warnings.
+Validation and Testing: HTML passes validator.w3.org with 0 errors; CSS passes jigsaw.w3.org/css-validator with 0 errors; tested in at least 2 browsers; all links work with no 404s; form validation works; Lighthouse score 80 or higher.
+Deployment: public GitHub repository; all files pushed (HTML, CSS, JS, images); README.md with description and live link; deployed to GitHub Pages; meaningful commit messages.
+
+Part 2, Self-Reflection: answer the seven reflection prompts in the original document in writing, including a 1 to 5 star self-rating with an explanation and feedback for your instructor (a fully filled-out self-assessment is part of the submission).
+
+Part 3, Completion Checklist: all 4 or more pages work; HTML and CSS pass the W3C validators; the site is live on GitHub Pages; the repo is public with all files; README.md is complete; this self-assessment is fully filled out; the planning template is in the repo; all links work and the console has no errors; tested on mobile, tablet, and desktop; ready to demo to the instructor.
+
+Submission Instructions:
+1. Complete every section of this self-assessment.
+2. Save it as html14_SelfAssessment.md in your GitHub repository.
+3. Commit and push it. The three Git commands are:
+Code: git add html14_SelfAssessment.md
+This stages the file so Git will include it in the next commit.
+Code: git commit -m "Add capstone self-assessment"
+This saves a snapshot with a descriptive message.
+Code: git push
+This uploads the commit to GitHub.
+4. Submit your GitHub Pages URL to your instructor.
+
+Watch out for:
+- The star rating line uses star emoji symbols meant to be circled; just type your number from 1 to 5.
+- Do not forget to include the planning template in the repository too; it is on the final checklist.
+- Correction: build your table with at least 4 columns and 5 rows, which satisfies this checklist, the rubric's Excellent level, and the Capstone Spec. The spec only says "at least one data table," so this checklist is the stricter version to follow.
+
+Connects to:
+Mirrors html14_CapstoneSpec.md and the categories in html14_Rubric.md; the Git steps match the publishing work in html10 Site Quality and Publishing.

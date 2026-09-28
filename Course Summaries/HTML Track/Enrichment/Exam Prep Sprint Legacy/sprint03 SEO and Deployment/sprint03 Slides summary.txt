@@ -1,0 +1,67 @@
+Summary of: sprint03_Slides.md
+Course: HTML CSS JavaScript track
+Lesson: sprint03 SEO and Deployment
+Type of document: slideshow
+
+In one sentence:
+A 2-hour exam prep slideshow on search engine optimization, accessibility, web protocols, HTTPS, static versus dynamic sites, and deploying a site to GitHub Pages with Git.
+
+Main ideas:
+1. What SEO is. Search engine optimization means making your site show up in search results. It brings organic traffic, meaning free visitors from Google, Bing or Yahoo. The slide claims 93 percent of web experiences start with a search engine. SEO works alongside paid ads but costs nothing. The goal is page 1 of results, which brings more clicks and more business.
+2. The SEO process has three steps: crawl (a search engine robot reads your HTML), index (the robot stores your page in its database), and rank (the page is ordered by quality signals).
+3. Title tag. The title element in the head, for example "Fresh Sourdough Bread | Joe's Bakery". Keep it 50 to 60 characters. It is the clickable blue link in search results and the text in the browser tab. Include a keyword plus the brand name.
+4. Meta description. A meta element with name="description" and a content attribute holding a summary.
+Code: <meta name="description" content="Fresh baked sourdough bread delivered daily...">
+This tag gives search engines the short summary shown under the title in results.
+Keep it 150 to 160 characters. Google often does not use it for ranking, but it affects click-through rate, so a call to action like "Free shipping" or "Learn more" helps. Every page should have its own unique title and description; no duplicates.
+5. Heading rules. Use exactly one h1 per page, naming the page topic. Do not skip levels: go h1, h2, h3, never h1 straight to h3. Screen readers rely on heading structure, and headings form the outline of the page.
+6. Alt text. The alt attribute on an image should describe what the image shows, for example "Fresh loaf of sourdough bread on wooden board". Do not use "image.jpg", "photo" or "click here". Include keywords only if natural. Decorative images get an empty alt (alt=""). Screen readers read alt text aloud.
+7. Accessibility means designing for all users, including people with disabilities: blind and low-vision users (screen readers), deaf and hard-of-hearing users (captions, transcripts), users with motor impairments (keyboard navigation), and users with cognitive disabilities (simple, clear language).
+8. Legal and standards: the ADA (Americans with Disabilities Act) is US law. WCAG 2.1 (Web Content Accessibility Guidelines) is the international standard. Level AA is the minimum and the class goal. Stats given: 15 to 20 percent of web users have some disability, and 1 in 4 US adults has a disability. Accessible design is better for everyone.
+9. Screen readers read HTML structure, text and alt text. A link reading Home is announced as "Home link"; a button reading Search as "Search button". Test with NVDA on Windows or VoiceOver on Mac.
+10. ARIA labels. An icon-only button needs a text name for screen readers.
+Code: <button aria-label="Close menu">×</button>
+The button shows only a multiplication-sign symbol, so aria-label gives it the spoken name "Close menu". The same attribute can name a search input (aria-label="Search bakery").
+11. Color contrast. White text on white is a 1 to 1 ratio and fails; dark text on white can reach 21 to 1 and passes. The minimum for normal text is 4.5 to 1. Good contrast helps color-blind and low-vision users. Check with the WebAIM contrast checker.
+12. Web protocols (purpose, secure or not, port):
+- TCP/IP: the foundation of all data transmission; no port listed.
+- DNS: turns a domain name into an IP address; not secure; port 53.
+- HTTP: website communication; not secure; port 80.
+- HTTPS: website communication with SSL encryption; secure; port 443.
+- FTP: file transfer; not secure; port 21.
+- SFTP: file transfer with encryption; secure; port 22.
+Analogy: TCP/IP is the postal system, HTTP is a postcard anyone can read, HTTPS is a sealed envelope, and DNS is the address book.
+13. SSL and HTTPS. HTTPS is HTTP plus SSL encryption, shown by a lock icon in the address bar. An SSL certificate proves the site's identity and provides the encryption key. HTTPS protects passwords, credit cards and personal data, encrypts data in transit, prevents man-in-the-middle attacks, is expected by browsers (Chrome labels HTTP pages "Not Secure"), is required for forms, logins and payments, and is free from Let's Encrypt. GitHub Pages gives free automatic HTTPS, and web hosts often include it free. Never trust HTTP for passwords or payments.
+14. Static versus dynamic sites. A static site sends the same HTML, CSS and JavaScript files to every user; examples are GitHub Pages sites, portfolios and documentation. Static sites are fast, secure and cheap, need no database, and need a redeploy to change. A dynamic site has the server pull from a database and build custom HTML per user; examples are Gmail, Facebook, Twitter and Shopify. Dynamic sites are more powerful but slower and more complex, need a database and a backend server, and change through the database without redeploying. This course deploys static sites to GitHub Pages.
+15. Deploying to GitHub Pages in four steps:
+- Step 1, create a Git repository: git init, then git add . to add all files, then git commit -m "Initial commit" to save a snapshot.
+- Step 2, push to GitHub: git remote add origin followed by your repository URL, then git branch -M main, then git push -u origin main.
+- Step 3, enable Pages: go to Settings then Pages, choose branch main and folder root, and save. The site appears at https://username.github.io/repo-name/.
+- Step 4, deploy updates: git add ., git commit with a message, git push. GitHub Pages updates in 1 to 2 minutes.
+16. Key takeaways. SEO and accessibility share one goal, clear structure: use semantic HTML (button, nav, main), write descriptive titles and alt text, use proper heading order, ensure color contrast, make keyboard navigation work, and deploy with HTTPS. SEO helps search engines understand a site; accessibility helps humans use it; both use the same best practices. Next steps: fix SEO and accessibility on your practice site, deploy it to GitHub Pages, and share the live URL in class.
+
+Key terms:
+SEO — search engine optimization; making a site visible in search results.
+organic traffic — free, unpaid visitors from search results.
+crawl, index, rank — the three steps a search engine uses to read, store and order pages.
+title element — page title shown in the tab and as the search result link.
+meta description — summary tag shown under the title in results.
+alt attribute — text description of an image for screen readers.
+ADA — Americans with Disabilities Act, US law.
+WCAG 2.1 — international accessibility guidelines; Level AA is the target.
+aria-label — attribute that gives an element a name for screen readers.
+contrast ratio — brightness difference between text and background; 4.5 to 1 minimum for normal text.
+TCP/IP, DNS, HTTP, HTTPS, FTP, SFTP — the web protocols above.
+SSL certificate — proves identity and enables HTTPS encryption.
+static site — same files for every user, no database.
+dynamic site — pages built per user from a database.
+GitHub Pages — free static hosting from a GitHub repository with automatic HTTPS.
+
+Watch out for:
+- One h1 per page and no skipped heading levels.
+- Vague alt text like "photo" helps no one; decorative images should use an empty alt.
+- Icon-only buttons need aria-label or they are announced with no meaningful name.
+- Never send passwords or payment data over plain HTTP.
+
+Connects to:
+The html10 lesson on site quality and publishing covers SEO, accessibility and publishing in the main track. The sprint03 study guide and task continue this lesson.

@@ -1,0 +1,18 @@
+Overview of: html07 Flexbox and Responsive Design
+Course: HTML CSS JavaScript track
+
+What this lesson is about:
+This lesson teaches modern CSS layout and how to make pages work on any screen size. Flexbox lines items up along one direction, a row or a column, with the container controlling spacing along that line (justify-content) and across it (align-items), wrapping (flex-wrap), and gaps (gap). Responsive design is taught mobile-first: write one-column phone styles as the default, then add min-width media queries at 768 pixels for tablets and 1024 pixels for desktops. Every page needs the viewport meta tag, and images need max-width 100 percent and height auto to scale without distortion. CSS Grid is introduced as the two-dimensional system that controls rows and columns at once; on exams it is recognition level only, with the fuller toolkit (repeat, minmax, auto-fit, spanning) left to the extension. You leave able to build a flexbox navigation bar and card row, a responsive blog layout, a grid page layout, and a photo gallery that goes from one to three columns.
+
+Documents in this folder, in suggested order:
+1. html07 Slides summary.txt — slideshow on flexbox, mobile-first media queries, responsive images, and grid basics.
+2. html07 StudyGuide summary.txt — vocabulary, flexbox and media query cheat sheets, exam scope for grid, and competencies.
+3. html07 Walkthrough summary.txt — guided build of a responsive photo gallery with flexbox and then grid, with seven questions and answers.
+4. html07a Task summary.txt — starter page to lay out a nav bar, service cards, testimonials, and footer with flexbox.
+5. html07b Task summary.txt — starter blog page to make responsive with the viewport tag and responsive images.
+6. html07c Task summary.txt — starter blog page to arrange into a header, sidebar, main, and footer with CSS Grid.
+7. html07 DIYTask summary.txt — independent project: a mobile-first responsive photo gallery plus a reusable template.html.
+8. html07 ExtensionTask summary.txt — optional extra credit: a grid-only gallery that reflows without media queries.
+
+Other files in the original lesson:
+The source folder has an images subfolder containing 25 PNG placeholder pictures, each 300 by 200 pixels. They fall into four groups. Six are named photo-1 through photo-6; the walkthrough and DIY task point to these for the gallery. Four are illustrations used by the html07b blog articles: flexbox, css-grid, mobile-first, and responsive-images. Nine are named scenery pictures: city-lights, forest-valley, historic-building, lake-mountain, mountain-peak, palm-trees, street-scene, sunset-beach, and tropical-beach. Six more are named flex-1 through flex-6. The scenery and flex images are not referenced by any of the text files summarized here; they appear to be extra material for galleries such as the DIY and extension tasks. This lesson folder has no README. The three task starter files link to teacher solution stylesheets (html07a, html07b, and html07c Task_Solutions.css) that are not in this copy of the folder.

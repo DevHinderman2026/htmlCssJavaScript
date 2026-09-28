@@ -1,0 +1,64 @@
+Summary of: ai01_Lesson.md
+Course: Web Design AI track
+Lesson: ai01 Document Structure
+Type of document: lesson
+
+In one sentence:
+This lesson has you direct Claude to build an About Me page, aboutme.html, with a title, one main heading, three sections with their own headings and paragraphs, and a comment, then check its structure by ear.
+
+Main ideas:
+- You build a page about yourself with a title, one main heading, sections, and paragraphs. The lesson says this is the same page the rest of the class builds in html01.
+
+Step 1, Decide what to say:
+- Pick three sections, for example About Me, My Music, and My Goals.
+- For each section, think of two or three sentences. The words must be yours, not Claude's.
+
+Step 2, Build:
+- First tell Claude to make a folder called ai01_docStructure in your repository folder.
+- Then tell Claude to make a complete HTML page called aboutme.html in that folder, with these parts: the title is About [your name]; a comment at the top that says built by direction and today's date; one heading level one with your name; then three sections, each with a heading level two and a paragraph. Then give Claude your section names and sentences.
+- Before it saves, ask Claude to read you the structure of the page from top to bottom in plain sentences. If it matches what you asked for, tell it to save. This review step lets you catch mistakes before the file exists.
+
+Step 3, Check (open aboutme.html in Chrome from File Explorer):
+1. Listen for the title when the page opens. It should be About your name.
+2. Press H four times. You should hear your name as heading level one, then three headings at level two. If the order or the levels are different, tell Claude and have it fix the file.
+3. Press Insert plus Down Arrow to read the whole page. You should hear every paragraph, but you should not hear the comment. Comments are for people reading the code, not for visitors to the page.
+
+Step 4, Learn:
+- Ask Claude to read aboutme.html one line at a time and explain each line in one short sentence.
+- Then ask Claude to explain two things: the difference between the title and the heading level one, and what a missing doctype does to a page.
+
+Step 5, Make it yours:
+- Add anything you like, such as a fourth section or a list of your favorite artists. Tell Claude what to add, then check the page again.
+
+Step 6, Push:
+- Commit with the summary About Me page, then push.
+
+Key terms:
+title — the page name inside the head of the document (the title element, written <title>); it is announced first when the page opens, and it is different from the visible main heading.
+heading level one — the single main heading of the page (written <h1>); here it holds your name.
+heading level two — a subheading (written <h2>) that starts each section under the level one heading.
+section — a grouped part of the page with its own heading and content.
+paragraph — a block of text (written <p>).
+comment — a note in the code for people reading the source; browsers and screen readers do not present it to visitors.
+doctype — the first line of an HTML document; the lesson has you ask Claude what happens without it.
+Insert plus Down Arrow — the screen reader command used here to read the whole page from the current point.
+
+What you are asked to do:
+1. Choose three sections and write two or three sentences for each in your own words.
+2. Have Claude create ai01_docStructure and aboutme.html with the title About [your name], a top comment saying built by direction and today's date, one heading level one with your name, and three sections each with a heading level two and a paragraph.
+3. Have Claude read the structure back before saving.
+4. Check the title, the four headings in order and level, and that the whole page reads without the comment.
+5. Ask Claude for the line-by-line explanation and the two Learn explanations.
+6. Optionally extend the page and recheck.
+7. Commit with the summary About Me page and push.
+Turn in:
+1. aboutme.html
+2. Your answers to the questions in ai01_Questions.md, shared in Google Classroom.
+
+Watch out for:
+- The page should have exactly one heading level one followed by level two headings. A wrong order or level is something you must hear and have fixed.
+- If you can hear the comment while reading the page, it was not written as a real comment.
+- The content must be your own words, not Claude's.
+
+Connects to:
+This lesson matches html01 Document Structure in the HTML CSS JavaScript track. It builds on the hello.html page and loop from ai00.

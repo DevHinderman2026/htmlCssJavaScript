@@ -1,0 +1,42 @@
+Summary of: html04a_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html04 Images Media and Tables
+Type of document: task starter file
+
+In one sentence:
+This practice starter page has you add images with alt text and sizes, captioned figures, a responsive image, and a three-image gallery by replacing blank placeholders.
+
+Main ideas:
+1. The file begins with a comment warning that it uses pictures from the images folder. Download them from GitHub (html04_imagesMediaTables/images) and put them in a folder named images next to this file, or the pictures will not show.
+2. The page, titled "Image Gallery Task", has an h1 of the same name and a line saying it practices alt text, captions, and sizing. Each section contains a placeholder of three underscores where your code goes.
+3. Section "Basic Images with Alt Text" (id basic-images) says all images must have descriptive alt text. It already contains a finished example, Image 2: nature-scene-2.jpg with alt "Forest path lined with tall evergreen trees", width 300, height 200. Use it as a model.
+4. Section "Figures with Captions" (id figures) reminds you to use figure and figcaption for semantic image structure.
+5. Section "Responsive Images" (id responsive) says images should scale to fit the screen.
+6. Section "Image Gallery" (id gallery) asks for multiple captioned images, with placeholders for gallery items 1, 2, and 3.
+7. Section "Image Best Practices" (id practices) is already written as a bulleted list: alt text describes images for screen readers; use JPG for photos, PNG for graphics with transparency, and SVG for icons; compress images for faster loading; define width and height to prevent layout shift while an image loads; and the style attribute can make images shrink on small screens (CSS, coming in Lesson 05).
+8. The footer says "Task complete! Review your alt text and captions for clarity."
+
+Key terms:
+img — the image element.
+src — path to the image file.
+alt — text description for screen readers.
+width and height — size in pixels; they reserve space so the page does not jump when the image loads (layout shift).
+figure and figcaption — container and caption for an image.
+style="max-width: 100%; height: auto;" — CSS that lets an image shrink to fit the screen.
+
+What you are asked to do:
+TODO 1: Where the Image 1 placeholder is, add an img with src images/nature-scene-1.jpg, alt "A scenic mountain landscape with clear blue sky", width 300, and height 200.
+TODO 2: In the figures section, add a figure containing an img with src images/product-photo.jpg, alt "Professional camera with telephoto lens", width 400, height 300, and a figcaption reading "High-end photography equipment".
+TODO 3: In the responsive section, add a figure containing an img with src images/responsive-image.jpg, alt "Wide landscape photo that adapts to screen size", and the style attribute below, plus a figcaption reading "This image scales responsively on mobile and desktop".
+Code: style="max-width: 100%; height: auto;"
+This keeps the image from ever being wider than its container and keeps its proportions. The comment says this is CSS from Lesson 05; copy it exactly.
+TODO 4: In the gallery section, add three figure elements, each with an img and a figcaption, to create a gallery. Suggested images: gallery-1.jpg with alt "Colorful painted wall with geometric patterns"; gallery-2.jpg with alt "Coastal beach at sunset with golden light"; gallery-3.jpg with alt "Urban street with modern architecture". Caption wording is up to you.
+TODO 5: Read the five best practices and think about why each matters: always include descriptive alt text; choose the right format; optimize file size; use width and height to reserve space and prevent layout shift; make images scale to the screen. No code is required for this step.
+
+Watch out for:
+- If the images folder is missing or misnamed, every picture shows as broken.
+- Alt text should describe what is in the picture, not just repeat the file name.
+- Remember the img tag has no closing tag, and a figcaption goes inside the figure.
+
+Connects to:
+Part 2 of the html04 Walkthrough and Part 1 (gallery) of the html04 Project.

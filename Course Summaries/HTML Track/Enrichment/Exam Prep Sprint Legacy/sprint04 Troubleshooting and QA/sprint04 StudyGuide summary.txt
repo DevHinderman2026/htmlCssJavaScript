@@ -1,0 +1,77 @@
+Summary of: sprint04_StudyGuide.md
+Course: HTML CSS JavaScript track
+Lesson: sprint04 Troubleshooting and QA
+Type of document: study guide
+
+In one sentence:
+A study guide for troubleshooting, quality assurance and project management with 25 vocabulary terms, a method comparison and decision guide, a test case template and example, a project planning checklist, the three Ohio outcomes, five common exam mistakes, fifteen practice questions with answers, and exam tips.
+
+Main ideas:
+1. Troubleshooting methods compared:
+- Top-Down starts from the whole site; best for general "nothing works" problems; example, the website will not load at all.
+- Bottom-Up starts from the code details; best for specific bugs and syntax errors; example, a button click does not trigger.
+- Follow the Path starts from a user action (click or form); best for interactive features; example, a form does not submit.
+- Spot the Differences starts from a before and after comparison; best after recent changes; example, the navbar disappeared after an update.
+Quick decision guide: site completely broken, use Top-Down; cannot find the bug, use Bottom-Up; a feature does not work, use Follow the Path; something changed, use Spot the Differences.
+2. Test case template fields: Test ID (such as TC-001), Description, Steps (numbered actions), Expected Result (what should happen), Actual Result (what did happen), Pass or Fail, and Notes.
+3. Worked example, TC-003, "Submit contact form with valid data": go to the Contact page, enter "John Smith" as the name, "john@email.com" as the email, "Question about services" as the message, and click Submit. Expected: the form submits and a confirmation message appears. Actual: the same. Result: PASS.
+4. Project planning checklist: scope defined (what is and is not included); stakeholders identified, including who approves; target audience defined; design brief created; budget set; timeline with start and end dates; milestones listed; critical path identified; acceptance criteria written (what "done" looks like); team assigned (who builds what).
+5. Ohio outcomes: 2.9 Project Management, planning and managing a web project from concept to completion; 2.11 Troubleshooting, finding and fixing problems with logical, documented methods; 2.12 Quality Assurance, formal testing with test cases and acceptance criteria.
+6. Exam tips. Troubleshooting clues: one browser only points to Spot the Differences; the whole site broken points to Top-Down; a failing button click points to Follow the Path; systematic always beats random. QA: QA is technical correctness with test cases, usability is real users testing, UAT is client approval, and acceptance criteria are the definition of done. Project management: scope is what is and is not included, stakeholders are anyone invested, the timeline is broken into milestones, and the critical path is what cannot be delayed.
+
+Key terms:
+Troubleshooting — systematic process of finding and fixing problems.
+Top-Down Troubleshooting — start with the big picture, narrow to details.
+Bottom-Up Troubleshooting — start with small code details, work up.
+Follow the Path — trace data from a user action through functions to the display.
+Spot the Differences — compare a working version to a broken version.
+Systematic Approach — a logical, organized method instead of guessing.
+Root Cause — the underlying reason a problem happens.
+Debugging — finding and fixing errors in code.
+Quality Assurance (QA) — formal, systematic testing before launch.
+Test Case — documented instructions for testing one feature, with expected results.
+Usability Testing — real users test whether they can use the site.
+UAT (User Acceptance Testing) — final testing where the client or stakeholders approve.
+Acceptance Criteria — conditions that must be met for approval.
+Cross-Browser Testing — testing in Chrome, Firefox, Safari and Edge.
+Regression Testing — making sure new changes do not break existing features.
+Bug Report — a documented problem with steps to reproduce it and its impact.
+Project Scope — what is included and not included.
+Stakeholder — a person with an interest in the project's success.
+Target Audience — the specific group who will use the site.
+Design Brief — one-page summary of goal, scope, timeline and budget.
+Budget — money allocated to the project.
+Timeline — schedule of start, end and key phases.
+Milestone — key checkpoint or deliverable.
+Critical Path — the longest sequence of tasks, which sets the minimum duration.
+Deliverable — a finished output that must be handed over, such as a page, design file or test report.
+
+What you are asked to do:
+Practice questions with correct answers and reasons:
+1. Site looks right in Chrome but broken in Safari: best method? d, Spot the Differences, because you compare a working and a broken version.
+2. A form's submit button does not trigger the JavaScript function: best method? c, Follow the Path, tracing click, event listener, function, result.
+3. The entire site fails to load: which method first? b, Top-Down: check whether the server is running, whether the internet works, and whether anything loads.
+4. Main difference between QA and usability testing? b, QA tests whether it works; usability tests whether users can use it.
+5. Main purpose of a test case? b, to document exactly how to test one feature with expected results.
+6. A login test expects a "Success" message; the form submits but no message appears. What is marked? b, FAIL, because the expected result was not met, and the actual result is written down.
+7. What is UAT? c, final testing where the client or stakeholders approve.
+8. Which is an acceptance criterion? b, "The website must load in under 3 seconds on all tested browsers", because criteria must be specific and measurable.
+9. What is project scope? c, what is and is not included.
+10. A client asks for features not in the agreement. This is? b, scope creep, which causes delays and budget problems.
+11. What is a stakeholder? b, someone with an interest in the project's success.
+12. What is the target audience? b, the specific group of people who will use the website.
+13. A design brief includes all of these EXCEPT? d, the developer's favorite color.
+14. What is a milestone? b, a key checkpoint or deliverable.
+15. Which tasks are on the critical path? c, the longest sequence of tasks that determines the minimum project time.
+
+Watch out for:
+Five common exam mistakes:
+1. Random guessing instead of a method; for a broken button, Follow the Path from click to event to function to DOM.
+2. Treating QA and usability testing as the same; QA is technical, usability is about users.
+3. Not writing test cases; document Test ID, Steps, Expected Result and Actual Result.
+4. Forgetting what is NOT in scope; listing exclusions prevents scope creep.
+5. No milestones or timeline; break the work into weeks such as design, development, then QA.
+Correction: FAIL goes in the Pass or Fail field; the Actual Result field describes what really happened, here that the form submitted but no success message appeared. The original question 6 asks what goes in "Actual Result" but gives FAIL as the answer.
+
+Connects to:
+Goes with the sprint04 slides and the sprint04 activity worksheet. Sprint05's Master Study Guide repeats these topics, though it describes Top-Down and Bottom-Up slightly differently.

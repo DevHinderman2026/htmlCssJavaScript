@@ -1,0 +1,55 @@
+Summary of: sprint02_Slides.md
+Course: HTML CSS JavaScript track
+Lesson: sprint02 Forms
+Type of document: slideshow
+
+In one sentence:
+A condensed slideshow on HTML forms covering the form element, GET versus POST, input types and labels, radio buttons versus checkboxes, dropdowns and textareas, fieldset and legend, buttons, and basic form CSS.
+
+Main ideas:
+1. What a form is. The form element collects user input and sends it to a server. It has two key attributes: action, the URL where the data is sent, and method, how it is sent (GET or POST). Forms are used for contact pages, registration, logins, surveys and searches.
+Code: <form action="process.php" method="POST">
+This opens a form that sends its data to process.php using the POST method.
+2. GET versus POST.
+- GET puts the data in the URL, where it is visible. It is limited in size, not secure, and bookmarkable. Use it for searches and filters.
+- POST puts the data in the request body, hidden from the URL. It allows larger data, is more secure, and is not bookmarkable. Use it for logins, sensitive data and registration.
+The examples show a search form (search.php, method GET, a text input named query) and a login form (login.php, method POST, a password input named password).
+3. Labels. A label is connected to an input by giving the label a for attribute that matches the input's id.
+Code: <label for="fname">First Name:</label> <input type="text" id="fname" name="fname">
+The label's for value "fname" matches the input's id "fname", so a screen reader announces "First Name" when the field gets focus.
+Labels matter for accessibility (screen readers), give a larger click or tap area on mobile, and improve the user experience.
+4. Common input types: text, email (example placeholder user@example.com), password, number (with min 0 and max 100 in the example), date, and tel (telephone).
+5. Radio buttons versus checkboxes. Radio buttons let the user pick exactly one option; checkboxes let the user pick several. The examples wrap each group in a fieldset with a legend: "Contact Method" with radio options Email and Phone (both name="contact"), and "Interests" with checkboxes Sports and Music (both name="interests"). Each input has its own id and a matching label. Key rule: radio buttons in one group share the same name; separate checkbox groups use different names.
+6. Dropdowns. A select element with an id and name holds option elements. The example "Grade Level" dropdown starts with an empty-value "-- Select --" option, then 9th, 10th and 11th grade with values 9, 10, 11.
+7. Textarea. A textarea is multi-line text, sized with rows (4 in the example) and cols (50), and paired with a label.
+8. Fieldset and legend. A fieldset groups related controls and its legend is the group's caption, for example a "Personal Info" group with name and email fields and a "Preferences" group. Benefits: better accessibility, clearer organization, easier CSS styling.
+9. Buttons. A button with type="submit" sends the form; type="reset" clears all fields; type="button" does nothing by itself and needs JavaScript. The tabindex attribute (tabindex="1") sets focus order and is rarely used. An input with type="submit" and a button with type="submit" do the same thing.
+10. Form styling basics. The sample CSS gives inputs, selects and textareas padding 8px, font-size 14px, a 1px solid light gray border and a 4px border-radius; makes labels display block with a 5px bottom margin and bold text; gives fieldsets a light border, 15px padding and 20px bottom margin; and makes legends bold and dark gray. Making labels display block puts each label on its own line above its field.
+11. Key takeaways: forms use form with action and method; GET for public data like searches, POST for secure data like logins; labels connect by for and id; radio means one choice, checkbox means many; fieldset and legend group controls; many input types exist; submit and reset control the form. For the state exam, focus on GET versus POST, fieldset and legend, and label connections.
+
+Key terms:
+form — element that collects input and sends it to a server.
+action — form attribute giving the URL that receives the data.
+method — form attribute, GET or POST.
+GET — sends data in the URL; visible, limited size, bookmarkable.
+POST — sends data in the request body; hidden from the URL, larger size.
+label — text tied to a form control; uses the for attribute.
+for — label attribute whose value matches the input's id.
+id — unique identifier of an element.
+name — identifies the field in submitted data; groups radio buttons.
+input type values — text, email, password, number, date, tel, radio, checkbox, submit, reset.
+select and option — a dropdown list and its choices.
+textarea — multi-line text field, sized with rows and cols.
+fieldset — groups related controls.
+legend — caption for a fieldset.
+tabindex — attribute that changes keyboard focus order.
+
+Watch out for:
+- Radio buttons with different names are not a group, so the user could pick more than one.
+- Every input needs a connected label; unlabeled fields are an accessibility failure.
+- A type="button" button does nothing unless JavaScript is attached.
+- Using tabindex with positive numbers is rarely a good idea; the slide itself says it is rarely used.
+- Correction: POST keeps data out of the URL but does not encrypt it; only HTTPS encrypts data on its way to the server (covered in sprint03). The slides call POST "more secure" only in that limited sense.
+
+Connects to:
+The html08 lesson on HTML forms covers the same material in the main track. The sprint02 study guide and task follow directly from these slides.

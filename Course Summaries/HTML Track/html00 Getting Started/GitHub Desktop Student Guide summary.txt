@@ -1,0 +1,48 @@
+Summary of: GitHub_Desktop_Student_Guide.md
+Course: HTML CSS JavaScript track
+Lesson: html00 Getting Started
+Type of document: walkthrough (first-day setup guide with a turn-in step)
+
+In one sentence:
+This guide walks you through installing Git, signing in to GitHub Desktop, creating a small test repository, adding one file in VS Code, committing it, publishing it to GitHub, and turning in the link.
+
+Main ideas:
+1. Three words to know before starting. A repository (repo) is a project folder that GitHub keeps track of. A commit is a save point, a snapshot of your files at one moment. A push sends your commits from your computer up to GitHub.
+2. Install Git first. Download Git for Windows from git-scm.com (the install page for Windows) and install it using all the default settings.
+3. Open the GitHub Desktop app on your computer.
+4. Sign in from inside the app, not by typing github.com yourself. The app opens a browser for you.
+5. Check whose account is already signed in. On a shared lab computer, someone else may still be logged in. Go to File, then Options, then Accounts. If your own username is shown, you are set and can skip ahead to creating the test repository. If it is blank or shows someone else, choose Sign out and then sign in as yourself. Also make sure the web browser is not logged in to someone else's GitHub account, because the Authorize step will use whatever account the browser has. Check the username on the Authorize screen before you approve it.
+6. Signing in, step by step: in File, Options, Accounts, next to GitHub.com choose Sign in, then Continue with browser. In the browser choose Authorize, then return to the app. You may also be asked something like "sign into electron"; approve it. Your username should now appear under Accounts. Close the options window.
+7. Create the test repository. On the start screen choose "Create a New Repository on your local drive" (or File, New Repository). Fill it in exactly: Name is github-desktop-test. Description is "Getting familiar with GitHub Desktop" (optional). Leave the local path at its default, usually Documents then GitHub. Check the box "Initialize this repository with a README." Set Git ignore to None and License to None. Then choose Create Repository. At this point the repo exists only on your computer; it reaches GitHub at the Publish step.
+8. Open the repo in VS Code using the "Open in Visual Studio Code" button in GitHub Desktop. If VS Code says it is in Restricted Mode, choose Manage, then Trust, so you are allowed to edit.
+9. In the VS Code file sidebar, create a new file (right-click and choose New File, or use the new file button) named exactly githubDesktopTest.md. Type a couple of lines in it, for example a heading line reading "GitHub Desktop Test" and a sentence saying the file was pushed with GitHub Desktop. Save with Ctrl+S.
+10. Git status letters in VS Code. After saving, a letter appears next to the file name. U means Untracked: a new file Git is not tracking yet. M means Modified: a tracked file has been changed. A means Added: the file is staged and ready to commit. D means Deleted: a tracked file was removed. R means Renamed. The guide marks U, M, A, and D as the most common. The source also uses colors for these letters, but the letter itself tells you everything.
+11. Commit the change. Switch back to GitHub Desktop. The left side lists your changes, with githubDesktopTest.md marked as a brand-new file, and the right side shows the added lines. In the commit message box at the bottom left, type a short message such as "Add GitHub Desktop test file", then choose "Commit to main".
+12. Publish (push) to GitHub. Choose the Publish repository button at the top. Leave the name as github-desktop-test. Uncheck "Keep this code private" so the teacher can open your link. If your class rule is private repos, leave it checked and add the teacher as a collaborator; the teacher will explain how. Then choose Publish repository. After this first publish, that same button becomes "Push origin" for all future changes.
+13. Get your link. Choose "View on GitHub" (in the Repository menu or on the right side), which opens the repo in a browser. Copy the web address, which looks like https://github.com/YOUR-USERNAME/github-desktop-test.
+14. Explore GitHub Desktop, since you will use it all year. Find the History tab (list of every commit, including who made each one, when, and exactly what changed), the Current Repository drop-down (how you switch between projects), the Undo button that appears right after a commit but before a push (your safety net), and Fetch or Push origin (Fetch checks GitHub for changes; Push sends your local commits up).
+
+Key terms:
+Repository (repo) — a project folder that Git and GitHub track.
+Commit — a saved snapshot, or save point, of your files, with a message describing the change.
+Push — sending your local commits up to GitHub.
+Publish repository — the first-time upload of a new local repo to GitHub; afterwards the button becomes Push origin.
+Push origin — the button used to push later commits to the existing GitHub repo.
+Fetch — checks GitHub for changes you do not have locally.
+Restricted Mode — a VS Code safety mode; choose Trust to allow editing.
+U, M, A, D, R — Git status letters shown next to file names in VS Code.
+
+What you are asked to do:
+1. Complete steps 2 through 13 above: install Git, sign in as yourself, create github-desktop-test with a README, add githubDesktopTest.md, commit, and publish.
+2. Paste your repo link into the Google Classroom assignment and submit.
+3. Then explore the History tab, Current Repository drop-down, Undo button, and Fetch or Push origin.
+
+Watch out for:
+- On a lab computer, someone else may already be signed in, either in the app or in the browser. Always verify the username before authorizing.
+- The file name must be typed exactly, including capital letters: githubDesktopTest.md.
+- Creating the repo does not put it on GitHub. Only Publish (and later Push origin) does.
+- A private repo will stop the teacher from opening your link unless you add them as a collaborator.
+- Undo is only available after committing and before pushing.
+
+Connects to:
+The VSCode and GitHubDesktop Walkthrough in this same folder continues directly from this test repo. The AI track's ai00 lesson (Your First Page) uses the same GitHub Desktop push loop, with Claude building the page.

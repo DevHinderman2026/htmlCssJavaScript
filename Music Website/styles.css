@@ -1,0 +1,177 @@
+/* ==========================================================================
+   The Artist Who Only Uses Ears - Site Stylesheet
+   Written as a single EXTERNAL stylesheet (Lesson 05, CSS method #3),
+   linked from every page with:  <link rel="stylesheet" href="styles.css">
+   Color scheme: Deep Tide (dark and atmospheric).
+   ========================================================================== */
+
+/* -----------------------------------------------------------
+   ELEMENT SELECTORS
+   These target every tag of that type, everywhere on the page.
+   ----------------------------------------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1d26;          /* hex color: very dark teal-navy, deep water at night */
+    color: rgb(224, 242, 241);          /* rgb color: pale seafoam text */
+    line-height: 1.6;                   /* text property: line-height */
+    margin: 0;
+    padding: 0 1.5rem 3rem;
+}
+
+h1, h2 {
+    font-family: 'Oswald', Arial, sans-serif;   /* Google Font, headings only */
+}
+
+h1 {
+    letter-spacing: 2px;                /* text property: letter-spacing */
+    font-weight: 700;                   /* font property: font-weight */
+}
+
+h2 {
+    color: rgb(79, 209, 197);           /* rgb color: bright aqua */
+    letter-spacing: 1px;
+}
+
+a {
+    color: rgb(154, 216, 255);          /* rgb color: light sky blue */
+    text-decoration: underline;         /* text property: text-decoration */
+}
+
+a:focus {
+    outline: 3px solid white;           /* named color, for keyboard focus */
+    outline-offset: 2px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+caption {
+    text-align: left;                   /* text property: text-align */
+    padding-bottom: 0.5rem;
+}
+
+th, td {
+    border: 1px solid #1f4a5a;          /* hex color: muted dark teal */
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #1f4a5a;
+    text-align: center;
+}
+
+/* -----------------------------------------------------------
+   CASCADE & SPECIFICITY EXAMPLE
+   "a" above is an element selector: it underlines every link.
+   "nav a" below is more specific (it only matches links inside
+   a <nav>), so inside the navigation it wins and removes the
+   underline. This is the same last-rule-and-specificity rule
+   from the slideshow, just written with a real selector chain
+   instead of a class.
+   ----------------------------------------------------------- */
+
+nav a {
+    text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+/* -----------------------------------------------------------
+   ID SELECTOR
+   #main-content is unique to one element per page (it's also
+   the skip-link's jump target), so this rule only ever matches
+   once on any given page.
+   ----------------------------------------------------------- */
+
+#main-content {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+/* -----------------------------------------------------------
+   CLASS SELECTORS
+   Reusable rules, applied to any element carrying the class.
+   ----------------------------------------------------------- */
+
+.skip-link {
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    background: black;                  /* named color */
+    color: white;                       /* named color */
+    padding: 0.75rem 1rem;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+main:focus {
+    outline: none;
+}
+
+.page-overview {
+    border-left: 4px solid #4fd1c5;     /* hex color: bright aqua accent */
+    padding-left: 1rem;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+/* -----------------------------------------------------------
+   MENU BUTTON
+   The Menu button opens and closes the main navigation links.
+   menu.js adds the behavior; these rules set its look.
+   ----------------------------------------------------------- */
+
+.menu-toggle {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    background-color: #1f4a5a;          /* muted dark teal */
+    color: rgb(224, 242, 241);          /* pale seafoam text */
+    border: 2px solid #4fd1c5;          /* bright aqua outline */
+    padding: 0.5rem 1.25rem;
+    cursor: pointer;
+}
+
+.menu-toggle:focus {
+    outline: 3px solid white;
+    outline-offset: 2px;
+}
+
+/* When the menu is open, the button switches to aqua with dark text. */
+.menu-toggle[aria-expanded="true"] {
+    background-color: #4fd1c5;
+    color: #0b1d26;
+}

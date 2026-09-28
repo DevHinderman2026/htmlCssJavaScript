@@ -1,0 +1,39 @@
+Summary of: html09b_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html09 JavaScript
+Type of document: task starter file
+
+In one sentence:
+This starter HTML page is Task 09b, functions practice: following TODO comments, you write and test six small functions that take parameters and return values.
+
+Main ideas:
+1. The page is a minimal HTML5 document titled "Task 09b - Functions Practice." The body has an h1, "Task 09b: JavaScript Functions Practice," and a paragraph telling you to complete the functions and test them in the console (F12).
+2. The script element holds TODO comments with blank lines for your code. One function is partly started for you: an empty function named addNumbers with empty parentheses (no parameters yet) and a comment inside saying to add the parameters together and return the result.
+3. Every function follows the same pattern: define it with parameters, return a value, then call it and print the result with console.log() to test it.
+
+Key terms:
+function — a named, reusable block of code.
+parameter — a name listed in the function's parentheses that receives an input.
+argument — the actual value you pass when calling the function.
+return — sends the function's result back to where it was called.
+template literal — a backtick string that inserts values with a dollar sign and curly braces; several TODOs ask for one.
+calling a function — running it by writing its name followed by parentheses with arguments.
+
+What you are asked to do:
+The TODO comments, in order:
+1. Write a function called greetUser with one parameter, name, that returns a greeting using a template literal, such as "Hello, Maya!". Then test it by calling it with a name and printing the result with console.log().
+2. Finish addNumbers so it takes two parameters and returns their sum. Test it with a few different pairs of numbers.
+3. Write a function called buildStory with three parameters (an adjective, a noun, and a verb) that returns a template literal sentence like "The purple elephant decided to dance!". Test it with different words.
+4. Write a function called calculateArea that takes width and height and returns the area, which is width times height. Test it with different dimensions.
+5. Write a function called createMessage that combines a name and a grade into a template literal like "Alex earned an A in Web Design!". Test it with several names and grades.
+6. Write a "more complex" function called announceEvent with the parameters eventName, date, and location, returning something like "The Web Dev Conference is on 3/15 at the Career Center!". Test it.
+7. Bonus: write a function with 4 parameters that builds a Mad Libs sentence, and test it several times with different inputs.
+
+Watch out for:
+- The provided addNumbers has empty parentheses; you must add two parameter names inside them, or the function has nothing to add.
+- A function must use return to hand back a value; without return, logging the call prints undefined.
+- Defining a function does nothing by itself; each TODO also asks you to call and test it.
+- If you prefer, the same sentences can be built with concatenation using the plus sign, which the Unit Guide says is the tested form, though these TODOs specifically ask for template literals.
+
+Connects to:
+Part 6 of the html09 Walkthrough (functions), and the Mad Libs DIY task, which the bonus previews.

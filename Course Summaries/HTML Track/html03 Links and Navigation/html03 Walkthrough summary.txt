@@ -1,0 +1,54 @@
+Summary of: html03_Walkthrough.md
+Course: HTML CSS JavaScript track
+Lesson: html03 Links and Navigation
+Type of document: walkthrough
+
+In one sentence:
+This guided build creates a three-page "Travel Adventure" mini-site (index.html, about.html, contact.html) with shared navigation, jump links to sections, email and phone links, a download link, and testing steps.
+
+Main ideas:
+Part 1, the home page, index.html:
+1. Start with the HTML5 structure: doctype, html lang en, head with meta charset, viewport meta tag, and the title "Travel Adventure - Home". In the body, a comment, then a header with id "top" containing an h1 "Travel Adventure" and a nav of three links: Home to index.html, About Us to about.html, Contact to contact.html. Then an empty main, then a footer with the line "copyright 2024 Travel Adventure. All rights reserved." and a second nav with the same three links. Navigation appears in both the header and the footer.
+2. Replace the placeholder comment in main with three sections, each with an id, an h2, and a paragraph: id "featured" (Featured Destinations), id "packages" (Our Packages), and id "testimonials" (What Our Travelers Say).
+3. Add a jump navigation right after main opens: a nav with id "page-nav" holding a paragraph "Jump to:" and an unordered list of four links to #featured, #packages, #testimonials, and #top (Back to Top). Every section has an id, and the links reach them with the number sign plus the id.
+Code: <li><a href="#packages">Our Packages</a></li>
+This list item holds a link that jumps to the section whose id is packages.
+4. Test: save, open in a browser, and use each jump link. The page should move to that section, and the address should end with the fragment, such as index.html#featured. Back to Top should return to the header with id "top".
+Part 2, the about page, about.html:
+5. Same head (title "Travel Adventure - About Us") and the same header nav and footer as the home page. In main: an h2 "About Our Company" and a paragraph saying the company was founded in 2015 to inspire wanderlust; a section with id "team" (h3 Our Team); a section with id "mission" (h3 Our Mission, about sustainable and ethical travel); and a nav of jump links to #team and #mission plus a "Back to Home" link to index.html. Save it in the same folder as index.html.
+6. Test navigation between pages: from index.html, choose About Us, then Home. These links are relative paths such as about.html because both files are in the same folder.
+Part 3, the contact page, contact.html:
+7. Same head (title "Travel Adventure - Contact Us"), header, and footer. In main: an h2 "Contact Us" and a welcome paragraph. A section with id "contact-info" (h3 Contact Information) contains a plain email link to info@traveladventure.com, a "Send us an email" link to support@traveladventure.com with the subject "Travel Question" (the space written as %20), and a phone link using the tel: protocol. A section with id "booking" (h3 Booking Information) contains a download link to brochure.pdf. A nav jumps to #contact-info and #booking and back to index.html.
+Code: <a href="tel:+1-555-0123">(555) 012-3456</a>
+This is a phone link; on a device that can call, activating it starts a call to the number in the href.
+Code: <a href="brochure.pdf" download>Download Brochure (PDF)</a>
+This link downloads brochure.pdf instead of opening it.
+Correction: a tel link's href number should match the number shown in the link text; this example dials 555-0123 but displays (555) 012-3456, so make both the same number in your page. Heads up: no brochure.pdf is provided, so put any small PDF named brochure.pdf in the same folder or the download link will find nothing.
+8. Test the email link: your default email app should open with the To field filled in. mailto only opens the email program; it never sends anything by itself.
+Part 4, review:
+9. Test every link: from each page you should reach the other two; the jump links on each page should work; the email link should open your email app; Back to Top should work on index.html. List any that fail so the class can fix them together.
+10. Optional improvement: on the contact page, before the footer, add a paragraph about a partnership with an external link to https://www.adventureguides.com using target="_blank", so the outside site opens in a new tab and visitors do not leave yours.
+11. Summary: the finished site uses absolute and relative links, page anchors and fragment identifiers, mailto email links, a download link, and consistent navigation. Save all three files in the same folder.
+
+Key terms:
+Relative link — a path like about.html for files in the same folder.
+Absolute link — a full address like https://www.adventureguides.com.
+id — unique name on a section that jump links target.
+Fragment identifier — the number sign plus id, such as #featured.
+Jump navigation — a list of links to sections on the same page.
+mailto: — opens the email app with the address filled in.
+tel: — phone link protocol.
+download — attribute that downloads the linked file.
+target="_blank" — opens the link in a new tab.
+
+What you are asked to do:
+Build all three pages as described (the "Try This" steps), test the jump links, page-to-page navigation, and email link, and keep all three files in one folder. The external partner link is optional.
+
+Watch out for:
+Troubleshooting from the document:
+- If links do not work, check that file names match exactly (they can be case-sensitive), that files are in the same folder, and that ids are spelled the same in the link and the target.
+- If the email link does not open an email app, your computer may not have a default email client; the link itself still works.
+- To link from a page in a subfolder back up to the home page, use ../ before the file name, as in ../index.html.
+
+Connects to:
+Follows the html03 Slides; the html03 DIY Task has you build your own three-page site the same way.

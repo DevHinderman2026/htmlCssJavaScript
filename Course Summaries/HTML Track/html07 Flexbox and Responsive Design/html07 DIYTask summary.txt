@@ -1,0 +1,58 @@
+Summary of: html07_DIYTask.md
+Course: HTML CSS JavaScript track
+Lesson: html07 Flexbox and Responsive Design
+Type of document: DIY task
+
+In one sentence:
+This independent project asks you to build a fully responsive, mobile-first photo gallery website of at least six images using flexbox, CSS Grid, or both, plus a reusable page template file as a bonus requirement.
+
+Main ideas:
+1. Estimated time is 45 to 60 minutes, intermediate difficulty. Skills: responsive design, flexbox or grid, media queries, responsive images. You choose the layout approach.
+2. Bonus requirement (Ohio competency 6.5.6): before styling, save a copy of your bare page skeleton (header, nav, main, footer, linked stylesheet, viewport meta tag) as template.html. Every new page you make for the rest of the year starts by copying it; that is what a page template is.
+3. Suggested page structure: a header with an h1 gallery title and a subtitle paragraph; a main containing an optional nav with class filters holding buttons (All, Category 1, Category 2) and a div with class gallery holding photo-card divs, each with an img and a caption paragraph; and a footer with copyright and contact info.
+4. Step-by-step guide: (1) plan for 5 minutes: sketch the layout, choose flexbox, grid, or both, pick colors, plan breakpoints; (2) HTML for 15 minutes: semantic structure, viewport tag, at least 6 photos, alt text, captions; (3) basic styles for 10 minutes: body font and background, header and footer, card background, rounded corners, shadow; (4) gallery layout for 15 minutes: flexbox or grid, gap, photo containers, responsive images; (5) media queries for 10 minutes: 1, 2, then 3 or more columns, testing each; (6) polish for 10 minutes: hover effects, extra features, final tweaks, testing.
+5. Minimal flexbox gallery example. By default the gallery is display flex, flex-direction column, gap 20px, so photos stack. At min-width 768px it becomes flex-direction row with flex-wrap wrap, and each photo-card gets flex: 0 1 calc(50% - 10px), meaning do not grow, may shrink, start at half the width minus 10 pixels, which gives two per row with room for the 20 pixel gap. At min-width 1024px each card becomes calc(33.333% - 14px), three per row.
+6. Minimal grid gallery example. The gallery is display grid, grid-template-columns 1fr (one column), gap 20px. At 768px it becomes repeat(2, 1fr); at 1024px, repeat(3, 1fr).
+7. Images: the lesson's images folder has ready-made placeholders photo-1.png through photo-6.png and more, used like src="images/photo-1.png". You can also use your own photos or screenshots saved in your images folder, or free stock photos from Unsplash, Pexels, or Pixabay, downloaded and saved locally rather than linked.
+8. Common issues and fixes: images not scaling on mobile, check max-width 100 percent and height auto; layout breaking at some sizes, test exactly at 375, 768, and 1024 pixels; text too small on mobile, use mobile-first with larger mobile font sizes, adjusting down on desktop; unequal item widths in flexbox, use flex-basis or percentage widths consistently; uneven gaps in grid, use the gap property instead of margins.
+9. Ideas. Themes: travel, products, portfolio or artwork, nature and wildlife, food, student projects, a local business. Polish: shadows on hover, brighter image on hover, smooth color transitions, animated borders or underlines, gradient overlays, icon overlays on hover.
+
+Key terms:
+responsive design — a layout that adapts to any screen width
+mobile-first — one-column phone styles as the default, then min-width media queries for bigger screens
+breakpoint — 768px for tablet and 1024px for desktop in this project
+flex-wrap: wrap — lets flex items flow onto new rows
+flex-basis — an item's starting size before growing or shrinking
+flex: 1 — makes items share space equally
+calc() — CSS math, used to subtract the gap from percentage widths
+grid-template-columns — sets grid column sizes
+repeat() — repeats a column size, as in repeat(3, 1fr)
+auto-fit and minmax() — let a grid decide how many columns fit, for example repeat(auto-fit, minmax(200px, 1fr)), meaning as many columns as fit, each at least 200 pixels wide
+alt text — text description of an image read by screen readers
+page template — a bare starter file you copy for every new page
+
+What you are asked to do:
+Section 1, HTML structure: valid HTML5 with doctype, meta tags, and semantic elements; the viewport meta tag; at least 6 photos; a gallery wrapper with individual photo items; captions or titles; proper alt text on every image.
+Section 2, layout, choose one option:
+- Option A, flexbox: display flex on the gallery container; flex-wrap for multiple lines; gap for spacing; justify-content for alignment; responsive items using flex-basis or flex 1.
+- Option B, CSS Grid: display grid on the gallery; grid-template-columns with responsive units; gap; repeat() with auto-fit or auto-fill, for example repeat(auto-fit, minmax(200px, 1fr)).
+- Option C, combination: grid for the overall page (header, gallery, footer) and flexbox for gallery items or navigation.
+Section 3, responsive mobile-first: mobile default under 768px is 1 column with full-width images; tablet 768px and up is 2 columns; desktop 1024px and up is 3 or 4 columns; use @media (min-width: Xpx) queries; test at least three breakpoints.
+Section 4, responsive images: every image uses max-width 100%, height auto, and display block, and scales properly at every size.
+Section 5, styling: clean professional look; a consistent color scheme of at least 3 colors; proper spacing and padding; hover effects on photos (shadow, scale, or opacity change); readable typography with proper line-height.
+Section 6, additional features, choose at least 2: photo hover effect (scale, shadow, overlay); lightbox or modal on click; category or filter buttons; search; star rating or like button; animated transitions; dark mode toggle; lazy loading images (advanced).
+Bonus: template.html as described above.
+Testing checklist before submitting: valid HTML5 (no errors in the browser console); viewport tag present; mobile at 375px shows 1 readable column; tablet at 768px shows 2 columns; desktop at 1024px shows 3 or more; images scale at all sizes; no horizontal scrollbars at any size; text readable on mobile; hover effects smooth; all links and buttons work; footer reachable at every size.
+Submission: a folder named html07_DIYTask_YourName containing index.html (your HTML), styles.css (your CSS), README.md (a brief description covering layout approach used, color scheme explanation, features implemented, challenges and how you solved them, and browser compatibility notes), and optionally an images folder.
+Rubric criteria (the source gives no point values): HTML Structure (valid HTML, viewport tag, semantic elements); Responsive Layout (flexbox or grid working at 3 or more breakpoints); Media Queries (mobile-first, min-width breakpoints, correct transitions); Responsive Images (max-width 100%, height auto, display block); Styling and Polish (colors, typography, spacing, hover effects); Additional Features (at least 2); Testing and Performance (no scrollbars, smooth interactions, works on mobile).
+
+Watch out for:
+- Always write meaningful alt text; it is a requirement and a key accessibility item.
+- Use gap, not margins, for even spacing.
+- Download stock photos and save them locally rather than linking to the websites.
+Heads up: the testing checklist says to check the browser console for errors, but dev tools are disabled on school computers. Check your HTML with the W3C validator at validator.w3.org instead.
+Heads up: the lightbox, filter buttons, search, like button, and dark mode toggle need JavaScript, which comes later in html09 JavaScript. To meet the "at least 2 features" rule now, pick CSS-only ones such as the photo hover effect and animated transitions.
+Heads up: the example folder structure shows names like photo1.jpg, but the provided images are named photo-1.png. Use the real file names in your src values, for example images/photo-1.png.
+
+Connects to:
+Builds directly on html07 Walkthrough (the same gallery at three breakpoints). Option B's auto-fit and minmax come from html07 ExtensionTask.

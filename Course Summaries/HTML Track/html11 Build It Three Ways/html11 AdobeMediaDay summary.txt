@@ -1,0 +1,32 @@
+Summary of: html11_AdobeMediaDay.md
+Course: HTML CSS JavaScript track
+Lesson: html11 Build It Three Ways
+Type of document: lesson plan (placeholder)
+
+In one sentence:
+This is a placeholder outline for segment 11e, media day, where you optimize your site's images for the web and make an SVG logo; the full walkthrough is waiting on which Adobe tools students will have.
+
+Main ideas:
+1. Status: this file will be replaced once the teacher confirms which Adobe version students have: desktop apps, Photoshop and Illustrator on the web, or Adobe Express. The lesson's shape stays the same regardless of tool.
+2. Part 1, export-for-web images (about half the period). Take the three heaviest images from your hand-coded site. Resize each to the size it actually displays at, compress it, and choose the right format: JPG for photos, PNG for images with sharp edges, SVG for vector graphics. Record the file sizes before and after, and connect this to the html10 slide on bandwidth. Squoosh, at squoosh.app, is confirmed available no matter what the Adobe answer is; it compares quality side by side with a slider, and needs no login and no developer tools.
+3. Part 2, an SVG logo (about half the period). Make a simple logo for your client from shapes and text. Export it as SVG, put it in your hand-coded site's header, then open the .svg file in VS Code and read it; an SVG file is markup, like HTML, so you can read it.
+
+Key terms:
+Web-optimized image — an image resized and compressed so it loads quickly.
+Compression — reducing file size, sometimes trading a little quality.
+JPG — format best for photos.
+PNG — format best for images with sharp edges, such as screenshots or text.
+SVG — Scalable Vector Graphics; a vector image written as text markup that stays sharp at any size.
+Squoosh — a free web tool at squoosh.app for compressing images.
+
+What you are asked to do:
+- Optimize your three heaviest images and record before and after sizes.
+- Create an SVG logo and use it in your hand-coded site's header.
+- Commit the optimized images (replacing the heavy ones), the logo SVG in use, and a note about the size savings in your commit message.
+
+Watch out for:
+- Because this file is a placeholder, the tool steps may change; the deliverables described here are the stable part.
+- Accessibility reminder: a logo in the header still needs a text alternative, such as alt text on an img element or a title inside the SVG, so screen reader users know what it is.
+
+Connects to:
+html10 (the bandwidth slide) and the hand-coded build from segment 11b.

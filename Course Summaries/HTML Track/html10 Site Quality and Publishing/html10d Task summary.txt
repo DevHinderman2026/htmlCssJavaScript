@@ -1,0 +1,39 @@
+Summary of: html10d_Task.md
+Course: HTML CSS JavaScript track
+Lesson: html10 Site Quality and Publishing
+Type of document: task
+
+In one sentence:
+In this 40 to 45 minute task (still titled Task 13b) you validate the HTML and CSS of one of your own earlier projects, test it in at least three browsers and in mobile view, fix what you find, and write a short summary report.
+
+Main ideas:
+1. Validation means running your code through the official W3C validators and fixing errors until there are none. Common HTML errors mentioned are unclosed tags, missing alt attributes and invalid nesting. CSS warnings are not errors but are worth knowing about.
+2. Cross-browser testing means opening the same project in several browsers (Chrome, Firefox, and Safari, Edge or a mobile browser if available) and checking loading, links, images, layout, colors and fonts, interactive elements and console errors in each.
+3. Mobile testing uses DevTools responsive mode: press F12 (Cmd plus Option plus I on Mac), turn on the device toolbar, and test at a 375 pixel wide mobile view.
+
+Key terms:
+W3C HTML validator — validator.w3.org, which checks HTML against the standard.
+W3C CSS validator — jigsaw.w3.org/css-validator, which checks CSS.
+Direct Input — the validator option for pasting code.
+warning — a validator note that is not an error but may point to a problem.
+console — the DevTools tab (F12, then Console) that lists JavaScript errors.
+responsive mode or device toolbar — DevTools feature that simulates phone and tablet screen sizes.
+
+What you are asked to do:
+Part 1: choose one of your previous projects (the sheet says from Unit 1 to 4, for example a portfolio, restaurant page, quiz game or product page) and record its name and every file name.
+Part 2, HTML validation: go to validator.w3.org, choose Direct Input, paste your HTML, click Check. Record whether it had no errors, some or many, and list the errors. Fix each one and re-validate until you have zero errors. Record how many you fixed and what the most common errors were.
+Part 3, CSS validation: go to jigsaw.w3.org/css-validator, choose Direct Input, paste your CSS (from the style tag or .css file), click Check. Record the result (no errors, some errors, or warnings only), list errors, fix and re-validate, record how many you fixed, and note any warnings.
+Part 4, cross-browser testing: test in at least 3 browsers from Chrome, Firefox, Safari, Edge and a mobile browser. For each browser, record: page loading (fully, partially, errors); links (all work, some broken, CSS not loading); images (all display, some missing, none); layout (correct, slightly different but readable, broken); colors and fonts (correct, slight acceptable differences, major differences); buttons and interactive elements (all work, some issues, not working); console errors (none, minor warnings, errors). Describe any errors.
+Part 5, mobile testing in DevTools responsive mode at 375 pixels wide: check and record whether the layout adapts, text is readable, buttons are easy to tap, navigation works, and images scale properly. List mobile issues.
+Part 6, summary report: numbers of HTML errors fixed, CSS errors fixed and cross-browser issues found; each browser tested with a score out of 10; a mobile responsiveness score out of 10; what went well and what needed fixing; and a short written reflection on testing and validation (prompts in the original).
+Submission checklist: all HTML validation errors fixed; all CSS validation errors fixed; tested in at least 3 browsers; tested mobile responsiveness; filled out all browser checklists; wrote a summary of findings; project now works across browsers.
+Extra credit: screenshots of your HTML validation results, your CSS validation results, your project in 2 or more browsers side by side, and your project in mobile view, collected in a file as evidence.
+
+Watch out for:
+- The goal is zero validation errors, not just fewer.
+- If CSS does not load in one browser, the link path is a likely cause (the checklist itself suggests this).
+- Heads up: "Unit 1 to 4" is leftover older course numbering. By default pick a substantial project from an earlier html lesson (html01 to html09), and check with Mr. McMaster only if you want to use something else.
+- No point values are given.
+
+Connects to:
+html10 PublishWalkthrough Parts 2 and 3 (the same steps on a test page) and html10 PublishDIYTask (a larger version that ends in deployment).

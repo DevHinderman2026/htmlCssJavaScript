@@ -1,0 +1,38 @@
+Summary of: html06a_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html06 Box Model and Spacing
+Type of document: task starter file
+
+In one sentence:
+This starter page for sub-lesson 06a has all its HTML written but empty CSS rules, and TODO comments tell you exactly which box model values to fill in and which class names to add.
+
+Main ideas:
+1. The page title is "HTML06a Task - Box Model and Spacing." It uses an internal style sheet (a style element in the head), so all your CSS goes in the same file.
+2. Already styled for you: the body uses Arial, 20 pixels of padding, and a light gray background (#f5f5f5); the h1 is dark gray (#333) and centered.
+3. The page content, in reading order: an h1 heading "HTML06a Task: Box Model and Spacing"; a div with class box-model-demo containing an h2 "Understanding Box Model" and a paragraph reminding you to turn on the X-ray trick; a centered h2 "Box Model Variations"; a div with class boxes-container holding three plain divs (Box 1 Small Spacing, Box 2 Medium Spacing, Box 3 Large Spacing), each with an h3 and a paragraph listing its padding, margin, and border sizes; and a closing gray note saying to add * { outline: 1px solid red; } to the top of your CSS to see every box edge.
+4. The point of the exercise is to see how different padding, margin, and border sizes change the space each box takes up, and to check it with the X-ray trick.
+
+Key terms:
+box-sizing: border-box — makes width include padding and border
+margin: 30px auto — 30 pixels top and bottom; auto on left and right splits the leftover space evenly, which centers a block that has a set width
+border-bottom — a border on only the bottom edge, used here as a divider under the title
+text-align: center — centers inline content; here it is suggested for centering the boxes in their container
+class attribute — how HTML elements are connected to CSS rules such as .box-1
+
+What you are asked to do:
+Every TODO comment in the file, in order:
+1. At the top of the style sheet, add a universal box-sizing: border-box rule.
+2. Style .box-model-demo with width 300px, padding 20px, border 2px solid #333, margin 30px auto (which centers it), and background-color #fff.
+3. Style .box-model-demo h2 (the title) with margin-top 0, padding-bottom 10px, border-bottom 1px solid #ddd, and color #1976d2.
+4. Style .box-model-demo p (the description) with margin 0, padding 15px 0 (15 on top and bottom, 0 on the sides), and color #555.
+5. Create three box classes. box-1: padding 10px, margin 5px, border 1px solid #1976d2. box-2: padding 20px, margin 10px, border 2px solid #f57c00. box-3: padding 30px, margin 15px, border 3px solid #7b1fa2. All three get width 200px and background-color #f9f9f9. The empty rules .box-1, .box-2, and .box-3 are already in the file waiting for styles.
+6. Style .boxes-container with text-align center to align the boxes, and add space between boxes if needed.
+7. In the HTML, add class="box-1" to the first of the three plain divs, class="box-2" to the second, and class="box-3" to the third. Each has a TODO comment right above it.
+
+Watch out for:
+- The three box divs have no class yet, so your .box-1, .box-2, .box-3 rules will do nothing until you add the class attributes.
+- text-align center on the container only lines the boxes up side by side if they are inline or inline-block; plain divs are block and will still stack. The source just says "if needed," so decide whether to add display inline-block.
+- Use the X-ray trick to confirm the spacing, then remove it.
+
+Connects to:
+Uses the card-building steps from html06 Walkthrough Part 1 and the shorthand rules from html06 StudyGuide.

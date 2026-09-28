@@ -1,0 +1,59 @@
+Summary of: html04_Slides.md
+Course: HTML CSS JavaScript track
+Lesson: html04 Images Media and Tables
+Type of document: slideshow
+
+In one sentence:
+This slideshow introduces the three parts of Lesson 04: putting images on a page (04a), playing video and audio (04b), and building data tables (04c), with accessibility as the common thread.
+
+Main ideas:
+1. The image element. The img tag (written <img>) places a picture on the page. It has two required attributes: src, the path to the image file, and alt, a text description of the picture. It has no closing tag.
+Code: <img src="images/sunset.jpg" alt="Orange sunset over mountains">
+This line shows the image file sunset.jpg from the images folder and gives it a clear, descriptive alt text.
+2. Why alt matters. Alt text is what a screen reader speaks instead of the picture, it helps search engines understand the image (SEO), and it is shown as a fallback if the image fails to load.
+3. Image formats. JPG is for photos and realistic images; files are small, but the compression is lossy, meaning some quality is thrown away. PNG is for graphics and logos and supports a transparent background; it is lossless but larger than JPG. SVG is a vector format for icons and scalable graphics; it stays crisp at any size but is not for photos. WebP is a modern format that is smaller than JPG or PNG, but older browsers may not support it.
+4. Image sizing. The width and height attributes set the size in pixels. The slides say to always set them, because the browser can reserve the space before the image finishes loading.
+Code: <img src="images/photo.jpg" alt="Description" width="400" height="300">
+This shows the image at 400 pixels wide by 300 pixels tall.
+5. Letting an image shrink on small screens. A second version adds a style attribute with max-width: 100% and height: auto. The slides point out that this is CSS, which starts in Lesson 05; for now students just copy it when needed.
+6. Figure and figcaption. The figure element (<figure>) is a container that holds an image together with its caption, and the figcaption element (<figcaption>) holds the caption text. This is the semantic way to tie a caption to its image. The example is a photo of blue wireless headphones with the caption about a 20-hour battery.
+7. The video element. The video tag (<video>) plays a video file stored with your site. The controls attribute shows play, pause, and volume buttons. Inside it go one or more source tags (<source>), each with a src path and a type, so the browser can pick a format it supports. MP4 is the most compatible format and WebM is a modern alternative. Text placed inside the video element after the sources, such as "Your browser does not support HTML5 video.", is shown only if the browser cannot play video.
+8. The audio element. The audio tag (<audio>) works the same way for sound: controls gives play, pause, volume, and a progress bar; source tags list the files. MP3 (type audio/mpeg) is the most compatible and OGG (type audio/ogg) is the alternative. Audio is a lightweight choice for voice or music.
+9. Embedding external media. The iframe element (<iframe>) shows content from another website, such as a YouTube video. Its src must be the embed URL (it contains /embed/ followed by the video ID), not the normal share URL. The title attribute describes the frame for accessibility, and allowfullscreen lets the viewer go full screen. The example also sets width 560 and height 315.
+10. Table structure. The table element (<table>) is the container. Each row is a tr element (<tr>). Header cells use th (<th>), which browsers show bold and centered by default. Normal data cells use td (<td>). The caption element (<caption>) gives the table a title. The example is a monthly sales report with columns Month, Sales, and Growth and a January row.
+11. Merging cells. The colspan attribute makes one cell stretch across several columns (for example a "Contact Info" header spanning 2 columns). The rowspan attribute makes a cell stretch down several rows (for example a "Group A" cell spanning 3 rows).
+12. Accessible tables. Always use th for header cells, and add scope="col" when the header labels a column or scope="row" when it labels a row, so screen readers can announce which header goes with each cell.
+13. Key takeaways: write descriptive alt text and choose the right format; use video and audio for your own files and iframe for outside content like YouTube; build tables with th, td, captions, colspan, and rowspan; make all content usable by everyone, including screen reader users. The next step is the hands-on labs, building a Product Showcase page.
+
+Key terms:
+img — element that embeds an image; needs src and alt.
+src — attribute giving the path or URL of a file.
+alt — attribute with a text description of an image, read by screen readers.
+JPG, PNG, SVG, WebP — image formats: photos, graphics with transparency, scalable icons, and modern compressed images.
+lossy — compression that discards some quality to make a file smaller.
+lossless — compression that keeps all quality.
+width and height — attributes setting an image or video size in pixels.
+style attribute — a way to put CSS directly on a tag; covered in Lesson 05.
+figure — container grouping an image with its caption.
+figcaption — the caption text inside a figure.
+video — element that plays a video file.
+audio — element that plays a sound file.
+controls — attribute that shows the player buttons.
+source — element inside video or audio naming one file and its type.
+iframe — element that embeds content from another website.
+allowfullscreen — iframe attribute that allows full-screen viewing.
+title (on iframe) — describes the embedded content for accessibility.
+table, tr, th, td, caption — table container, row, header cell, data cell, and table title.
+colspan — makes a cell span several columns.
+rowspan — makes a cell span several rows.
+scope — attribute on th saying whether it labels a column (col) or a row (row).
+
+Watch out for:
+- Never leave out alt; it is required and is how screen reader users learn what the picture shows.
+- For YouTube, use the embed URL, not the share URL.
+- Include the controls attribute or visitors cannot play or pause the media.
+- Use th for headers, not a bold td, so assistive technology knows it is a header.
+- Heads up: the slide examples use folders named video and audio (such as video/demo.mp4), but this lesson's practice files are all in a folder named media. Write your src paths as media/demo.mp4, media/podcast.mp3, and so on, to match where the files really are.
+
+Connects to:
+Lesson 05 (CSS Fundamentals) explains the style attribute used for shrinking images. The Web Design AI track's ai04 lesson covers the same topic.

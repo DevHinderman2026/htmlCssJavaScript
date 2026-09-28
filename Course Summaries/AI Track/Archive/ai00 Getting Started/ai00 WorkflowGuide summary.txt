@@ -1,0 +1,55 @@
+Summary of: ai00_WorkflowGuide.md
+Course: Web Design AI track (archived version)
+Lesson: ai00 Getting Started
+Type of document: study guide (workflow guide)
+
+In one sentence:
+This guide is the whole working system for the AI track: the five-step loop, habits for talking to Claude, the end-of-session prompt log, the tools, and what to do when something goes wrong.
+
+Main ideas:
+1. In this track you build websites by conversation. You describe exactly what you want, Claude writes the code, and you check the result by listening to it with a screen reader. The guide puts it as: your voice is the keyboard and your ears are the quality department.
+2. The five-step loop, used in every unit and every build:
+- Brief: listen to or read the unit's BuildBrief and note the must-say list, the technical words your directions must use.
+- Direct: tell Claude what to build in complete requests, using the must-say vocabulary out loud. This is the graded skill.
+- Save: tell Claude exactly where to put the file, then ask it to confirm the file is really there.
+- Audit: run the unit's AudioLab with the screen reader. If the page fails, tell Claude what failed and have it fix the markup; repeat until it passes.
+- Commit: push everything with GitHub Desktop so it is turned in.
+Say the loop until it is automatic: brief, direct, save, audit, commit.
+3. Talking to Claude so it works. Claude does exactly what you say, so vague directions give vague websites. Habits:
+- One request at a time. "Add a navigation region with four links" beats a paragraph asking for six things. Stack requests one after another.
+- Use the real names, such as "heading level one," "nav region," "unordered list," and "alt text." The technical vocabulary is the curriculum, and Claude responds better to it.
+- Make Claude read its work back: ask it to describe the page's structure top to bottom in plain sentences, to check the plan before you audit.
+- Ask for short answers when you want them, such as "answer in two sentences" or "list the steps, one per line."
+- Interrupt freely if a reply is going nowhere; it is a tool, not a guest.
+- Never accept "done" without proof. After every save, ask Claude to list the files in your unit folder.
+4. The prompt log. End every session by asking Claude to compile everything from the session (your requests, its key answers, and any fixes) into a markdown file called aiNN_PromptLog.md (NN is the unit number) saved in the unit's folder. The log is graded; it is how the quality of your direction is seen. Claude writes it; you just have to remember to ask.
+5. The tools:
+- Claude desktop app: where building happens, by voice input, dictation, or typing.
+- Screen reader: the audit instrument; the AudioLabs name each move in plain English, and the ai00 moves trainer teaches them all.
+- GitHub Desktop: the turn-in machine, the one step that is not a conversation, a short fixed routine that is the same every time.
+- The repository: where everything lives, one folder per unit; builds, logs, and completed lab files are saved and pushed there.
+6. When something goes wrong:
+- File saved in the wrong place: ask Claude to move it to the right place and confirm.
+- A build sounds wrong in the audit: do not debug it yourself; describe the symptom exactly (for example "the region walk skips the navigation") and make Claude find the cause.
+- Lost mid-session: ask Claude to summarize where you are and what is left from the brief.
+- GitHub Desktop shows something unexpected: read the message to Claude and ask what it means; the guide notes developers do this all day.
+
+Key terms:
+Brief, direct, save, audit, commit — the five-step loop.
+Must-say list — the required technical vocabulary for your directions.
+Read-back — Claude describing a page's structure so you can check it before auditing.
+Prompt log (aiNN_PromptLog.md) — the graded session record Claude compiles.
+Audit — checking the page with the screen reader against the AudioLab.
+
+What you are asked to do:
+- Follow the five-step loop for every build.
+- End every session by requesting the prompt log file in the unit folder.
+- Verify every save by asking Claude to list the folder's files.
+
+Watch out for:
+- Vague or bundled requests produce poor results.
+- Claude saying "done" is not proof; check the files.
+- Forgetting the prompt log loses a graded artifact.
+
+Connects to:
+ai00 FirstSession runs this loop once; every later BuildBrief and AudioLab (ai01 to ai08) follows it.

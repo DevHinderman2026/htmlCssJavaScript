@@ -1,0 +1,42 @@
+Summary of: html11a_Task.html
+Course: HTML CSS JavaScript track
+Lesson: Enrichment, Bootstrap Basics (the retired Lesson 11 Bootstrap unit)
+Type of document: task starter file
+
+In one sentence:
+This starter HTML page for sub-lesson 11a has you add Bootstrap and build a four-item responsive grid.
+
+Main ideas:
+1. The starter page is nearly empty. It has the doctype, html with lang="en", a head with meta charset UTF-8, the viewport meta tag, and the title "HTML11a: Grid System Task". The body contains only instruction comments.
+2. The practice goal is the grid system: a container holding a row, holding columns whose widths change at breakpoints.
+3. The width math: col-12 is 12 of 12 columns (full width), col-md-6 is 6 of 12 (half), and col-lg-3 is 3 of 12 (one quarter, 25 percent).
+
+Key terms:
+container — the wrapper div the grid lives in.
+row — the horizontal line that holds the columns.
+col-12, col-md-6, col-lg-3 — full width on mobile, half width from medium screens, quarter width from large screens.
+mb-4 — margin at the bottom, size 4, for space between items.
+bg-light — a light gray background.
+p-3 — padding size 3 inside the box.
+
+What you are asked to do:
+The TODO comments inside the file say:
+1. In the head, add the Bootstrap CSS CDN link.
+2. In the body, build a responsive grid:
+- Wrap everything in a div with class container.
+- Inside, create a div with class row.
+- Add 4 items that are full width (col-12) on mobile, 2 per row (col-md-6) on medium screens, and 4 per row (col-lg-3) on large screens.
+- Give each item margin-bottom with mb-4.
+- Inside each item, put a div with classes bg-light and p-3.
+- Put the text "Item 1", "Item 2", and so on inside those inner divs.
+3. The comment gives an example structure where the item's classes are blanks for you to fill in:
+Code: <div class="___ ___ ___"><div class="bg-light p-3">Item 1</div></div>
+The three blanks are the three column classes (plus mb-4 as the instructions ask); the inner div is the light gray padded box holding the label.
+4. Before the closing body tag, add the Bootstrap JavaScript bundle CDN link.
+
+Watch out for:
+- The column classes go on the outer item div; the bg-light and p-3 go on the inner div.
+- Without the CSS link in the head, none of the classes will do anything.
+
+Connects to:
+Uses the grid material from the Bootstrap Basics slides and study guide in this folder; html11b Task continues with components.

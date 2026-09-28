@@ -1,0 +1,71 @@
+Summary of: html05_StudyGuide.md
+Course: HTML CSS JavaScript track
+Lesson: html05 CSS Fundamentals
+Type of document: study guide
+
+In one sentence:
+This study guide gives 22 CSS vocabulary terms, a cheat sheet of CSS syntax, the state competencies covered, common beginner mistakes, and ten practice questions with answers.
+
+Main ideas:
+1. CSS rule syntax: a selector, then curly braces holding one or more lines of property, colon, value, semicolon.
+2. The three methods compared. Inline: the style attribute in a tag; for quick one-off styles, and to be avoided. Internal: a style element in the head; for small projects or a single file. External: a separate .css file; best practice because it is reusable and maintainable.
+3. Basic selectors: element selectors like p, h1, and div; class selectors like .highlight and .warning; ID selectors like the hash-sign selectors for header and main.
+4. Color syntax. Named colors such as red or navy. Hex such as #FF0000 (red), #0000FF (blue), #FFFFFF (white). RGB such as rgb(255, 0, 0) for red, rgb(0, 0, 255) for blue, rgb(200, 200, 200) for gray. These work with both color (text) and background-color.
+5. Font properties: font-family such as Arial, sans-serif or 'Roboto', sans-serif; font-size such as 16px or 32px; font-weight of normal, bold, or 700; line-height of 1.6 or 20px.
+6. Text properties: text-align left, center, or right; text-decoration none, underline, or line-through; letter-spacing such as 2px.
+7. Linking an external stylesheet: put the link element in the head.
+Code: <link rel="stylesheet" href="styles.css">
+rel says the linked file is a stylesheet and href gives its file name.
+8. Linking Google Fonts: put the Google Fonts link element (for example the Roboto URL from fonts.googleapis.com) in the head, then set font-family: 'Roboto', sans-serif on body.
+9. Cascade and specificity. The browser reads CSS top to bottom and later rules override earlier ones. Specificity from weakest to strongest: element selector, class selector, ID selector, inline style.
+10. Ohio Department of Education (ODE) competencies. 6.1.7 Integrate Styles: apply color, font, and text properties, use selectors, understand the three methods. 6.5.7 Create and Attach CSS Stylesheets: make an external .css file, link it with the link element, recognize inline versus internal versus external. 6.5.3 Use Standard Web Languages: write valid CSS syntax and apply it correctly.
+
+Key terms:
+CSS — Cascading Style Sheets, the language for styling HTML.
+selector — the part of a rule that targets which elements to style.
+property — the aspect you change, such as color or size.
+value — the setting assigned, such as blue or 16px.
+declaration — a property and value pair, such as color: blue;
+declaration block — the curly-brace section holding the declarations.
+inline style — CSS in a tag's style attribute.
+internal stylesheet — CSS in a style element inside the head.
+external stylesheet — a separate .css file linked with the link element.
+element selector — targets all tags of one type, such as p.
+class selector — targets elements with a class; uses a dot.
+ID selector — targets one unique element; uses a hash sign.
+hex color — a hash sign and 6 characters from 0 to 9 and A to F.
+RGB — red, green, blue values from 0 to 255.
+named color — an English color word such as navy.
+font-family — the typeface.
+font-size — text size, here in pixels.
+font-weight — boldness: normal, bold, or 400 to 900.
+line-height — vertical space between lines.
+text-align — horizontal alignment.
+text-decoration — underline, overline, line-through, or none.
+Google Fonts — free font library linked through a link element.
+letter-spacing — space between characters (in the cheat sheet, not the numbered list).
+
+What you are asked to do:
+Answer the ten practice questions (answers from the guide in parentheses):
+1. What is the difference between a class selector and an ID selector? (Classes can target many elements and use a dot; IDs target one unique element and use a hash sign.)
+2. Write the link tag to attach styles.css. (The link element with rel="stylesheet" and href="styles.css".)
+3. What color is #FF0000? (Red.)
+4. How do you add Google Fonts? (Add a link element to the Google Fonts URL in the head, then use the font name in font-family.)
+5. What does font-weight: bold; do? (Makes text bold.)
+6. Why is an external stylesheet better than inline styles? (Reusable, keeps HTML clean, easier to maintain.)
+7. How many colors can hex codes make? (16,777,216, which is 256 times 256 times 256.)
+8. What property centers text horizontally? (text-align: center;)
+9. What happens if two rules apply to the same element? (The more specific or later rule wins.)
+10. Write an element selector for all h2 tags. (h2 followed by empty curly braces.)
+
+Watch out for:
+The guide's six common beginner mistakes:
+1. Forgetting the semicolon at the end of each declaration.
+2. Wrong color syntax: hex needs the hash sign and RGB needs rgb() around the numbers.
+3. Mixing up class and ID: classes use a dot and can repeat; IDs use a hash and should be unique.
+4. Not linking the stylesheet: an external file does nothing without a link element in the head.
+5. Misspelling properties: it is font-size, not fontSize, and text-align, not textAlign.
+6. Forgetting to close curly braces: every opening brace needs a closing one.
+
+Connects to:
+The html05 Slides and Walkthrough cover the same material; the DIY Task applies it.

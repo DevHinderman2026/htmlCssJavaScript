@@ -4,27 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Artist Who Only Uses Ears</title>
-    <style>
-        .skip-link {
-            position: absolute;
-            top: -3rem;
-            left: 0;
-            background: #000;
-            color: #fff;
-            padding: 0.75rem 1rem;
-            z-index: 100;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        main:focus {
-            outline: none;
-        }
-        .page-overview {
-            border-left: 4px solid #999;
-            padding-left: 1rem;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="menu.js" defer></script>
+    <script src="sample-cues.js" defer></script>
 </head>
 <body>
 
@@ -36,7 +19,8 @@
     </header>
 
     <nav aria-label="Main navigation">
-        <ul>
+        <button type="button" class="menu-toggle" aria-expanded="true" aria-controls="main-menu" hidden>Menu</button>
+        <ul id="main-menu">
             <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="music.html">Music</a></li>
@@ -47,12 +31,12 @@
 
     <main id="main-content" tabindex="-1">
 
-        <p class="page-overview">This is the home page. Above the main content there is a banner with the site name, then a navigation list of five links: Home, About, Music, Equipment, and Contact. The main content below has four sections, in this order: Listen to a Sample, which holds an audio player; then Music; then Listen to One of My Releases; then About. After the last section you will reach the page footer, which holds my name and my email address.</p>
+        <p class="page-overview">This is the home page. Above the main content there is a banner with the site name, then a Menu button. Pressing it opens a list of five links: Home, About, Music, Equipment, and Contact. Pressing it again, or pressing Escape while on one of the links, closes the list. The main content below has four sections, in this order: Listen to a Sample, which holds an audio player; then Music; then Listen to One of My Releases; then About. After the last section you will reach the page footer, which holds my name and my email address.</p>
 
         <section aria-labelledby="sample-heading">
             <h2 id="sample-heading">Listen to a Sample</h2>
-            <p>Here is a 49-second sample of <cite>Sensations</cite>, the title track from my 2026 album of the same name. Press play on the audio player below to hear it.</p>
-            <audio controls preload="metadata" aria-label="Sample of Sensations by Russell Hinderman">
+            <p>Here is a sample of <cite>Sensations</cite>, the title track from my 2026 album of the same name. The music lasts about 34 seconds, followed by a short fade-out. When you press play, a short rising tone plays just before the music starts, and a falling tone marks the end of the sample at about 33 seconds.</p>
+            <audio class="sample-player" data-end-cue="33" controls preload="metadata" aria-label="Sample of Sensations by Russell Hinderman">
                 <source src="audio%20samples/sensations-sample.m4a" type="audio/mp4">
                 <source src="audio%20samples/sensations-sample.mp3" type="audio/mpeg">
                 <p>Your browser cannot play audio on this page. You can <a href="audio%20samples/sensations-sample.mp3" download>download the Sensations sample (MP3, 1.5 MB)</a> instead.</p>

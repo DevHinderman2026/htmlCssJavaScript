@@ -1,0 +1,42 @@
+ai05 Questions
+
+1. What are the three places CSS can go? Which one wins if two of them set the same thing?
+
+The three places where CSS can go is inline, internal, and external. The element that wins is the very last one, since the browser prioritizes the last element. So for example, if you have a color change for green and red, red would win since it would be the last one that the browser would prioritize.
+
+
+2. Your site had a style block on every page. Why is one external stylesheet better? What would you have had to do to change your link color before this lesson?
+
+The external file for CSS wins every time due to the fact that you make all of your changes in one file. If we didn't have an external file, for example, the changes would have to be made on each individual web page.
+
+
+3. A CSS rule has a selector, a property, and a value. Pick one rule from your styles.css and name all three parts.
+
+Note: I did not figure this one out on my own. Claude wrote this answer after explaining it to me several times.
+I picked the rule h2 { color: rgb(79, 209, 197); }, which makes the level two headings on my site aqua. The selector is h2, which says which elements get styled. The property is color, which says what is being changed. The value is rgb(79, 209, 197), which is the aqua color it is changed to.
+
+
+4. What is the difference between a class and an id? When would you use each one?
+
+A class is a way to have as many elements as you want to change. IDs, however, you can only use one. This would be useful to jump to a link. Also, IDs win in priority over classes.
+
+
+5. Why is rem a better unit than px for font size?
+
+Rem is better because you can change the level, unlike px.
+
+
+6. What does a contrast ratio measure? What were the ratios on your site?
+
+The contrast ratio measured the different levels of colors on the site. The ratios on my site are 14.9 to 1 for the body text, 9.2 to 1 for the headings, 11.2 to 1 for the links, and 8.3 to 1 for the text on the Menu button.
+
+
+7. Your skip link is hidden until it gets keyboard focus. Why not hide it with display none?
+
+Display none would make the link completely invisible, and then you would not be able to find it.
+
+
+8. After this lesson, did the headings, links, and reading order on your pages change? Why or why not?
+
+Nothing changed due to the fact that CSS is only for styling, and the actual HTML portion is untouched, due to the fact that that's where you update content, not in CSS. That's only for styling.
+

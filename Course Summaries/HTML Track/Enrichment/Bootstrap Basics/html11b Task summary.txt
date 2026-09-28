@@ -1,0 +1,42 @@
+Summary of: html11b_Task.html
+Course: HTML CSS JavaScript track
+Lesson: Enrichment, Bootstrap Basics (the retired Lesson 11 Bootstrap unit)
+Type of document: task starter file
+
+In one sentence:
+This starter HTML page for sub-lesson 11b has you build a page from Bootstrap components: navbar, hero, cards, alert, form, and footer.
+
+Main ideas:
+1. The starter page has the doctype, html with lang="en", a head with meta charset UTF-8, the viewport meta tag, and the title "HTML11b: Components Task". The body contains only instruction comments.
+2. The practice goal is assembling a full page from Bootstrap's ready-made components and utility classes, the same pieces used in the walkthrough.
+
+Key terms:
+navbar navbar-expand-lg navbar-dark bg-dark — classes for a dark navigation bar that collapses below large screens.
+navbar-brand — the site name link in the navbar.
+navbar-nav, nav-link — the list of nav links and each link.
+btn btn-light — a light button.
+card, card-body, card-title, card-text — the parts of a card.
+btn btn-primary btn-sm — a small blue button.
+alert alert-warning alert-dismissible fade show — a closable yellow warning message.
+form-label, form-control — label and input styling.
+btn btn-success — a green button.
+
+What you are asked to do:
+The TODO comments inside the file say:
+1. In the head, add the Bootstrap CSS CDN link.
+2. Navbar at the top: a nav element with classes navbar navbar-expand-lg navbar-dark bg-dark; a brand name with class navbar-brand; a hamburger toggler button for mobile; and 2 to 3 navigation links using navbar-nav and nav-link. Hint: look at the walkthrough or the solutions example.
+3. Hero section after the navbar: a section with classes bg-primary text-white text-center py-5, containing an h1 heading, a tagline paragraph, and a button with classes btn btn-light.
+4. Three cards in a responsive grid: use container, row, and columns with col-12 col-md-6 col-lg-4. Each card uses card, card-body, card-title, and card-text, and has a button with classes btn btn-primary btn-sm.
+5. Alert: a div with classes alert alert-warning alert-dismissible fade show, containing text and a close button.
+6. Form: use form-label and form-control; include a text input, an email input, and a textarea; add a submit button with classes btn btn-success.
+7. Footer before the closing body tag: a footer element with classes bg-dark text-white text-center py-4, containing copyright text and links.
+8. Bonus: use utility classes such as mb-3, mt-5, py-5 for spacing; text-center, text-start for alignment; and bg-light, bg-info for colors.
+9. Before the closing body tag, add the Bootstrap JavaScript bundle CDN link.
+
+Watch out for:
+- The hamburger toggler and the dismissible alert both need the JavaScript bundle to work.
+- Give each form label a for attribute that matches its input's id so screen readers announce the label (the walkthrough shows this).
+Heads up: the file hints at a "Solutions example," but no solution file is included in this folder. Use the Walkthrough summary in this folder instead; it builds the same navbar, hero, cards, alert, form, and footer.
+
+Connects to:
+Mirrors the Walkthrough in this folder and prepares for the DIY landing-page task.

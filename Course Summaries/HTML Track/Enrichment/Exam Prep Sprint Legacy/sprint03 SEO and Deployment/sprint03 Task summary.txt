@@ -1,0 +1,51 @@
+Summary of: sprint03_Task.html
+Course: HTML CSS JavaScript track
+Lesson: sprint03 SEO and Deployment
+Type of document: task starter file
+
+In one sentence:
+A deliberately broken web page for a fictional bakery, "Sarah's Bakery", with ten TODO comments that have you fix its SEO and accessibility problems and then deploy it to GitHub Pages.
+
+Main ideas:
+1. The page is a small bakery site: a header with the business name and a tagline, a nav with links Home, Menu, About and Contact, a main area with an "Our Specialties" heading and three product sections (Classic Sourdough 8.99 dollars, Butter Croissants 4.50 dollars, Chocolate Cake 24.99 dollars serving 8), a "Why Choose Us" list of five points (organic local flour, no preservatives, baked fresh every morning, free delivery over 25 dollars, gluten-free options), an "Order Now" section with one link, a "Contact Us" section with a fake button and a small form, and a footer with a copyright line and address (123 Main St, open daily 7am to 7pm).
+2. The file is a "fix-it" exercise. Each problem is marked by a TODO comment explaining what is wrong and how to correct it. The problems are the classic SEO and accessibility mistakes from the slides and study guide.
+3. The problems as the page starts: the title says only "My Page"; there is no meta description; the header jumps from h1 to h3; the sourdough and chocolate cake images have no alt attribute and the croissant image has an empty alt; a div with an onclick handler pretends to be a button; a link says "Click here to place an order"; three icon-only buttons (a telephone, an envelope and a map pin symbol) have no text names; the two form labels are not connected to their inputs; and the CSS has no visible focus style.
+4. After the checklist, the file says to open the page in Chrome and use DevTools (View Page Info to see the new title, check the console for errors), Tab through the page to test keyboard navigation, check contrast with the WebAIM Contrast Checker (webaim.org/resources/contrastchecker), deploy with git add ., git commit -m "Fix SEO and accessibility", git push, and share your live URL with the class.
+
+Key terms:
+title element — the page title shown in the tab and search results.
+meta description — search result summary, written as a meta tag with name="description".
+alt — image description; empty alt means decorative.
+aria-label — gives an icon-only button a spoken name.
+for and id — connect a label to its input.
+focus indicator — visible outline on the element keyboard users are on, set with the :focus selector.
+contrast ratio — text versus background brightness; 4.5 to 1 minimum.
+
+What you are asked to do:
+Complete each TODO in order (the file's checklist times are in parentheses):
+1. TODO 1 (5 min): change the title from "My Page" to "Fresh Sourdough Bread & Pastries | Sarah's Bakery", aiming for 50 to 60 characters.
+2. TODO 2 (5 min): add a meta description tag of 150 to 160 characters, something like "Fresh baked sourdough bread, croissants, and pastries made daily. Free delivery on orders over 25 dollars. Visit our café in downtown."
+Code: <meta name="description" content="...">
+This is the tag form to use, with your description inside the content quotes.
+3. TODO 3 (3 min): fix the heading order by changing the header's tagline "Handmade Sourdough & Fresh Pastries Since 2015" from h3 to h2.
+4. TODO 4 (7 min): add descriptive alt text to the images. The sourdough image has no alt. The croissant image has alt="" which wrongly marks it decorative even though croissants are the product; change it to something like "Golden butter croissants with flaky layers". (The chocolate cake image also lacks alt.)
+5. TODO 5 (5 min): turn the div with onclick "Send Us a Message" into a real button element, and remove the inline cursor pointer style.
+6. TODO 6 (3 min): change the link text "Click here to place an order" to something descriptive like "Order online now" or "Place your order online", because screen reader users hear only "click here".
+7. TODO 7 (5 min): add aria-label="Call us" to the telephone icon button, which currently has no accessible name.
+Code: <button aria-label="Call us">☎</button>
+The button shows only a phone symbol, so the aria-label supplies the words a screen reader speaks.
+8. TODO 8 (5 min): connect both form labels to their inputs. Give "Your Name" for="name" and its input id="name", and do the same for "Your Email".
+9. TODO 9 (3 min): fix color contrast by adding a darker text color, such as color: #333; to the form-group input style, aiming for at least 4.5 to 1.
+10. TODO 10 (4 min): add a visible focus style, for example on button:focus or on every element's focus state, such as outline: 2px solid #FF6B35; so keyboard users can see where they are.
+The checklist gives a total of about 45 minutes with buffer. Then do the after-completion steps listed above: check in DevTools, Tab-test, check contrast, deploy to GitHub Pages, and share your live URL.
+
+Watch out for:
+- The TODO comments are not in number order in the file: TODOs 10 and 9 are inside the CSS near the top, and TODO 8 comes before TODO 7 in the form.
+- Only the telephone button is named in TODO 7, but the envelope and map pin icon buttons also have no accessible names and need aria-labels too.
+- Correction: plan for about 45 minutes, which is what the checklist times add up to. The script comment near the bottom says 35 minutes.
+- Correction: the suggested title is 49 characters and the suggested description about 127 characters, both short of the 50 to 60 and 150 to 160 ranges the task cites. Add a few words to each so yours land inside the ranges.
+- Heads up: TODO 9 describes light tan text on a light background, but the starter CSS never actually sets a light input text color. Add color: #333; to the input styling anyway, since an explicit dark color guarantees the contrast.
+- Correction: buttons show the normal arrow cursor by default in most browsers, not a pointer; TODO 5 says the opposite. Removing the inline style is still fine, and you can add cursor: pointer in the stylesheet if you want the hand cursor.
+
+Connects to:
+Practices the sprint03 slides and study guide. The same fixes appear in the html10 lesson on site quality and publishing.

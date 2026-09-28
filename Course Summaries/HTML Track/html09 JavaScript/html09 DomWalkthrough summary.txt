@@ -1,0 +1,46 @@
+Summary of: html09_DomWalkthrough.md
+Course: HTML CSS JavaScript track
+Lesson: html09 JavaScript
+Type of document: walkthrough
+
+In one sentence:
+This fill-in-the-blank walkthrough (still titled "HTML10 Walkthrough: Building Interactive Elements") teaches selecting elements, changing text and styles, click listeners, show and hide toggles, why hover is CSS, classList, and an FAQ example.
+
+Main ideas:
+1. Part 1, select and change content. Fill the blanks so the code finds the element with id greeting using getElementById and sets its textContent to "Hello, Web Developer!". getElementById() finds the element; textContent replaces the text inside it.
+2. Part 2, change styles. Select the element with id myBox, then fill in style property names to set its text color to blue, its background color to yellow, and then hide it with display set to none. Key point: CSS property names use hyphens (background-color), but in JavaScript they are camelCase (backgroundColor). Common ones: color, backgroundColor, display, fontSize, padding.
+3. Part 3, respond to clicks. Select the button with id myButton, then fill in the method name (addEventListener) that listens for 'click'. The function inside logs "Button was clicked!" and changes the button's background to green. The second argument to addEventListener is a function that runs when the event happens, called a callback.
+4. Part 4, toggle visibility. Select toggleBtn and hiddenBox, and start with the box hidden by setting its display to none. In the click listener, check whether the box's display is currently 'none'. If it is, set it to 'block' to show it; otherwise set it back to 'none'. So the first click shows, the second hides, the third shows again.
+5. Part 5, hover effects: use CSS, not JavaScript. Older versions built hover with JavaScript mouseover events; this one says do not. Use the CSS :hover pseudo-class from html06, because it is simpler, faster, works without JavaScript, and is what competency 6.2.7 expects. The example rule gives nav links a dark background (#333) and gold text on hover. Save event listeners for things CSS cannot do: clicks, reading input, and changing content.
+6. Part 6, classList for show and hide. The HTML has a div with id message and class hidden, and CSS makes the hidden class display none. A Show button's click listener removes the hidden class (classList.remove), a Hide button's listener adds it (classList.add), and a comment notes you could toggle it instead (classList.toggle). Why classList: styling stays in CSS files, it is easier to maintain than setting styles directly, and it is easy to add several classes.
+7. Part 7, putting it together, a simple FAQ. Each FAQ item is a div containing a button with class question and a div with classes answer and hidden. Step by step: select all question buttons (the blank is querySelectorAll). Loop through them with a for loop that counts i from 0 up to the number of buttons. Give each button a click listener. Inside, get the answer that sits right after the clicked button, then toggle its hidden class. The explanation says the keyword this means the button that was clicked, and nextElementSibling gets the next element.
+8. Try This: using the examples, build a page with a heading that has an id, a button that changes the heading's color, a paragraph that can be hidden and shown, and a couple of navigation links with hover effects.
+9. Common patterns table, in words: select by id with document.getElementById('id'); select by class with querySelector('.class') or querySelectorAll('.class'); change text with element.textContent = 'new text'; change a style with element.style.property = 'value'; add a listener with element.addEventListener('event', function() { }); and add, remove, or toggle a class with classList.add, classList.remove, and classList.toggle.
+
+Key terms:
+getElementById() — finds one element by id.
+textContent — the plain text inside an element.
+style — the element's inline styles, with camelCase names like backgroundColor and fontSize.
+display — the CSS property that controls whether and how an element shows; none hides it, block shows it.
+addEventListener() — attaches a function to run when an event happens.
+callback — a function passed to another function to be run later, like the one given to addEventListener.
+toggle — switch between two states on each click.
+:hover — CSS pseudo-class for styling while the pointer is over an element.
+classList — an element's classes, changed with add, remove, and toggle.
+querySelectorAll() — selects all matching elements as a list.
+for loop — repeats code once for each item, using a counter variable i.
+this — inside a listener, the element that received the event.
+nextElementSibling — the element that comes right after a given element in the HTML.
+
+What you are asked to do:
+Fill every blank in Parts 1 to 4, 6, and 7, then do the Try This page: a heading with an id, a button that recolors it, a hide-and-show paragraph, and nav links with hover effects.
+
+Watch out for:
+- Hover effects should be done in CSS with :hover, not JavaScript (Part 5).
+- Remember JavaScript style names are camelCase.
+- Per the Unit Guide, class uses Parts 1 to 4 and 6; Part 7 (the FAQ) is now an optional extension.
+Correction: nextElementSibling is a property, so the working line is const answer = this.nextElementSibling; with no parentheses and no selector. Part 7's blank is written as this.___('div.answer'), which wrongly looks like a method call.
+Heads up: this walkthrough has no form validation section, even though the Unit Guide sends segment 09f here for one. Study validation from html09_DomSlides, html09_DomStudyGuide, and html09d_Task instead.
+
+Connects to:
+html09c Task (practice with these same moves), the Feature Days walkthrough (classList.toggle on your real site), the Extension Task (FAQ accordion), and html06 (CSS :hover).

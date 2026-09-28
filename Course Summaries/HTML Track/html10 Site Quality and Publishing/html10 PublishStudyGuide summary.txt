@@ -1,0 +1,47 @@
+Summary of: html10_PublishStudyGuide.md
+Course: HTML CSS JavaScript track
+Lesson: html10 Site Quality and Publishing
+Type of document: study guide
+
+In one sentence:
+This study guide (titled Lesson 13) gives 20 vocabulary terms, cheat sheets, competencies and study tips for the protocols, testing and publishing half of html10.
+
+Main ideas:
+1. Protocols at a glance: HTTPS is today's standard because it is secure and encrypted; HTTP is outdated because data can be seen; DNS is the phone book of the internet; TCP/IP is how data gets delivered in packets.
+2. Static versus dynamic: static content is the same for everyone, fast and simple (blogs, portfolios); dynamic content changes per user, is slower and more complex (Gmail, Netflix, Facebook).
+3. Testing checklist: validate HTML at validator.w3.org and CSS at jigsaw.w3.org/css-validator; test in Chrome, Firefox and Safari; check the mobile responsive view; check the DevTools console.
+4. Publishing workflow in GitHub Desktop, which is what the class actually uses: 1. save changes in VS Code; 2. open GitHub Desktop, where changed files are listed; 3. write a short summary of the change; 4. commit to main; 5. push origin. You may see git init, git add, git commit and git push online; those are the command-line version of the same steps, and they are not tested and not the class workflow.
+5. GitHub Pages workflow: 1. create a repository named username.github.io; 2. add files; 3. push; 4. enable Pages in Settings; 5. wait 2 minutes; 6. the site is live at https://username.github.io.
+6. ODE competencies: 6.5.1 web standards and protocols (HTTP and HTTPS, TCP/IP, DNS, static versus dynamic, browser rendering); 6.5.11 cross-browser compatibility (test in several browsers, use DevTools, know that browsers differ); 6.5.12 publish to a web server (GitHub Pages, commit then push in GitHub Desktop, verify the live site); 6.5.4 CMS overview (know WordPress, Wix and Squarespace exist, understand CMS versus hand-coded sites, recognize when each is appropriate).
+7. Key concepts: the web is just requests and responses (the browser asks for a page, the server sends the HTML, the browser renders it); always use HTTPS; validation is not optional because validators catch errors you miss and errors can break things in some browsers; ten minutes of testing saves hours of debugging; git plus GitHub Pages gives free hosting with no servers and no monthly fees.
+8. Study tips: deploy a simple site yourself; open DevTools on a site you like (Ctrl plus Shift plus I, or Cmd plus Option plus I on Mac); run your projects through the W3C validator; open your site in several browsers.
+
+Key terms:
+HTTP — HyperText Transfer Protocol, an unsecure protocol for transferring web data.
+HTTPS — HTTP Secure, encrypted transfer using SSL/TLS.
+FTP — File Transfer Protocol, an older way to upload and download files to servers.
+TCP/IP — Transmission Control Protocol and Internet Protocol, the foundation of internet communication.
+DNS — Domain Name System, which translates domain names like google.com into IP addresses.
+domain — the human-readable name of a website, such as example.com.
+IP address — a unique numeric identifier for a device on the internet, such as 192.168.1.1.
+URL — Uniform Resource Locator, the full web address including the protocol, such as https://example.com/page.
+static site — fixed content served the same to every visitor.
+dynamic site — content generated from a database or user input.
+server — a computer that hosts and delivers web files.
+client — the user's device that requests and displays pages.
+browser rendering — parsing HTML, CSS and JavaScript and displaying the page.
+W3C — World Wide Web Consortium, the organization that sets web standards.
+validator — a tool that checks code against the official HTML or CSS standards.
+cross-browser testing — testing a site in several browsers for compatibility.
+DevTools — developer tools built into browsers for inspecting and debugging.
+git — a version control system that tracks changes.
+repository — a folder or project tracked by git, which can be hosted on GitHub.
+GitHub Pages — free hosting for static sites from a GitHub repository.
+
+Watch out for:
+- Command-line git is not tested; know the GitHub Desktop flow.
+- Correction: 192.168.1.1 is a private home or school network address, not a public internet address. The guide uses it only to show what an IP address looks like.
+- The publishing workflow lists five numbered steps, but the guide also sums it up as four moves (change, review, commit, push); writing the summary is part of committing.
+
+Connects to:
+html10 PublishSlides and NewTopicsSlides; html10c, html10d and html10e tasks practice this material. html12 Exam Prep reviews it.

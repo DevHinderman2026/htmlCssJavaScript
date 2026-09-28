@@ -1,0 +1,30 @@
+Overview of: html10 Site Quality and Publishing
+Course: HTML CSS JavaScript track
+
+What this lesson is about:
+This unit is about taking a site you have already built and making it good enough to put in front of the public, then actually putting it online. It merges two older lessons: the former html12 on SEO and accessibility (files named Seo...) and the former html13 on testing, protocols and publishing (files named Publish...), plus a short New Topics slideshow added for the exam. The unit guide calls it the vocabulary unit, because most of the terms that appear only on the written exam live here. You learn search engine optimization (title tags, meta descriptions, heading hierarchy, alt text, keywords, clean URLs), accessibility (the ADA, WCAG, screen readers, keyboard navigation, focus indicators, color contrast, connected form labels, and the aria-label attribute), and how the web works underneath (HTTP, HTTPS, FTP, TCP/IP, DNS, static versus dynamic sites, bandwidth and latency, plug-ins, and what a CMS is). You also learn to check quality with the W3C validators, cross-browser and mobile testing, and DevTools. Finally you publish a real site to GitHub Pages using GitHub Desktop (commit, then push), not command-line git. You leave able to audit a page for SEO and accessibility problems, fix them, validate and test the code, and deploy it to a public URL.
+
+How the pieces fit together:
+The unit runs about five class periods in five segments, each with a lettered task. Segment 10a is SEO and uses the SEO slides, SEO walkthrough and html10a Task. Segment 10b is accessibility and uses the second half of the SEO slides and html10b Task. Segment 10c is protocols and site architecture and uses the Publish slides, the New Topics slides and html10c Task. Segment 10d is testing and validation and uses the Publish walkthrough and html10d Task. Segment 10e is publishing to GitHub Pages and uses html10e Task and the Publish DIY task. The two DIY tasks are larger independent projects, and the Extension task is optional extra credit for fast finishers once the site is live. Heads up: many source files still carry their old titles (HTML 12, Lesson 13, Task 13a and so on), so go by the current html10 names: Task 13a is now html10c, Task 13b is html10d, and Task 13c is html10e.
+
+Documents in this folder, in suggested order:
+1. html10 UnitGuide summary.txt — the map of the unit: segments 10a to 10e, which files go with each, competencies, and scope limits (no CLI git, aria-label only, CMS at describe level).
+2. README summary.txt — the older teacher-facing package description for the SEO and accessibility half, with lesson-flow options and tool list; partly out of date.
+3. html10 SeoSlides summary.txt — slideshow on SEO basics and accessibility basics (segments 10a and 10b).
+4. html10 SeoStudyGuide summary.txt — vocabulary, SEO and accessibility cheat sheets and competencies (its unanswered review questions are left out).
+5. html10 SeoWalkthrough summary.txt — guided audit of a deliberately bad restaurant page, the fixed version, and reusable SEO and accessibility checklists.
+6. html10a Task summary.txt — starter file: a flawed restaurant page with 15 labeled SEO and accessibility problems to fix.
+7. html10b Task summary.txt — starter file: a flawed tech gadget store page with 20 labeled accessibility problems to fix.
+8. html10 SeoDIYTask summary.txt — independent project: audit one of your own earlier sites for SEO and accessibility, write AUDIT_REPORT.md, fix the issues.
+9. html10 PublishSlides summary.txt — slideshow on protocols, static versus dynamic sites, browser rendering, validation, GitHub Desktop and GitHub Pages.
+10. html10 NewTopicsSlides summary.txt — short slideshow on bandwidth versus latency, browser plug-ins, and content management systems.
+11. html10 PublishStudyGuide summary.txt — 20 vocabulary terms for protocols, testing and publishing, cheat sheets and competencies (its unanswered practice questions are left out).
+12. html10c Task summary.txt — the concepts the graded html10c question sheet checks: protocols, DNS, static versus dynamic sites and browser rendering (questions left out; they are homework).
+13. html10 PublishWalkthrough summary.txt — guided practice: trace a web request, validate a test page, test in browsers, deploy to GitHub Pages.
+14. html10d Task summary.txt — validate and cross-browser test one of your own projects, with a mobile check and summary report.
+15. html10e Task summary.txt — step-by-step deployment of a project to GitHub Pages with GitHub Desktop, plus troubleshooting.
+16. html10 PublishDIYTask summary.txt — capstone: select, validate, test, fix, deploy and document a full project.
+17. html10 ExtensionTask summary.txt — optional extra credit: audit your live site with PageSpeed Insights and WAVE and fix three findings.
+
+Other files in the original lesson:
+The source folder has an images subfolder containing 3 PNG files, each 400 by 300 pixels: custom-cake.png, fresh-bread.png and pastries.png. They are simple gray placeholder pictures with the item name written in the middle (for example the words Custom Cake), so they look like stand-ins for a bakery website. None of the html10 documents refers to them, so their intended use is not stated. They were not summarized because they are images, not documents. The README also lists several files that are not in this folder: html10a_Task_Solutions.html, html10b_Task_Solutions.html, html10_SeoDIYTask_Solutions.html, html10_SeoGimkit.csv and html10_SeoGoogleQuiz.csv. Those files do not exist here, so there is nothing to summarize for them.

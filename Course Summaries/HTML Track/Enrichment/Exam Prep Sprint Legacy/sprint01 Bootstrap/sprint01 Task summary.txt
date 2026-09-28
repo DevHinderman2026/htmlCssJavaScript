@@ -1,0 +1,44 @@
+Summary of: sprint01_Task.html
+Course: HTML CSS JavaScript track
+Lesson: sprint01 Bootstrap
+Type of document: task starter file
+
+In one sentence:
+A beginner starter page with seven TODO comments that has you build a responsive Bootstrap landing page (navbar, hero section, three cards, alert, contact form, footer) in about 40 minutes.
+
+Main ideas:
+1. The top comment names the task "Build a Responsive Landing Page with Bootstrap", time estimate 40 minutes, difficulty Beginner. You complete each TODO so the page works on mobile, tablet and desktop, using Bootstrap classes.
+2. The head already has the charset meta tag, the viewport meta tag, an empty title element, the Bootstrap 5.3.0 CSS link from jsDelivr, and a small style block.
+3. The style block (optional custom CSS) defines a class hero-section with a minimum height of 400 pixels and flexbox centering (display flex, align-items center, justify-content center), which you can use on the hero.
+4. The body has empty placeholder elements for each part: an empty nav, an empty section, a container with margin-top 5 holding a centered "Featured Items" heading (text-center mb-4) and an empty row, an empty container for the alert, a container with vertical margin (my-5) holding a "Contact Us" heading and a row with one column (col-12 col-md-6) that is empty, and an empty footer.
+5. The Bootstrap JavaScript bundle script is already at the bottom of the body, required for interactive components like the navbar toggler.
+
+Key terms:
+hero section — the large banner area near the top of a landing page with a heading, short text and a call-to-action button.
+navbar-dark and bg-dark — classes for a dark navbar with light text.
+bg-primary — Bootstrap's primary (blue) background color class.
+btn btn-light — a light-colored Bootstrap button.
+alert alert-info — an informational Bootstrap message box.
+form-control — class that styles inputs and textareas.
+text-white — class for white text.
+my-5 — utility class for large margin on top and bottom.
+
+What you are asked to do:
+General rules: complete every TODO; use Bootstrap classes for responsiveness; do NOT modify the Bootstrap CDN link and do NOT remove any TODO comments.
+1. TODO 1: put a page title inside the title element.
+2. TODO 2: build the navbar using the classes navbar-dark and bg-dark. Include a text brand, a navbar-toggler, and three nav-links: Home, About, Contact.
+3. TODO 3: build a hero section with class bg-primary. Include a centered heading, paragraph text, and a button with classes btn btn-light. Use padding and text color to make it look good.
+4. TODO 4: inside the provided row, make three responsive cards. Each card's column uses col-12 col-md-6 col-lg-4. Each card has the card class, a top image (the comment says img-top; the real Bootstrap class is card-img-top), a card-body, a title, text, and a button.
+5. TODO 5: below the cards, add an alert with classes alert alert-info and a meaningful message.
+6. TODO 6: in the contact column, build a form using form-control classes with a Name input, an Email input, a Message textarea, and a Submit button. Wrap the inputs in form-group divs with labels.
+7. TODO 7: build a footer with classes bg-dark and text-white containing centered copyright text.
+No point values or submission instructions are given in the file.
+
+Watch out for:
+- Give every card image real alt text, and connect every label to its input with for and id.
+- The navbar toggler needs the Bootstrap JavaScript (already included) and, in real Bootstrap, a data-bs-target pointing to the collapse div's id.
+- Correction: form-group was removed in Bootstrap 5, so it does nothing in this 5.3 page. Wrap each label and input in a div with a spacing utility such as mb-3 instead.
+- Heads up: the starter file does not say which images to use, but the lesson's images folder has item-1.png, item-2.png and item-3.png, which fit the three cards. Use those, for example src="images/item-1.png", each with real alt text.
+
+Connects to:
+Uses the classes taught in the sprint01 slides and study guide. The contact form previews the forms material in sprint02.

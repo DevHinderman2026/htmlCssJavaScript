@@ -1,0 +1,39 @@
+Summary of: html07c_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html07 Flexbox and Responsive Design
+Type of document: task starter file
+
+In one sentence:
+This starter page for sub-lesson 07c is a "Web Design Blog" whose TODO asks you to arrange the header, sidebar, main content, and footer into a page layout using CSS Grid.
+
+Main ideas:
+1. The page title is "CSS Grid Page Layout." It has the viewport meta tag and links html07c_Task_Solutions.css. There is no style element in the file.
+2. The target layout, described spatially: a header running across the full width at the top; below it a narrower sidebar column on the left and a wider main content column in the center-right; and a footer running across the full width at the bottom.
+3. Header (class header): an h1 "Web Design Blog" and a nav with links Home, About, Blog, Contact.
+4. A div with class page-layout contains the aside with class sidebar and the main with class main. The sidebar has a Categories list (Design Trends, Tutorials, Tools and Resources, Tips and Tricks, Case Studies) and an Archive list (2025, 2024, 2023), all links.
+5. The main area has three articles that also teach grid. "Understanding CSS Grid Layouts" explains that grid is two-dimensional, that grid-template-columns sets column widths using pixels, percentages, or the fr unit (a fraction of available space), and lists key properties: grid-template-columns (for example 200px 1fr 200px), grid-template-rows (for example 100px auto 50px), gap, grid-column (which columns an item spans), and grid-row (which rows an item spans). "Grid vs Flexbox: Choosing the Right Tool" says flexbox is best for one-dimensional things like nav bars, grid for two-dimensional page layouts, and the best practice is grid for the page structure with flexbox for components. "Responsive Grid Layouts with Media Queries" says to change grid-template-columns at breakpoints (one column on mobile, two on tablet, three on desktop) and that fr adjusts automatically to available space.
+6. Footer (class footer) with a div footer-content: a 2025 copyright line and a line reading Privacy Policy, Terms of Service, Contact Us (plain text, not links).
+
+Key terms:
+display: grid — turns on two-dimensional layout
+grid-template-columns — sets column widths, such as 200px 1fr 200px
+grid-template-rows — sets row heights, such as 100px auto 50px
+fr — one fraction of the leftover space
+gap — space between grid areas
+grid-column and grid-row — make an item span one or more columns or rows, used to stretch a header or footer across the full width
+
+What you are asked to do:
+The single TODO comment says to create a page layout using CSS Grid with:
+1. A header that spans the full width.
+2. A sidebar as the left column.
+3. Main content in the center, larger than the sidebar.
+4. A footer that spans the full width.
+5. Use display grid and grid-template-columns and grid-template-rows.
+6. Use gap for spacing between sections.
+
+Watch out for:
+- The header and footer are not inside the page-layout div; only the sidebar and main are. If you put display grid on page-layout, it can only arrange the sidebar and main as two columns. To make the header and footer part of the same grid, the grid would have to go on the body instead.
+Heads up: the stylesheet link points to html07c_Task_Solutions.css, the teacher solution file, which is not in the folder. Create your own stylesheet (for example html07c_Task.css) and change the link's href to point to it.
+
+Connects to:
+Applies sub-lesson 07c of html07 Slides; the StudyGuide notes grid is recognition level on exams, and html07 ExtensionTask goes deeper.

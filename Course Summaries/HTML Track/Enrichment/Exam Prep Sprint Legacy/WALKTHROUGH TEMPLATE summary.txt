@@ -1,0 +1,39 @@
+Summary of: WALKTHROUGH_TEMPLATE.md
+Course: HTML CSS JavaScript track
+Lesson: Exam Prep Sprint Legacy
+Type of document: template
+
+In one sentence:
+This is the fill-in-the-blanks markdown skeleton each team copies to write its sprint walkthrough, showing exactly what sections and wording the finished file should have.
+
+Main ideas:
+1. The template gives the walkthrough a fixed order: a title, team information, an introduction, a "What You'll Need" list, four practice chunks plus an optional fifth, an exam review list, and the resources used.
+2. Every practice chunk follows the same four-part pattern: "What we're doing" (one sentence), instructions on what file to create or where to add code, the code block itself, "What this does" (a plain-English explanation of the important tags, attributes, and connections), and "What to look for" (what the class should see or try in the browser, such as resizing the window or clicking a button).
+3. There are two kinds of topics. For build topics, students create a named file and type working code. For fix topics, students type intentionally broken starting code, the team explains "What's wrong here," and then gives a corrected version of the code.
+4. Each code chunk should stay under 25 lines and be complete and working (or deliberately broken, for fix topics).
+5. The template's code blocks are marked as HTML, since most walkthroughs build HTML pages.
+
+Key terms:
+Practice chunk — one small, self-contained example in the walkthrough.
+Build topic — a walkthrough where the class creates something new from scratch.
+Fix topic — a walkthrough where the class starts with broken code and repairs it.
+Markdown — a plain-text format that uses symbols for headings, bold, and code blocks; the walkthrough file is written in it.
+
+What you are asked to do:
+Fill in each part of the template:
+1. Title line: "Sprint" plus your number and your topic title.
+2. Team Members (names), Topic, and Time (about 20 to 25 minutes).
+3. Introduction: 2 to 3 sentences on what the topic is and why it matters, written for classmates new to it.
+4. What You'll Need: VS Code or another editor, a web browser (Chrome recommended), and anything topic-specific, for example a GitHub account or the Bootstrap CDN link.
+5. Practice Chunks 1 to 4 (required) and Chunk 5 (optional): for each, a short title, "What we're doing," instructions, a code block under 25 lines, "What this does," and "What to look for." For fix topics, also add "What's wrong here" and a corrected code block.
+6. Exam Review, Key Things to Remember: six numbered items, each a term or concept followed by a one-sentence explanation.
+7. Resources We Used: a list of resource names with links.
+
+Watch out for:
+- Keep every code chunk under 25 lines and make sure it works before presenting.
+- For fix topics, explain the problems before showing the fix.
+- "What to look for" should describe something a student can actually check. When writing for everyone, describe results in ways that do not depend only on sight, for example what text appears or what the page title says.
+- Correction: write 4 chunks and 6 exam review items, which satisfies both this template and the assignment (which asks for 3 to 4 mini-walkthroughs and a 5 to 6 item summary).
+
+Connects to:
+Used with SPRINT_WALKTHROUGH_ASSIGNMENT.md in this folder; its format matches the course walkthrough in html08 HTML Forms.

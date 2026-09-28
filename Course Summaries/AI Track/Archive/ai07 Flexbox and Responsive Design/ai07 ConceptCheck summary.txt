@@ -1,0 +1,24 @@
+Summary of: ai07_ConceptCheck.md
+Course: Web Design AI track (archived version)
+Lesson: ai07 Flexbox and Responsive Design
+Type of document: questions
+
+In one sentence:
+This is the ConceptCheck question sheet you complete and turn in for the archived ai07 unit; its questions are left out of these study notes because they are homework, not study material.
+
+Topics it checks:
+- the viewport meta tag
+- mobile-first design and media queries
+- the flexbox main axis and cross axis
+- CSS Grid versus flexbox
+- ways to present data (competency 2.7.2)
+- page templates (template.html)
+State competencies listed on the sheet: 6.5.13, 6.5.6, and 2.7.2.
+
+What you are asked to do:
+Answer each question in your own words, directly under it in your copy of ai07_ConceptCheck.md. Commit and push the completed file with the rest of the unit's work, as listed in the unit's turn-in list.
+Some answers have a set length on the sheet (such as two or three sentences), so follow it.
+
+Study these in:
+- ai07 BuildBrief summary.txt (in this folder)
+- ai07 AudioLab summary.txt (in this folder)

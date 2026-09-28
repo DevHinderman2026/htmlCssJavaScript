@@ -1,0 +1,56 @@
+Summary of: html10e_Task.md
+Course: HTML CSS JavaScript track
+Lesson: html10 Site Quality and Publishing
+Type of document: task
+
+In one sentence:
+This 45 to 60 minute task (still titled Task 13c) walks you through publishing a validated project to GitHub Pages using GitHub Desktop, verifying it live, updating it later, and fixing common problems.
+
+Main ideas:
+1. Prerequisites: a free GitHub account, git installed, a project with HTML, CSS and images, and a project already validated with no major errors.
+2. The repository must be named exactly username.github.io (your GitHub username, for example jane-smith.github.io) and must be public for Pages to work. Leave the initialize options unchecked.
+3. Getting the repository onto your computer, two options. Option A (recommended for beginners): on the repository page use the green Code button and Open with GitHub Desktop, or in GitHub Desktop choose File, then Clone repository, and pick a location. Option B (if you already have a project folder): in GitHub Desktop choose File, then Add local repository (it offers to create one if needed), then check Repository, Repository settings, Remote points to your username.github.io repository, or use Publish repository.
+4. Put all your files in the repository folder, with index.html in the root, because that is your home page. Other pages, a style.css file, and images and assets folders can sit alongside it.
+5. Relative paths are critical. Correct: href="style.css", src="images/photo.jpg", href="about.html". Wrong: paths starting with C:/Users, /Users/name/Desktop, or file:///, which only exist on your own computer.
+Code: <img src="images/photo.jpg" alt="Photo">
+This points to photo.jpg inside an images folder next to the page, so it works once uploaded.
+6. Committing means saving a snapshot. Review the Changes list in GitHub Desktop (check that everything that belongs is there and nothing extra is), then write a meaningful summary. Good examples: "Add landing page and styling", "Deploy portfolio to GitHub Pages", "Initial commit: Restaurant project". Bad examples: "update", "stuff", "asdf".
+7. Push with Push origin. If asked to sign in, use GitHub Desktop's browser sign-in under File, Options, Accounts.
+8. Enable Pages: on GitHub open the repository's Settings, then Pages; under Source choose Deploy from a branch, branch main (or master if that is your default), folder / (root), and Save. It takes 1 to 2 minutes, after which GitHub says your site is live at https://username.github.io.
+9. Making updates later: edit and test locally, commit in GitHub Desktop with a summary such as "Fix footer styling", click Push origin, wait 1 to 2 minutes, and the live site updates automatically.
+10. Troubleshooting:
+- 404 page not found: check the exact repository name, wait 5 minutes, confirm Pages is enabled, and make sure index.html is in the root, not a subfolder.
+- Asked for a password you do not know: sign out and back in through File, Options, Accounts in GitHub Desktop.
+- CSS does not load: use a relative href like style.css, not a C:/Users path, and make sure style.css is in the same folder as index.html.
+- Images missing on the live site but fine locally: same cause; use relative paths and make sure the image files are actually in the repository folder.
+- Push rejected with "remote repository not found": check Repository, Repository settings, Remote, and set it or use Publish repository.
+- Mistake in a commit message: do not worry, it cannot hurt the site; write a better one next time. Rewriting old commits is possible but not worth the risk yet.
+
+Key terms:
+repository — a git-tracked project folder hosted on GitHub.
+username.github.io — the special repository name that GitHub Pages serves at your personal URL.
+public — visibility setting required for GitHub Pages here.
+clone — copy a repository from GitHub to your computer.
+commit — a saved snapshot with a descriptive summary.
+Push origin — GitHub Desktop button that uploads commits to GitHub.
+Deploy from a branch — the GitHub Pages source setting used here.
+root folder — the top level of the repository, where index.html must live.
+relative path — a path measured from the current file.
+absolute path — a full path to a location on one specific computer; breaks online.
+404 — the page not found error.
+remote — the GitHub address a local repository pushes to.
+
+What you are asked to do:
+Record as you go: your GitHub username; your repository name (must end in .github.io); an optional description; whether the clone or local setup succeeded; the files you see in the folder; whether all links use relative paths; your commit summary; whether the push succeeded; how many minutes deployment took; whether the home page loads, links work, images display, CSS looks right, and whether there are console errors (F12, Console); and your live URL. Optionally make a small change to index.html, commit and push, and check that the live site updates (2 to 5 minutes).
+Deployment checklist: GitHub account created; repository named username.github.io and public; files cloned to your computer; project files copied in; index.html in the root; all links relative; committed in GitHub Desktop with a real summary; pushed with Push origin; GitHub Pages enabled; site live at https://username.github.io; all pages, links and images work live; console shows no errors.
+Extra credit ideas: 1. add a custom domain pointing yourname.com to username.github.io (needs DNS setup, ask the teacher); 2. add a README.md describing the project; 3. add more pages such as about.html and contact.html linked in navigation; 4. update frequently; 5. test edge cases such as slow internet (DevTools network throttling), very old browsers and different screen sizes.
+
+Watch out for:
+- Wrong repository name, private visibility, or index.html in a subfolder are the usual reasons for a 404.
+- Absolute paths work on your computer but break online.
+- Heads up: you only need GitHub Desktop, not a separate git install or terminal commands. The prerequisites' brew and apt install commands, Option A's cd command, and its misnumbered steps (no step 4, clone step repeated) are leftovers from the old command-line version, so follow the GitHub Desktop steps.
+- Heads up: skip the Mac or Linux ls -la command for checking files; in GitHub Desktop use Repository, Show in Explorer to see the folder.
+- Heads up: this is titled Task 13c from the old numbering; it is the html10e task.
+
+Connects to:
+html10 PublishWalkthrough Part 4 (the same steps in shorter form) and html10 PublishDIYTask (deployment of a fully tested project). The html10 ExtensionTask starts from the live site this task produces.

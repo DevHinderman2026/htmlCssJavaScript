@@ -1,0 +1,74 @@
+Summary of: html11_DIYTask.md
+Course: HTML CSS JavaScript track
+Lesson: Enrichment, Bootstrap Basics (the retired Lesson 11 Bootstrap unit)
+Type of document: DIY task
+
+In one sentence:
+This 45 to 60 minute do-it-yourself project has you build a complete, responsive landing page for a fictional business using only Bootstrap's grid, components, and utility classes.
+
+Main ideas:
+1. The goal is to apply every Bootstrap idea from the unit at once: the grid system, components, and utilities, on one professional-looking page.
+2. You choose a business. Suggested ideas: a coffee shop (menu highlights, location, hours, reservations); a fitness gym (classes, pricing, trainer profiles, membership signup); a freelance designer (portfolio, services, testimonials, contact); a tech startup (features, pricing plans, team, newsletter signup); a tutoring service (subjects, schedules, success stories, enrollment); a restaurant (menu, about, photos, reservation form); an e-commerce shop (featured products, categories, reviews, cart preview); a salon or spa (services, pricing, appointment booking, specials); a digital marketing agency (services, case studies, team, quote request); or a travel agency (destinations, tour packages, testimonials, booking). You can also invent your own.
+3. Getting started, in order: create myBusinessLandingPage.html; include the Bootstrap CDN links; plan your sections (navbar, hero, services, features, contact form, alert, footer); build one section at a time, starting with the navbar (you may copy it from the solution), then hero, card grid, form, and footer; add spacing and color utilities, such as py-5 for section padding, mb-4 between cards, text-center, and bg-light or bg-info; test responsiveness with F12 and the device toolbar at mobile, tablet, and desktop sizes; then polish by checking colors and contrast, spacing, every button and link, and the form inputs.
+4. Tips for success: start from the walkthrough solution and adapt it; keep it simple and focus on layout and components, not custom CSS; use Bootstrap utilities before writing any CSS; test responsiveness while you build, not only at the end; use consistent spacing classes; stick to Bootstrap's built-in color names (primary, success, danger, and so on); write real content for your business instead of placeholder text; and think mobile first.
+5. Classes you will likely need: container and container-fluid; row, col-something, col-md-something, col-lg-something; navbar, navbar-expand-lg, bg-dark; card, card-body, card-title; btn, btn-primary, btn-success; alert, alert-info, alert-warning; form-label, form-control; spacing classes m-, p-, mb-, mt-; text-center and text-white; bg-primary and bg-light; and padding shortcuts like py-5 and px-3.
+6. Example files named for inspiration: html11_Walkthrough_Solutions.html (a full example landing page) and html11b_Task_Solutions.html (a component reference).
+
+Key terms:
+Landing page — a single page that introduces a business and leads visitors to act, such as signing up or making contact.
+Hero section — the large banner at the top of a page with a heading, tagline, and call-to-action button.
+Call to action — a button or form that asks the visitor to do something.
+col-12 col-md-6 col-lg-3 — full width on mobile, two per row on tablets, four per row on desktops (3 of 12 columns each).
+mx-, my-, ms-, me- — margin on the left and right (x), top and bottom (y), start side, and end side.
+px-, py-, pt-, pb-, ps-, pe- — the matching padding classes, including top, bottom, start, and end.
+img-fluid — makes an image scale to fit its container.
+Carousel — a Bootstrap slideshow component that cycles through items.
+Toast — a small JavaScript-powered pop-up notification.
+btn-outline-primary, btn-lg — an outlined button and a large button.
+
+What you are asked to do:
+Your landing page must include:
+1. Navbar: brand name, at least 3 navigation links, dark background (bg-dark), and it collapses into a hamburger menu on mobile.
+2. Hero section: a full-width banner with an eye-catching heading, a tagline or subheading, a call-to-action button, and a background color or contrast such as bg-primary or bg-success.
+3. Grid layout with at least 4 cards: full width on mobile, 2 per row on tablet, 4 on desktop, using col-12 col-md-6 col-lg-3. Each card has a title (card-title), a description (card-text), and a button (btn btn-primary or another style).
+4. Features or services section: at least 3 items describing what the business offers, as cards, text blocks, or both, in a responsive grid.
+5. Call to action with a form: a heading such as "Contact Us" or "Sign Up", and a form with at least 3 fields (a text input, an email input, and a textarea), plus a submit button with btn btn-success.
+6. Alert component: at least one alert (info, warning, success, or danger); it can be dismissible.
+7. Footer: dark background, copyright text, links (such as privacy, terms, contact, social media), and centered text.
+8. Spacing and typography utilities: margin classes (m-, mx-, my-, mt-, mb-, ms-, me-), padding classes (p-, px-, py-, pt-, pb-, ps-, pe-), text classes (text-center, text-start, text-end, text-white), and color classes (bg-primary, text-danger, bg-light, and so on).
+9. Responsiveness: test on mobile (under 576 pixels), tablet (768), and desktop (992 and up); all content readable and well spaced; navbar collapses on mobile; cards stack on mobile, 2 per row on tablet, 4 on desktop.
+10. Valid HTML5: proper semantic structure, all required Bootstrap CDN links, and no errors in the browser console.
+
+Grading checklist (14 items):
+- Navbar with brand and 3 or more links, collapsing responsively.
+- Hero section with heading, tagline, and button.
+- 4 or more cards in a responsive grid (col-12 col-md-6 col-lg-3).
+- Features or services section with content.
+- Contact form with text, email, and textarea inputs.
+- Submit button.
+- At least one alert component.
+- Footer with copyright and links.
+- Spacing utilities used throughout.
+- Text and color utilities used.
+- Responsive on mobile, tablet, and desktop.
+- Valid HTML5 with the Bootstrap CDN.
+- No console errors.
+- Professional appearance and organization.
+
+Submission: save the file as myBusinessLandingPage.html and include complete HTML with all Bootstrap CDN links, all required components (navbar, hero, cards, form, footer), a responsive grid that works on mobile, tablet, and desktop, code comments explaining key Bootstrap classes, and valid HTML5 with no console errors. No point values are given.
+
+Optional bonus challenges: add a small custom.css for custom colors or fonts (keep it minimal); add images with img-fluid; add a Bootstrap carousel for featured items; use different button styles such as btn-outline-primary or btn-lg; add toast notifications; make a pricing table with Bootstrap table styling; add testimonials in a carousel or grid; and mix column sizes, such as 6 and 6 on tablet and 4, 4, 4 on desktop.
+
+Watch out for:
+Troubleshooting from the document:
+- Navbar will not collapse on mobile: include the Bootstrap JavaScript link, and check the button has data-bs-toggle="collapse" and data-bs-target="#navbarNav".
+- Cards do not stack on mobile: make sure col-12 is used, not only col-md-6, and check with the device toolbar.
+- Nothing is styled: the Bootstrap CSS link must be in the head; clear the cache and refresh.
+- Form inputs not styled: use form-label on labels and form-control on inputs, wrapped in a div with mb-3.
+- Colors look wrong: use real class names like bg-primary, not bg-blue; bg- sets background color and text- sets text color.
+Correction: the Bootstrap JavaScript bundle goes just before the closing body tag (or in the head only if you add the defer attribute). Step 2 of Getting Started says "before </head>", which is a typo; every other Bootstrap document in this folder says before the closing body tag.
+Heads up: the example solution files it names (html11_Walkthrough_Solutions.html and html11b_Task_Solutions.html) are not in this folder. Use the Walkthrough summary and the html11b Task summary in this folder as your reference instead.
+Correction: navbar and hero are not HTML elements; the layout plan writes them in angle brackets only as a sketch. Build the navbar with a nav element and the hero with a section (or header) element, each with Bootstrap classes, and use a footer element for the footer.
+
+Connects to:
+This expands the Walkthrough in the same folder (which builds a similar page with 3 cards) into a full, graded-style project with 4 or more cards.

@@ -1,0 +1,45 @@
+Summary of: html08a_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html08 HTML Forms
+Type of document: task starter file
+
+In one sentence:
+This starter page asks you to build a user registration form from scratch by following TODO comments that spell out every label, id, name, type and attribute.
+
+Main ideas:
+This is sub-lesson 08a, Form Basics. It practices the form element, labels connected with for and id, and five input types: text, email, password, number and date, plus the required and placeholder attributes and a submit button.
+
+What the starter page already contains:
+- A complete page skeleton with the title "Registration Form Task", the charset and viewport meta tags, and an h1 heading reading "User Registration".
+- An internal style block that gives the body Arial font, a maximum width of 500 pixels, centering, padding and a light gray background; gives the form a white background, padding and slightly rounded corners; and makes the h1 dark gray and centered.
+- No form yet. Every part of the form is a TODO comment followed by a "YOUR CODE HERE" placeholder.
+
+Key terms:
+form — the container; here it needs action and method.
+label with for — visible name for a field, linked to the field's id.
+type="text", "email", "password", "number", "date" — the five input types used.
+placeholder — gray hint text.
+required — field must be filled before submitting.
+button type="submit" — sends the form.
+
+What you are asked to do:
+Complete each TODO in order:
+1. Open a form with action="/register" and method="POST".
+2. Full Name: label text "Full Name:", input id and name "fullName", type text, placeholder "Enter your full name", required.
+3. Email: label text "Email Address:", input id and name "email", type email, placeholder "your@email.com", required.
+4. Password: label text "Password:", input id and name "password", type password, placeholder "Minimum 8 characters", required.
+5. Age: label text "Age:", input id and name "age", type number, placeholder "18". Not required.
+6. Birth Date: label text "Birth Date:", input id and name "birthDate", type date. No placeholder and not required.
+7. A submit button with type submit and the text "Create Account".
+8. Close the form tag.
+Code: <label for="fullName">Full Name:</label> <input id="fullName" name="fullName" type="text" placeholder="Enter your full name" required>
+This is what the first field looks like when finished: the label's for matches the input's id, and required makes it mandatory.
+
+Watch out for:
+- The for value must match the id exactly, including capital letters, so fullName and birthDate must be typed with the same capitalization in both places.
+- The placeholder "Minimum 8 characters" is only a hint; nothing in the task actually enforces an 8-character minimum.
+- Only name, email and password get the required attribute; age and birth date do not.
+- The page has no styles for labels or inputs, so the fields will run together on one line unless you add CSS; the task does not ask you to.
+
+Connects to:
+The html08 slides (08a section) and walkthrough steps 1 and 2 teach everything needed here. The next task, html08b, moves on to radios, checkboxes, dropdowns and textareas.

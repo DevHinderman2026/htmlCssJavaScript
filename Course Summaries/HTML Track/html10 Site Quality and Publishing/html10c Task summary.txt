@@ -1,0 +1,33 @@
+Summary of: html10c_Task.md
+Course: HTML CSS JavaScript track
+Lesson: html10 Site Quality and Publishing
+Type of document: questions
+
+In one sentence:
+This 25 to 30 minute graded question sheet (still titled Task 13a) checks your understanding of web protocols, DNS, static versus dynamic sites, and browser rendering; its questions are left out of these notes because they are homework, but the concepts they test are below.
+
+Main ideas:
+1. The sheet is organized in four parts plus a bonus: protocols and DNS, static versus dynamic sites, browser rendering, and a real-world question tracing a full website visit.
+2. The concepts it tests: HTTP versus HTTPS and why encryption matters; what DNS does; which protocol does what (HTTP or HTTPS transfers web files from server to browser, TCP/IP delivers data in packets across the network, DNS translates domain names to IP addresses); what the lock icon means; how to tell a static site (same content for everyone) from a dynamic one (content built for each user); the order a browser renders a page (parse HTML and build the DOM tree, parse CSS and apply styles, run JavaScript, display the page); and why sites look different across browsers.
+
+Key terms:
+HTTP and HTTPS — the protocols that transfer web files; HTTPS is encrypted.
+TCP/IP — delivers data in packets across the network.
+DNS — translates domain names into IP addresses.
+static site — same content for every visitor.
+dynamic site — content generated per user or from a database.
+DOM tree — the structure the browser builds when it parses HTML.
+cross-browser testing — checking a site in several browsers.
+
+What you are asked to do:
+Answer all 10 questions plus the bonus in the original sheet, in your own words (Part 4 asks for a 4 to 5 sentence written answer). The question text is left out of these study notes because it is homework, not study material.
+Rubric: answers are judged on accuracy and completeness at three levels: accurate and complete; partially correct; incorrect or missing. No point values are given.
+Self-check list: I can explain HTTP and HTTPS; I understand DNS; I can tell static from dynamic sites; I know the browser rendering steps; I understand why multi-browser testing matters; I can describe the full journey of visiting a website.
+
+Watch out for:
+- The correct rendering order is HTML first, then CSS, then JavaScript, then display; the sheet lists them scrambled.
+- Personalized content (a feed, an inbox) is the sign of a dynamic site; the same page for everyone means static.
+- Heads up: the file is still titled Task 13a from the old numbering; it is the html10c task, so submit it under that name.
+
+Connects to:
+html10 PublishSlides and PublishStudyGuide (the answers are all in those) and html10 PublishWalkthrough Part 1.

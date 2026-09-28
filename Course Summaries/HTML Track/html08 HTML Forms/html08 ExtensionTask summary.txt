@@ -1,0 +1,47 @@
+Summary of: html08_ExtensionTask.md
+Course: HTML CSS JavaScript track
+Lesson: html08 HTML Forms
+Type of document: extension task
+
+In one sentence:
+This optional task for fast finishers, called "Forms That Talk Back," has you build a sectioned form with HTML validation attributes and use CSS pseudo-classes to show live valid and invalid feedback, with no JavaScript at all.
+
+Main ideas:
+It is extra credit with no points and no rubric, and you should finish the regular html08 tasks first. The point is that HTML and CSS alone can check input and give feedback.
+
+Part 1, a sectioned form: rebuild or extend your html08 form so it has at least three fieldset groups, each with a legend (for example Contact Info, Order Details, Preferences). Every input keeps a properly connected label. Add sensible validation attributes: required, min and max, maxlength, and at least one pattern (a phone number or ZIP code is the classic example).
+
+Part 2, styled validation states: use CSS pseudo-classes so the form reacts as the user types:
+- input:focus styles the field you are in.
+- input:valid styles a field whose value passes its rules.
+- input:invalid styles a field that does not pass yet.
+- input:required marks fields that must be filled.
+Code: input:invalid:not(:placeholder-shown) { ... }
+This targets fields that are invalid but only once the placeholder is no longer showing, meaning the user has started typing.
+The real-world warning: a field can count as invalid before the user has touched it, for example an empty required field, which feels hostile. The combined selector above avoids showing errors too early on fields that have placeholders. You are asked to try it and notice the difference.
+
+Key terms:
+pattern — attribute holding a rule the typed text must match, such as a ZIP code format.
+min and max — smallest and largest allowed values for number or date inputs.
+maxlength — the most characters allowed.
+:focus — pseudo-class for the active field.
+:valid — pseudo-class for a field whose value passes all its rules.
+:invalid — pseudo-class for a field that fails a rule.
+:required — pseudo-class for fields with the required attribute.
+:placeholder-shown — true while the field is empty and showing its placeholder.
+:not() — reverses a condition.
+
+What you are asked to do:
+Commit html08_ExtensionForm_lastname.html plus its stylesheet. Done when:
+1. Three fieldsets with legends, and every input labeled.
+2. required, pattern, min and max are used meaningfully.
+3. Focus, valid and invalid states are visibly styled.
+4. Zero JavaScript.
+5. Pushed to GitHub.
+
+Watch out for:
+- Styling :invalid alone flags untouched empty fields as errors right away.
+- This task does not mention it, but the html12 master study guide reminds you that color should not be the only way to convey information, so pair any valid or invalid color change with another cue such as a border style or text.
+
+Connects to:
+Builds on the html08 DIY survey and the bonus challenges there (pattern, min, max, styling required fields).

@@ -1,0 +1,68 @@
+Summary of: html08_Slides.md
+Course: HTML CSS JavaScript track
+Lesson: html08 HTML Forms
+Type of document: slideshow
+
+In one sentence:
+This slideshow teaches how to build an HTML form, from the form container and labeled inputs through radio buttons, checkboxes, dropdowns, text areas, fieldsets and buttons, and finally how to style and lay out a form with CSS.
+
+Main ideas:
+The slides are split into three sub-lessons: 08a Form Basics, 08b Form Controls, and 08c Form Submission and Styling.
+
+Part 1, Form Basics (08a):
+1. A form collects data from the user and sends it to a server. Everything in the form lives inside the form element (written <form>).
+2. The form has two key attributes. The action attribute says where the data goes. The method attribute says how it is sent, either GET or POST.
+Code: <form action="/submit" method="POST"> ... </form>
+This opens a form that sends its data to the address /submit using the POST method, with the form controls placed between the opening and closing tags.
+3. The input element (written <input>) creates most form fields. Its type attribute decides what kind of field it is, and its name attribute labels the piece of data when it is sent.
+4. Labels make forms accessible. The label element (written <label>) either wraps the input or is paired with it. When paired, the label's for attribute must match the input's id, so a screen reader announces the label when the field gets focus.
+Code: <label for="username">Username:</label> <input id="username" name="username" type="text" placeholder="Enter your name">
+The label's for value "username" matches the input's id "username", which connects them.
+5. Common input types: text (basic text), email (checks for a valid email format), password (hides what you type), number (numbers only), date (a date picker), and tel (telephone number).
+6. Helpful attributes: placeholder shows grayed-out hint text inside the field; required means the field must be filled before the form can submit; maxlength limits how many characters can be typed.
+
+Part 2, Form Controls (08b):
+7. Radio buttons (type="radio") let the user pick only ONE choice. Every radio in the group has the same name but a different value. The shared name is what makes them one group.
+Code: <label><input type="radio" name="size" value="small"> Small</label>
+This radio button sits inside its label, belongs to the group named size, and sends the value small if chosen.
+8. Checkboxes (type="checkbox") let the user pick MANY choices. They also share a name and have different values.
+9. The select element (written <select>) makes a dropdown list. Each choice is an option element (written <option>). The user picks one. The first option is often a placeholder like "-- Select --" with an empty value.
+10. The textarea element (written <textarea>) is a multi-line text box. Its rows and cols attributes set its visible height and width. It has a closing tag.
+11. The fieldset element (written <fieldset>) groups related controls, and the legend element (written <legend>) gives the group a title, for example "Contact Information" and "Preferences".
+
+Part 3, Submission and Styling (08c):
+12. Button types: a button with type="submit" sends the form; type="reset" clears all fields; type="button" does nothing by itself and is used with JavaScript. You can also make submit and reset buttons with the input element, using the value attribute for the button's text.
+Code: <button type="submit">Send Form</button>
+This makes a button labeled Send Form that submits the form.
+13. The tabindex attribute sets the order in which fields receive focus when you press Tab. The slide says tabindex="1" comes before tabindex="2", and higher numbers come later.
+14. Styling forms with CSS: give input, select and textarea some padding, margin, a light gray border, rounded corners (border-radius) and a 16-pixel font size. Make labels display: block so each sits on its own line above its field, with a top margin and bold text. Give fieldsets a border, padding, margin and rounded corners. Give buttons padding, a blue background, white text, no border, rounded corners and cursor: pointer, and use button:hover to darken the blue when the mouse is over it.
+15. Layout best practices: stack labels above inputs using display: block, keep spacing consistent, make buttons clearly distinct, group related fields with fieldset, and test on mobile because forms must be responsive. The final example puts a name field and an email field, both required, plus Submit and Reset buttons, inside one fieldset titled "Your Information".
+
+Key terms:
+form — the container element that collects and sends user input.
+action — form attribute giving the address where the data is sent.
+method — form attribute choosing GET or POST as the way data is sent.
+input — the element for single-line fields; its type sets the kind of field.
+type — input attribute: text, email, password, number, date, tel, radio, checkbox, submit, reset.
+name — identifies a field's data when it is sent; also groups radios and checkboxes.
+value — the data a radio, checkbox or option sends; on an input button, the button's text.
+id — unique identifier that a label's for attribute points to.
+label — text that names a form control; for connects it to the control's id.
+placeholder — gray hint text shown inside an empty field.
+required — the field must be filled before submitting.
+maxlength — maximum number of characters allowed.
+select and option — a dropdown list and its individual choices.
+textarea — multi-line text box sized with rows and cols.
+fieldset and legend — a group of related controls and the group's title.
+button — a clickable button whose type is submit, reset or button.
+tabindex — sets the keyboard Tab order.
+button:hover — CSS selector for a button while the mouse is over it.
+
+Watch out for:
+- Radio buttons only act as a single-choice group if they all share the same name.
+- Every input needs a connected label; the for value must exactly match the input's id.
+- Placeholder text is only a hint and disappears when typing; it is not a replacement for a label.
+- Correction: positive tabindex values (1, 2, 3 and so on) are discouraged because they override the natural reading order; put fields in the right order in the HTML instead, use tabindex="0" to add an element to the tab order, and tabindex="-1" for focus by script only. The slide presents numbered tabindex values as the normal way to set tab order without this warning.
+
+Connects to:
+The archived Web Design AI track lesson ai08 HTML Forms covers the same topic. Forms, GET versus POST, and fieldset and legend are reviewed again in the html12 Exam Prep master study guide.

@@ -1,0 +1,61 @@
+Summary of: html11_Slides.md
+Course: HTML CSS JavaScript track
+Lesson: Enrichment, Bootstrap Basics (the retired Lesson 11 Bootstrap unit)
+Type of document: slideshow
+
+In one sentence:
+This slideshow introduces Bootstrap, a ready-made CSS and JavaScript framework, in two parts: sub-lesson 11a on the grid system and sub-lesson 11b on components and utility classes.
+
+Main ideas:
+1. What Bootstrap is. Bootstrap is a front-end framework: a pre-built package of CSS and JavaScript that gives you ready-made components, a responsive grid system for layout, and utility classes for spacing, colors, and text. You style a page mostly by adding class names to your HTML instead of writing your own CSS.
+2. Why use it. It saves time because you do not write CSS from scratch, it is responsive so pages work on phones and desktops, it gives a consistent professional look, and it has a large community with many examples.
+3. Loading Bootstrap from a CDN. You do not download files; you link to them on the web. The CSS link goes inside the head, and the JavaScript bundle goes just before the closing body tag.
+Code: <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+This is the stylesheet link for Bootstrap version 5.3.0, placed in the head.
+Code: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+This loads Bootstrap's JavaScript bundle, placed right before </body>. Interactive pieces like the collapsing navbar need it.
+4. Containers. Everything in Bootstrap starts inside a container. A div with class container has a fixed maximum width that changes by screen size. A div with class container-fluid stretches the full width of the screen.
+5. Rows and columns. Inside a container you put a div with class row, which is one horizontal line. Inside the row you put divs with class col. Plain col columns share the row equally, so three col divs make three equal columns. Columns automatically stack on top of each other on small screens.
+6. Responsive breakpoints. Bootstrap changes layout at set screen widths. The six sizes are: xs, under 576 pixels (phones); sm, 576 pixels and up; md, 768 and up; lg, 992 and up; xl, 1200 and up; xxl, 1400 and up.
+7. Breakpoints in action. You can give one column several classes so it changes width at each size. The grid is 12 units wide, so the number after the breakpoint says how many of 12 units the column takes.
+Code: <div class="col-12 col-md-6 col-lg-4">Card</div>
+This column is full width (12 of 12) on phones, half width (6 of 12) from medium screens up, and about one third (4 of 12) from large screens up. Three of these give one card per row on mobile, two per row on a tablet, and three per row on a desktop.
+8. The navbar component. A navigation bar is a nav element with classes navbar, navbar-expand-lg (show the full menu on large screens, collapse it on smaller ones), navbar-dark, and bg-dark. Inside are: a link with class navbar-brand for the site name; a button with class navbar-toggler that has the attributes data-bs-toggle="collapse" and data-bs-target="#navbarNav" and holds a span with class navbar-toggler-icon (this is the hamburger menu button); and a div with classes collapse and navbar-collapse and id navbarNav that holds a list with class navbar-nav and ms-auto (pushes links to the right). Each list item has class nav-item and each link has class nav-link.
+9. Cards. A div with class card, containing a div with class card-body, which holds a heading with class card-title and a paragraph with class card-text. Cards are boxes for grouped content.
+10. Buttons. Add class btn plus a color style: btn-primary, btn-success, or btn-danger.
+11. Alerts. Message boxes such as a div with classes alert alert-info, or alert alert-warning.
+12. Spacing utilities. m- means margin and p- means padding, followed by a size number from 1 to 5. For example m-3 p-2 gives medium margin and small padding.
+13. Text alignment utilities. text-center centers text; text-end aligns it right.
+14. Color utilities. bg-primary gives a blue background; text-white makes text white; text-success makes green text.
+15. Form styling. Add class form-control to an input or textarea to get Bootstrap's form styling.
+16. Key takeaways: Bootstrap is a framework for fast responsive design; the grid is 12 columns built as container, then row, then col; breakpoints make it respond to screen sizes; components are pre-built navbar, cards, buttons, and alerts; utilities are one-job classes for spacing, colors, and text. The next step is building a responsive landing page using all of these.
+
+Key terms:
+Bootstrap — a front-end framework of pre-built CSS and JavaScript.
+Front-end framework — a ready-made toolkit of styles and components for building web pages.
+CDN — Content Delivery Network; loading a library from the web instead of from your own files.
+container — Bootstrap class for a wrapper with a maximum width.
+container-fluid — Bootstrap class for a full-width wrapper.
+row — a horizontal line of the grid that holds columns.
+col — a grid column; plain col columns split the row equally.
+Breakpoint — a screen width where the layout changes (xs, sm, md, lg, xl, xxl).
+col-12, col-md-6, col-lg-4 — column widths out of 12 at mobile, medium, and large sizes.
+navbar, navbar-brand, navbar-toggler, navbar-collapse, navbar-nav, nav-item, nav-link — the parts of the Bootstrap navigation bar.
+data-bs-toggle and data-bs-target — attributes that tell Bootstrap's JavaScript which element the hamburger button opens and closes.
+ms-auto — margin-start auto; pushes items to the right end.
+card, card-body, card-title, card-text — the parts of a card component.
+btn, btn-primary, btn-success, btn-danger — button classes.
+alert, alert-info, alert-warning — alert message classes.
+m-, p- — margin and padding utilities with sizes 1 to 5.
+text-center, text-end — text alignment utilities.
+bg-primary, text-white, text-success — color utilities.
+form-control — class that styles inputs and textareas.
+
+Watch out for:
+- The CSS link belongs in the head; the JavaScript bundle belongs before the closing body tag. Without the JavaScript, the hamburger menu will not open.
+- Columns must sit inside a row, and rows inside a container.
+- The grid counts in twelfths, so column numbers in one row should add up to 12 for a full row.
+- Correction: there is no xs infix in Bootstrap 5. A class with no size, such as col-12 or col-6, applies at every size including phones, and sm, md, lg, xl, xxl start at 576, 768, 992, 1200 and 1400 pixels. The slide lists xs as if it were a class name.
+
+Connects to:
+The html11c AI build in html11 Build It Three Ways uses this Bootstrap material as a "component menu" so students can name Bootstrap parts when directing an AI.

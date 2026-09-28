@@ -1,0 +1,68 @@
+Summary of: html10_SeoSlides.md
+Course: HTML CSS JavaScript track
+Lesson: html10 Site Quality and Publishing
+Type of document: slideshow
+
+In one sentence:
+This slideshow introduces search engine optimization in its first half (segment 10a) and web accessibility in its second half (segment 10b), and ends by showing how the two overlap.
+
+Main ideas:
+Part 1, SEO (the slides are still titled Lesson 12 and Sub-Lesson 12a).
+1. SEO means search engine optimization: making your site easier for search engines such as Google and Bing to find, understand and rank. It matters because more visitors means more business or impact, good ranking brings free traffic, and people can actually find your site. The parts a developer controls are title tags, meta descriptions, semantic HTML with proper headings, alt text, URL structure and page speed.
+2. The title element (written <title>) sets the text in the browser tab and the headline in search results.
+Code: <title>Best Pizza in Ohio | Joe's Pizzeria</title>
+This names the page with a keyword phrase first, then the business name after a vertical bar. Keep titles under 60 characters, put the keyword early, and make it something people want to click.
+3. The meta description is the short snippet shown under the title in search results.
+Code: <meta name="description" content="Award-winning pizza since 1985. ...">
+The name attribute says this is the description, and the content attribute holds the text. Aim for 150 to 160 characters, write for humans rather than robots, and include a call to action.
+4. Semantic HTML helps search engines understand what the page is about. The good example wraps the main title in a header element, the content in main and article elements with an h2 heading, and ends with a footer. The bad example, called div soup, uses div elements with ids like header and main, which carry no meaning.
+5. Heading hierarchy: exactly one h1 per page for the main topic, h2 for sections, h3 for subsections, and never skip a level (going from h1 straight to h3 is bad). The example is an h1 Web Design Course, then h2 Unit 1 HTML, h3 Semantic Tags, then h2 Unit 2 CSS.
+6. Alt text describes an image for both accessibility and SEO. Good: alt="wood-fired pizza with fresh basil". Bad: alt="image", or no alt attribute at all.
+7. Clean URLs help SEO. Good URLs are descriptive, such as /blog/how-to-make-sourdough-bread or /products/blue-ceramic-mug. Bad URLs are vague or messy, such as /blog/post123 or a long query string full of question marks and ampersands.
+8. Keywords are what someone would search to find your page. Use them naturally in the title, headings, first paragraph and alt text. Do not keyword-stuff (for example an h1 that just repeats Sourdough Bread Sourdough Recipe Sourdough How To), because Google penalizes it as spam.
+
+Part 2, Accessibility (Sub-Lesson 12b).
+9. Accessibility means making sites usable by everyone, including people with vision impairments (blind, low vision, color blind), hearing impairments, motor impairments (keyboard only, no mouse), and cognitive disabilities.
+10. The ADA (Americans with Disabilities Act) is U.S. law; websites must be accessible, and violations can bring lawsuits and reputation damage. WCAG (Web Content Accessibility Guidelines) is the international standard; WCAG 2.1 Level AA is the industry standard. It has four principles abbreviated POUR, which the slide lists as Perceptible, Operable, Understandable, Robust.
+11. A screen reader is software that reads web content aloud. Its users navigate with the keyboard (Tab, Enter, arrow keys), and it announces headings, links, form labels and alt text.
+12. Color contrast: text needs enough contrast with its background. The WCAG AA standard is a 4.5 to 1 ratio. Light gray text (color #ccc) on white fails; dark gray (color #333) is easy to read. Test with the free WebAIM Contrast Checker.
+13. ARIA stands for Accessible Rich Internet Applications: extra labels that tell assistive technology what an element does.
+Code: <button aria-label="Close menu">×</button>
+This button shows only a multiplication-sign symbol, so the aria-label gives screen readers the words Close menu. The slide also shows aria-describedby, which points an image at the id of a longer paragraph describing it (a chart showing a 15 percent increase).
+14. Keyboard navigation: Tab moves through the page in a logical order, every interactive element must be reachable, and the focus indicator must stay visible.
+Code: button:focus { outline: 2px solid #0066cc; }
+This CSS rule draws a 2-pixel solid blue outline around a button when it has keyboard focus.
+15. Semantic HTML for accessibility: use a real button element for actions, not a div with an onclick; use an a element with href for navigation, not a span with an onclick; connect every label to its input with for and id (a placeholder alone is not a label); and wrap site links in a nav element.
+16. Pre-launch accessibility checklist: meaningful alt text on all images (not "image"); one h1 and logical headings; 4.5 to 1 contrast; tab through the whole page; visible focus indicators; connected form labels; semantic tags instead of divs; link text that says where it goes, not "click here". Test with keyboard only, with a screen reader (NVDA, JAWS or VoiceOver), and with a contrast checker.
+17. Final slide: SEO and accessibility overlap. Semantic HTML, alt text and heading hierarchy help both search engines and screen reader users, and mobile-friendly design helps both users and rankings. Accessibility is the foundation of good web development, not an extra feature.
+
+Key terms:
+SEO — search engine optimization, making a site easy to find, understand and rank.
+title element — sets the browser tab text and search-result headline.
+meta description — a meta tag with name="description" whose content is the search-result snippet.
+semantic HTML — tags that describe meaning, such as header, nav, main, article and footer.
+div soup — a page built mostly of meaningless div elements.
+heading hierarchy — one h1, then h2 and h3 in order without skipping.
+alt attribute — text alternative for an image.
+keyword — the words people search for.
+keyword stuffing — repeating keywords unnaturally; penalized by search engines.
+accessibility — usability for everyone, including people with disabilities.
+ADA — Americans with Disabilities Act, U.S. law.
+WCAG — Web Content Accessibility Guidelines; 2.1 Level AA is the industry standard.
+screen reader — software that reads a page aloud and is driven by keyboard.
+color contrast ratio — brightness difference between text and background; AA requires 4.5 to 1.
+ARIA — Accessible Rich Internet Applications, extra attributes for assistive technology.
+aria-label — gives an element a spoken name when it has no visible text.
+aria-describedby — links an element to the id of text that describes it further.
+:focus — CSS state for the element that currently has keyboard focus.
+focus indicator — visible outline showing where keyboard focus is.
+
+Watch out for:
+- Never leave out alt text, and never use a generic word like "image" as alt text.
+- Do not remove or empty out focus outlines; keyboard users need them.
+- A div or span with onclick is not a real button or link; keyboard and screen reader users cannot rely on it.
+- Correction: the first WCAG principle is Perceivable, so POUR stands for Perceivable, Operable, Understandable, Robust. The slide says "Perceptible", which is not the official word.
+- The unit guide says only aria-label is needed for the exams; aria-describedby appears here but is beyond exam scope.
+
+Connects to:
+html02 Semantic HTML (the semantic tags used here) and html08 HTML Forms (connected labels). The html10 SEO walkthrough and tasks a and b put these slides into practice.

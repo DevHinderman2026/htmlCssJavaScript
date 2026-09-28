@@ -1,0 +1,51 @@
+Summary of: html06b_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html06 Box Model and Spacing
+Type of document: task starter file
+
+In one sentence:
+This starter page for sub-lesson 06b gives you an empty header, main with sidebar and content area, and footer, and TODO comments tell you to fill in both the HTML content and the CSS for a fixed header and footer with a two-column middle.
+
+Main ideas:
+1. The page title is "HTML06b Task - Display and Positioning." CSS goes in an internal style element in the head.
+2. Already provided: the body has margin 0, padding 0, Arial, a light gray background, and a separate rule giving the body margin-bottom 60px as space for the fixed footer.
+3. The HTML skeleton, in order: an empty header; a main element containing an empty aside (sidebar) and an empty div with class content; then an empty footer. Each has a TODO comment.
+4. The layout goal, described spatially: a dark blue bar pinned across the top of the window, a dark gray bar pinned across the bottom, and between them a white sidebar about a quarter of the width on the left with the white main content taking the remaining three quarters on the right, both lined up along their top edges.
+5. The two columns use display inline-block, which lets two block-like boxes sit next to each other on one line while keeping their widths. vertical-align top makes them line up at the top instead of the bottom of the line.
+6. The content width uses calc(75% - 20px) to subtract the sidebar's 20 pixel right margin, so 25 percent plus the margin plus the content width fits on one line. This only adds up correctly because border-box keeps padding inside those widths.
+
+Key terms:
+position: fixed — pins an element to the browser window so it stays while scrolling
+z-index: 100 — high stacking order so the header and footer stay on top of content
+display: inline-block — lets boxes sit side by side while respecting width
+vertical-align: top — aligns inline-block boxes by their top edges
+calc() — CSS math, such as 75 percent minus 20 pixels
+min-height: calc(100vh - 140px) — makes main at least the window height minus 140 pixels
+aside — the HTML element for a sidebar of related content
+text-decoration: none — removes the underline from links
+
+What you are asked to do:
+CSS TODOs, in order:
+1. Add a universal box-sizing: border-box rule.
+2. header: position fixed; top 0, left 0, right 0; width 100%; height 60px; background-color #1565c0; color white; padding 15px 20px; z-index 100.
+3. header h1: margin 0; font-size 24px.
+4. main: margin-top 60px (to push it below the header); padding 20px; min-height calc(100vh - 140px).
+5. aside (sidebar): display inline-block; width 25%; vertical-align top; padding 20px; background-color #fff; margin-right 20px.
+6. .content: display inline-block; width calc(75% - 20px) to account for the margin; vertical-align top; padding 20px; background-color #fff.
+7. footer: position fixed; bottom 0, left 0, right 0; width 100%; height 60px; background-color #333; color white; padding 15px 20px; z-index 100.
+8. footer p: margin 0; text-align center.
+9. aside h2 and .content h2: color #1565c0; margin-top 0.
+10. aside a (sidebar links): display block; padding 10px 0; color #1565c0; text-decoration none; border-bottom 1px solid #eee.
+HTML TODOs:
+11. Put an h1 reading "My Website" inside the header.
+12. Inside the aside, add an h2 and three links.
+13. Inside the div with class content, add an h2 and paragraphs.
+14. Inside the footer, add copyright text.
+
+Watch out for:
+- Heads up (not stated in the source): the given widths add up to exactly 100 percent, and inline-block boxes also get a small gap from the white space between the two tags in the HTML, so the content area will likely drop below the sidebar. Check border-box first, then shrink the content width slightly, for example calc(75% - 25px).
+- Without main's margin-top, the fixed header covers the top of the page.
+- Add enough paragraphs to scroll so you can confirm the header and footer stay fixed.
+
+Connects to:
+Builds directly on the layout-demo.html section of html06 Walkthrough and is the practice for the html06 DIY Task page layout.

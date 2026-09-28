@@ -1,0 +1,62 @@
+Summary of: html06_DIYTask.md
+Course: HTML CSS JavaScript track
+Lesson: html06 Box Model and Spacing
+Type of document: DIY task
+
+In one sentence:
+This independent project asks you to build one page containing a reusable styled card component (shown at least three times) inside a layout with a fixed header, padded main content, optional sidebar, and fixed footer, graded on a 100 point rubric.
+
+Main ideas:
+1. The objective is to apply the box model, display, and positioning together: a card with proper padding, margin, and border, and a full page layout with header, content, and footer.
+2. The suggested layout, described spatially: a fixed header bar about 70 pixels tall across the top; below it, an optional sidebar on the left taking 20 to 30 percent of the width beside the main content area on the right taking 70 to 80 percent, which holds the cards; and a fixed footer bar about 70 pixels tall across the bottom.
+3. The example card is a div with class card holding an h3 with class card-title, a p with class card-body, and a button with class card-button. Its sample CSS: width 300px, padding 20px, margin 15px, border 2px solid #1976d2, border-radius 8px, background-color #f5f5f5, a soft box-shadow, display inline-block, and vertical-align top so cards in a row line up at their tops.
+Code: box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+This adds a faint shadow 2 pixels below the card, blurred over 8 pixels, in black at 10 percent opacity, giving a sense of depth.
+4. Helpful tips from the document: build the basic structure first (header, footer, cards); use the X-ray trick * { outline: 1px solid red; } to check spacing, then remove it before submitting; comment what each CSS rule does; scroll to confirm the header and footer stay fixed; test mobile by narrowing the browser window; choose two or three main colors and stick with them; use spacing in multiples of 5 or 10 (5, 10, 15, 20 pixels).
+
+Key terms:
+card component — a reusable styled box with a title, body text, and optional button
+box-shadow — adds a shadow around a box for depth
+border-radius — rounds the corners
+position: fixed — keeps the header and footer pinned while scrolling
+z-index — stacking order; 100 or higher keeps header and footer on top
+hover effect — a style change when the pointer is over an element, written with the :hover selector
+media query — CSS that applies only at certain screen widths (mentioned in the optional challenges)
+
+What you are asked to do:
+Part 1, Card Component:
+1. HTML: a div or article containing an h2 or h3 title, a p for the description, and an optional button as a call to action.
+2. Styling: fixed width of 280 to 320px; padding 15 to 25px; border 1 to 2px solid in a color of your choice; margin 15 to 20px; a light background color (such as #f5f5f5, #fff, or #f9f9f9); border-radius 4 to 8px; box-shadow optional but recommended; use box-sizing border-box.
+3. Spacing details: the title has margin-top 0; the title has a bottom border or padding as a separator; body text has line-height between 1.4 and 1.6; the button, if included, spans the card width with padding.
+4. Show at least 3 cards on the page, using inline-block or flex display.
+Part 2, Page Layout:
+5. Header: position fixed at the top; width 100%; height 50 to 70px; a dark background (such as #1565c0 or #333); contains an h1 with the page title; z-index 100 or higher.
+6. Main content area: margin-top or padding-top so it is not covered by the fixed header; contains your cards; has padding for breathing room.
+7. Footer: position fixed at the bottom; width 100%; height 50 to 70px; dark background; contains copyright or site information; z-index 100 or higher.
+8. Optional sidebar: display inline-block or flex; width 20 to 30% of the content area; contains navigation links or extra info.
+Part 3, CSS properties you must use:
+9. box-sizing border-box on the universal selector; padding (multiple values); margin (multiple values); border and border-radius; width and height; display block, inline-block, or flex; position fixed for header and footer; z-index for layering; background-color and color; at least one hover effect (for example on a button or card).
+Optional challenges:
+10. Advanced styling: gradient background on header or footer, CSS transitions for smooth hovers, card box shadows, a hover that scales or lifts the card.
+11. Responsive design: media queries that stack cards vertically on mobile, a smaller header on small screens, hiding the sidebar on mobile with display none.
+12. Content variation: different card styles (alternate border colors or padding), a "featured" card with slightly different styling, icon placeholders in cards.
+13. Interactive elements: styled form inputs with proper padding and margin, a working navigation menu in the header, active link styling.
+Deliverables:
+14. Submit html06_DIYTask_Submission.html, your complete page. CSS may be inside a style tag or in a linked external stylesheet. Use semantic HTML5 elements, proper indentation, and comments.
+15. If you use an external stylesheet, also submit html06_DIYTask_Submission.css, organized with comments and proper formatting and indentation.
+Grading rubric, 100 points total:
+16. HTML Structure, 20 points: proper semantic HTML5, valid markup, comments.
+17. Card Component, 25 points: proper padding, margin, border, width, and multiple cards displayed.
+18. Page Layout, 25 points: fixed header and footer, content spacing, z-index management.
+19. CSS Properties, 20 points: uses all the required properties correctly.
+20. Visual Design, 10 points: clean professional appearance, colors, consistent spacing.
+Due date and submission method are left as blanks in the source ("[INSERT DATE]" and "[INSERT SUBMISSION METHOD]"), so get them from your teacher.
+
+Watch out for:
+- Remove the X-ray outline line before you submit.
+- A fixed header will cover your first cards unless main has top margin or padding at least as tall as the header.
+- A fixed footer can cover the last cards; leave bottom space too.
+- The document says "Submit TWO files" but the CSS file is only needed if you use an external stylesheet.
+
+Connects to:
+Combines html06a Task (card spacing) and html06b Task (fixed header, sidebar, footer). The flex option and mobile media queries are covered in html07 Flexbox and Responsive Design.

@@ -1,0 +1,72 @@
+Summary of: html10_SeoStudyGuide.md
+Course: HTML CSS JavaScript track
+Lesson: html10 Site Quality and Publishing
+Type of document: study guide
+
+In one sentence:
+This study guide gives the vocabulary, best-practice cheat sheets, competencies and resources for the SEO and accessibility half of html10.
+
+Main ideas:
+1. Vocabulary. The heading says 20 terms, but the list is numbered 1 to 23, with item 20 being a scope note instead of a term. The terms are listed in full under Key terms below.
+2. SEO best practices cheat sheet:
+- Title tag: unique, under 60 characters, keyword-rich and compelling, for example "How to Bake Sourdough | The Bread Institute".
+- Meta description: 150 to 160 characters, compelling, with a clear call to action.
+- h1: one per page; it should match or relate to the title tag.
+- h2, h3, h4: logical order, no skipped levels.
+- Alt text: descriptive, about 100 to 125 characters, and do not start with "image of". Example: "crusty sourdough loaf cooling on wire rack".
+- URL: short, descriptive, lowercase, with hyphens rather than underscores. Example: /blog/how-to-bake-sourdough-bread, not /blog/post_123.
+- Keywords: natural placement in the title, the h1, the first 100 words and alt text. Overuse (keyword stuffing) is penalized.
+- Content: unique and useful, answering the searcher's question; 300 or more words gives better ranking chances.
+3. Accessibility best practices cheat sheet:
+- Alt text: descriptive and meaningful, not generic.
+- Form labels: connected to the input by matching the label's for attribute to the input's id.
+Code: <label for="email">Email:</label> <input id="email">
+The label's for value equals the input's id, so a screen reader announces "Email" when you reach that field.
+- Buttons: use the button element for actions, not a div with onclick.
+- Link text: descriptive, for example "Learn about us", never "click here".
+- Color contrast: 4.5 to 1, such as dark text #333 on a white #fff background.
+- Focus styles: always visible, for example button:focus { outline: 2px solid blue; }.
+- Heading hierarchy: one h1, then h2 and h3, never skipping from h1 to h3.
+- Semantic HTML: nav, main, article, header instead of divs.
+- Keyboard navigation: tab order follows reading order, left to right and top to bottom.
+- ARIA labels: use on icons or unclear elements, such as a close button that only shows a symbol.
+4. ODE competencies:
+- 6.5.14 Search Engine Optimization: know how search engines crawl, index and rank; use title tags, meta descriptions, semantic HTML and headings; write alt text; create clean URLs; understand that content quality affects ranking.
+- 6.1.2 Plan with Accessibility (ADA): treat accessibility as a core requirement from the start, know WCAG Level AA, and plan for keyboard, screen reader and contrast needs.
+- 6.1.4 Proofreading and Quality Assurance: review for SEO and accessibility problems, test with keyboard and screen reader, audit headings, alt text and contrast, and fix issues before launch.
+- 6.5.10 Usability Testing: test accessibility, audit SEO, gather feedback, iterate, and document findings and changes.
+5. SEO and accessibility overlap. Semantic HTML, alt text, heading hierarchy, clean URLs, form labels and descriptive link text each help search engines understand the page and help people (especially screen reader users) use it. Building for accessibility makes the site better for everyone, including search engines.
+6. Resources listed: Google Search Central, the Moz Beginner's Guide to SEO, WebAIM, the WCAG 2.1 overview, the ARIA Authoring Practices Guide, Google Lighthouse, WAVE, the WebAIM Contrast Checker, and the free NVDA screen reader for Windows.
+
+Key terms:
+SEO — search engine optimization: making sites easier for search engines to find, understand and rank.
+search engine — software that crawls the web, indexes pages and returns results for searches (Google, Bing, DuckDuckGo).
+crawl or crawler — an automated bot, such as Googlebot, that visits pages, reads them and follows links to find more pages.
+index — the search engine's database of discovered, processed pages; only indexed pages can show in results.
+rank — a page's position in results; rank 1 is the top, based on relevance and quality.
+title tag — the title element, shown in browser tabs and as the search-result headline.
+meta description — a meta tag giving a short page summary that appears under the title in results.
+heading hierarchy — the ordered structure of h1 to h6: one h1, h2 for sections, h3 for subsections.
+alt text — the alt attribute describing an image for search engines and screen reader users.
+keyword — a word or phrase people search for, used naturally in titles, headings and content.
+organic traffic — visitors who arrive from unpaid search results, not ads or direct links; a sign of good SEO.
+SERP — search engine results page, the list of results for a query.
+ADA — Americans with Disabilities Act, U.S. law requiring accessible websites.
+WCAG — Web Content Accessibility Guidelines, the international standard; Level AA is the industry standard.
+accessibility — designing sites usable by everyone, including people with vision, hearing, motor or cognitive disabilities.
+screen reader — software that reads content aloud for blind or low-vision users (NVDA, JAWS, VoiceOver), controlled with Tab, Enter and arrow keys.
+color contrast — brightness and color difference between text and background; WCAG AA requires 4.5 to 1 for normal text.
+ARIA — Accessible Rich Internet Applications, attributes that give screen readers extra information, such as aria-label, aria-describedby and role.
+aria-label — gives an element a label when there is no visible text, as in a close button showing only a symbol.
+keyboard navigation — using a site with only Tab, Shift plus Tab, Enter and arrow keys; every interactive element must be reachable.
+focus indicator — the visible outline showing which element has keyboard focus; must never be hidden.
+semantic HTML — using meaningful tags (header, nav, main, article, button, a) instead of div soup.
+
+Watch out for:
+- Scope note in the guide: of the ARIA attributes, you only need to know aria-label; the rest is beyond both exams.
+- Do not skip heading levels, and do not remove focus outlines.
+- Use hyphens, not underscores, in URLs.
+- Correction: the vocabulary list has 22 real terms (numbered 1 to 23, with number 20 being a scope note, not a term). The guide's heading says 20 terms and the README says 23; learn all 22 listed under Key terms.
+
+Connects to:
+html10 SeoSlides and SeoWalkthrough cover the same material; html12 Exam Prep reviews these terms.

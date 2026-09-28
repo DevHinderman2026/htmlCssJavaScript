@@ -1,0 +1,65 @@
+Summary of: MANIFEST.txt
+Course: HTML CSS JavaScript track
+Lesson: html09 JavaScript
+Type of document: package manifest (teacher inventory of the original JavaScript Basics lesson)
+
+In one sentence:
+This is a teacher-facing inventory of the original "HTML09 JavaScript Basics" lesson package, listing its 17 files, standards alignment, a day-by-day plan, code standards, and teaching tips.
+
+Main ideas:
+1. What the package is. The manifest describes the original basics-only version of html09, made for the Medina County Career Center Web Design program and dated February 2026. It claims 17 files, 1,931 lines of code, written in HTML5, modern JavaScript (ES6), Markdown, and CSV. It describes itself as "production ready." It was written before the unit was merged with the DOM and Feature Days material, so it does not mention the DOM files, Feature Days files, html09c, html09d, or the Unit Guide.
+
+2. File inventory, grouped:
+- Documentation and planning (4 files): README.md (overview and lesson flow), html09_Slides.md (10 slides on variables and functions), html09_StudyGuide.md (20 vocabulary terms, a cheat sheet, competency alignment, and 10 practice questions), and html09_DIYTask.md (the Mad Libs project with 6 core requirements, stretch goals, and a 100-point rubric).
+- Guided walkthrough: html09_Walkthrough.md, an 8-part guided lesson with fill-in-the-blank sections. The parts are console.log basics, creating variables, let versus const, string concatenation, template literals, writing functions, connecting JavaScript to HTML, and comments. Two solution files go with it: an HTML version with the script written inline, and a separate .js version that shows how an external script is linked.
+- Task 09a, variables practice: html09a_Task.html, a starter template with TODO comments and 10 fill-in assignments focused on let versus const, data types, and console.log. Two solution files (inline HTML and external .js, with bonus examples).
+- Task 09b, functions practice: html09b_Task.html, a starter template with 9 function-writing assignments focused on parameters, return, and template literals. Two solution files, with bonus functions and conversions.
+- DIY project, Mad Libs generator: an example solution page with CSS styling, valid HTML5 structure, a button that makes a new story, and a linked external script; plus the solution script with 12 story variables, 2 story functions, bonus functions, DOM changes with getElementById and innerHTML, and a button click handler.
+- Assessment: html09_Gimkit.csv (30 multiple-choice questions formatted as question, correct answer, and three wrong answers, ready to import into Gimkit) and html09_GoogleQuiz.csv (30 multiple-choice questions formatted as question, options A to D, correct letter, and 1 point each, for Google Forms).
+
+3. Standards alignment (Ohio Department of Education competencies):
+- 6.3.1, Scripting Languages in Web Development: what JavaScript does, that it runs on the client (in the browser), script tags, and data types. Covered by the slides, study guide, and walkthrough.
+- 6.3.2, Insert Client-Side Scripts: using the script tag, inline versus external scripts, the src attribute, and linking. Covered by every HTML and JS file, especially Walkthrough Part 7.
+- 6.3.3, Comments in Scripts: single-line comments that start with two slashes, and multi-line comments that open with slash-star and close with star-slash, plus good commenting habits. Covered by all code files.
+
+4. Learning progression. The approach is scaffolded: walkthrough, then task, then DIY project.
+- Days 1 to 2: walkthrough plus Task 09a, learning console.log, variables, let and const, and data types; review solutions together.
+- Days 2 to 3: functions and template literals, function-focused walkthrough, Task 09b, and a discussion of why functions make code reusable.
+- Days 3 to 5: the Mad Libs DIY project, with the teacher's solution as a reference and grading by the rubric.
+- Day 5: assessment with the Gimkit review game and the formal Google Forms quiz.
+
+5. Code standards the package follows:
+- Variable naming in camelCase, for example myVariable, studentName, totalScore, isStudent.
+- Comments in all code: every function explained, every variable justified, and comments that explain why, not just what.
+- Modern JavaScript: let and const instead of var, template literals instead of concatenation, proper function syntax, and good DOM practices.
+- Valid HTML5: a DOCTYPE declaration, meta tags for charset and viewport, semantic elements where they fit, and no deprecated attributes.
+
+6. Key features claimed: full scaffolding, solutions in both inline and external formats, a fun real-world project, extensive comments, camelCase throughout, modern JavaScript, standards alignment, two quiz options, a 100-point rubric, no outside dependencies, and plain-text files.
+
+7. Teaching tips (ten of them): start in the Developer Tools console (F12) before HTML; stress console.log as the main debugging tool; teach let and const first and mention var only so students recognize it; highlight template literals for readability; show how one function saves repetition; keep Mad Libs fun and creative; consider pair programming for Tasks 09a and 09b; always demo a working solution first; treat errors as normal, for example by uncommenting error lines to see a TypeError; and push advanced students to the stretch goals.
+
+8. Technical details: about 92 KB total, all plain text, works in Chrome, Firefox, Safari, and Edge, needs only a text editor, a browser, and a Gimkit or Google account for quizzes, uses plain ("vanilla") JavaScript with no frameworks, and claims valid HTML5 with semantic elements and alt text.
+
+9. A quick-reference table maps purposes to files, for example slides for presenting, the study guide for vocabulary, the walkthrough for step-by-step learning, the task files for practice, the solution files for checking work, the DIY task for the rubric, the CSV files for quizzes, and the README for lesson structure.
+
+Key terms:
+manifest — a list of every file in a package and what each is for.
+ODE competency — a numbered skill from the Ohio Department of Education standards (here 6.3.1, 6.3.2, 6.3.3).
+client-side — code that runs in the user's browser rather than on a server.
+inline script — JavaScript written directly inside a script element in the HTML file.
+external script — JavaScript kept in a separate .js file and linked with the src attribute of the script tag.
+camelCase — naming style where the first word is lowercase and each later word starts with a capital, like totalScore.
+ES6 — the 2015 version of JavaScript that introduced let, const, and template literals.
+vanilla JavaScript — plain JavaScript without any framework or library.
+scaffolding — teaching in steps from guided practice to independent work.
+Gimkit — a classroom quiz game that can import questions from a CSV file.
+TypeError — a JavaScript error type; the manifest mentions showing it by uncommenting error examples.
+
+Watch out for:
+- Many files listed here are not in this folder: the walkthrough solutions, the 09a and 09b solutions, the Mad Libs solutions, and both quiz CSV files. They were likely moved to teacher-only storage.
+Heads up: this manifest is out of date. Only 7 of its 17 files are in the folder (README, html09_Slides, html09_StudyGuide, html09_DIYTask, html09_Walkthrough, html09a_Task, html09b_Task), and the folder's newer DOM and Feature Days files are not listed, so use the Unit Guide as the current file list.
+Correction: follow the newer Unit Guide: concatenation with the plus sign is the tested way to build strings, and template literals are shown once. The manifest's preference for template literals is older advice; know both, but study concatenation for tests.
+- The manifest recommends working in the F12 console, but the Unit Guide warns the console may be blocked on student machines.
+
+Connects to:
+The html09 Unit Guide, which supersedes this manifest by describing the merged unit (basics plus DOM plus Feature Days).

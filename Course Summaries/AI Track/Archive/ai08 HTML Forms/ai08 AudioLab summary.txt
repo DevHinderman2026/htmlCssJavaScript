@@ -1,0 +1,43 @@
+Summary of: ai08_AudioLab.md
+Course: Web Design AI track (archived version)
+Lesson: ai08 HTML Forms
+Type of document: audio lab (screen reader forms audit, "The Forms Face-Off")
+
+In one sentence:
+This lab compares, by ear, your carefully directed registration form with a deliberately lazy copy, turns the lazy form's failures into written findings, and checks what the browser does when a submit fails validation.
+
+Main ideas:
+There are two forms with identical fields: the real one you directed carefully, and lazy-form.html, which the brief had Claude build badly on purpose. Forms are where a screen reader changes behavior: when you land in a form field, it switches into a mode where your typing goes into the field, and it announces what each field is as you arrive. That arrival announcement is the only introduction a field gets.
+
+1. Step 1, the real form walked cold. This checks whether every control introduces itself completely the moment you land on it, before you type. A complete introduction has up to four parts: the field's label (what to enter), its type ("edit" for a text box, "radio button," or "combo box" for a dropdown), its position in a group (such as "1 of 3"), and whether it is required. When you enter a grouped section, the group's legend (its title) should announce first. Tab through the whole form, top to bottom, and at each stop note whether you heard the label, type, and required status, and whether each new fieldset announced its legend. Example of what you should hear: "Contact information, grouping," then "Full name, edit, required," then "Email address, edit, required," and at the radio group, "Shirt size, grouping. Small, radio button, not checked, 1 of 3." If a field announces only its type, such as just "edit," its label is not connected; the lab calls this the single most common form defect on the web. Example fix request: the phone number field announces as just "edit" with no label, so connect its label element to the input using matching for and id attributes, and save.
+2. Step 2, the lazy form, same walk. The lazy form uses placeholders instead of labels, no fieldsets, and a generic button. Open lazy-form.html and do the same Tab walk. Some fields announce their placeholder text once, but after you type a character and review the field, the placeholder is gone, and so is any reminder of what the field wanted. The radio buttons arrive as "radio button, 1 of 3" with nothing saying one of three what. Record the exact moment the form stops making sense to someone who did not design it.
+3. Step 3, turn the differences into findings. This is the exact format the html11 AI-critique uses. For each lazy-form failure, write one line with three parts: what announced wrong, what markup is missing, and what the fix is, separated by arrows. The lab's example: radio group announces no purpose, arrow, no fieldset and legend, arrow, wrap the group in a fieldset with the legend "Shirt size." Write at least five findings in that arrow format. If you run out, you missed some; go back to Step 2 and listen to the dropdown and the button. Cleanup: have Claude delete lazy-form.html and do not commit it.
+4. Step 4, submit behavior on the real form. This checks what the browser does on its own when validation fails, behavior you get for free from the required and pattern attributes. Leave a required field empty and activate the submit button. Note whether focus jumped, whether a message announced, and which field is now focused. Then fix the field, submit again with everything valid, and note what happens. On the failed submit you should hear focus move to the first invalid field with an announcement like "Please fill out this field," as the browser blocks the submit and takes you to the problem. On the valid submit the form goes through; on class pages that may just reload the page, which is expected because there is no server yet (a fact the ConceptCheck asks about).
+
+Key terms:
+Forms mode — the screen reader mode used inside form fields, where typing goes into the field.
+Label — the text that tells a user what to enter, connected to its input.
+for and id — matching attributes that connect a label element to its input.
+Fieldset — a grouping of related form controls.
+Legend — the title of a fieldset, announced when you enter the group.
+Placeholder — hint text inside a field that disappears when you type; not a replacement for a label.
+Combo box — how screen readers usually announce a select dropdown.
+required — the attribute that makes a field mandatory, so the browser blocks an empty submit.
+pattern — the attribute that checks a field's value against a format.
+Validation — the browser's checking of form input before submitting.
+
+What you are asked to do:
+- Step 1: Tab through the real form and write short notes on what each field announced; fix any unlabeled fields.
+- Step 2: do the same walk on lazy-form.html and write what you heard and where it broke down.
+- Step 3: write at least five findings in the three-part arrow format, then delete lazy-form.html without committing it.
+- Step 4: test a failed and a valid submit and write what happened on both.
+- Verdict: write the three-sentence verdict at the end of the lab (its prompts are in the original file); it is part of the completed AudioLab you turn in.
+
+Watch out for:
+- A field that announces only "edit" has no connected label.
+- Placeholders vanish once you type, so they cannot replace labels.
+- Radio groups without a fieldset and legend give no context.
+- Do not commit lazy-form.html.
+
+Connects to:
+Audits the forms from ai08 BuildBrief; the findings format is reused in html11's AI critique. Matches html08 HTML Forms in the HTML CSS JavaScript track.

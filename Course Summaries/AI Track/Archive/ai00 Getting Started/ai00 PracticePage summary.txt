@@ -1,0 +1,43 @@
+Summary of: ai00_PracticePage.html
+Course: Web Design AI track (archived version)
+Lesson: ai00 Getting Started
+Type of document: practice page (a finished, correctly built sample page used by the AudioLab)
+
+In one sentence:
+A small, correctly built web page for a fictional "Trailhead Bakery" that the ai00 moves trainer uses so you can hear what correct structure sounds like.
+
+Main ideas:
+The page has no TODO comments or tasks inside it; it is a model to listen to. Its structure, from top to bottom:
+1. The head contains the character set declaration (UTF-8), the viewport tag for mobile screens, and the title "Trailhead Bakery - Practice Page." The html element has lang set to English.
+2. A header (the banner region) containing one heading level 1, "Trailhead Bakery."
+3. A nav element (the navigation region) containing an unordered list of three links: "Our breads," "Hours and location," and "Contact the bakery." Each link jumps to a spot on the same page using an id, written like href="#breads".
+4. A main element with two section elements:
+- The first section, id breads, has a heading level 2 "Our Breads," a paragraph saying everything is baked the same morning it is sold, an unordered list of three breads (Sourdough, Rye, Honey oat), then a heading level 3 "Weekend Specials" with a paragraph: cinnamon rolls on Saturdays, challah on Sundays.
+- The second section, id hours, has a heading level 2 "Hours and Location" and a data table with the caption "Weekly hours." The table has a header row with two column headers, Days and Hours, each marked with scope="col". Two data rows follow: Tuesday to Friday, 7am to 2pm; and Saturday and Sunday, 8am to noon.
+5. A footer, id contact, with a paragraph giving the address, 12 Summit Street, and the phone number 330-555-0184.
+
+Why it matters: each part is built so a screen reader can report it correctly. The title is spoken on load, the headings form a clean outline (one level 1, two level 2s, one level 3), the header, nav, main, and footer announce as regions, link text makes sense on its own, the lists announce with item counts, and the table's column headers are announced with each cell.
+
+Code: <th scope="col">Hours</th>
+This makes "Hours" a header cell for its column, so a screen reader says "Hours" along with each value below it.
+
+Key terms:
+title — the page name in the head, spoken first when the page opens.
+header — the banner region at the top of the page.
+nav — the navigation region holding the site's links.
+main — the main content region.
+section — a thematic block of content with its own heading.
+footer — the bottom region, announced as "content information."
+ul and li — an unordered list and its list items.
+a with href="#id" — a link that jumps to the element with that id on the same page.
+table, caption, thead, tbody, tr, th, td — a data table, its title, header group, body group, row, header cell, and data cell.
+scope="col" — marks a header cell as labeling its column.
+
+What you are asked to do:
+Nothing is to be edited. Open this page in your browser and use it for the eight moves in the ai00 AudioLab.
+
+Watch out for:
+This page is correct on purpose; use it as the reference for what your own pages should sound like.
+
+Connects to:
+Used by ai00 AudioLab; the same elements are taught in the ai02 (semantic HTML), ai03 (links), and ai04 (tables) units.

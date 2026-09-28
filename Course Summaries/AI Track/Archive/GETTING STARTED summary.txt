@@ -1,0 +1,43 @@
+Summary of: GETTING_STARTED.md
+Course: Web Design AI track (archived version)
+Lesson: Archive (track-level document, not tied to one lesson)
+Type of document: setup guide
+
+In one sentence:
+This short guide lists the tools you need running for the archived AI track, how to tell Claude where to save files, the standard screen reader "audit moves" every AudioLab uses, and the one habit to do after every build.
+
+Main ideas:
+1. Four things need to be running before you work. First, the Claude desktop app, signed in; you can work by voice or keyboard, whichever is faster. Second, a screen reader, which is the audit tool for every AudioLab; any screen reader works because the labs describe each step in plain English. Third, GitHub Desktop, with this repository cloned so you can commit and push. Fourth, a folder open where Claude saves the files it builds (each unit folder in the repo).
+2. Saving files: when a build is right, tell Claude exactly where to put it. The guide's example is "Save that as index.html in my ai02_semanticHTML folder." Then confirm the file really exists before you commit.
+3. The audit moves: every AudioLab is built from a small set of standard screen reader moves. Every screen reader has a command for each one. Find the command in your own screen reader once, and every lab in the track becomes runnable. The nine moves are:
+- Headings list: one view of every heading on the page, with its level.
+- Next heading: jump from heading to heading in order.
+- Region walk: jump between the page's landmarks, which are banner, navigation, main, and footer.
+- Links list: every link on the page, read by its link text alone.
+- Tab through: move through every focusable element in page order.
+- Next table and cell-by-cell: jump to a data table, then walk it one cell at a time, with headers announced as you move.
+- Next graphic: jump to the next image; its alt text is what gets announced.
+- Read from here: continuous reading down the page.
+- Top of page: go back to the start.
+4. The one habit: after every build, before judging anything else, pull up the headings list. If that list alone does not tell the story of the page, the page is wrong, no matter what else was built correctly.
+
+Key terms:
+Claude desktop app — the AI tool you direct to build pages.
+Screen reader — software that reads a page aloud; here it is used as the audit instrument.
+GitHub Desktop — the program used to commit and push work to the repository.
+Landmark (region) — a named zone of a page such as banner, navigation, main, or footer.
+Focusable element — something the Tab key can land on, such as a link, button, or form field.
+Alt text — the text description of an image that a screen reader announces.
+
+What you are asked to do:
+- Have the Claude app, a screen reader, GitHub Desktop with the repo cloned, and your unit folder ready.
+- Learn your own screen reader's command for each of the nine audit moves.
+- Always confirm a saved file exists before committing.
+- Run the headings list first after every build.
+
+Watch out for:
+- Do not assume Claude saved a file; check that it exists.
+- A page that gets many things right can still fail if its headings list does not make sense on its own.
+
+Connects to:
+The ai00 AudioLab (the moves trainer) practices each of these moves on a sample bakery page, and ai00 WorkflowGuide explains the full five-step loop.

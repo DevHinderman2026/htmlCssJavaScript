@@ -1,0 +1,60 @@
+Summary of: html09_FeaturesDIYTask.md
+Course: HTML CSS JavaScript track
+Lesson: html09 JavaScript
+Type of document: DIY task (the unit's capstone)
+
+In one sentence:
+This capstone task has you ship three features on your real website, dark mode, a mobile hamburger nav, and form validation, all in one commented external script.
+
+Main ideas:
+1. This is the capstone task of the unit. All three features go on your real site, not a scratch page, and they stay there.
+2. Feature 1 follows the dark mode pattern from the feature days. You are told not to copy and paste but to retype it and adapt it to your own colors.
+3. Feature 2 follows the hamburger pattern: a button that toggles an open class on the nav, with aria-expanded kept up to date.
+4. Feature 3 applies validation to the form you built in html08, plus a written explanation of what a real server would do with the data. That explanation is how you show competency 6.4.7.
+5. Comments on every function show competency 6.3.3.
+
+Key terms:
+capstone — the final task that combines the unit's skills.
+CSS custom properties — CSS variables, defined on :root, holding your color palette.
+.dark-mode override — the set of variable values used when body has the class dark-mode.
+classList.toggle('open') — flips the open class that shows or hides the nav.
+aria-expanded — tells screen readers whether the nav menu is open.
+form validation — checking input before accepting it.
+server — the computer that receives and processes submitted form data.
+database — where a server stores data permanently.
+alert() — a pop-up box; not allowed for errors in this task.
+
+What you are asked to do:
+Feature 1, dark mode toggle:
+- Move your palette into CSS custom properties on :root.
+- Create a .dark-mode override set.
+- Put a real button element in the header that toggles it.
+- The button label updates with the mode, and the background uses a transition so it fades.
+Feature 2, mobile hamburger nav:
+- Below 768 pixels, the nav is hidden behind a hamburger button; above that, the normal nav shows and there is no button.
+- classList.toggle('open') drives it.
+- aria-expanded updates when it opens and closes.
+- It works by keyboard (Tab and Enter).
+Feature 3, form validation on your html08 form:
+- At least three checks: a required field is empty, the email has the right shape, and a length or pattern rule.
+- Friendly error messages written into the page, not alert().
+- The form only "submits" when every check passes.
+- A comment at the top of your JavaScript with two or three sentences about what a real server would do with this data after it is submitted. You must use the words server and database, and say that validation happens again on the server because users can bypass yours.
+What to commit: your updated site's HTML, CSS, and one single external file named script.js. All JavaScript must be commented, with every function getting a one-line comment saying what it does.
+Done-when checklist:
+- Dark mode toggles site-wide through one body class.
+- The hamburger appears only on narrow screens and toggles the nav.
+- The form blocks bad input with visible, friendly messages.
+- All JavaScript is external, commented, and in one file.
+- The server comment exists and uses the required vocabulary.
+- Everything is pushed to GitHub.
+
+Watch out for:
+- All three features must share one script.js file; do not split them up or leave script inline.
+- Error messages must appear on the page. For screen-reader users, messages placed near the field are more useful than pop-ups.
+- Client-side validation can be bypassed, which is exactly why the server must check again; your comment must say this.
+- Retype and adapt the patterns instead of pasting them.
+Heads up: the teacher solution the Unit Guide mentions (teacher/html09_Features_Solutions) is teacher-only and not in your folder. Build from the FeatureDays walkthrough and html09d_Task instead.
+
+Connects to:
+html09 FeatureDays Walkthrough (Features 1 and 2), html09d Task and DomSlides (validation), html08 (your form), and html11 (where these features are required).

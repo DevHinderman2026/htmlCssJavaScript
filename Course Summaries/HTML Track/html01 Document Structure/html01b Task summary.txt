@@ -1,0 +1,38 @@
+Summary of: html01b_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html01 Document Structure
+Type of document: task starter file
+
+In one sentence:
+This starter file gives you a complete HTML skeleton titled "My Skills Page" with an empty body full of TODO comments, and you add headings, paragraphs, a line break, and a comment.
+
+Main ideas:
+The head is already done: the doctype, the html element with lang en, meta charset UTF-8, and the title "My Skills Page". Inside the body, an instruction comment labeled "TASK 01b: Content Markup with Headings, Paragraphs and Comments" says your objective is to add headings, paragraphs, line breaks, and comments by completing all TODO items. Each TODO is followed by blank lines for your code.
+
+Key terms:
+h1 — main heading.
+h2 — subheading.
+h3 — third-level heading.
+p — paragraph.
+br — line break inside a paragraph.
+Comment — hidden developer note.
+
+What you are asked to do:
+1. Add an h1 with the text "My Skills".
+2. Add an h2 with the text "Technical Skills".
+3. Add a paragraph about your technical skills.
+4. Add another h2 with the text "Soft Skills".
+5. Add a paragraph about soft skills such as teamwork and communication.
+6. Add an h3 with the text "Goal".
+7. Add a paragraph with your learning goal that includes a br tag in the middle.
+8. Add a comment explaining what the page is about.
+Code: <h3>Goal</h3>
+This is the level-three heading TODO 6 asks for.
+
+Watch out for:
+- Heading text should match the TODOs exactly.
+- The br goes inside the goal paragraph, not between paragraphs.
+- Your added comment must use proper comment markers so it stays hidden.
+
+Connects to:
+Follows html01a Task; the DIY About Me task uses the same skills without a starter file.

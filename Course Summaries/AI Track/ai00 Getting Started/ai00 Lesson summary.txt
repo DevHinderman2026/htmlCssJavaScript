@@ -1,0 +1,68 @@
+Summary of: ai00_Lesson.md
+Course: Web Design AI track
+Lesson: ai00 Getting Started
+Type of document: lesson
+
+In one sentence:
+This lesson walks you through building one small page called hello.html with Claude, checking it with your screen reader, learning what each line does, and pushing it, which is the same loop used in every later lesson.
+
+Main ideas:
+
+Before you start, check four things:
+1. The Claude desktop app is open and signed in.
+2. Claude can see your repository folder. This is the folder GitHub Desktop created when you cloned your repository.
+3. GitHub Desktop is open and showing your repository.
+4. Your screen reader is running.
+If any of these is not true, ask Mr. McMaster before continuing.
+
+Step 1, Build:
+- Every lesson gets its own folder in your repository with the same name as the lesson. First, tell Claude to make a folder called ai00_gettingStarted in your repository folder.
+- Then tell Claude to make a complete HTML page. The page title is Hello from [your name]. The page has one heading level one that says the same thing, and one paragraph that says what this class is. It is saved as hello.html in the ai00_gettingStarted folder.
+- Then ask Claude to list the files in the ai00_gettingStarted folder. You should hear hello.html in the list. This confirms the file was saved where you asked.
+
+Step 2, Check:
+1. Open File Explorer, go to your repository folder, then into ai00_gettingStarted.
+2. Arrow to hello.html and press Enter. It opens in Chrome.
+3. When the page opens, the screen reader announces the page title first. You should hear Hello from your name.
+4. Press H to jump to the heading. It should be announced as heading level one.
+5. Press Down Arrow. You should hear your paragraph.
+If something is wrong, tell Claude exactly what you heard. The lesson's example: the page title is the file name instead of Hello from my name, so ask Claude to fix the title and save. Then press F5 to reload the page and check again.
+
+Step 3, Learn:
+- Ask Claude to read hello.html to you one line at a time and, after each line, explain in one short sentence what that line does. Listen to the whole thing once. This is how you start learning the code Claude writes.
+
+Step 4, Push:
+1. Switch to GitHub Desktop.
+2. hello.html appears in the Changes list.
+3. Move to the Summary field and type: First page.
+4. Activate the Commit to main button.
+5. Activate the Push origin button.
+The lesson states plainly: pushed means turned in.
+
+Key terms:
+repository folder — the folder on your computer that GitHub Desktop created when you cloned your repository; all lesson folders go inside it.
+complete HTML page — a full HTML document, not just a fragment, so it includes the page structure and a title.
+page title — the name of the page; it is the first thing the screen reader announces when the page opens.
+heading level one — the main heading of the page; the H key jumps to headings and the screen reader announces the level.
+paragraph — a block of ordinary text on the page.
+F5 — the key that reloads the page in Chrome after a fix.
+commit — saving a snapshot of your changes with a short summary message.
+push (Push origin) — sending your commit up to GitHub, which counts as turning the work in.
+
+What you are asked to do:
+1. Create the folder ai00_gettingStarted in your repository.
+2. Have Claude build hello.html with the title Hello from [your name], a matching heading level one, and one paragraph about the class.
+3. Check the page by ear: title, heading level one, and paragraph.
+4. Have Claude explain the file line by line.
+5. Commit with the summary First page and push.
+Turn in:
+1. hello.html
+2. Your answers to the questions in ai00_Questions.md, shared in Google Classroom.
+
+Watch out for:
+- A missing or wrong title is easy to miss visually but obvious by ear: if the screen reader announces the file name when the page opens, the title is wrong.
+- Always reload with F5 after Claude fixes a file, or you will hear the old version.
+- The work is not turned in until it is pushed, not just committed.
+
+Connects to:
+This lesson matches html00 Getting Started in the HTML CSS JavaScript track. The same build, check, fix, push loop is used in every AI track lesson.

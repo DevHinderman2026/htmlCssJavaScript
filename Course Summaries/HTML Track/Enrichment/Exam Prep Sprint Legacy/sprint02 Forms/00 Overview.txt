@@ -1,0 +1,10 @@
+Overview of: sprint02 Forms
+Course: HTML CSS JavaScript track
+
+What this lesson is about:
+This second legacy exam-prep sprint condenses HTML forms into the facts the state exam tests most. You learn the form element with its action and method attributes, and when to use GET (searches, visible in the URL) versus POST (logins and sensitive data, sent in the request body). You learn to connect every label to its input with matching for and id values, and to choose the right input type: text, email, password, number, date, tel, radio, checkbox, submit and reset. You learn that radio buttons in a group share one name so only one can be chosen, while checkboxes allow many. You group related fields with fieldset and legend, use select, option and textarea, and add the required attribute. You leave able to build and check an accessible registration form.
+
+Documents in this folder, in suggested order:
+1. sprint02 Slides summary.txt — the slideshow: form basics, GET versus POST, labels, input types, radio versus checkbox, fieldset, buttons and form CSS.
+2. sprint02 StudyGuide summary.txt — 20 vocabulary terms, cheat sheets, Ohio competencies, 5 common mistakes and 10 practice questions with answers.
+3. sprint02 Task summary.txt — starter page with 10 TODOs to build a registration form with three fieldsets.

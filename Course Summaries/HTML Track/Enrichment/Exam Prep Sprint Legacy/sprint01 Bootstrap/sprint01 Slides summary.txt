@@ -1,0 +1,64 @@
+Summary of: sprint01_Slides.md
+Course: HTML CSS JavaScript track
+Lesson: sprint01 Bootstrap
+Type of document: slideshow
+
+In one sentence:
+A short slideshow for a 2-hour exam prep sprint that introduces Bootstrap, its 12-column grid, its six responsive breakpoints, its common components, and its utility classes.
+
+Main ideas:
+1. What Bootstrap is. Bootstrap is a front-end framework: a ready-made library of CSS classes and components that makes responsive sites faster to build. Its key features are pre-built classes and components, a 12-column grid for layout, mobile-first responsive design built in, and delivery through a CDN so nothing has to be installed.
+2. Why use it. It saves time writing CSS, looks consistent across browsers, is mobile-responsive by default, and gives you professional-looking components ready to use.
+3. Getting started. You add one link element in the head of the page that loads Bootstrap's CSS from the jsDelivr CDN, version 5.3.0. An optional script element loads Bootstrap's JavaScript bundle, which is only needed for interactive components such as a collapsing menu.
+Code: <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+This line in the head pulls in the Bootstrap stylesheet so its class names start working.
+4. The grid structure is always container, then row, then columns. A div with class container holds a div with class row, which holds divs with class col. Two plain col divs share the row equally.
+5. The 12-column system. Every row is divided into 12 columns. You divide those 12 among your column divs to make a layout, and the widths can change at breakpoints.
+6. Container types. The class container is fixed width with margins on the sides. The class container-fluid is full width, edge to edge.
+7. Responsive breakpoints. Bootstrap changes layout at set screen widths. The column class prefixes and their widths are:
+- col- with a number (no size letters): extra small, under 576 pixels.
+- col-sm-: small, 576 pixels and up.
+- col-md-: medium, 768 pixels and up.
+- col-lg-: large, 992 pixels and up.
+- col-xl-: extra large, 1200 pixels and up.
+- col-xxl-: extra extra large, 1400 pixels and up.
+8. Mobile-first approach. Start with the smallest breakpoint and add larger breakpoint classes only as you need them. A class for a size applies at that width and every width above it.
+9. Breakpoints in action. The example gives three cards in a row, each with the classes col-12 col-md-6 col-lg-4.
+Code: <div class="col-12 col-md-6 col-lg-4">Card 1</div>
+On phones each card is col-12, meaning full width and stacked. On tablets (md) each is 6 of 12, so two cards per row. On desktops (lg) each is 4 of 12, so three cards per row.
+10. Navbar component. A nav element with classes navbar, navbar-expand-lg, navbar-dark and bg-dark. Inside is a container-fluid holding a brand link (class navbar-brand), a toggle button (class navbar-toggler with the attribute data-bs-toggle="collapse") that appears on small screens, and a collapsible div (classes collapse navbar-collapse) containing a list with class navbar-nav and ms-auto (pushes the links to the right). Each list item has class nav-item and each link has class nav-link.
+11. Card component. A div with class card, containing an image with class card-img-top, then a div with class card-body holding a heading with class card-title, a paragraph with class card-text, and a link styled as a button with classes btn btn-primary.
+12. Buttons. Every Bootstrap button gets the base class btn plus a color variant, for example btn-primary, btn-secondary, btn-success.
+13. Alerts. A div with classes alert and alert-success (or another color) and the attribute role="alert" shows a message box.
+14. Utility classes. Small single-purpose classes:
+- m- for margin, such as m-3, mt-2 (top), mb-4 (bottom).
+- p- for padding, such as p-3, pt-2, pb-4.
+- text-center, text-start, text-end for text alignment.
+- bg- for background color, such as bg-primary, bg-light.
+- form-control for styling text, email and password inputs.
+15. Key takeaways: Bootstrap is a framework of classes and components; the grid is container, row, col with 12 columns; responsiveness comes from breakpoint classes like col-md-6 and col-lg-4; navbar, card, button and alert are ready to use; utilities (m-, p-, text-, bg-) speed up styling; build mobile first starting at xs. Next steps are reviewing the Bootstrap documentation, completing the hands-on task, and practicing grid layouts.
+
+Key terms:
+Bootstrap — a front-end framework of pre-built CSS classes and components for responsive sites.
+CDN — content delivery network; lets you load Bootstrap from the internet with a link tag instead of installing it.
+container — fixed-width wrapper with side margins.
+container-fluid — full-width wrapper that runs edge to edge.
+row — a horizontal line of columns inside a container.
+col — a column inside a row; col-md-6 means 6 of 12 columns from medium screens up.
+breakpoint — a screen width where the layout changes (xs, sm, md, lg, xl, xxl).
+mobile-first — start with the smallest screen layout, then add classes for larger screens.
+navbar — Bootstrap navigation bar component.
+navbar-toggler — the button that opens and closes the collapsed menu on small screens.
+card — Bootstrap content box component with image, title, text and button.
+btn — base class for Bootstrap buttons; combined with btn-primary, btn-success and so on.
+alert — Bootstrap message box component, used with role="alert".
+utility class — a small class that sets one style, like m-3 or text-center.
+form-control — class that styles form inputs.
+
+Watch out for:
+- Exam tip list: know the 12-column system, memorize all six breakpoint names and pixel sizes, remember the order container then row then col, recognize navbar, card, button and alert, know the m-, p-, text- and bg- utilities, and know that the CDN link goes in the head.
+- The Bootstrap JavaScript bundle is only needed for interactive pieces like the collapsing navbar; without it the toggler button does nothing.
+- Correction: a navbar toggler needs data-bs-target="#id-of-menu" (and aria-controls) pointing at the collapsible menu's id, or it will not open. The slide's example leaves data-bs-target out, so copy the full version from the Bootstrap Basics slides instead.
+
+Connects to:
+The enrichment Bootstrap Basics lesson covers Bootstrap in more depth, and the html07 lesson on flexbox and responsive design covers the responsive ideas without a framework. Sprint05 Exam Review repeats this material.

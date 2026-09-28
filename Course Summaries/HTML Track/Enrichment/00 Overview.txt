@@ -1,0 +1,14 @@
+Overview of: Enrichment
+Course: HTML CSS JavaScript track
+
+What this lesson is about:
+The Enrichment folder holds optional material that is not on the graded path of the course. It has three sections. Bootstrap Basics is the retired Bootstrap unit; it is still current in one way, because it serves as the component menu for the html11c AI build, and fast finishers can use it for extra practice. Capstone Project Legacy is the old html14 capstone, a multi-page website project with a spec, planning template, rubric, self-assessment, implementation guide, and a complete example solution site. Exam Prep Sprint Legacy is last year's five-part catch-up sprint series on Bootstrap, forms, SEO and deployment, troubleshooting and quality checks, and exam review. The two "legacy" sections appear to be older, optional material that has been replaced: pieces of the capstone were reused in html11 Build It Three Ways, and pieces of the sprints were reused in html12 Exam Prep. Use this folder for extra practice or background, not as a guide to what is graded now.
+
+Documents in this folder, in suggested order:
+1. README summary.txt — what each enrichment section is and which parts were reused elsewhere.
+2. The Bootstrap Basics subfolder — slides, study guide, walkthrough, two task starter files, and a DIY landing-page project on Bootstrap 5 (has its own 00 Overview.txt).
+3. The Capstone Project Legacy subfolder — the old html14 capstone: README, implementation guide, capstone spec, planning template, rubric, self-assessment, and example solution files for a four-page site (index, about, menu, and contact pages plus a stylesheet and script). Summarized separately, with its own overview.
+4. The Exam Prep Sprint Legacy subfolder — a sprint walkthrough assignment and walkthrough template, plus five sprints: sprint01 Bootstrap, sprint02 forms, sprint03 SEO and deployment, sprint04 troubleshooting and QA, and sprint05 exam review with a master study guide and practice exam. Summarized separately, with its own overview.
+
+Other files in the original lesson:
+The Exam Prep Sprint Legacy sprint01 Bootstrap folder has an images subfolder with 3 small PNG images named item-1, item-2, and item-3; none of the sprint01 text files refer to them by name, so they appear to be spare placeholder images. The Capstone Project Legacy folder includes example solution code as HTML, CSS, and JavaScript files. The README also mentions two empty leftover folders, jsDom_leftovers and publish_leftovers, but they are not present in the source.

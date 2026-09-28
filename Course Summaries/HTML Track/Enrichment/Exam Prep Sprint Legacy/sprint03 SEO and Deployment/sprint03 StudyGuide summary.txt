@@ -1,0 +1,102 @@
+Summary of: sprint03_StudyGuide.md
+Course: HTML CSS JavaScript track
+Lesson: sprint03 SEO and Deployment
+Type of document: study guide
+
+In one sentence:
+A large study guide for SEO, accessibility, web protocols and GitHub Pages deployment, with vocabulary, best-practice cheat sheets, Git commands, a deployment checklist, the Ohio competencies, five common mistakes, fifteen multiple-choice practice questions with answers, and study tips.
+
+Main ideas:
+1. SEO best practices:
+- Title tag: keyword plus brand, descriptive, 50 to 60 characters; shows in results and the tab.
+- Meta description: descriptive with a call to action, 150 to 160 characters; affects click-through rate.
+- h1: one per page, naming the main topic; search engines use it to understand the page.
+- h2 to h6: logical order with no skipped levels; helps crawlers understand structure.
+- Alt text: describes the image with natural keywords; helps screen readers and SEO and shows if the image breaks.
+- URL: short and descriptive, with hyphens for spaces.
+- Internal links: descriptive link text, not "click here"; helps crawlers find pages.
+2. Accessibility best practices (with the WCAG level the guide assigns):
+- Color contrast at least 4.5 to 1 for text (AA).
+- One h1 and logical heading order (A).
+- Descriptive alt text, not "image" or "photo" (A).
+- Form labels linked with label for and id (A).
+- Real button elements, not divs, so Enter and Space work (A).
+- Descriptive link text (A).
+- aria-label on icon buttons (the guide lists this as AAA).
+- A visible focus outline on focused elements so keyboard users know where they are (AA).
+- Semantic elements nav, main and button used correctly (A).
+3. Protocols table: TCP/IP (transport layer, the foundation of all internet data, no port); DNS (domain name to IP lookup, not secure, port 53); HTTP (unencrypted web transfer, port 80); HTTPS (web transfer with SSL encryption, secure, port 443); FTP (unencrypted file transfer, port 21); SFTP (encrypted file transfer, port 22). The guide lists every protocol except TCP/IP as application layer.
+4. Git commands for deployment:
+- Setup: git init creates a repository; git remote add origin with your GitHub URL connects it to GitHub.
+- Daily: git add . stages all changes; git commit -m with a message saves a snapshot; git push uploads to GitHub; git pull downloads changes from GitHub.
+- Checking: git status shows what changed; git log --oneline shows a short commit history.
+5. GitHub Pages checklist: push code to a GitHub repository; the repository must be public (or you need GitHub Pro); go to Settings then Pages; select branch main and folder root; click Save; wait 1 to 2 minutes; the site is live at https://username.github.io/repo-name/; confirm HTTPS works (lock icon shows).
+6. SEO and accessibility overlap. Descriptive titles, heading hierarchy, alt text, semantic HTML, descriptive links, color contrast and clear language each help both search engines and people using assistive technology.
+7. Ohio competencies: 6.5.14 SEO principles; 6.1.2 semantic markup (headings, alt text); 6.5.1 web protocols and client-server communication; 6.5.11 deploying with version control and hosting; 6.5.12 WCAG-compliant accessibility features.
+8. Key formulas to remember: SEO success equals descriptive titles plus proper headings plus alt text plus HTTPS. Accessibility success equals semantic HTML plus color contrast plus keyboard navigation plus screen reader support. Deployment is git init, add, commit, push, enable GitHub Pages, and you have a live HTTPS site.
+
+Key terms:
+SEO — search engine optimization.
+Search Engine — tool that finds and ranks sites (Google, Bing, Yahoo).
+Crawler or Spider — robot that reads HTML and follows links to index pages.
+Index — the database where search engines store crawled pages.
+Rank — a page's position in search results.
+Title Tag — element shown as the blue result link and the browser tab text.
+Meta Description — 150 to 160 character summary shown below the title in results.
+Heading Hierarchy — correct heading order, h1 then h2 then h3.
+Alt Text — image description for screen readers and for when the image fails to load.
+Keyword — word or phrase people search for.
+Organic Traffic — free visitors from search engines.
+SERP — search engine results page.
+ADA — Americans with Disabilities Act, US federal law requiring equal access.
+WCAG — Web Content Accessibility Guidelines; AA is the minimum target.
+Accessibility — designing for users with visual, hearing, motor and cognitive disabilities.
+Screen Reader — software that reads content aloud (NVDA, VoiceOver).
+Color Contrast — brightness difference between text and background; 4.5 to 1 minimum for normal text.
+ARIA — Accessible Rich Internet Applications; attributes that give screen readers extra information.
+Focus Indicator — visible outline on the element that has keyboard focus.
+Semantic HTML — using meaningful elements (button, nav, main) instead of generic divs.
+HTTP — HyperText Transfer Protocol, unencrypted.
+HTTPS — HTTP Secure, HTTP plus SSL encryption.
+FTP — File Transfer Protocol, for uploading and downloading files.
+TCP/IP — Transmission Control Protocol and Internet Protocol, the foundation of internet communication.
+DNS — Domain Name System; converts domain names to IP addresses.
+SSL Certificate — digital certificate that enables HTTPS and proves site identity.
+Static Site — fixed HTML, no database; GitHub Pages is an example.
+Dynamic Site — changes per user, uses a database and backend server.
+Git — version control system for tracking code changes.
+GitHub Pages — free static hosting from a GitHub repository with automatic HTTPS.
+
+What you are asked to do:
+Practice questions with correct answers:
+1. What does HTTPS protect that HTTP does not? B, data encryption; the S stands for Secure.
+2. Which heading order is correct? A, h1, h2, h3, h4, because levels go in order without skipping.
+3. Minimum WCAG AA contrast for body text? B, 4.5 to 1.
+4. Best title tag? C, "Fresh Sourdough Bread | Joe's Bakery", because it is descriptive with keyword and brand.
+5. What does alt text do? C, helps screen readers and shows if the image fails to load.
+6. What does a crawler do? B, reads HTML and indexes pages for search engines.
+7. Most accessible element for a clickable button? C, the button element, which works with Enter and Space.
+8. What is a meta description for? B, describing page content in search results in 150 to 160 characters.
+9. Which DNS statement is true? B, DNS converts domain names to IP addresses.
+10. What is a static website? B, fixed HTML files with no database that load the same for every user.
+11. When should you use aria-label? B, when visual labels are not enough, such as icon buttons.
+12. First step to deploy to GitHub Pages? B, create a Git repository and push code to GitHub; Pages can only be enabled after that.
+13. Which is NOT a protocol? C, HTML, which is a markup language.
+14. What is organic traffic? C, free traffic from search engine results.
+15. Which accessibility statement is false? B, "accessibility only helps people with disabilities"; captions help in noisy places and clear language helps English learners.
+Study tips: make flashcards (especially protocols); write a practice page with correct headings, alt text and semantic HTML; test contrast with the WebAIM Contrast Checker; deploy something to GitHub Pages; look at real sites and check for aria-label and enough contrast.
+
+Watch out for:
+Five common mistakes:
+1. Multiple h1 tags on one page; use one h1 and make the rest h2 or h3.
+2. Skipped heading levels, such as h1 straight to h3.
+3. Vague alt text such as "image" or "photo".
+4. A missing meta description; every page needs its own 150 to 160 character description with a call to action.
+5. A div with an onclick used as a button; divs are not keyboard accessible, so use a real button element.
+Heads up: the vocabulary heading says 25 terms, but the list actually has 30. Nothing is missing; study all 30.
+Correction: WCAG Level AA is 4.5 to 1 for normal text and 3 to 1 for large text; Level AAA is 7 to 1 for normal text and 4.5 to 1 for large text (large means about 24px regular or 18.66px bold). The explanation for practice question 3 wrongly says 7 to 1 is "for large text," but answer B, 4.5 to 1, is still right.
+Correction: alt="" (empty) is correct for purely decorative images and is only wrong when the image carries meaning. Mistake 3 lists alt="" as always wrong, while the sprint03 slides teach it correctly.
+Correction: giving an icon-only button a name with aria-label is WCAG Level A (4.1.2 Name, Role, Value), not AAA. The guide's accessibility table rates it AAA.
+
+Connects to:
+Matches the html10 lesson on site quality and publishing. The sprint03 task practices these fixes, and sprint05 reviews them.

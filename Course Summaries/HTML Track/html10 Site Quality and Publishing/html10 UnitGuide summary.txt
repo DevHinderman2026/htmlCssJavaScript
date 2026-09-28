@@ -1,0 +1,38 @@
+Summary of: html10_UnitGuide.md
+Course: HTML CSS JavaScript track
+Lesson: html10 Site Quality and Publishing
+Type of document: unit guide
+
+In one sentence:
+This is the road map for the whole html10 unit, telling you which topics are covered in which order, which files go with each part, and what is deliberately left out.
+
+Main ideas:
+1. html10 is a merged unit. It combines the old html12 (SEO and Accessibility) and the old html13 (Testing, Protocols and Publishing), rebuilt under the course's version 2 master plan.
+2. The guide calls this "the vocabulary unit": most of the material that appears only on the written exam, and not in hands-on work, is taught here. Treat the terms in this unit as study priorities.
+3. The unit takes about 5 class periods, split into five segments:
+- 10a, SEO: title tags, meta descriptions, headings, alt text and keywords. Materials: html10_SeoSlides, html10_SeoWalkthrough, html10a_Task.
+- 10b, Accessibility: the ADA, screen readers, keyboard navigation, color contrast and the aria-label attribute. Materials: the second half of html10_SeoSlides and html10b_Task.
+- 10c, Protocols and architecture: FTP, TCP/IP and HTTP; static versus dynamic sites; the new topics of bandwidth and latency, plug-ins, and CMS; and ways to present data. Materials: html10_PublishSlides, html10_NewTopicsSlides, html10c_Task.
+- 10d, Testing: cross-browser and cross-device testing, a usability checklist, and the W3C validator. Troubleshooting methods are introduced here and drilled later in html12. Materials: html10_PublishWalkthrough, html10d_Task.
+- 10e, Publishing to GitHub Pages using GitHub Desktop, with no command line. Materials: html10e_Task, html10_PublishDIYTask.
+4. Scope decisions the guide says not to drift from:
+- Command-line git is cut. The class uses GitHub Desktop, and the publishing materials teach commit-then-push there. Terminal git commands get only a one-line mention that you will see them online.
+- ARIA is limited to the aria-label attribute. The rest of the ARIA attribute catalog is beyond both exams.
+- CMS is taught at the describe level: what a CMS is, static versus CMS-driven sites, and WordPress as the big example. You actually configure a real CMS hands-on in html11's builder segment.
+5. Ohio Department of Education (ODE) competencies covered: 6.5.14 (SEO); 6.1.2 and 2.7.4 (ADA and screen readers); 6.1.4 (proofreading); 6.5.1 (standards and protocols); 2.7.2, 2.7.5, 2.7.6 and 2.7.8 (architecture); 6.5.10 and 6.5.11 (testing); 6.5.12 (publishing); 6.5.4 (CMS, describe level); and 2.11 (troubleshooting, introduced).
+
+Key terms:
+SEO — search engine optimization, making pages easy for search engines to find and rank.
+Accessibility — making a site usable by people with disabilities, including screen reader and keyboard users.
+aria-label — the one ARIA attribute you need to know; it gives an element a name for screen readers.
+CMS — content management system, software such as WordPress that builds pages from stored content and templates.
+GitHub Pages — free hosting for static sites straight from a GitHub repository.
+GitHub Desktop — the app the class uses to commit and push, instead of typing git commands.
+
+Watch out for:
+- Several files still have their old titles. The SEO files say HTML 12, and the Publish files and tasks c, d and e say Lesson 13 or Task 13a, 13b and 13c. They all belong to html10.
+- Even though some materials show other ARIA attributes such as aria-describedby or role, the guide says you only need aria-label for the exams.
+- The segment 10c list mentions "ways to present data", but none of the files in this folder covers it directly.
+
+Connects to:
+html11 Build It Three Ways (hands-on CMS configuration on WordPress) and html12 Exam Prep (where troubleshooting is drilled).

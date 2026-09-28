@@ -1,0 +1,55 @@
+Summary of: html03_Slides.md
+Course: HTML CSS JavaScript track
+Lesson: html03 Links and Navigation
+Type of document: slideshow
+
+In one sentence:
+These slides teach the anchor element for links, absolute versus relative links, the target attribute, jumping to spots on a page with id and the number sign, email and download links, and building consistent navigation across a small site.
+
+Main ideas:
+Sub-lesson 03a, anchor tags and links:
+1. The anchor element (written <a>) creates links to other pages, files, or websites. Its href attribute says where the link goes (a web address or file path), and the text between the opening and closing tags is the link text people click. Without an href, the tag does nothing.
+Code: <a href="about.html">About Us</a>
+This is a link whose text is About Us and which goes to the file about.html.
+2. Absolute links are complete web addresses, such as https://www.google.com, and work from anywhere. Relative links are paths measured from the current page and work within your own site. Same folder: just the file name, like about.html. Into a subfolder: the folder name, a slash, then the file, like pages/contact.html. Up to the parent folder: two dots and a slash before the file name, like ../index.html. Use relative links for your own pages and absolute links for outside websites.
+3. The target attribute controls where a link opens. The default is the same tab. The value _blank (underscore blank) opens a new tab. Other less common values are _self (same window) and _parent (parent frame). The slides recommend target="_blank" for external links so visitors do not lose your site.
+Code: <a href="about.html" target="_blank">About (new tab)</a>
+This link opens about.html in a new tab.
+4. Page anchors. Give an element an id attribute to mark a spot, then link to it with a fragment identifier: a number sign followed by the id. For example, an h2 with id "services" can be reached with a link whose href is "#services". From another page, put the file name before the number sign, like index.html#services. A common use is "Back to Top": give the header id "top" and link to "#top". Each id must be unique on the page; name ids with hyphens or camelCase.
+Code: <a href="#services">Jump to Services</a>
+This link jumps to the element on the same page whose id is services.
+Sub-lesson 03b, email and download links, and navigation:
+5. Email links use mailto: followed by an address in the href. Clicking one opens the visitor's default email app with the recipient filled in. You can add a subject and body after a question mark, joined with an ampersand, for example ?subject=Help&body=I need assistance. The visible link text can be anything, including the address itself. Use email links on contact pages and in footers.
+6. Download links. Adding the download attribute to a link makes the browser save the file instead of opening it. Give download a value to rename the saved file, for example download="MyResume.pdf". Without the attribute, PDFs and images usually open in the browser; with it, they go to the Downloads folder.
+Code: <a href="files/resume.pdf" download>Download Resume</a>
+This link downloads resume.pdf from the files folder instead of opening it.
+7. Navigation structures. A good site has consistent navigation. Put a nav with links to every page (Home, About, Services, Contact) inside the header, and repeat links in the footer (such as Home, Privacy Policy, and a mailto Support link). Keep the navigation the same on every page.
+8. Site folder layout for a three-page site: a my-site folder containing index.html (home), about.html, and contact.html, plus a styles folder with style.css, an images folder with logo.png, and a files folder with resume.pdf for downloading. From any page, link home with index.html; link outside sites with a full address and target _blank; link email with mailto.
+9. Key takeaways: use a with href for links; know absolute versus relative; use target _blank for external links; make page anchors with id and link with the number sign plus id; use mailto for email; use download for files; build consistent navigation in the header and footer; organize files into folders for larger sites. Next: build a working three-page site.
+Correction: spaces in a mailto subject or body should be written as %20, as the study guide says, so the reliable form is body=I%20need%20assistance. The slide's example uses plain spaces, which some mail apps tolerate, but %20 is the correct answer.
+
+Key terms:
+a (anchor) — the element that creates a link.
+href — the attribute holding the link destination.
+Link text — the clickable words of a link.
+Absolute link — a full web address including https://.
+Relative link — a path from the current file, such as about.html or ../index.html.
+../ — means go up one folder.
+target — attribute controlling where a link opens.
+_blank — target value that opens a new tab.
+_self — target value for the same window (default behavior).
+_parent — target value for the parent frame.
+id — a unique name on an element that links can jump to.
+Fragment identifier — the number sign plus an id at the end of a link, such as #services.
+mailto: — link scheme that opens an email app.
+download — attribute that saves a file instead of opening it.
+nav — container for navigation links.
+
+Watch out for:
+- A link with no href does nothing.
+- ids must be unique on a page.
+- Keep navigation identical on every page.
+- Use relative links for your own pages; absolute links for other sites.
+
+Connects to:
+The AI track's ai03 lesson builds a three-page linked site with jump links, an email link, a download link, and a skip link.

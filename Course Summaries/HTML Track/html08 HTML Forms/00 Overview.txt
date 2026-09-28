@@ -1,0 +1,19 @@
+Overview of: html08 HTML Forms
+Course: HTML CSS JavaScript track
+
+What this lesson is about:
+This lesson teaches how web pages collect information from people using HTML forms. You learn the form element and its action and method attributes, including the difference between sending data with GET and with POST. You learn the main controls: text, email, password, number, date, tel and url inputs, radio buttons for one choice, checkboxes for many, select dropdowns, and multi-line textareas. You learn to connect every control to a label using for and id, and to group related controls with fieldset and legend, which is what makes a form usable with a screen reader. You also learn submit and reset buttons, tabindex, and how to style forms with CSS, including focus and hover states and a mobile media query. By the end you can build and style a complete, accessible, multi-section survey form.
+
+Documents in this folder, in suggested order:
+1. html08 Slides summary.txt — the lesson slideshow covering form basics, form controls, buttons and styling.
+2. html08 StudyGuide summary.txt — vocabulary, attribute reference and competencies (review questions left out).
+3. html08 Walkthrough summary.txt — step-by-step build of a styled, responsive contact form with six Try This activities.
+4. html08a Task summary.txt — starter file: build a registration form with text, email, password, number and date inputs.
+5. html08b Task summary.txt — starter file: build a customer feedback survey with radios, checkboxes, a dropdown and a textarea.
+6. html08c Task summary.txt — starter file: write the CSS for a finished event registration form.
+7. html08 DIYTask summary.txt — independent project: your own multi-section survey, with a 55-point rubric.
+8. html08 ExtensionTask summary.txt — optional challenge: validation attributes and valid and invalid styling with no JavaScript.
+9. README summary.txt — teacher overview of the lesson files, competencies and four-day plan.
+
+Other files in the original lesson:
+The folder has no images or media subfolders and no non-text files; all nine source files are Markdown or HTML and each has a summary here. The README describes eight more files (solution HTML and CSS files for the walkthrough, tasks and DIY project, plus Gimkit and Google Quiz CSV question banks) that are not present in this copy of the lesson.

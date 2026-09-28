@@ -1,0 +1,40 @@
+Summary of: CREDITS.md
+Course: HTML CSS JavaScript track
+Lesson: html04 Images Media and Tables
+Type of document: image credits list (reference)
+
+In one sentence:
+This file credits the photographers and licenses for the practice photos in the lesson's images folder and serves as the model for how to credit photos on your own site.
+
+Main ideas:
+1. The photos come from Wikimedia Commons and are free to use under Creative Commons licenses. When you use a Creative Commons photo on your own site, credit the photographer in this same way: file, photo title, photographer, and license.
+2. The ten credited files:
+- nature-scene-1.jpg: Mount Shasta, Lake Siskiyou, southwest view, by Radomianin, license CC BY-SA 4.0.
+- nature-scene-2.jpg: Dülmen, Göversheide (2015), by Dietmar Rabich, CC BY-SA 4.0.
+- product-photo.jpg: camera with 70-200mm telephoto lens, by Miki Yoshihito, CC BY 2.0.
+- responsive-image.jpg: Tasman Lake panorama, by Krzysztof Golik, CC BY-SA 4.0.
+- gallery-1.jpg: Mural en Chile, by Rjcastillo, CC BY-SA 4.0.
+- gallery-2.jpg: sunset on the Aresquiers beach, by Christian Ferrer, CC BY 4.0.
+- gallery-3.jpg: Aura skyscraper in Toronto, by Maksim Sokolov (maxergon.com), CC BY-SA 4.0.
+- product-view-1.jpg: Bose QuietComfort 25 headphones, by Florian Fuchs, CC BY-SA 3.0.
+- product-view-2.jpg: Bose QuietComfort 25 headphones with carry case, by Florian Fuchs, CC BY-SA 3.0.
+- product-view-3.jpg: Bose QuietComfort 35 II headphones, by Carsonjp21, CC BY-SA 4.0.
+3. All photos were resized and cropped for this unit. To find an original, search its title on commons.wikimedia.org.
+4. The sample Big Buck Bunny video used in the YouTube embeds is by the Blender Foundation, license CC BY 3.0.
+5. The files in the media folder (demo.mp4, demo.webm, podcast.mp3, podcast.ogg) are short computer-generated test clips made for this unit, so there is nothing to credit.
+
+Key terms:
+Creative Commons (CC) — a family of licenses that let creators allow free reuse under stated conditions.
+CC BY — you may reuse the work if you credit the creator.
+CC BY-SA — you must credit the creator and share any adapted version under the same license (SA means share-alike).
+Wikimedia Commons — a free media library where these photos came from.
+
+What you are asked to do:
+Nothing directly. The html04 Project tells you to use this format when crediting any photo on your gallery page that you did not take.
+
+Watch out for:
+- Credit every photo you did not take, either in its caption or in a credits line at the bottom of the page.
+- Heads up: the images folder also holds five small PNG files (product-name.png and four smartwatch images: detail, front view, lifestyle, and side view) that no lesson document uses and this file does not credit. You can ignore them; if you do use one on a page, its source is unknown, so ask Mr. McMaster before publishing it.
+
+Connects to:
+The html04 Walkthrough gallery (product-view photos), the html04a Task (nature, product, responsive, and gallery photos), and the photo-credit rule in the html04 Project.

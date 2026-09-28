@@ -1,0 +1,29 @@
+Read Me First: Course Summaries
+
+These are study notes for both versions of Mr. McMaster's web design course at Medina County Career Center. Every document in the two course repositories on GitHub has its own summary file here, written for a screen reader: plain text, no symbols, no references to pictures.
+
+Where the notes came from:
+- The HTML CSS JavaScript track, from github.com/42mcmaster/htmlCssJavaScript
+- The Web Design AI track, from github.com/42mcmaster/webDesignAiTrack
+The notes reflect the repositories as they were on September 23, 2026. If Mr. McMaster updates a lesson after that, these notes will not change on their own.
+
+How the folders are organized:
+This folder has two folders inside it.
+
+1. HTML Track holds 13 lesson folders, html00 Getting Started through html12 Exam Prep, plus an Enrichment folder. Enrichment has three optional sections: Bootstrap Basics, Capstone Project Legacy, and Exam Prep Sprint Legacy. The Exam Prep Sprint Legacy section has five sprint folders.
+
+2. AI Track holds the five current AI lessons, ai00 Getting Started through ai04 Images Media and Tables. It also has an Archive folder with the older version of AI lessons ai00 through ai08. The archive is the only place the AI track covers CSS, the box model, flexbox, and forms so far.
+
+How to use a lesson folder:
+- Open 00 Overview.txt first. It explains what the lesson is about and lists every summary in the folder in a suggested reading order.
+- Every other file is named after the original document, followed by the word summary. For example, html05 Slides summary.txt summarizes html05_Slides.md.
+- Each summary starts with the original file name, the course, the lesson, and the type of document. After that come these sections, each on a line ending with a colon: In one sentence, Main ideas, Key terms, What you are asked to do, Watch out for, and Connects to. Not every file has every section. You can use your screen reader's find command to jump to a section, for example by searching for "Key terms".
+- A line starting with "Code:" shows the exact code. The sentence after it explains the code in words.
+- A line starting with "Correction:" fixes something the original course material gets wrong, or settles a place where two course documents disagree. The correct fact comes first, then what the original said. The corrections were checked against current web standards and sources in September 2026.
+- A line starting with "Heads up:" flags a practical problem, like a file that is missing from the lesson folder or old lesson numbering, and says what to do instead.
+
+About questions:
+These notes are for studying only, so they contain no unanswered questions. The AI track's Questions files and the archive's ConceptCheck files are graded homework, so their summaries list only the topics they check and where to study them. The questions themselves are left out. Practice exams and quizzes that come with their answers are kept, because they are study material.
+
+Matching lessons across the two tracks:
+ai00 goes with html00 Getting Started, ai01 with html01 Document Structure, ai02 with html02 Semantic HTML, ai03 with html03 Links and Navigation, and ai04 with html04 Images Media and Tables. In the archive, ai05 through ai08 go with html05 CSS Fundamentals, html06 Box Model and Spacing, html07 Flexbox and Responsive Design, and html08 HTML Forms.

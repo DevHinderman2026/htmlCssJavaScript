@@ -1,0 +1,51 @@
+Summary of: html10a_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html10 Site Quality and Publishing
+Type of document: task starter file
+
+In one sentence:
+This is a deliberately broken restaurant home page with 15 numbered PROBLEM comments marking its SEO and accessibility mistakes, which you find and fix in segment 10a.
+
+Main ideas:
+1. The page is a simple one-page restaurant site with an internal style sheet. It has a dark header bar, a gray navigation bar, a centered content area up to 900 pixels wide, a light gray hero box, three content sections each with a photo and text, a contact form, and a dark footer.
+2. The content is intentionally vague. The top heading just says Restaurant with the tagline "We have food". The hero says Welcome and "Come eat at our restaurant. We serve food. It's good." The three sections are titled Food, Ambiance and Our Chef, and describe fresh local ingredients, a relaxed atmosphere, and a head chef with 20 years of experience who trained in Italy and France. The footer says Copyright 2024 Restaurant.
+3. The page does have some correct basics: the html element has lang="en", and there is a meta charset of UTF-8 and a viewport meta tag.
+4. The comments label every problem. Each one, in order, is described under What you are asked to do.
+
+Key terms:
+title element — page title for the browser tab and search results; empty here.
+meta description — search-result snippet; missing here.
+semantic tags — header, nav, main, section and footer, which replace the generic divs here.
+alt attribute — image description; missing on all three images here.
+for and id — the pair that connects a label to its input.
+focus style — a visible outline on the focused element; empty here.
+
+What you are asked to do:
+The file has no written instructions beyond its comments. The README and unit guide say to identify and fix every problem (a 30 to 45 minute task). The problems as commented:
+1. PROBLEM 1: the title element is empty. A commented-out alternative, a title of just "Page", is shown as the too-generic version.
+2. PROBLEM 2: there is no meta description, so search engines will not show a snippet.
+3. A CSS PROBLEM comment (not numbered) on the rule for button:focus and a:focus: the rule is empty, so there are no focus styles.
+4. PROBLEM 3: the header is a div with class header instead of a header element.
+5. PROBLEM 4: the h1 is vague ("Restaurant") and has no keyword.
+6. PROBLEM 5: the navigation is a div with class nav instead of a nav element. Its four links (Home, Menu, Contact, About) are a elements with no href attribute.
+7. PROBLEM 6: the main content is a div with class content instead of a main element.
+8. PROBLEM 7: the hero is another plain div (the comment says "instead of <hero> or similar").
+9. PROBLEM 8: the heading hierarchy is broken. The comment says there are no h2s. In fact the page has five h1 elements (Restaurant, Welcome, Food, Ambiance and Our Chef) and only one h2, Contact Us.
+10. PROBLEM 9: the food.jpg image has no alt text.
+11. PROBLEM 10: the ambiance.jpg image has no alt text.
+12. PROBLEM 11: the chef.jpg image has no alt text.
+13. PROBLEM 12: the contact form's labels are not connected to their inputs. There is also no form element around them.
+14. PROBLEM 13: the Name and Email labels have no for attribute and the inputs have no id; the inputs rely only on placeholder text.
+15. PROBLEM 14: the Send Message control is a div with an onclick that pops up an alert, styled with inline blue background, instead of a real button element (the comment also mentions a missing aria-label).
+16. PROBLEM 15: the footer is a div with class footer instead of a footer element.
+
+Watch out for:
+- Count your h1s: the page has five, and a good page has exactly one; the others should become h2s.
+- Links without href are not reachable with the Tab key, and a div with onclick cannot be activated from the keyboard.
+- Correction: visible focus outlines are for sighted keyboard users; screen reader users follow focus by speech. The file's focus comment wrongly says screen reader users will not see focus, but the fix is the same: add a visible outline.
+- Correction: there is no hero element in HTML; "hero" is a design term for a big intro banner. For PROBLEM 7 use a section element (or a header) inside main, not a made-up hero tag as the comment hints.
+- The images food.jpg, ambiance.jpg and chef.jpg are not in the lesson folder, so they will show as broken images; that does not affect the alt-text task.
+- A label with no connection and a placeholder alone do not give screen readers a reliable field name.
+
+Connects to:
+html10 SeoWalkthrough (guided audit of this same page) and html10 SeoSlides. html02 Semantic HTML and html08 HTML Forms cover the tags and labels needed for the fixes.

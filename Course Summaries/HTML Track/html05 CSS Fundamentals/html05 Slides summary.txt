@@ -1,0 +1,55 @@
+Summary of: html05_Slides.md
+Course: HTML CSS JavaScript track
+Lesson: html05 CSS Fundamentals
+Type of document: slideshow
+
+In one sentence:
+This slideshow introduces CSS: the three ways to add it to a page, the three basic selectors, how a CSS rule is built, colors, fonts, text properties, and a first look at cascade and specificity, ending with the About Me restyling project.
+
+Main ideas:
+1. Three ways to add CSS (sub-lesson 05a). Inline styles put CSS in a tag's style attribute. An internal stylesheet puts CSS inside a style element in the head. An external stylesheet is a separate .css file connected with a link element. Best practice is the external stylesheet because it is cleaner and reusable.
+Code: <p style="color: blue;">Styled text</p>
+An inline style: only this one paragraph turns blue.
+Code: <link rel="stylesheet" href="styles.css">
+An external stylesheet link placed in the head; it pulls in every rule from styles.css.
+2. Three basic selectors. An element selector targets every tag of one type, such as p or h1. A class selector starts with a dot and targets every element that has that class, such as .highlight. An ID selector starts with a hash sign and targets one unique element, such as the element with id header. In HTML you write class="highlight" or id="header" without the dot or hash.
+Code: .highlight { background-color: yellow; }
+Every element with class highlight gets a yellow background.
+3. Anatomy of a CSS rule. A rule has a selector (what to style) and a declaration block (the curly braces, saying how to style it). Inside are declarations, each a property and a value separated by a colon, such as color: blue. The property is the aspect being changed and the value is the setting. Every declaration ends with a semicolon.
+Code: p { color: blue; font-size: 18px; }
+All paragraphs become blue and 18 pixels tall.
+4. Colors (sub-lesson 05b). Named colors are English words like red or navy. Hex colors are a hash sign followed by 6 characters using 0 to 9 and A to F, such as #FF0000 for red and #0000FF for blue. RGB colors give red, green, and blue amounts from 0 to 255, such as rgb(255, 0, 0) for red. Hex and RGB let you make custom colors; named colors are simple for beginners.
+5. Font properties. font-family picks the typeface and lists a fallback, such as Arial, sans-serif. font-size sets size in pixels (px), for example 32px for h1 and 16px for paragraphs. font-weight sets boldness using normal, bold, or numbers 400 to 900 (700 is bold). Google Fonts are free professional fonts: add their link element in the head, then use the font name in font-family.
+Code: body { font-family: 'Roboto', sans-serif; }
+The whole page uses Roboto, falling back to any sans-serif font if Roboto fails to load.
+6. Text properties. text-align sets alignment: left, center, right, or justify. line-height sets space between lines, unitless (like 1.6) or in px. text-decoration adds underline, overline, line-through, or none; a common use is removing link underlines with text-decoration: none. letter-spacing adds space between characters, such as 2px.
+7. Cascade and specificity (quick intro). The cascade means the browser applies styles top to bottom, so the last rule wins. Specificity means some selectors are stronger: element is weak, class is medium, ID is strong, and an inline style is strongest. The advice is to use external stylesheets and classes for maintainable code.
+8. What you will build: restyle the About Me page from html01 using CSS. Start with its HTML, create a separate styles.css, link it, and add rules for colors (text and backgrounds), fonts (family, size, weight), and text formatting (alignment, spacing), using at least 2 classes and 1 ID selector. The goal is the same HTML with a totally different look.
+
+Key terms:
+CSS — the styling language for HTML.
+inline style — CSS in a tag's style attribute.
+internal stylesheet — CSS in a style element in the head.
+external stylesheet — CSS in a separate .css file linked with a link element.
+selector — the part of a rule that chooses which elements to style.
+element selector — targets all tags of one type.
+class selector — targets elements with a class; written with a leading dot.
+ID selector — targets one unique element; written with a leading hash sign.
+declaration block — the curly braces holding the declarations.
+declaration — one property and value pair ending in a semicolon.
+property — the aspect you change, like color.
+value — the setting you give a property, like blue.
+named, hex, and RGB colors — three ways to write a color.
+font-family, font-size, font-weight — typeface, size, and boldness.
+Google Fonts — free font library linked from the head.
+text-align, line-height, text-decoration, letter-spacing — alignment, line spacing, underline and similar lines, character spacing.
+cascade — later rules override earlier ones.
+specificity — how strong a selector is.
+
+Watch out for:
+- Every declaration needs a semicolon.
+- The dot and hash belong in the CSS selector, not in the HTML attribute.
+- Correction: in the specificity example the ID rule wins, so the text is red. Specificity from weakest to strongest is element, class, ID, inline style; the slide confusingly labels both the class rule and the ID rule "wins!", but the class rule only beats the element rule.
+
+Connects to:
+The html04 lesson already used an inline style (image max-width) and an internal style block (table borders). Lesson html06 continues with the box model and spacing.

@@ -1,0 +1,39 @@
+Summary of: html09c_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html09 JavaScript
+Type of document: task starter file
+
+In one sentence:
+This starter page (titled "Lesson 10a Task: DOM Manipulation") gives you five practice sections where you add buttons and write JavaScript to change text, colors, visibility, several styles, and HTML content.
+
+Main ideas:
+1. The page. It is a valid HTML5 page titled "Lesson 10a Task: DOM Manipulation," with an internal style sheet in the head. Visually it is a centered white card on a light gray background. Each task sits in its own bordered section. The CSS already includes a class named box (a blue block with white bold centered text), styled green buttons with a darker green :hover color, an info class (a light teal panel), and a hidden class that sets display to none.
+2. The body has one container with the h1 "Lesson 10a: DOM Manipulation Tasks" and five sections, each with an h2 heading, the element you will change, and HTML comments saying what to add.
+3. At the bottom is a script element with only comments: an overall TODO to write JavaScript for all five tasks using the Lesson 10 slides and walkthrough, and one comment block per task.
+4. Every task is the same pattern: select the button and the target element, add a click listener to the button, and inside it change the target.
+
+Key terms:
+getElementById() — finds an element by id.
+addEventListener('click', ...) — runs a function when the button is clicked.
+textContent — plain text inside an element.
+innerHTML — HTML inside an element; tags like strong and em are rendered.
+style.backgroundColor, style.fontSize, style.color, style.border, style.display — JavaScript names for inline CSS properties.
+display 'none' and 'block' — hide and show an element.
+strong and em elements (written <strong> and <em>) — bold (strong importance) and italic (emphasis) text.
+
+What you are asked to do:
+Task 1, change text content. The section holds a paragraph with id originalText reading "This is the original text." Add a button with id="changeTextBtn". In JavaScript, select it and add a click listener that changes the paragraph's text to "The text has been changed!"
+Task 2, change element colors. There is a blue box div with id colorBox reading "Click the button to change my color!" Add a button with id="changeColorBtn" that changes colorBox's background color to a different color; the suggestion is #e74c3c, a red.
+Task 3, hide and show elements. There is an info div with id secretMessage containing "This is a secret message that can be hidden!" Add two buttons, "Hide Message" and "Show Message." The hide button (the script comments call it hideBtn) sets secretMessage's display to 'none'; the show button (showBtn) sets it to 'block'.
+Task 4, change multiple styles. There is a purple box div with id styleBox reading "Change my size and color!" (its purple, #9b59b6, is set with an inline style attribute). Add a button with id="styleBtn" that changes the font size, the text color, and adds a border. The example values are fontSize '1.5rem', color 'yellow', and border '3px solid white'.
+Task 5, change HTML content. A div with id htmlContent contains a paragraph "This is plain text." Add a button with id="changeHtmlBtn" that replaces the content with HTML that includes bold text in a strong element and italic text in an em element. Hint: use innerHTML instead of textContent, because textContent would show the tags as literal characters.
+
+Watch out for:
+- The comments name hideBtn and showBtn but do not say to set those as id attributes; give your two Task 3 buttons id="hideBtn" and id="showBtn" so your script can find them.
+- Make your buttons real button elements so they work with the keyboard.
+- The page has a hidden CSS class ready, so you could also solve Task 3 with classList.add and classList.remove, but the comments ask for display 'none' and 'block'.
+- Put the buttons inside each section in the HTML, above the closing div, and keep the script at the bottom so the elements exist before the script runs.
+Heads up: "Lesson 10a" and "Lesson 10 slides" in the file are leftover old numbering from before the merge. This is html09c, and the slides it means are html09_DomSlides (with html09_DomWalkthrough).
+
+Connects to:
+html09 DomSlides and Parts 1 to 4 of the DOM walkthrough.

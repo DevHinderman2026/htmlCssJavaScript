@@ -1,0 +1,62 @@
+Summary of: ai07_BuildBrief.md
+Course: Web Design AI track (archived version)
+Lesson: ai07 Flexbox and Responsive Design
+Type of document: build brief (project task, "Responsive and the Order Trap")
+
+In one sentence:
+This brief has you direct Claude to make your site responsive with the viewport tag, flexbox, mobile-first media queries, and responsive images, save a reusable page template, and then deliberately reverse the nav's display order for the AudioLab.
+
+Main ideas:
+The brief pairs with html07 (Flexbox and Responsive Design).
+1. What to build:
+- The viewport meta tag on every page. Ask Claude to check, since it may already be there; the brief says verifying beats assuming.
+- A flexbox nav bar, and a flexbox card row that wraps on narrow screens.
+- Mobile-first media queries: base styles for phones, and a min-width: 768px query that switches to the wider layout.
+- The responsive image rule applied across the whole site.
+- A saved template.html: your bare page skeleton with header, nav, main, footer, stylesheet link, and viewport tag, which every future page starts from.
+2. The must-say list:
+- viewport meta tag, and what breaks on phones without it.
+- flexbox: display: flex, justify-content, align-items, flex-wrap, and gap.
+- mobile-first, and media query with min-width.
+- max-width: 100% for images.
+- template. The brief notes this is competency 6.5.6; creating one is a state skill.
+- Grid, once, at recognition level: ask Claude to explain in two sentences how Grid differs from flexbox, and put the answer in your prompt log.
+3. The twist: ask Claude to use flex-direction: row-reverse on your nav so the links display in reverse order, without touching the HTML. Visually the links now run backward. What the audit reports is the subject of the AudioLab.
+
+Code: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+This viewport tag tells phone browsers to use the device's real width instead of pretending to be a wide desktop screen.
+
+Code: @media (min-width: 768px) { ... }
+A mobile-first media query: the styles inside apply only when the window is at least 768 pixels wide, so phones get the base styles and wider screens get the extra layout rules.
+
+Code: img { max-width: 100%; }
+The responsive image rule: an image can never be wider than its container, so it shrinks to fit small screens.
+
+Key terms:
+Responsive design — a site that adapts its layout to different screen widths.
+viewport meta tag — tells mobile browsers how to size the page.
+Flexbox (display: flex) — a CSS layout mode that arranges child items in a row or column.
+justify-content — aligns flex items along the main axis.
+align-items — aligns flex items along the cross axis.
+flex-wrap — lets flex items wrap onto new lines.
+gap — sets space between flex items.
+Mobile-first — writing base styles for phones first, then adding styles for larger screens.
+Media query — a CSS block that applies only under conditions such as a minimum width.
+min-width — a media query condition meaning "at least this wide."
+Template — a reusable page skeleton.
+CSS Grid — a two-dimensional layout system, covered here only at recognition level.
+flex-direction: row-reverse — displays flex items in reverse order without changing the HTML.
+
+What you are asked to do:
+- Direct Claude to add or verify the viewport tag, flexbox nav and wrapping card row, mobile-first media queries with a 768px min-width breakpoint, and max-width: 100% on images site-wide.
+- Save template.html with the listed skeleton parts.
+- Use every must-say term by name, and save Claude's two-sentence Grid explanation in your prompt log.
+- Do the row-reverse twist before running the AudioLab.
+- Commit: the responsive site plus template.html, ai07_PromptLog.md, and your completed ConceptCheck and AudioLab.
+
+Watch out for:
+- Do not assume the viewport tag is present; check.
+- row-reverse changes only the visual order, not the code order; the AudioLab has you remove it afterward.
+
+Connects to:
+Pairs with html07 Flexbox and Responsive Design; audited in ai07 AudioLab.

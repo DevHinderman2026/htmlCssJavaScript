@@ -1,0 +1,38 @@
+Summary of: ai03_AudioLab.md
+Course: Web Design AI track (archived version)
+Lesson: ai03 Links and Navigation
+Type of document: audio lab (screen reader audit of your own build, "Navigation on Trial")
+
+In one sentence:
+This lab audits every link feature of your three-page site by ear: link text quality, round-trip navigation, the skip link, the table of contents anchors, and the email and download links.
+
+Main ideas:
+Your site now has three pages with a shared nav, a table of contents on the about page, an email link, a download link, and a skip link on every page. The audit tests each against your brief. Keep the brief nearby, describe any failure to Claude in specific words, get the fix, and re-run the step.
+
+1. Step 1, the links list on every page. This checks whether every link's text stands on its own. The links list reads only the link text with no surrounding sentences, which is how many people scan a page. "Click here" is meaningless there; the lab's good example is "Weekly menu." Run the list-all-links command on each of your three pages. You should hear every link naming a clear destination: nav links by page name, table-of-contents links by section name, and the email and download links by what they do. If a link fails, name it precisely; the example request says one link just says "here," so rewrite its text to name its destination and save.
+2. Step 2, round trips. This checks that navigation works in both directions and that the skip link does its job. The skip link lets keyboard users jump straight to the main content instead of tabbing through the whole menu on every page, but only if it is the first thing Tab reaches. On each page, go to the top, press Tab once, listen, and activate what you landed on. Then from the home page, Tab to each nav link, activate it, and use the destination page's nav to come back. You should hear "Skip to main content, link" on the first Tab of every page, and activating it should land you on the main content, so the next thing read is the page's main heading, not more menu. Every nav link should reach its page and every page should get you back. If the first Tab lands on a nav link, the skip link is missing or misplaced; tell Claude the first Tab stop on that page is the Home link, that the skip link must be the very first focusable thing inside the body, and to fix it and save.
+3. Step 3, the table of contents on the about page. In-page anchors are links that jump to a section further down the same page. Each needs two halves: the link at the top and a marked target at the section. Tab to each table-of-contents link, activate it, and listen to what reads next. You should hear the target section's heading right after each jump. Then go to the top and run the headings list; the sections should appear in the same order the table of contents promised. If a jump goes nowhere (nothing changes, or reading continues from the top), the target's marker is missing. Example request: the "My goals" link does not move me to that section; check that the link's address and the section's id match, fix it, and save.
+4. Step 4, email and download. An email link should open a mail compose window with the subject already filled in, because you directed that. A download link should offer to save a file instead of navigating. Activate the email link, listen to what opens, check the subject, and close it. Then activate the download link and listen. You should hear a compose window with your pre-filled subject, and a save or download announcement naming your file, not a move to a new page. If the email subject is blank, ask Claude to add your subject to the mailto link and save.
+
+Key terms:
+Links list — the screen reader view of all link text with no context.
+Skip link — a link at the very start of the body that jumps to the main content, so keyboard users can bypass the menu.
+Focusable — able to receive focus with the Tab key.
+In-page anchor — a link that jumps to a marked section on the same page; it needs a matching id on the target.
+id — the attribute that marks the target of an in-page link.
+mailto link — a link that opens an email message, optionally with a subject filled in.
+Download link — a link that saves a file instead of navigating.
+
+What you are asked to do:
+- Step 1: run the links list on all three pages and note any failures per page.
+- Steps 2 to 4: perform each check, write what you heard, and direct fixes for failures.
+- Verdict: write the two-or-three-sentence verdict at the end of the lab (its prompts are in the original file), including the exact fix request you gave Claude; it is part of the completed AudioLab you turn in.
+
+Watch out for:
+- Vague link text like "here" or "click here."
+- A skip link that is not the first focusable element.
+- A table-of-contents link whose address does not match the section's id.
+- An email link without the subject, or a download link that navigates instead of saving.
+
+Connects to:
+Audits the site from ai03 BuildBrief; matches html03 Links and Navigation in the HTML CSS JavaScript track.

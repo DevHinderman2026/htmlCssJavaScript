@@ -1,0 +1,79 @@
+Summary of: sprint02_StudyGuide.md
+Course: HTML CSS JavaScript track
+Lesson: sprint02 Forms
+Type of document: study guide
+
+In one sentence:
+A forms study guide with 20 vocabulary terms, cheat sheets for labels, input types, radio versus checkbox, GET versus POST, fieldset, select, textarea and common attributes, the Ohio competencies, five common mistakes, and ten practice questions with answers.
+
+Main ideas:
+1. Form structure. A form element with action (where to send) and method (GET or POST) wraps the controls and ends with a submit button.
+2. Two ways to connect a label.
+- Method 1, wrapping: put the input inside the label element, after the label text.
+- Method 2, for and id, called best practice: the label's for attribute equals the input's id.
+Code: <label for="fname">First Name:</label> <input type="text" id="fname" name="fname">
+Here the label and input are separate elements linked because for="fname" matches id="fname".
+3. Input types table: text (single line), email (checks email format), password (hides characters), number (numeric, can use min and max), date (date picker), tel (phone number), checkbox (multiple selections), radio (single selection), submit (sends the form; its value sets the button text), reset (clears the form).
+4. Radio versus checkbox. Radio buttons in a group must share one name so only one can be picked. Checkboxes allow several picks and can have different names. Both examples are wrapped in a fieldset with a legend.
+5. GET versus POST comparison:
+- Data visibility: GET shows it in the URL; POST hides it in the request body.
+- Size limit: GET is small (2 to 4 KB); POST is large, with no practical limit.
+- Security: GET is not secure (data exposed); POST is more secure.
+- Caching: GET requests are cached by browsers; POST requests are not.
+- Bookmarking: a GET URL with its data can be bookmarked; POST cannot.
+- Idempotent (safe to repeat): GET yes; POST no, because it changes things on the server.
+- Best for: GET for searches, filters and public data; POST for logins, payments and sensitive data.
+6. Fieldset and legend example. Two fieldsets: "Personal Information" (first and last name) and "Account Details" (email and password, both marked required).
+7. Dropdown. A select with id and name "grade", a blank "-- Select One --" option, then options for grades 9 through 12.
+8. Textarea. A textarea with id and name "message", rows 4, cols 50, and a placeholder.
+9. Common attributes: name (identifies the field in the submitted data), id (unique, used by labels), placeholder (hint text in the field), required (field must be filled), value (default value, and the value sent for a radio or checkbox), type (kind of input), rows and cols (textarea height in lines and width in characters), for (label link to an id), action and method (on the form).
+10. Ohio competencies covered: 6.4.1 form elements and structure; 6.4.2 creating controls; 6.4.3 applying attributes (name, id, type, required); 6.4.4 using GET versus POST appropriately; 6.4.5 fieldset and legend for accessibility; 6.4.6 validating and styling forms with CSS; 6.5.9 testing form functionality.
+
+Key terms:
+Form — element that collects input and sends it to a server.
+Action — form attribute: the URL where data is sent.
+Method — form attribute: the HTTP method, GET or POST.
+GET — method that adds data to the URL; visible and limited in size.
+POST — method that sends data in the request body; hidden and larger.
+Input — element that accepts user data.
+Type — input attribute that sets what kind of data is accepted.
+Label — element that ties text to a control for accessibility.
+For — label attribute that points to an input's id.
+ID — unique identifier; must match the label's for.
+Placeholder — hint text shown before the user types.
+Required — attribute that makes a field mandatory before submitting.
+Radio — control for choosing one option.
+Checkbox — control for choosing multiple options.
+Select — dropdown list element holding option elements.
+Option — one choice inside a select.
+Textarea — multi-line text field.
+Fieldset — groups related controls.
+Legend — caption for a fieldset.
+Submit — button type that sends the form data.
+Idempotent — safe to repeat without changing anything; GET is, POST is not.
+
+What you are asked to do:
+Practice questions with the guide's answers:
+1. Login form: GET or POST? POST, because passwords must never show in the URL.
+2. Purpose of fieldset and legend? Fieldset groups related controls, legend gives the group a caption; screen readers understand the grouping and it helps styling.
+3. Connect a label to a "Username" text input. A label with for="username" and an input with id="username" and name="username".
+4. Favorite color with options Red, Green, Blue: radio or checkbox? Radio, since only one favorite; "select all colors you like" would use checkboxes.
+5. Which two attributes must a form have? action and method, for example action="process.php" method="POST".
+6. Input type for a birth date? type="date", which gives a date picker, checks for a valid date, and is easier on mobile than typing into a text field.
+7. Write a dropdown for "Which grade are you in?" A label with for="grade" and a select with id and name "grade", a blank "-- Select --" option, and options 9 through 12.
+8. Make an email field mandatory? Add the required attribute to the email input; the form will not submit while it is empty.
+9. Why POST for large files or long text? GET's URL is size-limited (about 2 to 4 KB); POST has no practical limit.
+10. Three radio buttons for Email, Phone, Text: what must they share? The same name, such as name="contact", so only one can be selected; different names would let the user pick several.
+
+Watch out for:
+Five common mistakes from the guide:
+1. Labels not connected to inputs. A label with no for, next to an input with no id, fails accessibility tests and does not enlarge the click area.
+2. Using GET for sensitive data. A login form with GET shows the password in the URL. Always use POST for logins and registration.
+3. Radio buttons with different names (contact1, contact2). They must share the same name to work as a group.
+4. Forgetting the action attribute. The guide says a form without action "fails silently".
+5. Not grouping related controls with fieldset and legend, which hurts accessibility, readability and CSS grouping.
+Correction: a form with no action attribute does not fail silently; it submits to the current page's own URL, and method defaults to GET. Still always write action and method so the data goes where you intend, and if an exam asks which two attributes a form needs, answer action and method.
+Correction: every radio button and checkbox needs its own label element, connected with for and id or by wrapping the input. The "right" fieldset example in mistake 5 uses plain text after each option instead, which breaks the guide's own label rule.
+
+Connects to:
+Matches the html08 lesson on HTML forms. The sprint03 task and sprint05 review repeat the label for and id rule.

@@ -1,0 +1,25 @@
+Summary of: ai06_ConceptCheck.md
+Course: Web Design AI track (archived version)
+Lesson: ai06 Box Model and Spacing
+Type of document: questions
+
+In one sentence:
+This is the ConceptCheck question sheet you complete and turn in for the archived ai06 unit; its questions are left out of these study notes because they are homework, not study material.
+
+Topics it checks:
+- the box model
+- background color and the box model
+- padding versus margin
+- box width arithmetic and box-sizing
+- display: none versus visibility: hidden
+- the sr-only technique
+- position: sticky and sticky headers
+State competencies listed on the sheet: 6.5.8.
+The sheet says the box model and positioning also feed the December Certiport exam directly.
+
+What you are asked to do:
+Answer each question in your own words, directly under it in your copy of ai06_ConceptCheck.md. Commit and push the completed file with the rest of the unit's work, as listed in the unit's turn-in list.
+
+Study these in:
+- ai06 BuildBrief summary.txt (in this folder)
+- ai06 AudioLab summary.txt (in this folder)

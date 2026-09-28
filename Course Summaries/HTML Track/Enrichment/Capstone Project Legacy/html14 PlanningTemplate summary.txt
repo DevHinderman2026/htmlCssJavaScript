@@ -1,0 +1,51 @@
+Summary of: html14_PlanningTemplate.md
+Course: HTML CSS JavaScript track
+Lesson: Capstone Project Legacy
+Type of document: template
+
+In one sentence:
+This is the fill-in planning worksheet you complete in Session 1, before writing any code, to plan every page, color, font, form, table, and accessibility and SEO detail of your capstone site.
+
+Main ideas:
+1. The template is meant to be finished before coding starts, because planning makes coding faster and gives your teacher something to approve.
+2. It has 12 numbered sections plus a teacher notes area, each with blanks or checkboxes to fill in.
+3. A sitemap lists your 4 pages and what goes on each. The template suggests a standard outline for each page: navigation at the top, a heading or hero, the main content sections, a call to action, and a footer.
+4. Visual design means choosing 3 to 5 colors with hex codes (primary, secondary, accent, and neutral light background and dark text) and 2 Google Fonts (one heading font, one body font) with a reason for each.
+5. The content plan lists the images and text you need. Aim for at least 3 to 4 images. Sources can be your own photos, free stock sites (Unsplash, Pexels, Pixabay), or picsum.photos. Do not use Lorem Ipsum.
+6. Wireframes are simple box-layout sketches on paper; the template gives a text outline for each page (for example Home: header with navigation, hero, content sections, call-to-action button, footer). For a screen-reader user, a written top-to-bottom list of regions works as your wireframe.
+7. The form and table sections make you decide field types, required fields, validation rules, table columns, and rows before you build them.
+8. The responsive section asks how navigation, layout, images, and fonts change at mobile (under 600 pixels), tablet (600 to 1024), and desktop (1024 and up).
+9. The accessibility and SEO sections turn those requirements into a plan you can check off later.
+
+Key terms:
+Sitemap — a list or map of all pages and how they connect.
+Wireframe — a rough layout sketch showing where header, content, images, and footer go.
+Hex code — a six-character color code, such as 8B4513 for a brown.
+Primary, secondary, accent colors — the main brand color, a supporting color, and a highlight color for things like call-to-action buttons.
+Call to action — a button or link that tells the visitor what to do next, such as "Contact us."
+Target audience — the people the website is built for.
+
+What you are asked to do:
+Fill in every section:
+1. Project Overview: website name, theme or purpose (what it is about, what problem it solves, who it is for), target audience, and your personal goal.
+2. Sitemap: for each page, its purpose and a content outline. Page 1 Home (index.html): navigation, hero with main headline, other sections, footer with copyright and social links. Page 2 About (about.html): navigation, heading and intro, sections such as history, team bios, or mission, call to action, footer. Page 3 Services or Portfolio (services.html or similar): navigation, heading and intro, service or portfolio sections, a described TABLE (what it shows, its columns, how many rows), call to action, footer. Page 4 Contact (contact.html): navigation, heading and intro, a described FORM (which fields, submit button, what happens on submit), contact info, footer.
+3. Visual Design: hex codes and planned uses for the primary, secondary, and accent colors, plus a light background and dark text color; heading font and body font names, their Google Fonts links, and why you chose them.
+4. Content Plan: check off needed images (logo, hero, about, services, other), total image count (3 to 4 minimum), where images will come from, and text to write (home headline of 1 to 2 sentences, About description of 2 to 3 paragraphs, services list with descriptions, other text such as footer and labels).
+5. Wireframe Sketches: a layout for each of the 4 pages (Home, About, Services, Contact), showing header, main content, images, table or form, and footer.
+6. Form Details: the form heading; fields with required yes or no for name (text), email (email), phone (tel), subject (dropdown or text), message (textarea), and a checkbox such as "subscribe to newsletter"; validation rules such as name not empty, valid email format, phone of 10 digits, message at least 10 characters, checkbox checked, or your own rule; and what happens after submit (alert, on-page message, redirect, or email).
+7. Table Details: table title, purpose, 3 to 4 column headers (the 4th optional), and at least 5 to 6 planned rows of data.
+8. Navigation Structure: header menu links (Home, About, Services, Contact), footer navigation, optional breadcrumbs or sidebar; style choice of horizontal top menu, vertical side menu, mobile hamburger, or other.
+9. Responsive Design Strategy: navigation, layout, image, and font-size plans for mobile, tablet, and desktop.
+10. Accessibility Checklist: descriptive alt text on all images; correct heading order without skipping levels; labels connected to inputs; high color contrast; keyboard-accessible navigation with Tab; no flashing or rapid animation that could trigger seizures.
+11. SEO Basics: for Home, About, Services, and Contact, write a title (60 characters maximum) and a meta description (100 to 160 characters).
+12. Project Timeline: goals for the end of each session. Session 1, finish this document. Session 2, all 4 pages built with navigation and content. Session 3, all pages styled and responsive. Session 4, form validation and interactive features working. Session 5, validated, tested, bugs fixed. Session 6, live on GitHub Pages with repo and self-assessment done.
+Teacher Notes: student names, who approved the theme and the date, and comments. Your theme must be approved.
+
+Watch out for:
+- Plan real content now; Lorem Ipsum costs points later.
+- Keep titles to 60 characters or fewer and meta descriptions between 100 and 160.
+- Plan accessibility from the start, including avoiding flashing animation.
+- Correction: plan a table with at least 4 columns and at least 5 rows, which satisfies both this template and the rubric's Excellent level. The template only suggests 3 to 4 columns, with the 4th optional.
+
+Connects to:
+Feeds directly into html14_CapstoneSpec.md (Session 1 deliverable) and is submitted with the finished project; the planning ideas echo the project-scope work in the exam prep sprints.

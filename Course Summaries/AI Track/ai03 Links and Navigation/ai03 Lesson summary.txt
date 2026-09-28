@@ -1,0 +1,67 @@
+Summary of: ai03_Lesson.md
+Course: Web Design AI track
+Lesson: ai03 Links and Navigation
+Type of document: lesson
+
+In one sentence:
+This lesson has you direct Claude to turn your music home page into a three-page site with the same working nav on every page, plus jump links, a skip link, an email link, and a download link.
+
+Main ideas:
+- Your home page becomes a three-page site. Every page has the same nav, and every link must work. You also add jump links, an email link, a download link, and a skip link.
+
+Step 1, Set up:
+- Tell Claude to make a folder called ai03_linksAndNav in your repository folder and copy index.html from your ai02_semanticHTML folder into it.
+- All work in this lesson happens in ai03_linksAndNav.
+
+Step 2, Build the pages (give Claude these directions, with your own content):
+1. Make two more pages, about.html and music.html, with the same header, nav, and footer as index.html. The nav on every page has three links: Home to index.html, About to about.html, and Music to music.html. Use relative links.
+2. On about.html, put a heading level one that says About [your name], then three sections with heading level twos. At the top of main, put a small list of three links that jump to those three sections on the same page. Give Claude the three section names and a paragraph for each.
+3. On music.html, put a heading level one that says My Music, and a section for each of three tracks. Each section has a heading level two with the track name and a paragraph about the track.
+4. On every page, put a skip link as the very first thing in the body. Its link text is Skip to main content, and it jumps to the main element.
+5. In the footer of every page, add an email link to your email address with the subject line Question about your music. Also add a download link to a file called bio.txt, and have Claude create bio.txt containing a short two-sentence bio that you give it.
+
+Step 3, Check (open index.html in Chrome):
+1. Press Tab once. The first thing you hear should be the skip link. Press Enter and you should land in main.
+2. Press K to go through the nav links. Press Enter on About and the about page should open. Press Insert plus F7 to open the links list and confirm Home, About, and Music are all there. Do this on all three pages.
+3. On about.html, press Enter on one of the jump links. You should land on that section's heading.
+4. In the footer, press Enter on the email link. Your email program should open with the subject already filled in. Close it.
+5. Press Enter on the download link. bio.txt should download.
+If any link does nothing, tell Claude which page and which link, and have it fix the file.
+
+Step 4, Learn (ask Claude):
+- Ask Claude to explain relative links versus absolute links, including what happens to each kind when the whole site moves to a new folder.
+- Ask Claude to explain how a jump link works, covering both the link and its target.
+These topics are also on the graded question sheet, so listen closely.
+
+Step 5, Make it yours:
+- Add a fourth page, more tracks, or more jump links. Keep the nav the same on every page.
+
+Step 6, Push:
+- Commit with the summary Three page site, then push.
+
+Key terms:
+nav — the navigation region; in this lesson it must be identical on every page.
+relative link — a link that points to another file by its path from the current page, such as about.html; the lesson requires these for the nav.
+absolute link — the other kind of link you ask Claude to compare with relative links in the Learn step.
+jump link — a link that moves you to a specific place on the same page, here to each section on about.html.
+skip link — a link placed first in the body, with the text Skip to main content, that jumps straight to the main element.
+email link — a link that opens the visitor's email program addressed to you, here with a subject line filled in (the questions call this a mailto link).
+download link — a link that, when activated, should make a file download (here bio.txt); the questions ask about the download attribute.
+bio.txt — a plain text file with your two-sentence bio, created by Claude.
+Insert plus F7 — the screen reader command that opens a list of all links on the page.
+Tab — moves keyboard focus to the next link or control; the skip link should be the first stop.
+
+What you are asked to do:
+Complete Steps 1 through 6 above: set up ai03_linksAndNav with the copied index.html, build about.html and music.html with the shared header, three-link nav using relative links, and footer, add the jump links, skip link, email link, download link, and bio.txt as listed in Step 2, check every link on all three pages, and commit with the summary Three page site and push.
+Turn in:
+1. index.html, about.html, music.html, and bio.txt
+2. Your answers to the questions in ai03_Questions.md, shared in Google Classroom.
+
+Watch out for:
+- Every page must have the same nav. Check the links list on all three pages, not just one.
+- The skip link must be the first thing in the body, so it is the first thing Tab reaches.
+- If a jump link does nothing, the link or its target is not set up correctly.
+- Heads up: the index.html you copy from ai02 still has four nav links, including Contact, but this lesson uses a three-link nav (Home, About, Music) and never builds a contact page. Have Claude remove the Contact link from the copied index.html so all three pages share the same nav and no link is broken.
+
+Connects to:
+This lesson matches html03 Links and Navigation in the HTML CSS JavaScript track. It continues the site from ai02 Semantic HTML, and these pages are copied forward into ai04 Images Media and Tables.

@@ -1,0 +1,42 @@
+Overview of: html09 JavaScript
+Course: HTML CSS JavaScript track
+
+What this lesson is about:
+This is the course's JavaScript unit, created by merging two older lessons, html09 JavaScript Basics and html10 JS DOM and Interactivity. That is why some files still say "Lesson 10" or "HTML10." It runs about 5 to 6 class periods in three sub-units. The first sub-unit, core JavaScript (09a and 09b), covers the script tag, the console, variables with let and const, data types, functions with parameters and return, string concatenation, and comments, and ends with a Mad Libs story project. The second sub-unit, the DOM (09c), teaches how JavaScript selects page elements, changes their text and styles, listens for events like clicks, and shows or hides things with classList. The third sub-unit, Feature Days (09d to 09f), applies one move, select, listen, toggle a class, and let CSS finish, to add a dark mode toggle and an accessible hamburger menu to your real website, then adds form validation to your html08 form. You leave able to read and direct simple JavaScript, explain why hover belongs to CSS, keep aria-expanded in sync on toggle buttons, and explain why a server must re-check form data. The unit covers ODE competencies 6.3.1, 6.3.2, 6.3.3, and 6.4.7.
+
+How the pieces fit together:
+- The Unit Guide is the current master plan and says to start there. It maps each segment to its files: 09a to 09b basics, 09c DOM core, 09d dark mode day, 09e hamburger day, and 09f form validation plus the server discussion.
+- The README and MANIFEST describe only the original basics package (the Mad Libs half). They list solution files and quiz CSV files that are not in this folder. Read them as background.
+- Two graded projects: the Mad Libs DIY task closes the basics half, and the Features DIY task is the capstone for the whole unit. The Extension Task is optional extra credit.
+- The Unit Guide warns that the F12 console may be blocked on school computers; if so, use its say() output-div method wherever lessons say console.log().
+
+Documents in this folder, in suggested order:
+1. html09 UnitGuide summary.txt — the current plan for the merged unit, scope rules, and the console warning; read first.
+2. html09 Slides summary.txt — slides on script tags, console.log, variables, data types, functions, operators, and comments (09a and 09b).
+3. html09 StudyGuide summary.txt — 20 vocabulary terms, cheat sheet, and competencies for the basics (practice questions left out).
+4. html09 Walkthrough summary.txt — eight-part fill-in-the-blank walkthrough from console.log to connecting JavaScript to an HTML page.
+5. html09a Task summary.txt — starter page for variables practice (let, const, data types).
+6. html09b Task summary.txt — starter page for writing and testing six functions.
+7. html09 DIYTask summary.txt — the Mad Libs Story Generator project with requirements and a 100-point rubric.
+8. html09 DomSlides summary.txt — slides on the DOM, selecting elements, content and styles, events, validation, and classList.
+9. html09 DomStudyGuide summary.txt — DOM vocabulary, cheat sheet, and common mistakes (practice questions left out).
+10. html09 DomWalkthrough summary.txt — fill-in-the-blank DOM walkthrough (class uses Parts 1 to 4 and 6).
+11. html09c Task summary.txt — starter page with five DOM tasks: change text, color, visibility, several styles, and HTML.
+12. html09 FeatureDaysSlides summary.txt — slides for the dark mode and hamburger feature days.
+13. html09 FeatureDays Walkthrough summary.txt — step-by-step dark mode (Part 1, day 09d) and hamburger nav (Part 2, day 09e) on your real site.
+14. html09d Task summary.txt — starter page for a contact form with submit validation and error and success messages (used in 09f).
+15. html09 FeaturesDIYTask summary.txt — the unit capstone: ship dark mode, hamburger nav, and form validation in one commented script.js.
+16. html09 ExtensionTask summary.txt — optional extra-credit features: accordion, scroll-to-top, lightbox, and tabs.
+17. README summary.txt — the original basics package's README and five-day plan (background).
+18. MANIFEST summary.txt — the original basics package's file inventory, standards, and teaching tips (background).
+
+Other files in the original lesson:
+The source folder has no images or media subfolders; all 18 source files are text (Markdown, HTML, and one plain-text manifest), and every one has a summary here. The README and MANIFEST list files that are not present: walkthrough solutions, Task 09a and 09b solutions, Mad Libs solutions (each in .html and .js form), and two quiz files (html09_Gimkit.csv and html09_GoogleQuiz.csv, 30 questions each). The Unit Guide also names a teacher solution for the Features DIY task in a teacher folder. These appear to be teacher-only files.
+
+Things to know about conflicts in the sources:
+- Hover effects belong in CSS (:hover). The newer Unit Guide retires the JavaScript hover exercise, so follow it even though the DOM slides and the html09d Task still show JavaScript hover.
+- Concatenation with the plus sign is the tested form, per the Unit Guide; template literals are shown once. The older basics files lean on template literals, and the Mad Libs project still requires one, so know both.
+- The DOM walkthrough has no validation section, even though the Unit Guide points 09f there; study validation from the DOM slides, DOM study guide, and html09d Task.
+
+Connects to:
+html06 (CSS :hover), html08 (the form you validate), and html11 (the hand-coded build that requires dark mode and the hamburger menu).

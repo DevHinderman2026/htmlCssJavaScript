@@ -1,0 +1,28 @@
+Overview of: Capstone Project Legacy
+Course: HTML CSS JavaScript track
+
+What this lesson is about:
+This is an older (legacy) version of the course's final project, labeled html14, called "Multi-Page Responsive Website." Students plan, build, test, and publish a website of at least four pages (Home, About, Services or Portfolio, and Contact) on a theme they choose. The site must use semantic HTML, an external stylesheet with custom CSS, responsive layouts with media queries, at least one data table, and a contact form validated with JavaScript. It must also meet SEO and accessibility basics (good titles, meta descriptions, correct heading order, alt text, color contrast, keyboard navigation), pass the W3C validators, score 80 or more in Lighthouse, and be live on GitHub Pages. The work runs over six sessions of about 10 to 12 hours in total and is graded out of 100 points with a rubric. A complete example site for a fictional coffee shop, Mountain View Coffee Co., shows one way to meet every requirement. A student leaves able to take a site from planning to public deployment and to judge it against a checklist.
+
+Documents in this folder, in suggested order:
+1. README summary.txt — map of every file in the capstone and how students and teachers should use them.
+2. html14 CapstoneSpec summary.txt — the full assignment: every requirement, the six-session timeline, and submission rules.
+3. html14 PlanningTemplate summary.txt — the Session 1 planning worksheet to finish before coding.
+4. html14 Rubric summary.txt — all 27 grading criteria in 7 categories, the grade scale, deductions, and extra credit.
+5. html14 ExampleSolution index summary.txt — the example home page: head metadata, header, hero, cards, testimonials, footer.
+6. html14 ExampleSolution about summary.txt — the example About page: story, mission, team, values, timeline.
+7. html14 ExampleSolution menu summary.txt — the example Menu page, including the required comparison table.
+8. html14 ExampleSolution contact summary.txt — the example Contact page, including the required form.
+9. html14 ExampleSolution styles summary.txt — the shared stylesheet: variables, Flexbox, Grid, form and table styling, media queries.
+10. html14 ExampleSolution script summary.txt — the shared JavaScript: hamburger menu, five-field form validation, smooth scrolling, Escape key.
+11. html14 SelfAssessment summary.txt — the checklist, the written reflection requirement (its prompts left out of these notes), and Git steps to finish before submitting.
+12. IMPLEMENTATION GUIDE summary.txt — the teacher's session plan, grading checklist, and answers to common student questions.
+
+Other files in the original lesson:
+There are no images or media folders. The example pages load their photos from an online placeholder service (picsum.photos), so no image files are included. All 12 source files were summarized; none were skipped.
+
+Things to keep in mind across this folder:
+- The example solution does not follow every rule it teaches: the About, Menu, and Contact pages each have two h1 elements, the hamburger button has no accessible name, some gold text has low contrast, and the stylesheet is described as mobile-first but is really desktop-first. Each example summary explains these so you can avoid them.
+- The rubric gives no point values for individual criteria, only a total of 100.
+- The spec's academic integrity section says not to use AI code generators; since this is a legacy project, check with Mr. McMaster how that applies to your AI-directed workflow.
+- The current course ends with html12 Exam Prep; this html14 capstone is kept as enrichment.

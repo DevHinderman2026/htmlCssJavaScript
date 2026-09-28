@@ -1,0 +1,24 @@
+Summary of: ai02_Questions.md
+Course: Web Design AI track
+Lesson: ai02 Semantic HTML
+Type of document: questions
+
+In one sentence:
+This is the graded question sheet for ai02; its questions are left out of these study notes because they are homework, not study material.
+
+Topics it checks:
+- the page regions used on your home page
+- the heading level one and screen reader navigation
+- ordered lists versus unordered lists
+- the strong element versus the em element
+- bold text versus headings
+- the word markup in the name HTML
+
+What you are asked to do:
+Copy the questions from the original ai02_Questions.md into a Google Doc or Word document, type your answer under each one in your own words (one or two sentences per answer is enough), and share the document with Mr. McMaster in Google Classroom.
+
+Study these in:
+- ai02 Lesson summary.txt (in this folder)
+
+Connects to:
+Goes with ai02_Lesson.md; the matching main-track lesson is html02 Semantic HTML.

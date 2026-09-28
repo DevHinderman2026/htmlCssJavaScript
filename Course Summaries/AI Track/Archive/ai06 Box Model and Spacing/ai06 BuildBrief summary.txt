@@ -1,0 +1,55 @@
+Summary of: ai06_BuildBrief.md
+Course: Web Design AI track (archived version)
+Lesson: ai06 Box Model and Spacing
+Type of document: build brief (project task, "Space, Boxes, and the Secret Third Way to Hide Things")
+
+In one sentence:
+This brief has you direct Claude to give your site layout polish with consistent spacing, a centered column, reusable cards, and a sticky header, using box model vocabulary, plus a demo page showing three ways to hide content.
+
+Main ideas:
+The brief pairs with html06 (Box Model and Spacing).
+1. What to build:
+- Consistent spacing: content padded away from the edges, paragraphs with breathing room, and a centered main column with a maximum width.
+- A "card" component used at least three times: a box with padding, a border, and margin between cards.
+- A styled hover state on the cards, done in CSS.
+- One sticky header that stays in place while the page scrolls.
+2. The must-say list:
+- The box model by its rings: content, padding, border, margin. Your directions must use these words for where space goes. The brief stresses that "more padding inside the cards" and "more margin between them" are different requests.
+- max-width, and centering with margin: auto.
+- Shorthand order: if you direct something like margin: 1rem 2rem, say what each value applies to.
+- position: sticky.
+- display values: block, inline, and none.
+3. The twist: ask Claude to show three ways to hide an element with CSS (display: none, visibility: hidden, and the off-screen sr-only technique) by building a demo page with one paragraph hidden each way plus one visible control paragraph. That page is your AudioLab specimen. The brief notes the third technique appears on nearly every professional site.
+
+Code: margin: 1rem 2rem;
+With two values, the first (1rem) sets the top and bottom margins and the second (2rem) sets the left and right margins. This is the shorthand the brief asks you to explain when you use it.
+
+Code: main { max-width: 60rem; margin: 0 auto; }
+An example of centering a column: the width is capped, and automatic left and right margins split the leftover space evenly. (The numbers are only an example.)
+
+Key terms:
+Box model — the idea that every element is a box made of content, padding, border, and margin, from the inside out.
+Content — the innermost part of the box holding text or images.
+padding — space inside the border, between the content and the border.
+border — the line around the padding.
+margin — space outside the border, between this box and others.
+max-width — the largest width an element may grow to.
+margin: auto — automatic margins, used on left and right to center a block with a set width.
+Shorthand — writing several side values in one property, in the order top, right, bottom, left.
+position: sticky — keeps an element, such as a header, in place once scrolling reaches it.
+display: block, inline, none — block elements start on a new line and fill the width; inline elements flow within text; none removes the element.
+Card component — a reusable styled box for a piece of content.
+sr-only — the off-screen hiding technique that keeps content readable by screen readers.
+
+What you are asked to do:
+- Direct Claude to add the spacing, centered max-width column, at least three cards with hover styles, and a sticky header.
+- Use every must-say term by name, including explaining any shorthand values.
+- Have Claude build the hiding-demo page described in the twist.
+- Commit: the updated site plus the hiding-demo page, ai06_PromptLog.md, and your completed ConceptCheck and AudioLab.
+
+Watch out for:
+- Padding and margin are different; say which one you mean.
+- The demo page is needed for the AudioLab, so build it before auditing.
+
+Connects to:
+Pairs with html06 Box Model and Spacing; audited in ai06 AudioLab.

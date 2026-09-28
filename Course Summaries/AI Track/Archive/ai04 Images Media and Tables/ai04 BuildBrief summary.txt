@@ -1,0 +1,53 @@
+Summary of: ai04_BuildBrief.md
+Course: Web Design AI track (archived version)
+Lesson: ai04 Images Media and Tables
+Type of document: build brief (project task)
+
+In one sentence:
+This brief has you direct Claude to add a media page with images whose alt text you write yourself, a silent decorative image, audio and video with controls, and a properly built data table, plus a deliberately lazy table for comparison.
+
+Main ideas:
+The brief pairs with html04 (Images, Media and Tables).
+1. What to build: a media page added to your site with:
+- Four images relevant to your topic. You write every alt text yourself and dictate it to Claude. The brief explains that alt text is the author's voice, and handing it to an AI is how the web filled up with useless alt. Decide what each image needs to say to someone experiencing the page through a screen reader.
+- One purely decorative image, such as a divider or flourish, with empty alt so a screen reader skips it entirely.
+- One embedded video and one audio element, both with controls.
+- A data table about your topic with a caption, a header row with proper header cells, and at least four rows of data.
+2. The must-say list:
+- img, src, and alt, plus the rule for decorative images: empty alt, not missing alt.
+- figure and figcaption, and how a caption differs from alt text.
+- audio and video with the controls attribute.
+- table, caption, thead, tbody, and th with scope.
+- image file formats: when to use JPG, when PNG, and when SVG.
+3. The twist: have Claude produce the table twice, once correctly (th cells, scope, and caption) and once lazily (every cell a td, no caption) saved as lazy-table.html. The AudioLab compares them cell by cell. Delete the lazy version afterward and do not commit it.
+
+Code: <img src="divider.png" alt="">
+This shows empty alt: the alt attribute is present but has nothing between the quotation marks, which tells screen readers to skip the image. (The file name is only an example.)
+
+Key terms:
+img — the image element.
+src — the attribute giving the image file's location.
+alt — the attribute holding the image's text alternative.
+Empty alt — alt with no text, for decorative images; different from leaving alt out.
+figure and figcaption — a wrapper for an image and its visible caption.
+audio and video — elements that embed sound and video players.
+controls — the attribute that shows play, pause, and volume controls.
+table, caption, thead, tbody — a data table, its title, its header section, and its body section.
+th with scope — a header cell and the attribute saying whether it labels a column or a row.
+td — an ordinary data cell.
+JPG, PNG, SVG — image file formats the brief asks you to choose between.
+
+What you are asked to do:
+- Direct Claude to build the media page with all the required parts.
+- Write and dictate all four alt texts yourself.
+- Use every must-say term by name.
+- Have Claude build the correct table and the lazy-table.html version; delete the lazy one after the audit.
+- Commit: your media page plus its image and media files, ai04_PromptLog.md, and your completed ai04_AudioLab.md and ai04_ConceptCheck.md.
+
+Watch out for:
+- Do not let Claude write your alt text.
+- Decorative images need empty alt, not missing alt.
+- Do not commit lazy-table.html.
+
+Connects to:
+Pairs with html04 Images Media and Tables; audited in ai04 AudioLab.

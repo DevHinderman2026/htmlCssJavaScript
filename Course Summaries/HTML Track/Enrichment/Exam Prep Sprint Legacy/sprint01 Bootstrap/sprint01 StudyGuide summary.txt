@@ -1,0 +1,74 @@
+Summary of: sprint01_StudyGuide.md
+Course: HTML CSS JavaScript track
+Lesson: sprint01 Bootstrap
+Type of document: study guide
+
+In one sentence:
+A study guide for the Bootstrap exam prep sprint with 15 vocabulary words, a cheat sheet of grid, breakpoint, component and utility code, the Ohio competencies covered, five common mistakes, ten practice questions with answers, and a list of key exam topics.
+
+Main ideas:
+1. Basic grid structure. A container holds a row, which holds columns. The cheat sheet example uses two columns with class col-md-6, so each takes half the row from medium screens up.
+2. Breakpoints reference. Six breakpoints, each with a class prefix, minimum width, and typical device:
+- Extra small (XS): col- with a number, under 576 pixels, mobile phone.
+- Small (SM): col-sm-, 576 pixels and up, large mobile.
+- Medium (MD): col-md-, 768 pixels and up, tablet.
+- Large (LG): col-lg-, 992 pixels and up, laptop.
+- Extra large (XL): col-xl-, 1200 pixels and up, large monitor.
+- XXL: col-xxl-, 1400 pixels and up, extra large monitor.
+3. Responsive column example. Three cards each with col-12 col-md-6 col-lg-4 are stacked on mobile, two per row on tablet, and three per row on desktop.
+4. Bootstrap CDN. The stylesheet link (Bootstrap 5.3.0 from cdn.jsdelivr.net) goes in the head. The JavaScript bundle script goes just before the closing body tag and is needed only for interactive components.
+5. Navbar component. Same structure as the slides: nav with navbar navbar-expand-lg navbar-dark bg-dark, a container-fluid, a navbar-brand link, a navbar-toggler button containing a span with class navbar-toggler-icon (the menu icon), and a collapse navbar-collapse div with a navbar-nav ms-auto list of nav-item and nav-link entries for Home, About and Contact.
+6. Card component. Div with class card, image with card-img-top and alt text, card-body div with card-title heading, card-text paragraph, and a btn btn-primary link reading Learn More.
+7. Button styles. The btn class plus one of six color variants: btn-primary, btn-secondary, btn-success, btn-danger, btn-warning, btn-info.
+8. Alerts. Div with alert plus alert-success, alert-danger, alert-warning or alert-info, each with role="alert".
+9. Spacing utilities. Margin classes go from m-1 to m-5: m-3 is all sides, mt- top, mb- bottom, ms- start (left), me- end (right). Padding classes go from p-1 to p-5: p-3 all sides, pt- top, pb- bottom.
+10. Text utilities. text-center, text-start (left), text-end (right), text-muted (gray), and the guide also lists text-bold.
+11. Form controls. Text and email inputs and textareas get class form-control; a select dropdown gets class form-select.
+12. Background and text colors. bg-primary, bg-success, bg-danger for backgrounds; text-primary for colored text; text-light combined with bg-dark for light text on a dark background.
+13. Ohio Department of Education competencies covered: 6.5.3 (responsive design with media queries and frameworks), 6.5.6 (industry-standard frameworks like Bootstrap), 6.5.13 (component libraries for speed and consistency), and 6.1.7 (mobile-first design).
+
+Key terms:
+Bootstrap — a front-end framework with pre-built CSS classes and components for responsive design.
+Framework — a collection of pre-written code and tools that speeds up development.
+CDN (Content Delivery Network) — a service that delivers Bootstrap files from servers around the world.
+Container — class that wraps content and gives margins and a fixed width.
+Container-fluid — class that makes the container stretch the full width of the viewport.
+Row — class that makes a horizontal line containing columns.
+Col — class that makes a column within a row.
+Grid System — Bootstrap's 12-column layout system.
+Breakpoint — a screen size where the layout changes (xs, sm, md, lg, xl, xxl).
+Responsive Design — design that adapts layouts to different screen sizes.
+Navbar — component for navigation bars.
+Card — component for content in boxes.
+Button — component for clickable elements.
+Alert — component for messages or notifications.
+Utility Class — a class that applies a single CSS property, like m-3 for margin.
+form-select — class that styles a select dropdown.
+navbar-toggler-icon — span inside the toggler button that shows the menu icon.
+
+What you are asked to do:
+The guide's practice questions, with the given answers:
+1. What does the Bootstrap CDN link do? It loads Bootstrap's CSS and JavaScript from the internet so you do not have to download and install them.
+2. What is the correct order for the grid structure? Container, then row, then columns.
+3. Which classes make columns full width on mobile but half width on tablets? class="col-12 col-md-6".
+4. What is the grid based on? A 12-column system; columns combine to make layouts.
+5. Name three components from this sprint. Any three of navbar, card, button, alert (form controls also accepted).
+6. What is a breakpoint? A screen size at which the layout changes; Bootstrap uses xs, sm, md, lg, xl, xxl.
+7. Difference between container and container-fluid? Container has fixed margins and does not stretch full width; container-fluid stretches edge to edge.
+8. Which class adds margin above an element? mt- followed by a number 1 to 5, such as mt-3.
+9. What is mobile-first? Start with the smallest screen (no size prefix) and add larger breakpoint classes as needed.
+10. Write a line for a card that is full width on mobile and one-third on large screens. A div with class="col-12 col-lg-4", with a card inside.
+Practice assignment: build at least 3 different responsive layouts using the grid with different breakpoint combinations.
+Key exam topics to know: including Bootstrap by CDN; the 12-column grid; all six breakpoints and their sizes; responsive layouts with multiple breakpoint classes; navbar, card, button and alert; utility classes for spacing, alignment and color; exact class-name syntax; mobile-first design.
+
+Watch out for:
+Common mistakes listed in the guide:
+1. Forgetting the CDN link in the head. Without it no Bootstrap class works.
+2. Wrong grid nesting. It must be container, then row, then col.
+3. Columns that do not add up to 12. Three col-md-4 columns make 12; two col-md-5 columns make only 10 and leave a gap.
+4. Using only one breakpoint. Writing col-lg-6 alone, without col-12 or a col-md- class, means the layout is not planned for smaller screens.
+5. Wrong class names. For example col-medium-6 instead of col-md-6, or margin-3 instead of m-3. Class names must be exact.
+Correction: the Bootstrap 5 class for bold text is fw-bold; there is no text-bold class. This guide lists text-bold, but the sprint05 Master Study Guide correctly uses fw-bold.
+
+Connects to:
+Pairs with the sprint01 slides and the sprint01 task. The enrichment Bootstrap Basics lesson and the sprint05 Master Study Guide cover the same Bootstrap facts.

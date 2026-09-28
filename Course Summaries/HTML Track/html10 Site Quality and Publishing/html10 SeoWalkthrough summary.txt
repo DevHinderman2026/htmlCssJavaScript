@@ -1,0 +1,62 @@
+Summary of: html10_SeoWalkthrough.md
+Course: HTML CSS JavaScript track
+Lesson: html10 Site Quality and Publishing
+Type of document: walkthrough
+
+In one sentence:
+This guided walkthrough has you audit a deliberately bad restaurant page for SEO and accessibility problems, then study the fixed version, and gives you reusable audit checklists.
+
+Main ideas:
+1. Part 1, the bad example. The walkthrough points to the flawed restaurant page (called html12a_Task.html here, which is now html10a_Task.html). Its problems: a missing or generic title, no meta description, images without alt text, poor heading hierarchy, mostly divs instead of semantic tags, and vague or missing keywords.
+2. Part 1A, SEO audit, six fill-in steps:
+- Step 1: find the title tag in the head and check that it is descriptive and includes a keyword.
+- Step 2: check for a meta description that describes the page and is compelling.
+- Step 3: list every image, its current alt text, and what it should be.
+- Step 4: list all h1, h2 and h3 headings and check that they are in logical order with only one h1.
+- Step 5: note which semantic tags are used (header, nav, main, article, section, footer) versus plain divs.
+- Step 6: record the page URL and whether it is descriptive.
+3. Part 1B, accessibility audit, six fill-in steps:
+- Step 1: record the text and background colors and judge the contrast (tip: use the WebAIM Contrast Checker).
+- Step 2: note which images are missing meaningful alt text (same finding as the SEO audit).
+- Step 3: check that form inputs are connected to labels with a for attribute.
+- Step 4: navigate with only Tab (next element), Shift plus Tab (previous element) and Enter (activate), and check that every button and link is reachable and the focus indicator is visible.
+- Step 5: list semantic tags found versus generic divs with onclick.
+- Step 6: list real buttons, real links, and divs with onclick.
+4. Part 2, the good example (the walkthrough calls it html12a_Task_Solutions.html). SEO fixes shown:
+- Title: "Premium Italian Restaurant | Giuseppe's Trattoria in Medina": descriptive, has keywords, under 60 characters.
+- Meta description of about 160 characters about authentic Italian cuisine since 1995, ending with a call to action to visit.
+- Specific alt text such as "creamy fettuccine alfredo with parmesan" and "Chef Giuseppe preparing handmade pasta".
+- One h1 naming the restaurant, h2 sections Our Story and Menu, and h3 subsections Pasta Dishes and Main Courses.
+- Structure with header (containing the h1 and a nav of real links to Home, Menu and Contact), main with an article, and footer with a copyright line.
+5. Accessibility fixes shown:
+- Body text color #333 on a white #fff background; the comment gives the ratio as 12.6 to 1, well above the 4.5 to 1 AA minimum.
+- Labels connected with for and id for an email input and a message textarea, both marked required, so a screen reader announces label and field together.
+- A logical tab order, all links and buttons reachable, and a visible focus style.
+Code: button:focus, a:focus, input:focus { outline: 3px solid #0066cc; outline-offset: 2px; }
+This gives buttons, links and inputs a 3-pixel solid blue outline set 2 pixels away from the element whenever it has keyboard focus.
+- Real button elements for actions (Submit Order), real a elements for navigation (View Our Menu), and proper form controls such as a select with options.
+- An icon-only close button given aria-label="Close navigation menu", with the visible multiplication-sign symbol wrapped in a span marked aria-hidden="true" so it is not read aloud. An image of a star rating gets alt text and an aria-label.
+6. Part 3, reusable checklists.
+SEO checklist: title exists and is under 60 characters; title includes the main keyword; title is compelling, not just "Home"; meta description exists; it is 150 to 160 characters; it is compelling; all images have alt text; alt text is descriptive; one h1; h2 and h3 follow a logical hierarchy; no skipped levels; semantic HTML (header, nav, main, article, footer); URL descriptive with a keyword; content original and unique; content substantial (300 or more words for blog posts).
+Accessibility checklist: meaningful alt text on all images; 4.5 to 1 contrast; all inputs have connected labels; buttons are button elements; links are a elements; the page works with Tab, Shift plus Tab and Enter; visible focus indicator; icons have aria-labels; semantic HTML; descriptive link text; no text hidden with white color or tiny font size.
+7. Closing summary of which practices help search engines and which help users. Title tags, meta descriptions, alt text, headings, semantic HTML and real buttons and links help both. Color contrast, connected labels, keyboard navigation and visible focus mainly help users. Accessibility is the foundation of good web development, and it helps SEO too.
+
+Key terms:
+audit — a systematic check of a page against a list of best practices.
+outline-offset — CSS property that sets the gap between an element and its focus outline.
+aria-hidden="true" — hides decorative content, such as an icon symbol, from screen readers.
+required — form attribute that makes a field mandatory.
+for and id pairing — how a label is tied to its input.
+contrast ratio — measured text-to-background contrast; 4.5 to 1 is the AA minimum.
+
+What you are asked to do:
+Try It Yourself steps: 1. Open the task a page in your browser. 2. Follow the SEO audit (Part 1A) and accessibility audit (Part 1B). 3. Write down every problem you find. 4. Open the solutions file and compare. 5. Understand how each fix works. 6. Complete the task. Along the way, fill in all the blanks in Parts 1A and 1B.
+
+Watch out for:
+- Heads up: the file names here are the old html12a names; the starter page is now html10a_Task.html. The solutions file named here is not in this folder, so for Try It Yourself step 4 compare your findings with the good example in Part 2 instead.
+- The real starter page has no URL to check in Step 6 of Part 1A, since you open it as a local file.
+- aria-hidden appears in the example, but the unit guide says aria-label is the only ARIA attribute you need for the exams.
+- Do not use white or tiny text to hide content; it fails accessibility.
+
+Connects to:
+html10a Task (the page you audit) and html10 SeoDIYTask (the same checklists applied to your own project).

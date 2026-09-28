@@ -1,0 +1,87 @@
+Summary of: ai04b_Lesson.md
+Course: Web Design AI track
+Lesson: ai04 Images Media and Tables
+Type of document: lesson
+
+In one sentence:
+This follow-up lesson has you direct Claude to build a page for one new music release, release.html, with cover art that has separate alt text and caption, an audio preview stored in your own folder with fallback content, and a track table that ends with a total running time row.
+
+Main ideas:
+
+Step 1, Set up:
+- Tell Claude something like: make a folder called ai04b_releasePage in your repository folder, copy all of your site pages and image files into it from the folder your site is in, and add one more nav link on every page, pointing to release.html, with the name of the release as the link text.
+- All work in this lesson happens in ai04b_releasePage.
+
+Step 2, Get your audio:
+- A link to a music service is not a player. Those services do not let you put their player inside your own page, and no code gets around that. If you want people to hear music without leaving your site, the audio file has to be in your own folder.
+1. Export 30 to 60 seconds of one track as an MP3 from the software you produce in. You may use a whole track, but a short preview is enough; it keeps the file small and keeps a full release out of a public repository.
+2. Name the file with lowercase letters and no spaces, such as preview.mp3.
+3. Tell Claude to make a folder called audio in ai04b_releasePage and put your MP3 in it.
+
+Step 3, Decide what to say:
+1. Alt text for the cover art: what the screen reader reads instead of the picture. Describe what the artwork looks like in one or two sentences.
+2. Caption for the cover art: information about the release, such as when it came out, what it is, and who worked on it. It should not be a second description of the picture.
+3. Your track list: for each track, the name, its length, and anything else you want as a column.
+4. The total running time of the release.
+
+Step 4, Build (tell Claude something like this, with your own details):
+1. Make release.html with the same header, nav, footer, and skip link as your other pages. The title and the heading level one are both the name of the release.
+2. Add a section called About This Release with a paragraph about it.
+3. Add a figure element containing the cover art image and a figcaption under it. Give Claude the alt text and the caption.
+4. Add a section called Listen with an audio element that has the controls attribute, using the file in your audio folder. Inside the audio element, put a sentence saying the browser cannot play the file, plus a link to download it, for browsers that cannot play audio.
+5. Add a section called Track List with a table that has a caption and a header row of th cells with scope column. Give Claude your columns and rows.
+6. Add one more row at the bottom of the table. Its first cell says Total running time and spans across all the columns before the last one; the last cell holds the total. Tell Claude the total.
+7. On your main music page, add a link to release.html, and on release.html add a link back to the music page.
+Code: <td colspan="2">Total running time</td>
+This example shows a cell stretched across two columns with the colspan attribute; the number must equal the number of columns before the last one in your own table.
+
+Step 5, Check (open release.html in Chrome):
+1. Press G to reach the cover art. You should hear your alt text, not a file name.
+2. Press Down Arrow after the image to hear the caption. It should tell you something the alt text did not. If you hear the same sentence twice, rewrite one of them.
+3. Tab to the audio player's play button and press Enter; your clip should play. Press Enter again to pause. If there is no player at all, the controls attribute is missing or the file name is wrong; tell Claude what you heard.
+4. Press T to jump to the table. You should hear the caption and the number of rows and columns.
+5. Press Control plus Alt plus Right Arrow to move across a row. The column header should be announced before each cell.
+6. Move to the last row. The total running time should line up under the correct column. If it does not, the row spans the wrong number of columns; tell Claude how many columns the table has.
+7. Press K to go through the links. Go to the music page and back again without the browser's back button. If you cannot get back, one of the two links is missing.
+
+Step 6, Learn (ask Claude):
+- Ask Claude to explain why a music service link cannot be the file for an audio element.
+- Ask Claude to explain the colspan attribute and how to choose its number.
+- Ask Claude to explain the purpose of the content inside an audio element.
+These topics overlap with the graded question sheet, so listen closely.
+
+Step 7, Make it yours:
+- Add a second release page, add more table columns such as format or year, or add a link to where people can stream the full release. Check the page again afterward.
+
+Step 8, Push:
+- Commit with the summary Release page and push. Make sure the audio folder shows up on GitHub.
+
+Key terms:
+release page — a page about one new release of your music.
+audio element — plays a sound file that lives in your own site folder; it cannot use a music service link as its file.
+controls attribute — gives the audio element a visible player; without it, the lesson says there may be no player at all.
+fallback content — the sentence and download link placed inside the audio element for browsers that cannot play the file.
+figure and figcaption — the wrapper for the cover art and its caption.
+alt text — describes what the artwork looks like, for screen reader users.
+caption — gives information about the release, not a second description of the picture.
+table caption — the title of the track list table, announced when you reach the table.
+th with scope column — header cells that label each column, so the header is announced before each cell.
+colspan — the attribute that makes one table cell stretch across several columns; used for the Total running time cell.
+audio folder — the folder in ai04b_releasePage holding your MP3 preview.
+
+What you are asked to do:
+Complete Steps 1 through 8 above: set up ai04b_releasePage, add your MP3 to an audio folder, plan your alt text, caption, track list, and total, build release.html with every part listed in Step 4, run all seven checks, and commit with the summary Release page and push.
+Turn in:
+1. release.html and the updated pages, with the audio folder
+2. Your answers to the questions in ai04b_Questions.md, shared in Google Classroom.
+
+Watch out for:
+- A streaming service link cannot be turned into a player on your page; the file must be in your own folder.
+- Alt text and caption must not repeat each other.
+- If the total lands under the wrong column, the colspan number is wrong.
+- A new page needs links both to it and back from it.
+- Heads up: this lesson file sits in the ai04 lesson folder, but build it in its own new folder, ai04b_releasePage, and put the preview MP3 in a folder named audio (not the media folder ai04 used). Use those exact names so the audio element's file path works.
+- Heads up: when you set up ai04b_releasePage, also have Claude copy bio.txt and the media folder from ai04_imagesMediaTables. The copied pages link to them (the footer download link and the media page's audio player), and those links break without them; the setup step only mentions pages and image files.
+
+Connects to:
+This is a second lesson within ai04 Images Media and Tables, which matches html04 Images Media and Tables in the HTML CSS JavaScript track. It builds on the media page, alt text, audio, and table skills from ai04_Lesson.md.

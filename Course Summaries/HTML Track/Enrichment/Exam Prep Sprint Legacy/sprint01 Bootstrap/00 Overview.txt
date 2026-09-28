@@ -1,0 +1,13 @@
+Overview of: sprint01 Bootstrap
+Course: HTML CSS JavaScript track
+
+What this lesson is about:
+This is the first of five legacy exam-prep sprints, each planned as a 2-hour session. It condenses Bootstrap into the facts most likely to appear on the state web design exam. You learn that Bootstrap is a front-end framework loaded from a CDN link placed in the head. You learn the grid structure of container, row and column, the 12-column system, and the six breakpoints (xs under 576 pixels, sm 576, md 768, lg 992, xl 1200, xxl 1400) used in a mobile-first way. You also meet the navbar, card, button and alert components and the utility classes for margin, padding, text alignment and color. You leave able to read and direct a responsive Bootstrap landing page.
+
+Documents in this folder, in suggested order:
+1. sprint01 Slides summary.txt — the slideshow: what Bootstrap is, the grid, breakpoints, components, utilities, and exam tips.
+2. sprint01 StudyGuide summary.txt — vocabulary, cheat sheet, Ohio competencies, common mistakes, and 10 practice questions with answers.
+3. sprint01 Task summary.txt — starter file with 7 TODOs to build a responsive Bootstrap landing page.
+
+Other files in the original lesson:
+An images folder holds 3 small PNG placeholder images, each 300 by 200 pixels, named item-1.png, item-2.png and item-3.png. They appear to be the pictures for the three "Featured Items" cards in the task, though the task file does not refer to them by name.

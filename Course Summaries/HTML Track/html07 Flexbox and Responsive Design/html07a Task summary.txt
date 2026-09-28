@@ -1,0 +1,39 @@
+Summary of: html07a_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html07 Flexbox and Responsive Design
+Type of document: task starter file
+
+In one sentence:
+This starter page for sub-lesson 07a is a complete services web page with no styling of its own, and TODO comments ask you to lay out its navigation bar, service cards, testimonials, and footer with flexbox.
+
+Main ideas:
+1. The page title is "Flexbox Layout - Navigation and Cards." It has the viewport meta tag and links an external stylesheet named html07a_Task_Solutions.css. There is no style element in the file, so all the flexbox CSS goes in a separate stylesheet.
+2. Navigation bar: a nav with class navbar containing a div with class logo reading MyWebsite, then four links: Home, About, Services, Contact.
+3. Inside main, an h1 "Our Services," then a div with class card-container holding three divs with class card. Each card has an h2, a paragraph, and a Learn More button. The cards are Web Design (responsive websites and user-friendly interfaces), Development (clean, efficient, secure code), and Consulting (expert guidance to plan, design, and launch).
+4. An h2 "What Our Clients Say," then a div with class testimonials holding three divs with class testimonial. Each has a paragraph with class quote, a paragraph with class author, and a div with class stars containing five span elements with class star, each holding a star character. The authors are Sarah Johnson, Michael Chen, and Emma Davis.
+5. A footer with class footer (placed inside main) holding three divs with class footer-section: Company (a one-sentence description), Quick Links (Home, About, Services, Contact links), and Contact (Email info@example.com and Phone (555) 123-4567).
+
+Key terms:
+display: flex — makes a container line its children up in a row
+justify-content: space-between — pushes the first item to the start, the last to the end, and spreads the rest evenly
+gap — space between flex items
+flex: 1 — makes items share space equally, useful for equal-width cards
+flex-wrap: wrap — lets items move to a new line when they do not fit
+align-items — lines items up across the row, for example centering the logo and links vertically
+box-shadow and border-radius — the shadow and rounded corners asked for on the cards
+
+What you are asked to do:
+Every TODO comment, in order:
+1. Navigation: add a flexbox navigation bar with the logo and nav links.
+2. Cards: create a card layout using flexbox. Cards should sit in a row on desktop; each card should have equal width; cards should have padding, a shadow, and rounded corners; add a gap between cards.
+3. Testimonials: create a testimonials section with flexbox. Show testimonials in a row (or wrapping); each has a quote, author name, and rating; use flexbox to line up the star ratings.
+4. Footer: create a footer with flexbox. It should have multiple sections (about, links, contact); sections should be spread out with space-between; the text in each section should be centered.
+All the HTML already exists, so the work is writing the CSS.
+
+Watch out for:
+- display flex goes on the containers (navbar, card-container, testimonials, stars, footer), not on the individual items.
+- The five stars are separate span characters; a screen reader may read "star" five times, so consider an accessible label such as text saying "5 out of 5 stars." This is a suggestion, not a requirement of the task.
+Heads up: the starter links to html07a_Task_Solutions.css, the teacher solution stylesheet, which is not in the folder. Create your own stylesheet (for example html07a_Task.css) and change the link's href to point to it.
+
+Connects to:
+Uses the navigation bar example and container properties from html07 Slides, sub-lesson 07a.

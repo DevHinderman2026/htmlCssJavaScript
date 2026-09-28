@@ -1,0 +1,95 @@
+Summary of: html12_PracticeExam.md
+Course: HTML CSS JavaScript track
+Lesson: html12 Exam Prep
+Type of document: practice exam
+
+In one sentence:
+This is a 40-question multiple-choice practice exam for the final web design test, with an answer key and explanations; below, every question is listed with its correct answer and a short reason so you can study from it.
+
+Main ideas:
+Rules stated at the top: time limit 60 minutes (the note says 45 minutes of actual exam time), passing score 70 percent, which is 28 of 40. Choose the BEST answer; some options are deliberately similar.
+
+Responsive design and CSS layout, questions 1 to 6:
+1. Purpose of the viewport meta tag. Answer b: it makes mobile browsers render the page at the device's width instead of pretending to be a desktop. Reason: without it, phones show a zoomed-out desktop layout and media queries never get a chance to work.
+2. In a mobile-first stylesheet, which media query adds tablet styles? Answer b: min-width 768px. Reason: mobile-first adds styles as screens grow with min-width; max-width is the desktop-first approach.
+3. What does justify-content: space-between control in a flex container? Answer a: spacing along the main axis. Reason: justify-content works on the main axis (a row by default); align-items handles the cross axis.
+4. How is CSS Grid different from flexbox? Answer b: Grid lays out rows and columns at once; flexbox works in one direction. Reason: Grid is two-dimensional, flexbox is one-dimensional.
+5. Which CSS makes images shrink to fit their container? Answer b: max-width: 100% with height: auto. Reason: never wider than the container, and the height scales to keep proportions.
+6. Why does responsive design matter for competency 2.7.2, describing ways to present data? Answer b: a responsive website is one delivery option alongside mobile apps, desktop apps and web apps. Reason: 2.7.2 lists all four as ways to deliver content.
+
+HTML forms, questions 7 to 12:
+7. What does the form's action attribute specify? Answer b: the URL or script the data is sent to. Reason: action points to where the form submits, for example process.php.
+8. Main difference between GET and POST? Answer b: GET sends data in the URL, POST in the message body. Reason: GET is visible and bookmarkable; POST is hidden with larger limits. Speed and "GET is secure" are traps.
+9. Which input lets the user pick ONLY ONE option from a group? Answer c: radio button. Reason: radios enforce a single choice; checkboxes allow many. A select also allows one, but radio is the traditional answer for grouped options.
+10. Purpose of fieldset and legend? Answer b: to group related controls and give the group a title. Reason: fieldset groups, legend titles; good for accessibility and organization.
+11. Which attribute on a label connects it to an input? Answer c: for, matching the input's id. Reason: the for value must match the id, which is crucial for screen readers.
+12. Best input type for an email address with built-in validation? Answer b: type="email". Reason: it checks the email format automatically. Option c, type="mail", does not exist.
+
+SEO, questions 13 to 17:
+13. Ideal title tag length for search results? Answer b: 50 to 60 characters. Reason: Google usually shows about that much before cutting it off.
+14. What does the meta description control? Answer c: the summary text shown in search results. Reason: it appears under the title in results; aim for 150 to 160 characters, though Google may rewrite it.
+15. How many h1 tags per page? Answer b: one. Reason: one h1 for the main topic; several confuse screen readers and dilute SEO.
+16. Why should images always have alt text? Answer c: to help screen readers and improve SEO when images don't load. Reason: screen readers read it aloud, it shows if the image fails, and it helps SEO.
+17. Most important SEO practice? Answer b: a unique, descriptive title tag and meta description. Reason: these are foundational; keyword stuffing and visual tricks break search guidelines.
+
+Accessibility, questions 18 to 22:
+18. What does ADA stand for? Answer b: Americans with Disabilities Act. Reason: it is the federal law requiring accessibility for people with disabilities.
+19. Contrast ratio for normal text at WCAG AA? Answer c: 4.5 to 1. Reason: AA needs 4.5 to 1; AAA needs 7 to 1. The 3 to 1 option is the graphics and large-text trap.
+20. Main purpose of ARIA attributes? Answer b: to give extra semantic information to assistive technology. Reason: ARIA helps screen readers understand complex widgets like modals and custom dropdowns; it does not replace semantic HTML.
+21. Which is NOT a common accessibility barrier? Answer c: using relative units like percentages. Reason: percentages actually help because they scale; missing alt text, missing labels and keyboard-inaccessible buttons are real barriers.
+22. How should a site support users who cannot see? Answer b: alt text on images plus screen reader use. Reason: screen readers read alt text; keep images but describe them, rather than going text-only.
+
+Protocols and deployment, questions 23 to 26:
+23. Main security advantage of HTTPS? Answer c: it encrypts data in transit with SSL/TLS. Reason: HTTPS is HTTP plus encryption, which protects logins, payments and other sensitive data.
+24. What does DNS do? Answer b: converts domain names to IP addresses. Reason: it looks up the server address for a name like example.com, like a phone book.
+25. Where does a git commit store changes? Answer b: locally, in your computer's repository. Reason: commit saves to the local .git folder; git push is what uploads to GitHub.
+26. URL format for a GitHub Pages project site? Answer b: username.github.io/project-name. Reason: user sites are username.github.io, project sites add the repository name.
+
+Testing and deployment, questions 27 to 30:
+27. Purpose of the W3C HTML Validator? Answer b: to check that HTML follows the standards. Reason: validator.w3.org checks HTML; a separate W3C tool checks CSS.
+28. A page with small images loads slowly on school WiFi but fine on home fiber. Most likely cause? Answer c: latency or congestion on the school network delaying each request. Reason: the data amount is small, so bandwidth (option a) is less likely; the round-trip delay of each request adds up. This is competency 2.7.5.
+29. Which should NOT be tested before publishing? Answer c: the developer's personal favorites feature. Reason: browsers, screen sizes and keyboard accessibility all must be tested; a personal favorites feature is not a standard test item.
+30. What does a 404 error mean? Answer c: the requested resource was not found. Reason: the server understood the request but could not find the file, usually from a broken link, deleted page or wrong filename.
+
+Troubleshooting methods, questions 31 to 34:
+31. A JavaScript error shows in the console and you need to find where it happens. Best method? Answer b: bottom-up. Reason: start from the specific error and trace backward.
+32. A form submits but data is not saved to the database. Best method? Answer c: follow the path. Reason: it is a data-flow problem, so trace form to handler to database.
+33. A button disappeared after you edited the CSS. Best method? Answer d: spot the differences. Reason: something just broke, so compare with git diff to see exactly what CSS changed.
+34. A page works in Chrome but breaks in another browser. What comes FIRST? Answer b: identify and define the problem, exactly what breaks, where and in which browser. Reason: every method starts by pinning down the problem before changing anything (competency 2.11.1).
+
+Business, ethics and professional skills, questions 35 to 40:
+35. You want to use a Getty Images photo. What should you do? Answer b: check the license and either pay for it or use a Creative Commons image instead. Reason: all creative work is copyrighted by default; cropping, resizing or removing a watermark does not make it legal.
+36. Legal consequence of an inaccessible website? Answer c: lawsuits and settlements that can exceed 50,000 dollars. Reason: ADA lawsuits are real and increasing, and accessibility is also the ethical thing to do.
+37. A client has not clearly defined what they want. Best first step? Answer b: write a design brief documenting requirements, scope, timeline and stakeholders. Reason: it prevents misunderstandings before work starts.
+38. What does a project's scope include? Answer b: what is included AND explicitly what is not. Reason: clear scope prevents scope creep.
+39. Your manager asks you to put a client's database password in a shared Google Doc. What do you do? Answer c: refuse, because credentials must never be shared in documents, and have the person enter the password themselves. Reason: passwords and keys never belong in shared docs or email; use secure credential management. Sharing privately or "encrypted" in the doc is still wrong.
+40. Primary purpose of a professional portfolio? Answer a: to show your best work and abilities to potential employers. Reason: it acts as a visual resume, and quality matters more than quantity.
+
+Score interpretation: 36 to 40 (90 to 100 percent) means ready; 32 to 35 (80 to 89 percent) means good, review weak areas; 28 to 31 (70 to 79 percent) means passing, focus on areas under 70 percent; below 28 means study more, review the master study guide and retake the practice exam.
+
+Exam tips: read each question and all options twice; skip hard ones and come back; eliminate obviously wrong answers; watch for the words NOT and BEST, which change the question; trust your knowledge; manage your time at about one minute per question.
+
+Key terms:
+distractor — a wrong answer designed to look right.
+bandwidth — how much data a connection moves per second.
+latency — the delay for each request's round trip.
+404 — the HTTP status code for Not Found.
+idempotent — GET requests are safe to repeat.
+design brief — the document that pins down requirements before building.
+
+What you are asked to do:
+Take all 40 questions, ideally timed, then check the key. The unit guide says to autopsy each miss by explaining why the wrong options are wrong.
+
+Watch out for:
+- NOT questions (21 and 29) and FIRST or BEST questions (31 to 34, 37, 40) reward careful reading.
+- Question 28 separates bandwidth (how much data) from latency (how long each trip takes).
+- Correction: this practice exam has 40 questions, so take it in 45 minutes as the newer Unit Guide says (about one minute per question). The tips' "60 questions in 60 minutes" is wrong, and the header's "60 minutes" is only a padded class-period time. For comparison, the real Certiport IT Specialist HTML and CSS exam is 35 to 45 questions in 50 minutes, with 70 percent to pass.
+- Correction: an input with type="email" brings up a keyboard with the at sign on phones, not a number pad (type="tel" or type="number" give a number pad). The explanation for question 12 gets this wrong, but answer b is still the right choice.
+- Correction: a label needs a for attribute matching the input's id only when it is separate from the input; a label that wraps its input needs no for, as html08 taught. Question 11 says for "must be included with every label", but answer c is still the right choice.
+- Correction: the website supports blind users by providing alt text and good structure; the user runs the screen reader, not the website. Question 22's answer b words this loosely ("using a screen reader"), but it is still the answer to pick.
+- Heads up: the explanation for question 29 starts with the garbled words "Wrong question." Ignore them; the answer is c, because a personal favorites feature is not a standard test item.
+- Correction: ADA website lawsuit settlements commonly run about 5,000 to 20,000 dollars (sometimes under 5,000 for small businesses), and total costs with legal fees and fixing the site can be much higher; figures vary a lot by source. Question 36's explanation (35,000 to 50,000 dollars or more) and the master study guide (an average of 50,000 dollars or more) overstate typical settlements, but answer c is still right because the point is that inaccessible sites carry real legal and financial risk.
+- Heads up: option d of question 9 has its own explanation in parentheses; ignore it. For "only one option from a group", the answer is c, radio button.
+
+Connects to:
+Questions follow the sections of the html12 master study guide. Forms questions come from html08 HTML Forms; responsive questions from html07; SEO and publishing from html10.

@@ -1,0 +1,61 @@
+Summary of: html09_StudyGuide.md
+Course: HTML CSS JavaScript track
+Lesson: html09 JavaScript
+Type of document: study guide
+
+In one sentence:
+This study guide for JavaScript basics gives 20 vocabulary terms, a cheat sheet, the three ODE competencies, and key concepts (its 10 practice questions are left out of these study notes).
+
+Main ideas:
+1. Vocabulary, all 20 terms, are listed under Key terms below. They run from JavaScript and the script tag through data types, functions, operators, and template literals.
+2. Cheat sheet, variables. Use let for most variables, const for values that do not change, and avoid var because it is outdated.
+Code: let myVar = 'value';
+This makes a variable named myVar holding the text value. The same pattern with const makes a fixed value.
+3. Cheat sheet, data types. A string like 'string', a number like 42, a boolean like true, an undefined variable written as let empty; with no value, and null written as let nothing = null;
+4. Cheat sheet, console.log(). Four uses: print text, print a variable's value, print a calculation result such as x + y, and print a label plus a value separated by a comma, such as console.log('Result:', answer).
+5. Cheat sheet, functions.
+Code: function add(num1, num2) { return num1 + num2; }
+Step by step: this defines a function named add with two parameters. It adds them and returns the total. Then let sum = add(5, 3); calls it with 5 and 3, so sum becomes 8, and console.log(sum) prints it.
+6. Cheat sheet, strings, with a scope note: know concatenation with the plus sign "cold" (perfectly), and only recognize template literals, not drill them. Concatenation looks like 'Hello ' + name + '!'. The template literal version puts the text between backtick characters and inserts the name with a dollar sign and curly braces.
+7. Cheat sheet, comments. Single-line comments start with two slashes; multi-line comments start with slash-star and end with star-slash.
+8. ODE competencies:
+- 6.3.1 Scripting Languages in Web Development: know that languages like JavaScript add interactivity, and that JavaScript is client-side code running in browsers.
+- 6.3.2 Insert Client-Side Scripts: add JavaScript with script tags (inline) and external .js files, know when to use each, and link scripts with the src attribute.
+- 6.3.3 Comments in Scripts: write clear comments that explain logic, document parameters, and help future readers, including yourself.
+9. Key concepts:
+- Client-side versus server-side: JavaScript runs in your browser, unlike languages that run on a web server.
+- Variables can hold strings, numbers, booleans, and other data. Use let and const, and choose meaningful names like studentName instead of x.
+- Functions reduce repetition: write once, call many times. Parameters make them flexible.
+- Template literals make string building easier than joining with the plus sign.
+- console.log() finds bugs by showing values; open Developer Tools with F12 and use the Console tab.
+
+Key terms:
+JavaScript — a programming language that runs in web browsers to make pages interactive and dynamic.
+script tag (written <script>) — the HTML element that tells the browser to run JavaScript.
+src attribute — used as <script src="file.js"> to link an external JavaScript file.
+console.log() — prints messages to the browser console for testing and debugging.
+variable — a named container storing a value, like a labeled box.
+let — the modern keyword to declare a variable; preferred in most cases.
+const — declares a constant; its value cannot change after it is assigned.
+var — an older keyword for variables; avoid it, but recognize it.
+data type — the category of a value: string, number, boolean, undefined, or null.
+string — text in quotes, like "Hello World" or 'blue'.
+number — numeric data, whole or decimal, like 42 or 3.14.
+boolean — a value that is either true or false, used in logic.
+undefined — the default value of a variable that was declared but never given a value.
+null — a value set on purpose to mean "no value" or "empty."
+function — a reusable block of code that does a specific task.
+parameter — a placeholder name in a function definition that receives a value when called.
+argument — the actual value passed to a function when calling it.
+return — keyword that sends a value back from a function to where it was called.
+operator — a symbol that performs an action, such as plus, minus, asterisk (multiply), slash (divide), or equals (assign).
+template literal — a string wrapped in backtick characters that can insert variables using dollar sign and curly braces.
+
+Watch out for:
+- A parameter is the name in the definition; an argument is the real value you pass in. These are easy to mix up.
+- undefined happens automatically; null is set on purpose.
+- Use meaningful variable names, not single letters.
+Correction: for tests, focus on concatenation with the plus sign; template literals are recognition only, as the guide's scope note and the Unit Guide say. The Key Concepts section's praise of template literals as "your friend" is still true (they are cleaner), so know both.
+
+Connects to:
+html09 Slides and Walkthrough (same topics), and the DOM Study Guide for the second half of the unit.

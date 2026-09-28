@@ -1,0 +1,25 @@
+Summary of: ai03_Questions.md
+Course: Web Design AI track
+Lesson: ai03 Links and Navigation
+Type of document: questions
+
+In one sentence:
+This is the graded question sheet for ai03; its questions are left out of these study notes because they are homework, not study material.
+
+Topics it checks:
+- relative links versus absolute links
+- links after a site moves to a new folder
+- jump links and their targets
+- mailto links and subject lines
+- the download attribute
+- link text and the screen reader links list
+- skip links
+
+What you are asked to do:
+Copy the questions from the original ai03_Questions.md into a Google Doc or Word document, type your answer under each one in your own words (one or two sentences per answer is enough), and share the document with Mr. McMaster in Google Classroom.
+
+Study these in:
+- ai03 Lesson summary.txt (in this folder)
+
+Connects to:
+Goes with ai03_Lesson.md; the matching main-track lesson is html03 Links and Navigation.

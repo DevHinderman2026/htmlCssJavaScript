@@ -1,0 +1,40 @@
+Summary of: html05b_Task.html
+Course: HTML CSS JavaScript track
+Lesson: html05 CSS Fundamentals
+Type of document: task starter file
+
+In one sentence:
+This practice starter page has you link Google Fonts and a small external stylesheet, add an internal style block for colors, fonts, and text, and add a class and an ID to elements.
+
+Main ideas:
+1. The page is titled "Colors, Fonts and Text Task" (written with an ampersand in the source) with the h1 "Colors, Fonts & Text Properties".
+2. The body text explains the ideas: CSS can customize every aspect of text, from color to font family to spacing; external stylesheets and Google Fonts make sites look professional and modern. One paragraph lists the properties to practice: color, background-color, font-family, font-size, font-weight, text-align, line-height, and text-decoration.
+
+Key terms:
+link element — connects a stylesheet or font file to the page.
+Google Fonts — free fonts loaded by a link element.
+external stylesheet — a separate .css file, here html05b_Task.css.
+style element — an internal stylesheet.
+line-height — space between lines of text.
+.highlight and the featured ID — the class and ID selectors you create.
+
+What you are asked to do:
+1. In the head, add a link element for the Roboto font from Google Fonts using the URL https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap.
+2. In the head, link an external stylesheet: create a new file named html05b_Task.css in the same folder, put one rule in it that sets line-height to 1.6 on p, and link it.
+Code: <link rel="stylesheet" href="html05b_Task.css">
+This connects the page to your new CSS file.
+Code: p { line-height: 1.6; }
+This is the one rule in the CSS file; it adds comfortable space between lines in every paragraph.
+3. Add a style element with rules for: body (Roboto font, light gray background, blue text); h1 (large font size, bold weight, centered); .highlight (yellow background, bold text); and the featured ID (dark background, white text, padding).
+4. Add class="highlight" to the paragraph about customizing text.
+5. Add id="featured" to the paragraph about external stylesheets and Google Fonts.
+6. Create a div with class="highlight" containing some text about CSS of your own.
+
+Watch out for:
+- Correction: put the style element in the head, where it belongs, after the two link elements. The TODO comment for it sits inside the body, but the lesson teaches (and valid HTML expects) style in the head.
+- The external CSS file name in the link must match exactly, including capitals and the .css extension, and it must be in the same folder.
+- The TODOs list the Google Fonts link first and your own stylesheet link second, the same order the walkthrough uses.
+- In font-family, the name Roboto goes in quotes followed by a fallback such as sans-serif.
+
+Connects to:
+Parts 4 through 7 of the html05 Walkthrough (external stylesheet, colors, fonts, text), and the html05 DIY Task.

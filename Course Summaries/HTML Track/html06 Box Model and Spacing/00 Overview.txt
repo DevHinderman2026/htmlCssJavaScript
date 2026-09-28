@@ -1,0 +1,18 @@
+Overview of: html06 Box Model and Spacing
+Course: HTML CSS JavaScript track
+
+What this lesson is about:
+This lesson teaches how CSS controls the space around and inside every element. Every element is a box made of four layers from the inside out: content, padding, border, and margin. You learn to set each layer with shorthand values, and to use box-sizing border-box so the width you write is the width you get. The second half covers the display property (block, inline, inline-block, none), which decides how elements flow, and the position property (static, relative, absolute, fixed, and in the extension, sticky), which decides where they sit, along with offsets and z-index. Because dev tools are disabled on school computers, the lesson teaches the X-ray trick, a temporary outline on every element, plus the W3C validator and paper diagrams for debugging. You leave able to build a spaced card component and a page with a fixed header, sidebar, content area, and fixed footer.
+
+Documents in this folder, in suggested order:
+1. README summary.txt — teacher overview: files, teaching flow, objectives, common mistakes, and extension ideas.
+2. html06 Slides summary.txt — the slideshow on the box model, box-sizing, display, position, and the X-ray trick.
+3. html06 StudyGuide summary.txt — vocabulary, width formulas, syntax cheat sheet, and debugging checklist.
+4. html06 Walkthrough summary.txt — guided build of a card plus demo pages for display, fixed layout, and absolute positioning.
+5. html06a Task summary.txt — starter file where you fill in box model CSS for a demo box and three spacing variations.
+6. html06b Task summary.txt — starter file where you build a fixed header and footer with a two-column middle.
+7. html06 DIYTask summary.txt — independent project: cards plus a full page layout, graded out of 100 points.
+8. html06 ExtensionTask summary.txt — optional extra credit: sticky header and cards that lift on hover.
+
+Other files in the original lesson:
+The source folder contains only the eight text files summarized here; it has no images or media folder. The README mentions teacher solution files and two quiz files (Gimkit and Google Quiz, 30 questions each), but those are not present in this copy of the folder, so there was nothing to summarize for them.

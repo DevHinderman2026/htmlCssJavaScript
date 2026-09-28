@@ -1,0 +1,65 @@
+Summary of: html12_TroubleshootingScenarios.md
+Course: HTML CSS JavaScript track
+Lesson: html12 Exam Prep
+Type of document: worksheet (scenarios with fill-in answers)
+
+In one sentence:
+This 45-minute worksheet has you practice three exam topics through realistic scenarios: troubleshooting a missing navigation bar with the spot-the-differences method, writing QA test cases for a pizza order form, and planning a small client website project.
+
+Main ideas:
+The worksheet gives each scenario and a set of blank prompts; it does not include an answer key. For each scenario below you get the problem, the cause and fix where the worksheet points to them, and what you must write (the worksheet's unanswered question prompts are left out). It has lines for your name and the date at the top.
+
+Scenario 1, troubleshooting with spot the differences:
+- Problem: a website for a local coffee shop shows its navigation bar correctly on the Homepage, but the navigation bar is missing entirely on the About page. The worksheet says both pages link the correct CSS file in the head, and the navbar HTML is identical on both.
+- Method: spot the differences, comparing the working page (Homepage) with the broken one (About).
+- Cause the worksheet leads you to: in step 4 you discover a typo in the About page's stylesheet path, css/styles.css versus css/style.css. So the root cause is that the About page is linking to a stylesheet file name that does not exist, so its navbar styles never load.
+- Fix: correct the file path in the About page's link element so it matches the real CSS file, then re-test.
+- You write out five troubleshooting steps for this scenario, including three specific things to check (such as file paths, CSS selectors or JavaScript) and how you would verify the fix.
+Correction: the About page does not really link the correct CSS file; its stylesheet path has a typo (for example css/styles.css instead of css/style.css), and that is the root cause. The problem statement's claim that both pages link the correct file is an assumption that comparing the pages proves wrong, which is why you compare instead of trusting assumptions.
+
+Scenario 2, writing QA test cases:
+- Situation: you are testing a pizza ordering form for a local pizzeria. Customers should be able to enter their name, pick a size (Small, Medium or Large), choose toppings with checkboxes, enter a delivery address, and click Place Order.
+- Task: write five test cases, each with a test ID, description, numbered steps, expected result, an actual result filled in during testing, and pass or fail.
+The five required test cases:
+1. TC-001, valid order submission (5 steps).
+2. TC-002, missing required field, the name (4 steps).
+3. TC-003, topping selection and display (5 steps).
+4. TC-004, invalid email address (4 steps).
+5. TC-005, delivery address validation (5 steps).
+Heads up: TC-004 tests an invalid email address, but the form description never lists an email field. Write TC-004 assuming the form has an email field (order forms usually do) and state that assumption in the test's precondition.
+
+Scenario 3, project planning worksheet:
+- Client: a local dog grooming business called Pawsome Grooming.
+- Requirements: a 4-page website (Home, Services, Gallery, Contact), a budget of 500 dollars, a deadline 3 weeks (21 days) away, a need to schedule staff during the timeline, and a client with limited tech knowledge.
+Sections you complete:
+1. Scope: what IS included (pages, features) and what is NOT included for this budget and timeline.
+2. Stakeholders: list four; and describe the target audience specifically, including demographics and needs.
+3. Milestones: write today's date, then three milestones, each with a name, a date (how many days from today) and what is delivered, realistic for three weeks.
+4. Critical path: list five tasks that cannot slip without delaying the whole project.
+5. Acceptance criteria: six conditions that must be true for the client to sign off that the project is complete.
+6. Risk assessment: three risks of the tight timeline, each with one way to prevent it.
+
+Reflection section: three written answers in complete sentences (part of the grade; question text left out here). The ideas they rely on, from the html12 master study guide: adding a feature beyond the agreed plan, such as a shopping cart midway through, is scope creep, which a defined scope protects against; any delay on the critical path delays the whole project, so a late client approval pushes the deadline unless time is recovered elsewhere; and documenting scope and milestones up front prevents misunderstandings and lets you track progress.
+
+Key terms:
+spot the differences — troubleshooting by comparing a working version with a broken one.
+root cause — the underlying reason for a problem, not just its symptom.
+test case — a specific, repeatable check with steps and an expected result.
+expected versus actual result — what should happen compared with what really happened.
+scope — what the project includes and excludes.
+stakeholder — anyone invested in or affected by the project.
+milestone — a major checkpoint with a date and a deliverable.
+critical path — tasks that cannot be delayed without delaying the whole project.
+acceptance criteria — conditions the client needs met to sign off.
+risk assessment — listing what could go wrong and how to prevent it.
+
+What you are asked to do:
+Complete all three scenarios and the three reflection questions, then check the self-check list: Scenario 1 troubleshooting steps written clearly; Scenario 2 all five test cases done with specific steps; Scenario 3 scope, stakeholders, milestones, critical path and acceptance criteria all filled in; reflection questions answered in complete sentences. Turn it in when complete.
+
+Watch out for:
+- A tiny path difference such as style versus styles is enough to make CSS silently fail to load; the browser shows no visible error on the page.
+- Test steps must be specific enough that someone else could repeat them exactly.
+- Scope must list what is NOT included as well as what is.
+
+Connects to:
+The html12 unit guide uses this worksheet on Lane 1 day 2 for competency 2.11 troubleshooting methods. The html12 master study guide covers the four troubleshooting methods, the test case template and project management terms, and html11 Build It Three Ways covers proposal, testing and acceptance vocabulary.

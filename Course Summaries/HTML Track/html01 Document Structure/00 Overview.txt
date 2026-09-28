@@ -1,0 +1,16 @@
+Overview of: html01 Document Structure
+Course: HTML CSS JavaScript track
+
+What this lesson is about:
+This is the first real HTML lesson. It explains that HTML (HyperText Markup Language) gives a page its structure and content, while CSS handles style and JavaScript handles interactivity. You learn the required skeleton of every HTML5 page: the doctype line, the html root element with a lang attribute, a head containing the meta charset tag and a title, and a body holding the visible content. You then add content with headings h1 through h6, paragraphs, line breaks, and hidden developer comments, and learn that browsers collapse extra whitespace. The lesson also sets up VS Code with Live Server for previewing pages. You leave able to type a valid page from memory and build a personal About Me page. Sub-lesson 01a is document structure and 01b is content markup.
+
+Documents in this folder, in suggested order:
+1. html01 Slides summary.txt — the lesson slideshow: what HTML is, the skeleton, headings, paragraphs, comments, whitespace, VS Code setup.
+2. html01 StudyGuide summary.txt — 20 vocabulary terms, quick reference, VS Code workflow, and ODE competencies.
+3. html01 Walkthrough summary.txt — guided build of a Welcome page, plus Try This practice tasks A through E.
+4. html01a Task summary.txt — starter file with nine TODOs to build the page skeleton (title "My Portfolio").
+5. html01b Task summary.txt — starter file with eight TODOs to add headings, paragraphs, a br, and a comment (My Skills page).
+6. html01 DIYTask summary.txt — independent About Me page, aboutMe.html, with a 100-point rubric.
+
+Other files in the original lesson:
+None. The original folder has four Markdown documents and two HTML starter files, all summarized here; there are no images or media.

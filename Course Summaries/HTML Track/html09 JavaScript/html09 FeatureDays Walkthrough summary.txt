@@ -1,0 +1,49 @@
+Summary of: html09_FeatureDays_Walkthrough.md
+Course: HTML CSS JavaScript track
+Lesson: html09 JavaScript
+Type of document: walkthrough
+
+In one sentence:
+This walkthrough guides you step by step through adding a dark mode toggle (Part 1) and a mobile hamburger nav (Part 2) to your actual website, using the same select, listen, toggle pattern for both.
+
+Main ideas:
+1. Goal: two real features built with one JavaScript move. By the end your real site has both, and they stay for the html11 project.
+2. Part 1, Dark Mode Toggle.
+Step 1, define both color palettes with CSS custom properties. On :root, set --bg-color to white (#ffffff), --text-color to near-black (#1a1a1a), and --accent-color to a blue (#0055aa). Under body.dark-mode, override them: --bg-color near-black (#1a1a1a), --text-color light gray (#eeeeee), and --accent-color a lighter blue (#66aaff). Then the body uses var(--bg-color) for background and var(--text-color) for text, and links use var(--accent-color). Now one class on body re-themes everything that uses these variables; the cascade does the heavy lifting.
+Step 2, add the button.
+Code: <button id="theme-toggle">Dark mode</button>
+In words: a button with the id theme-toggle and the label Dark mode. Put it in your header. It must be a button, not a link, because it does something on this page instead of going somewhere.
+Step 3, the JavaScript, three lines that matter. First, select the button by its id theme-toggle and store it in a const named toggleBtn. Second, add a click listener to toggleBtn. Third, inside the listener, call document.body.classList.toggle('dark-mode'), which adds the dark-mode class to body if it is missing or removes it if present. That is the whole feature.
+Step 4, polish. Change the button's own text when the mode changes by setting toggleBtn.textContent inside an if/else that checks classList.contains('dark-mode'). Also add a CSS transition on the body's background-color so the change fades instead of snapping.
+3. Part 2, Mobile Hamburger Nav. On narrow screens, nav links hide behind a hamburger button.
+Step 1, the button and CSS.
+Code: <button id="nav-toggle" aria-expanded="false">☰ Menu</button>
+In words: a button with id nav-toggle, starting with aria-expanded set to false (closed), labeled with the hamburger symbol (three stacked lines) and the word Menu. The CSS is phones first: nav ul is display none, and nav ul with class open is display block. In a media query for a minimum width of 768 pixels (desktop), nav ul is display flex (always visible) and #nav-toggle, the button, is display none.
+Step 2, the JavaScript, which should look familiar. Select the button by id nav-toggle and store it as navBtn. Select the list with document.querySelector('nav ul') and store it as navList. In navBtn's click listener: toggle the open class on navList; then set a const isOpen to navList.classList.contains('open'), which is true or false; then call navBtn.setAttribute('aria-expanded', isOpen) so the button's attribute matches. The aria-expanded line tells screen readers whether the menu is open; a button that hides and shows content should always announce its state.
+Step 3, test it properly. Narrow the window below 768 pixels: the button appears and the menu toggles. Widen it: the menu is visible and the button is gone. Then press Tab to reach the button and press Enter: keyboard users get the menu too, for free, because you used a real button.
+4. The takeaway: two features that look completely different to a user are the identical four moves to you: select an element, listen for an event, toggle a class, and let CSS do the rest. Every item on the extension menu (accordion, tabs, lightbox) is the same pattern again.
+
+Key terms:
+CSS custom property — a variable in CSS, named with two leading hyphens, like --bg-color.
+var() — reads a custom property's value in CSS.
+:root — the top-level selector where global CSS variables live.
+body.dark-mode — a selector matching the body only when it has the dark-mode class.
+cascade — how CSS decides which rule wins; lets the dark-mode values override the defaults.
+classList.toggle() — flips a class on or off.
+classList.contains() — true if the element has the class.
+textContent — the button's visible text, updated in the polish step.
+transition — CSS property that animates a style change.
+media query — CSS that applies only above or below a screen width, here 768 pixels.
+display flex — lays items out in a row; used for the desktop nav.
+aria-expanded — tells assistive technology whether the button's controlled content is open.
+setAttribute() — sets an attribute from JavaScript.
+querySelector() — selects the first element matching a CSS selector, here nav ul.
+
+Watch out for:
+- Use a real button element, not a link or a div, for both toggles; this gives keyboard access automatically.
+- Keep aria-expanded in sync every time the menu opens or closes; screen readers announce it as expanded or collapsed.
+- The button starts with aria-expanded="false" in the HTML, matching the menu's starting closed state.
+- Test with the keyboard (Tab and Enter), not just the mouse.
+
+Connects to:
+html09 FeatureDaysSlides (same content in slide form), the Features DIY task (where both features are graded), html09 Extension Task, and html11 (where both features are required).
