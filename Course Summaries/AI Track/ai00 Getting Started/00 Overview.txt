@@ -1,9 +1,0 @@
-Overview of: ai00 Getting Started
-Course: Web Design AI track
-
-What this lesson is about:
-This first AI track lesson teaches the loop you will use in every lesson: Build, Check, Learn, and Push. You confirm your tools are ready (the Claude desktop app, access to your repository folder, GitHub Desktop, and your screen reader), then direct Claude to create a lesson folder called ai00_gettingStarted and a complete HTML page called hello.html with a title, one heading level one, and one paragraph. You check the page in Chrome by listening for the title, pressing H for the heading, and arrowing down to the paragraph, and you ask Claude to fix anything that sounds wrong. You then have Claude read the file back one line at a time with an explanation of each line. Finally you commit with the summary First page and push, because pushed means turned in. You leave knowing how to direct Claude, verify a page by ear, and submit work through GitHub. It matches html00 Getting Started in the HTML CSS JavaScript track.
-
-Documents in this folder, in suggested order:
-1. ai00 Lesson summary.txt — step-by-step instructions to build, check, learn from, and push hello.html.
-2. ai00 Questions summary.txt — the topics the graded ai00 question sheet checks (questions left out; they are homework).

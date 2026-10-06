@@ -1,9 +1,0 @@
-Overview of: ai02 Semantic HTML
-Course: Web Design AI track
-
-What this lesson is about:
-This lesson begins the music website you will keep building for the rest of the current AI track lessons. You direct Claude to create a folder called ai02_semanticHTML and a home page, index.html, using the semantic page regions header, nav, main, section, and footer, with no styling yet. The page has a heading level one with your site name, a nav with four links (Home, About, Music, Contact), two sections each with a heading level two, a paragraph, and a list (one ordered, one unordered), a footer with your artist name and the year, and one strong and one em element. You check it by ear with screen reader quick keys: D for regions (banner, navigation, main, content info), H for headings, L for lists, and K for links. You also ask Claude to replace any div elements that should be semantic and to explain strong versus em. You leave understanding why meaningful markup matters for screen reader navigation. It matches html02 Semantic HTML in the HTML CSS JavaScript track.
-
-Documents in this folder, in suggested order:
-1. ai02 Lesson summary.txt — step-by-step instructions to plan, build, check, learn from, and push the music site home page.
-2. ai02 Questions summary.txt — the topics the graded ai02 question sheet checks (questions left out; they are homework).

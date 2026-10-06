@@ -1,9 +1,0 @@
-Overview of: ai03 Links and Navigation
-Course: Web Design AI track
-
-What this lesson is about:
-This lesson turns your music site's home page into a three-page site that links together. You direct Claude to create a folder called ai03_linksAndNav, copy in index.html from ai02, and build about.html and music.html with the same header, nav, and footer, using relative links for a nav of Home, About, and Music. The about page gets jump links to its three sections, the music page gets a section for each of three tracks, and every page gets a skip link first in the body plus a footer with an email link (with a subject line) and a download link to a bio.txt file Claude creates. You check every link by ear using Tab, K, Enter, and the Insert plus F7 links list, and ask Claude about relative versus absolute links and how jump links work. You leave able to build and verify multi-page navigation and special-purpose links. It matches html03 Links and Navigation in the HTML CSS JavaScript track.
-
-Documents in this folder, in suggested order:
-1. ai03 Lesson summary.txt — step-by-step instructions to build, check, learn from, and push the three-page linked site.
-2. ai03 Questions summary.txt — the topics the graded ai03 question sheet checks (questions left out; they are homework).

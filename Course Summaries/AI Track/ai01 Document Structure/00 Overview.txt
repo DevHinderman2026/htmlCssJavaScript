@@ -1,9 +1,0 @@
-Overview of: ai01 Document Structure
-Course: Web Design AI track
-
-What this lesson is about:
-This lesson is about the basic structure of an HTML document. You plan three sections about yourself in your own words, then direct Claude to create a folder called ai01_docStructure and a page called aboutme.html with the title About [your name], a comment at the top saying built by direction and today's date, one heading level one with your name, and three sections that each have a heading level two and a paragraph. You ask Claude to read the structure back before saving, then check by ear that the title is announced, that the headings come in the right order and levels, and that the comment is not read aloud. You also ask Claude to explain the file line by line, the difference between the title and the heading level one, and what happens without a doctype. You leave understanding the title, headings, sections, paragraphs, comments, and the doctype. It matches html01 Document Structure in the HTML CSS JavaScript track, and the lesson says it is the same page the rest of the class builds there.
-
-Documents in this folder, in suggested order:
-1. ai01 Lesson summary.txt — step-by-step instructions to plan, build, check, learn from, and push aboutme.html.
-2. ai01 Questions summary.txt — the topics the graded ai01 question sheet checks (questions left out; they are homework).
