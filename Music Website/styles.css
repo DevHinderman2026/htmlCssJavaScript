@@ -123,7 +123,7 @@ nav a[aria-current="page"] {
 
 .skip-link {
     position: absolute;
-    top: -3rem;
+    top: -5rem;                         /* far enough up to be fully off-screen */
     left: 0;
     background: black;                  /* named color */
     color: white;                       /* named color */
@@ -141,7 +141,8 @@ main:focus {
 
 .page-overview {
     border-left: 4px solid #4fd1c5;     /* hex color: bright aqua accent */
-    padding-left: 1rem;
+    padding: 0.75rem 1rem;              /* padding: top-and-bottom, left-and-right */
+    margin: 1.5rem 0;                   /* margin: top-and-bottom, left-and-right */
 }
 
 .table-wrap {
@@ -174,4 +175,88 @@ main:focus {
 .menu-toggle[aria-expanded="true"] {
     background-color: #4fd1c5;
     color: #0b1d26;
+}
+
+/* -----------------------------------------------------------
+   BOX MODEL (Lesson 06)
+   Every element on a page is a box with four layers. From the
+   inside out:
+     1. content - the text or image itself
+     2. padding - space inside the box, between content and border
+     3. border  - the edge line around the box
+     4. margin  - space outside the box, between it and the next box
+   Shorthand values go clockwise: top, right, bottom, left.
+   One value sets all four sides; two values set
+   top-and-bottom, then left-and-right.
+   ----------------------------------------------------------- */
+
+/* Make width include padding and border, so boxes never grow
+   wider than expected when padding or a border is added. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Site header: an aqua line underneath, with space above and below. */
+header {
+    padding: 1.5rem 0 1rem;             /* top, left-and-right, bottom */
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #4fd1c5;   /* border shorthand: width, style, color */
+}
+
+/* Space between the Menu button area and the main content. */
+nav[aria-label="Main navigation"] {
+    margin-bottom: 1rem;
+}
+
+/* Each section of a page becomes its own card: a slightly lighter
+   background, a thin border, rounded corners, padding inside,
+   and margin between cards. */
+#main-content > section {
+    background-color: #102a36;          /* slightly lighter than the page */
+    border: 1px solid #2a6478;
+    border-radius: 8px;                 /* rounds the corners */
+    padding: 0.5rem 1.5rem 1.5rem;      /* top, left-and-right, bottom */
+    margin: 0 0 1.5rem 0;               /* top, right, bottom, left */
+}
+
+/* Cover art gets a frame: padding makes a mat around the image,
+   then a border goes around the mat. */
+figure img {
+    padding: 6px;
+    background-color: #102a36;
+    border: 3px solid #2a6478;
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+}
+
+/* Table header row gets its own background so it stands apart. */
+thead th {
+    background-color: #12303d;
+}
+
+/* A thicker aqua line above the total or note row at the bottom. */
+tfoot th,
+tfoot td {
+    border-top: 2px solid #4fd1c5;
+}
+
+/* Audio players: on their own line, with space around them. */
+audio {
+    display: block;
+    width: 100%;
+    max-width: 32rem;
+    margin: 1rem 0;
+}
+
+/* Previous and next release links on release pages: a dashed line
+   above to separate them from the sections. */
+nav[aria-label="Release navigation"] {
+    border-top: 2px dashed #2a6478;     /* dashed is another border style */
+    padding-top: 1rem;
+    margin-top: 2rem;
 }
