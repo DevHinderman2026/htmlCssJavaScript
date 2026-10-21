@@ -30,18 +30,44 @@
 
     <main id="main-content" tabindex="-1">
 
-        <p class="page-overview">This is the Music page. It has three sections below, in this order: Current Album, then Discography, then How I Build an Album. The Discography section holds a table of all 20 of my releases, newest first, with eight columns: Artwork, Release, Format, Release Date, Genre, Tracks, Running Time, and Credits. Every release name in the table is a link to that release's own page. The table ends with a single note row that stretches across all eight columns. After the last section you will reach the page footer, which holds my name and my email address.</p>
+        <p class="page-overview">This is the Music page. It has four sections below, in this order: Current Album, then Featured Releases, then Discography, then How I Build an Album. Featured Releases holds four cards, each with a release name as a heading, its cover art, and one sentence about it. The Discography section holds a table of all 20 of my releases, newest first, with eight columns: Artwork, Release, Format, Release Date, Genre, Tracks, Running Time, and Credits. Every release name in the table is a link to that release's own page. The table ends with a single note row that stretches across all eight columns. After the last section you will reach the page footer, which holds my name and my email address.</p>
 
         <section aria-labelledby="album-heading">
             <h2 id="album-heading">Current Album</h2>
             <p>The most current album I'm working on is called <strong>Paranoia</strong>. The way I produce music is I work on big catalogs of albums, and then hand pick which ones I'd like to distribute.</p>
         </section>
 
+        <section aria-labelledby="featured-heading">
+            <h2 id="featured-heading">Featured Releases</h2>
+            <div class="card-row">
+                <article>
+                    <h3><a href="the-right-brothers.html">The Right Brothers (the feeling of losing your mind)</a></h3>
+                    <img src="the-right-brothers.png" alt="Two tall dark rounded shapes standing side by side in front of warped, wavy lavender lines on a purple background, with the title The Right Brothers and the name Russell Hinderman across the lower part." width="360" height="360">
+                    <p>I was bored and decided to make this track.</p>
+                </article>
+                <article>
+                    <h3><a href="sensations.html">Sensations</a></h3>
+                    <img src="sensations.png" alt="Concentric orange and magenta ripples spreading over a purple-to-amber gradient, with the title Sensations and the name Russell Hinderman across the lower part." width="360" height="360">
+                    <p>This song explores the depth of fear, and how it can paralyze you.</p>
+                </article>
+                <article>
+                    <h3><a href="the-cost-of-love.html">The cost of love</a></h3>
+                    <img src="the-cost-of-love.png" alt="A dark crimson glow at the centre with fine cracks spreading outward across black, with the title The Cost of Love and the name Russell Hinderman across the lower part." width="360" height="360">
+                    <p>The cost of love explores the concept that love isn't always a good thing.</p>
+                </article>
+                <article>
+                    <h3><a href="the-cost-of-love.html">Remembrance</a></h3>
+                    <img src="the-cost-of-love.png" alt="The cover of The Cost of Love, the album Remembrance closes: a dark crimson glow at the centre with fine cracks spreading outward across black." width="360" height="360">
+                    <p>The last track on The cost of love. This track talks about moving forward even during hard times.</p>
+                </article>
+            </div>
+        </section>
+
         <section aria-labelledby="discography-heading">
             <h2 id="discography-heading">Discography</h2>
             <p>Everything I have released so far: 2 albums, 4 EPs, and 14 singles. If you only have time for one thing, start with <a href="https://music.youtube.com/watch?v=JooddkbGqbU&amp;si=wAvqgshbwUZFN2kg">Fractured tides</a>, the opening track from <a href="the-tides.html"><cite>The tides</cite></a>, or hear a sample of <a href="sensations.html"><cite>Sensations</cite></a> on its release page.</p>
 
-            <div class="table-wrap">
+            <div class="table-wrap" tabindex="0" role="region" aria-labelledby="discography-heading">
                 <table>
                     <caption>All 20 releases, newest first. Each row gives the cover artwork, the release name as a link to its own page, the format, the release date, the genre, the number of tracks, the running time, and the credits.</caption>
                     <thead>
@@ -283,7 +309,7 @@
 
     <footer>
         <p>Russell Hinderman &mdash; producing music since 2021</p>
-        <p>Contact: <a href="mailto:mc_rhinderman28@mcjvs2.org">mc_rhinderman28@mcjvs2.org</a></p>
+        <p>Contact: <a href="mailto:russellhinderman425@gmail.com">russellhinderman425@gmail.com</a></p>
     </footer>
 
 </body>

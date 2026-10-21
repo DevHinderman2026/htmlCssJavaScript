@@ -61,8 +61,17 @@ th, td {
     vertical-align: middle;
 }
 
-img {
+/* Images, audio players and videos shrink to fit narrow screens.
+   max-width: 100% means never wider than the box they sit in;
+   height: auto keeps images and videos in proportion as they shrink. */
+img,
+audio,
+video {
     max-width: 100%;
+}
+
+img,
+video {
     height: auto;
 }
 
@@ -79,11 +88,23 @@ dd {
     margin-left: 1.5rem;
 }
 
+/* Footer: a flexbox row with my name on one side and my email on
+   the other. It lines up with the 60rem main content above it.
+   On a phone the media query at the bottom stacks the two. */
 footer {
-    margin-top: 3rem;
+    max-width: 60rem;
+    margin: 3rem auto 0;                /* top, left-and-right (centered), bottom */
     padding-top: 1rem;
     border-top: 1px solid #1f4a5a;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;     /* name pushed left, email pushed right */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;                 /* row gap, column gap */
+}
+
+footer p {
+    margin: 0;
 }
 
 /* -----------------------------------------------------------
@@ -294,21 +315,32 @@ nav[aria-label="Release navigation"] {
                        border and margin work on all four sides
    ----------------------------------------------------------- */
 
+/* FLEXBOX NAV (Lesson 07)
+   display: flex turns the list into a flexbox row: the list items
+   line up side by side. gap puts 0.5rem of space between them, and
+   flex-wrap: wrap lets them move to a new line when the screen is
+   too narrow for one row. The order of the links in the HTML is
+   not changed. */
 #main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     list-style: none;                   /* no bullets in front of the buttons */
-    padding: 0;
+    padding: 0;                         /* no extra space on the left of the list */
     margin: 0.75rem 0 0;
 }
 
-#main-menu li {
-    display: inline;                    /* list items sit side by side */
+/* display: flex above would otherwise override the hidden attribute
+   that menu.js uses to close the menu, so closed must stay closed. */
+#main-menu[hidden] {
+    display: none;
 }
+
 
 /* Each main nav link is a button with a pattern of deep, dark waves. */
 #main-menu a {
     display: inline-block;              /* so padding works on all four sides */
     padding: 0.5rem 1.25rem;            /* top-and-bottom, left-and-right */
-    margin: 0 0.5rem 0.5rem 0;          /* space to the right and below each button */
     border: 2px solid #2a6478;
     border-radius: 999px;               /* fully rounded ends, like a pill */
     color: rgb(224, 242, 241);
@@ -379,5 +411,72 @@ a:hover {
 @media (prefers-reduced-motion: reduce) {
     * {
         transition: none !important;
+    }
+}
+
+/* -----------------------------------------------------------
+   FEATURED RELEASES (Lesson 07)
+   The cards sit in a flexbox row. flex: 1 makes them share the
+   row evenly. min-width: 15rem means a card is never narrower
+   than 15rem, so when the row runs out of room, flex-wrap moves
+   the next card down to a new line.
+   ----------------------------------------------------------- */
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* Same card look as the section cards. */
+.card-row article {
+    flex: 1;
+    min-width: 15rem;
+    background-color: #102a36;
+    border: 1px solid #2a6478;
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem 1.25rem;    /* top, left-and-right, bottom */
+}
+
+.card-row h3 {
+    font-family: 'Oswald', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin: 0.75rem 0;
+}
+
+.card-row img {
+    display: block;
+    border-radius: 6px;
+}
+
+.card-row p {
+    margin-bottom: 0;
+}
+
+/* -----------------------------------------------------------
+   PHONES (Lesson 07)
+   This media query is for screens 768 pixels wide or narrower,
+   like a phone. Everything inside it only applies on those
+   screens: nav links stack in a column, release cards go one per
+   row, section cards use less padding, and the footer stacks.
+   ----------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #main-menu {
+        flex-direction: column;         /* one nav link under another */
+        align-items: flex-start;        /* each button keeps its own width */
+    }
+
+    .card-row article {
+        flex-basis: 100%;               /* one card per row */
+    }
+
+    #main-content > section {
+        padding: 0.5rem 1rem 1rem;      /* top, left-and-right, bottom */
+    }
+
+    footer {
+        flex-direction: column;         /* name above email */
+        text-align: center;
     }
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+    TEMPLATE: every new page starts as a copy of this file.
+    1. Copy template.html and rename the copy, like new-page.html.
+    2. Change the title and the h1 to the new page's name.
+    3. In the main navigation, add aria-current="page" to the link
+       for the new page, if it has one.
+    4. Put the page overview and the page's sections inside main.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Name - The Artist Who Only Uses Ears</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <h1>Page Name</h1>
+        <p>The Artist Who Only Uses Ears &mdash; music by Russell Hinderman</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <button type="button" class="menu-toggle" aria-expanded="true" aria-controls="main-menu" hidden>Toggle navigation menu</button>
+        <ul id="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content" tabindex="-1">
+
+        <!-- The page overview and the page's sections go here. -->
+
+    </main>
+
+    <footer>
+        <p>Russell Hinderman &mdash; producing music since 2021</p>
+        <p>Contact: <a href="mailto:russellhinderman425@gmail.com">russellhinderman425@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
