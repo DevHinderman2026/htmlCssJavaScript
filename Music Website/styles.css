@@ -172,19 +172,52 @@ main:focus {
 
 /* -----------------------------------------------------------
    MENU BUTTON
-   The Menu button opens and closes the main navigation links.
-   menu.js adds the behavior; these rules set its look.
+   On phones, the main navigation links hide behind a button with
+   three lines on it (often called a hamburger menu). Screen readers
+   hear its name: Toggle navigation menu. On laptops and desktops the
+   button is hidden and the links always show. menu.js adds the
+   behavior; these rules set its look.
    ----------------------------------------------------------- */
 
 .menu-toggle {
-    font-family: 'Oswald', Arial, sans-serif;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    display: inline-flex;               /* centers the three-line icon */
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;                     /* 44 pixels: big enough to tap easily */
+    height: 2.75rem;
+    padding: 0;
     background-color: #1f4a5a;          /* muted dark teal */
-    color: rgb(224, 242, 241);          /* pale seafoam text */
+    color: rgb(224, 242, 241);          /* pale seafoam lines */
     border: 2px solid #4fd1c5;          /* bright aqua outline */
-    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
     cursor: pointer;
+}
+
+/* The three lines are drawn in the button's text color. */
+.menu-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+}
+
+/* The menu-toggle button[hidden] rule keeps the button gone on laptops,
+   even though display inline-flex above would otherwise show it. */
+.menu-toggle[hidden] {
+    display: none;
+}
+
+/* Text that screen readers announce but that is not shown on screen.
+   The button's name, Toggle navigation menu, lives in one of these. */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .menu-toggle:focus {
@@ -479,4 +512,26 @@ a:hover {
         flex-direction: column;         /* name above email */
         text-align: center;
     }
+}
+
+/* -----------------------------------------------------------
+   BETA ALERT (home page)
+   The Musician Forge alert at the very top of the page, above the
+   banner. role="alert" in the HTML makes it an assertive ARIA live
+   region: screen readers interrupt to announce it, and beta-alert.js
+   makes sure it gets announced. The word Beta at the start marks it as a notice, so it does not
+   rely on color.
+   ----------------------------------------------------------- */
+
+.beta-alert {
+    background-color: #12303d;
+    border: 2px solid #4fd1c5;          /* bright aqua outline */
+    border-left-width: 8px;             /* thick bar down the left side */
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    margin: 1rem 0 0;                   /* space above, the banner sits right below */
+}
+
+.beta-alert p {
+    margin: 0;
 }
